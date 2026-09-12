@@ -1,0 +1,26 @@
+{
+  "configuration_unchanged": {
+    "passed": true
+  },
+  "finite_model_reload_parity": {
+    "passed": true
+  },
+  "graph_layout": {
+    "passed": true
+  },
+  "protected_holdout_exclusion": {
+    "passed": true
+  },
+  "race_split_isolation": {
+    "passed": true
+  },
+  "source_immutability": {
+    "passed": true
+  },
+  "split_partition": {
+    "passed": true
+  },
+  "test_after_freeze": {
+    "passed": true
+  }
+}

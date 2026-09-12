@@ -1,0 +1,4 @@
+split,eligible_windows,positives,negatives,unique_races,positive_races,positive_race_fraction,unique_driver_pairs,unique_events,max_positives_in_one_race
+development_test,93,4,89,11,3,0.2727272727272727,78,4,2
+train,353,7,346,36,7,0.19444444444444445,214,7,1
+validation,117,5,112,9,5,0.5555555555555556,91,5,1

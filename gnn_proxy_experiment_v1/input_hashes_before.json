@@ -1,0 +1,10 @@
+{
+  "full_race_telemetry_collection_final/telemetry_car.csv.gz": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+  "full_race_telemetry_collection_final/telemetry_position.csv.gz": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+  "phase3_passed_races/prediction_windows_37.csv.gz": "03a5b634245f0431479c2297d744b905ca803b888b3dd10705c81f4b4c98e01b",
+  "phase3_passed_races/target_contract_v3_passed_races.md": "0968ad623301495dc46aee09005d9bf45720b0b50a0acab3fbd2570d6c641691",
+  "phase3_passed_races/telemetry_coverage_37.csv": "719d5acfc979513f453b3fa64a1645caabe5b0431df2f10c46ed286432b6ccd8",
+  "phase3_prediction_dataset/phase3_feature_readiness.csv": "1598fc69e3cfbd7a30ad9f7ae5636ad3db9cd2888865b38bb2bf8803073f9bff",
+  "phase3_races_audit_reconciliation_v1/positive_window_event_lineage.csv": "b85a50f96276df9fab275002b70058fc8326cc64b920bba4ceb2e71351104dff",
+  "phase3_races_audit_reconciliation_v1/proposed_chronological_split_37.csv": "f613de06f939b7527984639776dcdcc7d00d5cde05b699bb5b20a3983f302557"
+}

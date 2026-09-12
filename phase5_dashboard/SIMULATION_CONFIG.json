@@ -1,0 +1,26 @@
+{
+  "accounting_boundary": "battery-side",
+  "branch_horizon_laps": 3,
+  "capacity_mj": 4.0,
+  "efficiency_role": "performance factor only; not applied twice to battery energy",
+  "limits": "demo constraints, not FIA compliance; historical battery/SOH/temperature are not observed inputs",
+  "max_deploy_mj": 1.45,
+  "max_harvest_mj": 0.95,
+  "opponent_response": "deterministic stochastic draw hidden from planner; identical seed/draws across branches",
+  "peak_power_kw": 300,
+  "policies": [
+    "ATTACK",
+    "HOLD",
+    "HARVEST",
+    "DEFEND"
+  ],
+  "reserve_mj": 0.12,
+  "score_weights": {
+    "deployment_cost": 0.065,
+    "position": 6,
+    "reserve": 0.9,
+    "threat": 1.6
+  },
+  "version": "phase5-demo-energy-v1",
+  "window_seconds": 5
+}

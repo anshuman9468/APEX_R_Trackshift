@@ -1,0 +1,12 @@
+field_or_artifact,meaning,source,status
+telemetry_car_37_passed.csv.gz,Filtered continuous car stream; one row per car telemetry sample,FastF1 car_data,telemetry-ready
+telemetry_position_37_passed.csv.gz,Filtered continuous position/status stream; one row per position sample,FastF1 pos_data,telemetry-ready
+prediction_windows_37.csv.gz,One boundary window per driver/lap where laptime context exists; outcome columns are outside feature allowlist,TracingInsights laptimes.json plus FastF1 coverage,proxy-label-ready only
+proxy_feature_view_37.csv.gz,"Causal as-of car/position feature view; current sample only, no labels/evidence",FastF1 car_data/pos_data,proxy-label-ready only
+proxy_labels_37.csv.gz,"Explicit boundary-order proxy outcome, not a verified overtake",TracingInsights laptimes.json pos,proxy-label-ready only
+event_review_37.csv,Automated evidence review of inherited position-swap candidates,TracingInsights laptimes + public pit/RC context + FastF1 telemetry,verified-overtake-ready: NO
+target_contract_v3_passed_races.md,Frozen boundary-order proxy definition,Phase 3 contract carried to continuous-race subset,contract
+phase3_split_manifest_37.csv,Existing race-level split assignments filtered to PASS races,Approved split manifest,lineage
+driver_telemetry_coverage_37.csv,Per-driver coverage inventory filtered to passed races,Completed FastF1 collection inventory,coverage audit
+proxy_counts_by_split.csv,Proxy window counts using the unchanged race-level split,Generated from prediction windows,coverage audit
+augment_event_telemetry.py,Offline candidate-specific sample-count audit over boundary intervals,PASS-race FastF1 car_data/pos_data,reproducible audit helper

@@ -1,0 +1,9 @@
+{
+  "absolute_difference": 0.0,
+  "adapter_cpu_score": 0.0052168904803693295,
+  "note": "Same checkpoint, training-only preprocessing, graph topology and forward architecture; only the device adapter path differs.",
+  "saved_graph_cpu_score": 0.0052168904803693295,
+  "status": "PASS",
+  "tolerance": 1e-07,
+  "window_id": "ee38ba6e51b8d9dbba9b"
+}

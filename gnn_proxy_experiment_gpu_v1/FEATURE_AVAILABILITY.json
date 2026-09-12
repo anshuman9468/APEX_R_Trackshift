@@ -1,0 +1,34 @@
+{
+  "available_and_used": {
+    "gps_positional_timing": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "car_sample_age_sec",
+      "position_sample_age_sec",
+      "session_time_sec-derived ages"
+    ],
+    "raw_power_related_proxies": [
+      "throttle_pct",
+      "brake",
+      "rpm",
+      "n_gear",
+      "drs_binary"
+    ],
+    "speed_gap": [
+      "speed_kmh",
+      "distance_m",
+      "relative_speed_kmh",
+      "attacker_target_speed_delta_kmh",
+      "attacker_target_distance_m"
+    ]
+  },
+  "unavailable_and_excluded": {
+    "battery_es_temperature": "No battery/energy-storage temperature channel in audited source.",
+    "energy_delta": "No measured ERS/battery telemetry in audited source.",
+    "energy_power": "No measured power channel in audited source; engine power is simulated.",
+    "gps_latitude_longitude": "Only track-frame x/y/z are available.",
+    "state_of_health": "No battery state-of-health channel in audited source.",
+    "tyre_wear": "No causally safe tyre-wear stream in this graph cache."
+  }
+}

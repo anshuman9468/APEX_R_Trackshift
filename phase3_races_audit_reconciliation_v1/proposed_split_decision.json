@@ -1,0 +1,12 @@
+{
+  "boundary_rule": "ceil(0.70*N) and ceil(0.85*N) on authoritative chronology_rank",
+  "final_holdout": false,
+  "linked_events_stay_with_race": true,
+  "race_count": 37,
+  "selected_before_outcome_distribution": true,
+  "status": "PROPOSED_DEVELOPMENT_PARTITION_ONLY",
+  "train_end_index_exclusive": 26,
+  "validation_end_index_exclusive": 32,
+  "version": "phase3-passed-races-reconciliation-v1",
+  "whole_race_grouping": true
+}

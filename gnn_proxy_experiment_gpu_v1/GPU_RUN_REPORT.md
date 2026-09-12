@@ -1,0 +1,500 @@
+# APEX-R GNN proxy experiment — CUDA run summary
+
+This report summarizes the executed GPU variant. The target remains the
+fixed-pair next-lap-boundary classified-order proxy, not verified overtaking
+or energy-strategy effectiveness.
+
+- GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+- PyTorch: 2.11.0+cu128; CUDA runtime: 12.8
+- Eligible graphs: 15404 / 15423 labelled windows
+- Graph exclusions: 19
+- Data use: all eligible known-label graphs from the audited 37-race store;
+  unknown/censored windows are not valid supervised targets and remain excluded.
+- Development-test was evaluated once after FROZEN_BEFORE_TEST.json; it is
+  previously accessed development data, not an untouched final holdout.
+
+## Requested signal availability
+
+Used: speed, physical gap/proximity, relative speed, XYZ track position,
+session timing/sample ages, speed trends, throttle, brake, gear, RPM and DRS
+with explicit missingness masks. Not available in the audited source and not
+invented: measured energy delta, power, tyre wear, battery state-of-health,
+battery/ES temperature, or GPS latitude/longitude.
+
+## Training runs
+
+The complete run registry is in gnn_run_registry.json.
+[
+  {
+    "best_epoch": 33,
+    "best_validation_ap": 0.12361513222631858,
+    "checkpoint": "gnn_seed_17_best.pt",
+    "epochs_run": 48,
+    "seed": 17,
+    "training_seconds": 171.07103061676025
+  },
+  {
+    "best_epoch": 16,
+    "best_validation_ap": 0.1081456324715485,
+    "checkpoint": "gnn_seed_23_best.pt",
+    "epochs_run": 31,
+    "seed": 23,
+    "training_seconds": 108.31132578849792
+  },
+  {
+    "best_epoch": 28,
+    "best_validation_ap": 0.12760248880353492,
+    "checkpoint": "gnn_seed_42_best.pt",
+    "epochs_run": 43,
+    "seed": 42,
+    "training_seconds": 152.35492944717407
+  }
+]
+
+## Metrics
+
+See metrics.csv for every baseline/seed and split, precision_recall_curves.csv
+for full curves, reliability_bins.csv for bin counts, and whole_race_bootstrap.csv
+for race-level uncertainty.
+{
+  "bootstrap": [
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.037144448366258805,
+      "ci97_5": 0.08665616787866008,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.057817281157725095,
+      "model": "gnn_seed_17",
+      "race_count": 5,
+      "split": "development_test",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.03545457913799374,
+      "ci97_5": 0.1400907020694157,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.08841953107132554,
+      "model": "gnn_seed_17",
+      "race_count": 6,
+      "split": "development_validation",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.012733904150973686,
+      "ci97_5": 0.09081371201539974,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.046954879929465565,
+      "model": "gnn_seed_23",
+      "race_count": 5,
+      "split": "development_test",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.022613682195613702,
+      "ci97_5": 0.1180418048696422,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.0686538671414306,
+      "model": "gnn_seed_23",
+      "race_count": 6,
+      "split": "development_validation",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.03937784004509326,
+      "ci97_5": 0.09385067579025975,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.06259892357536347,
+      "model": "gnn_seed_42",
+      "race_count": 5,
+      "split": "development_test",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.03045502808166886,
+      "ci97_5": 0.13589985457140202,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.0867953996271297,
+      "model": "gnn_seed_42",
+      "race_count": 6,
+      "split": "development_validation",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.022179088527082592,
+      "ci97_5": 0.07408486130963583,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.03552842036531993,
+      "model": "logistic_c1",
+      "race_count": 5,
+      "split": "development_test",
+      "valid_replicates": 1000
+    },
+    {
+      "bootstrap_replicates": 1000,
+      "ci2_5": 0.03515268331479576,
+      "ci97_5": 0.07643888377823516,
+      "degenerate_replicates": 0,
+      "mean_ap_delta_vs_constant": 0.054216728745397895,
+      "model": "logistic_c1",
+      "race_count": 6,
+      "split": "development_validation",
+      "valid_replicates": 1000
+    }
+  ],
+  "primary_metric": "average_precision",
+  "rows": [
+    {
+      "average_precision": 0.057445412801049575,
+      "brier_score": 0.05414543734916659,
+      "log_loss": 0.21987984622068357,
+      "model": "constant",
+      "n": 10671,
+      "negative_count": 10058,
+      "positive_count": 613,
+      "prevalence": 0.057445412801049575,
+      "roc_auc": 0.5,
+      "seed": "",
+      "split": "development_train",
+      "threshold_f1": 0.108649415101028,
+      "threshold_fn": 0,
+      "threshold_fp": 10058,
+      "threshold_precision": 0.057445412801049575,
+      "threshold_recall": 1.0,
+      "threshold_threshold": 0.057445412801049575,
+      "threshold_tn": 0,
+      "threshold_tp": 613
+    },
+    {
+      "average_precision": 0.04066324516383735,
+      "brier_score": 0.039291386807186496,
+      "log_loss": 0.17292739103110444,
+      "model": "constant",
+      "n": 2533,
+      "negative_count": 2430,
+      "positive_count": 103,
+      "prevalence": 0.04066324516383735,
+      "roc_auc": 0.5,
+      "seed": "",
+      "split": "development_validation",
+      "threshold_f1": 0.07814871016691957,
+      "threshold_fn": 0,
+      "threshold_fp": 2430,
+      "threshold_precision": 0.04066324516383735,
+      "threshold_recall": 1.0,
+      "threshold_threshold": 0.057445412801049575,
+      "threshold_tn": 0,
+      "threshold_tp": 103
+    },
+    {
+      "average_precision": 0.1361701639165617,
+      "brier_score": 0.05222013954099145,
+      "log_loss": 0.2044061808167684,
+      "model": "logistic_c1",
+      "n": 10671,
+      "negative_count": 10058,
+      "positive_count": 613,
+      "prevalence": 0.057445412801049575,
+      "roc_auc": 0.7072788592882328,
+      "seed": "",
+      "split": "development_train",
+      "threshold_f1": 0.20423892100192678,
+      "threshold_fn": 454,
+      "threshold_fp": 785,
+      "threshold_precision": 0.1684322033898305,
+      "threshold_recall": 0.25938009787928223,
+      "threshold_threshold": 0.12560341787484255,
+      "threshold_tn": 9273,
+      "threshold_tp": 159
+    },
+    {
+      "average_precision": 0.08999784870644094,
+      "brier_score": 0.038379627556770685,
+      "log_loss": 0.16109829691228733,
+      "model": "logistic_c1",
+      "n": 2533,
+      "negative_count": 2430,
+      "positive_count": 103,
+      "prevalence": 0.04066324516383735,
+      "roc_auc": 0.6923009309201327,
+      "seed": "",
+      "split": "development_validation",
+      "threshold_f1": 0.18045112781954886,
+      "threshold_fn": 79,
+      "threshold_fp": 139,
+      "threshold_precision": 0.147239263803681,
+      "threshold_recall": 0.23300970873786409,
+      "threshold_threshold": 0.12560341787484255,
+      "threshold_tn": 2291,
+      "threshold_tp": 24
+    },
+    {
+      "average_precision": 0.3854309435911295,
+      "brier_score": 0.043977865577486126,
+      "log_loss": 0.1602643337915826,
+      "model": "gnn_seed_17",
+      "n": 10671,
+      "negative_count": 10058,
+      "positive_count": 613,
+      "prevalence": 0.057445412801049575,
+      "roc_auc": 0.8832729386523904,
+      "seed": 17,
+      "split": "development_train",
+      "threshold_f1": 0.3340909090909091,
+      "threshold_fn": 466,
+      "threshold_fp": 120,
+      "threshold_precision": 0.550561797752809,
+      "threshold_recall": 0.2398042414355628,
+      "threshold_threshold": 0.30211204290390015,
+      "threshold_tn": 9938,
+      "threshold_tp": 147
+    },
+    {
+      "average_precision": 0.12361513222631858,
+      "brier_score": 0.039326288510157396,
+      "log_loss": 0.18278596153709722,
+      "model": "gnn_seed_17",
+      "n": 2533,
+      "negative_count": 2430,
+      "positive_count": 103,
+      "prevalence": 0.04066324516383735,
+      "roc_auc": 0.6924887130928123,
+      "seed": 17,
+      "split": "development_validation",
+      "threshold_f1": 0.18518518518518515,
+      "threshold_fn": 88,
+      "threshold_fp": 44,
+      "threshold_precision": 0.2542372881355932,
+      "threshold_recall": 0.14563106796116504,
+      "threshold_threshold": 0.30211204290390015,
+      "threshold_tn": 2386,
+      "threshold_tp": 15
+    },
+    {
+      "average_precision": 0.24415568540259427,
+      "brier_score": 0.04841129682889979,
+      "log_loss": 0.17896965354410196,
+      "model": "gnn_seed_23",
+      "n": 10671,
+      "negative_count": 10058,
+      "positive_count": 613,
+      "prevalence": 0.057445412801049575,
+      "roc_auc": 0.8271947662772883,
+      "seed": 23,
+      "split": "development_train",
+      "threshold_f1": 0.3036405886909373,
+      "threshold_fn": 417,
+      "threshold_fp": 482,
+      "threshold_precision": 0.2890855457227139,
+      "threshold_recall": 0.3197389885807504,
+      "threshold_threshold": 0.21220846474170685,
+      "threshold_tn": 9576,
+      "threshold_tp": 196
+    },
+    {
+      "average_precision": 0.1081456324715485,
+      "brier_score": 0.04026674997462826,
+      "log_loss": 0.16946035157672662,
+      "model": "gnn_seed_23",
+      "n": 2533,
+      "negative_count": 2430,
+      "positive_count": 103,
+      "prevalence": 0.04066324516383735,
+      "roc_auc": 0.685376962723241,
+      "seed": 23,
+      "split": "development_validation",
+      "threshold_f1": 0.16597510373443983,
+      "threshold_fn": 83,
+      "threshold_fp": 118,
+      "threshold_precision": 0.14492753623188406,
+      "threshold_recall": 0.1941747572815534,
+      "threshold_threshold": 0.21220846474170685,
+      "threshold_tn": 2312,
+      "threshold_tp": 20
+    },
+    {
+      "average_precision": 0.3345352270296404,
+      "brier_score": 0.045671066163925474,
+      "log_loss": 0.1640522566365946,
+      "model": "gnn_seed_42",
+      "n": 10671,
+      "negative_count": 10058,
+      "positive_count": 613,
+      "prevalence": 0.057445412801049575,
+      "roc_auc": 0.8692452454394203,
+      "seed": 42,
+      "split": "development_train",
+      "threshold_f1": 0.36791758646063283,
+      "threshold_fn": 363,
+      "threshold_fp": 496,
+      "threshold_precision": 0.3351206434316354,
+      "threshold_recall": 0.4078303425774878,
+      "threshold_threshold": 0.1846635341644287,
+      "threshold_tn": 9562,
+      "threshold_tp": 250
+    },
+    {
+      "average_precision": 0.12760248880353492,
+      "brier_score": 0.03875358886809885,
+      "log_loss": 0.1660807449189008,
+      "model": "gnn_seed_42",
+      "n": 2533,
+      "negative_count": 2430,
+      "positive_count": 103,
+      "prevalence": 0.04066324516383735,
+      "roc_auc": 0.6892724439650006,
+      "seed": 42,
+      "split": "development_validation",
+      "threshold_f1": 0.18095238095238092,
+      "threshold_fn": 84,
+      "threshold_fp": 88,
+      "threshold_precision": 0.17757009345794392,
+      "threshold_recall": 0.18446601941747573,
+      "threshold_threshold": 0.1846635341644287,
+      "threshold_tn": 2342,
+      "threshold_tp": 19
+    },
+    {
+      "average_precision": 0.04818181818181818,
+      "brier_score": 0.045946144763781845,
+      "log_loss": 0.1939625439593566,
+      "model": "constant",
+      "n": 2200,
+      "negative_count": 2094,
+      "positive_count": 106,
+      "prevalence": 0.04818181818181818,
+      "roc_auc": 0.5,
+      "seed": "",
+      "split": "development_test",
+      "threshold_f1": 0.0919340849956635,
+      "threshold_fn": 0,
+      "threshold_fp": 2094,
+      "threshold_precision": 0.04818181818181818,
+      "threshold_recall": 1.0,
+      "threshold_threshold": 0.057445412801049575,
+      "threshold_tn": 0,
+      "threshold_tp": 106
+    },
+    {
+      "average_precision": 0.07760780363142826,
+      "brier_score": 0.045775746911450574,
+      "log_loss": 0.18859569421645414,
+      "model": "logistic_c1",
+      "n": 2200,
+      "negative_count": 2094,
+      "positive_count": 106,
+      "prevalence": 0.04818181818181818,
+      "roc_auc": 0.6318051575931232,
+      "seed": "",
+      "split": "development_test",
+      "threshold_f1": 0.09876543209876543,
+      "threshold_fn": 94,
+      "threshold_fp": 125,
+      "threshold_precision": 0.08759124087591241,
+      "threshold_recall": 0.11320754716981132,
+      "threshold_threshold": 0.12560341787484255,
+      "threshold_tn": 1969,
+      "threshold_tp": 12
+    },
+    {
+      "average_precision": 0.0996796896230693,
+      "brier_score": 0.047411415076514835,
+      "log_loss": 0.21929386325882186,
+      "model": "gnn_seed_17",
+      "n": 2200,
+      "negative_count": 2094,
+      "positive_count": 106,
+      "prevalence": 0.04818181818181818,
+      "roc_auc": 0.667189273936314,
+      "seed": 17,
+      "split": "development_test",
+      "threshold_f1": 0.09523809523809523,
+      "threshold_fn": 99,
+      "threshold_fp": 34,
+      "threshold_precision": 0.17073170731707318,
+      "threshold_recall": 0.0660377358490566,
+      "threshold_threshold": 0.30211204290390015,
+      "threshold_tn": 2060,
+      "threshold_tp": 7
+    },
+    {
+      "average_precision": 0.0885484470161785,
+      "brier_score": 0.04929438161478706,
+      "log_loss": 0.1998004131682408,
+      "model": "gnn_seed_23",
+      "n": 2200,
+      "negative_count": 2094,
+      "positive_count": 106,
+      "prevalence": 0.04818181818181818,
+      "roc_auc": 0.6527454902596818,
+      "seed": 23,
+      "split": "development_test",
+      "threshold_f1": 0.1122112211221122,
+      "threshold_fn": 89,
+      "threshold_fp": 180,
+      "threshold_precision": 0.08629441624365482,
+      "threshold_recall": 0.16037735849056603,
+      "threshold_threshold": 0.21220846474170685,
+      "threshold_tn": 1914,
+      "threshold_tp": 17
+    },
+    {
+      "average_precision": 0.10433820299403382,
+      "brier_score": 0.04596526598472098,
+      "log_loss": 0.19036481652666773,
+      "model": "gnn_seed_42",
+      "n": 2200,
+      "negative_count": 2094,
+      "positive_count": 106,
+      "prevalence": 0.04818181818181818,
+      "roc_auc": 0.7008568957128184,
+      "seed": 42,
+      "split": "development_test",
+      "threshold_f1": 0.13574660633484162,
+      "threshold_fn": 91,
+      "threshold_fp": 100,
+      "threshold_precision": 0.13043478260869565,
+      "threshold_recall": 0.14150943396226415,
+      "threshold_threshold": 0.1846635341644287,
+      "threshold_tn": 1994,
+      "threshold_tp": 15
+    }
+  ]
+}
+
+## Verification
+
+{
+  "configuration_unchanged": {
+    "passed": true
+  },
+  "finite_model_reload_parity": {
+    "passed": true
+  },
+  "graph_layout": {
+    "passed": true
+  },
+  "protected_holdout_exclusion": {
+    "passed": true
+  },
+  "race_split_isolation": {
+    "passed": true
+  },
+  "source_immutability": {
+    "passed": true
+  },
+  "split_partition": {
+    "passed": true
+  },
+  "test_after_freeze": {
+    "passed": true
+  }
+}
+
+GPU execution is not promised bit-for-bit identical to the prior CPU run
+because CUDA kernels can differ numerically even with unchanged seeds.

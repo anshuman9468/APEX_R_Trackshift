@@ -1,0 +1,32 @@
+{
+  "car_telemetry_source": {
+    "bytes": 267873901,
+    "path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/full_race_telemetry_collection_final/telemetry_car.csv.gz",
+    "sha256": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca"
+  },
+  "frozen_checkpoint": {
+    "bytes": 46365,
+    "path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/gnn_proxy_experiment_gpu_v1/gnn_seed_42_best.pt",
+    "sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14"
+  },
+  "frozen_preprocessing": {
+    "bytes": 3853,
+    "path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/gnn_proxy_experiment_gpu_v1/preprocessing_state.json",
+    "sha256": "425c6e8459a81d9dfc8bcd017557ec4b7eabecdac9f59d7a6bde9fdffe58ecc2"
+  },
+  "frozen_split_manifest": {
+    "bytes": 6950,
+    "path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/gnn_proxy_experiment_gpu_v1/frozen_split_manifest.json",
+    "sha256": "e2e3a206c3caa2d3edd4e98540cade6d5c9613ad9a116f2b3b982db055b52e5e"
+  },
+  "graph_schema": {
+    "bytes": 3011,
+    "path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/gnn_proxy_experiment_gpu_v1/GRAPH_CACHE_SCHEMA.json",
+    "sha256": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3"
+  },
+  "position_telemetry_source": {
+    "bytes": 277229195,
+    "path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/full_race_telemetry_collection_final/telemetry_position.csv.gz",
+    "sha256": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d"
+  }
+}

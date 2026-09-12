@@ -1,0 +1,2433 @@
+{
+  "archives": {
+    "2018": {
+      "bytes": 17055630,
+      "error": null,
+      "exists": true,
+      "first_bad_member": null,
+      "members": [
+        {
+          "compressed_size": 17055490,
+          "crc32": "45bb2398",
+          "file_size": 17050290,
+          "name": "telemetry_2018.csv.gz",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "42ca029881c5be48eee6a32e5ee7279c042d4ebe797c2eeb8766a8967b2dd73e"
+        }
+      ],
+      "path": "/home/anshumandutta/Downloads/APEX-R_Telemetry_2018.zip",
+      "sha256_before": "ebc40d2f4bdd12ee9533c14cf985bc109b660ae825125a4d474504e430a9be2d",
+      "unsafe_members": [],
+      "zip_opened": true,
+      "zip_test_passed": true
+    },
+    "2019": {
+      "bytes": 17558553,
+      "error": null,
+      "exists": true,
+      "first_bad_member": null,
+      "members": [
+        {
+          "compressed_size": 17558413,
+          "crc32": "d2404f52",
+          "file_size": 17553058,
+          "name": "telemetry_2019.csv.gz",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "36f2e7efa56f3b6b1ca4040b39d5b04ff91d59b413aa2bb3cb79ae6cddee333c"
+        }
+      ],
+      "path": "/home/anshumandutta/Downloads/APEX-R_Telemetry_2019.zip",
+      "sha256_before": "5d3e8e478db4733ce458b939f197d32e62d677b16bd1f830425c714808170faa",
+      "unsafe_members": [],
+      "zip_opened": true,
+      "zip_test_passed": true
+    },
+    "2020": {
+      "bytes": 19469961,
+      "error": null,
+      "exists": true,
+      "first_bad_member": null,
+      "members": [
+        {
+          "compressed_size": 19469821,
+          "crc32": "06fca620",
+          "file_size": 19463885,
+          "name": "telemetry_2020.csv.gz",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "9180c5c044ee19f9e9630874cda6c14225493fcc84b6dec70072f06b8cb8e91c"
+        }
+      ],
+      "path": "/home/anshumandutta/Downloads/APEX-R_Telemetry_2020.zip",
+      "sha256_before": "d71f85f4d582d9c6c9b2a48d6f7e9e17b2711bd95250b53ab9c77af0f8de40f7",
+      "unsafe_members": [],
+      "zip_opened": true,
+      "zip_test_passed": true
+    },
+    "2021": {
+      "bytes": 20780523,
+      "error": null,
+      "exists": true,
+      "first_bad_member": null,
+      "members": [
+        {
+          "compressed_size": 20780383,
+          "crc32": "93814e43",
+          "file_size": 20774043,
+          "name": "telemetry_2021.csv.gz",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "7ef941093ae398e3ab955c100b37f419791a67c9ec30e2243b136f941b98961e"
+        }
+      ],
+      "path": "/home/anshumandutta/Downloads/APEX-R_Telemetry_2021.zip",
+      "sha256_before": "81005874086bfdecdbee6da91438b75e3fe72dd1028ede825b2c2a8685ce1526",
+      "unsafe_members": [],
+      "zip_opened": true,
+      "zip_test_passed": true
+    },
+    "2022": {
+      "bytes": 17578909,
+      "error": null,
+      "exists": true,
+      "first_bad_member": null,
+      "members": [
+        {
+          "compressed_size": 17578769,
+          "crc32": "74123b97",
+          "file_size": 17573419,
+          "name": "telemetry_2022.csv.gz",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "de8fb9ee15ae84c604b6f236c1db9fdd26b6f5bdc1840e8e9545fbe7afe5eefb"
+        }
+      ],
+      "path": "/home/anshumandutta/Downloads/APEX-R_Telemetry_2022.zip",
+      "sha256_before": "12cce78f843aaf59c09f22cb6d08d5827a98b5a8b6adbb78866aa86dbba6a1fd",
+      "unsafe_members": [],
+      "zip_opened": true,
+      "zip_test_passed": true
+    },
+    "metadata": {
+      "bytes": 62983,
+      "error": null,
+      "exists": true,
+      "first_bad_member": null,
+      "members": [
+        {
+          "compressed_size": 241,
+          "crc32": "d6ffbc14",
+          "file_size": 413,
+          "name": "inventory.json",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "7b19a31e0a44b9eedbb927f3d6808a2b727055618618f2f5bf7282cb923de9ae"
+        },
+        {
+          "compressed_size": 61820,
+          "crc32": "eb1fecfa",
+          "file_size": 446936,
+          "name": "manifest.json",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "482159798ae8544dbdd180fc10156b7f84151c9599d66baa2711380da94479cc"
+        },
+        {
+          "compressed_size": 588,
+          "crc32": "a326d847",
+          "file_size": 1285,
+          "name": "validation.json",
+          "read_error": null,
+          "safe_path": true,
+          "sha256_uncompressed_member": "e49854743924a6ceac073afdd0694b21b6a4b6fbbded3249df49049bed56d75c"
+        }
+      ],
+      "path": "/home/anshumandutta/Downloads/APEX-R_Telemetry_Metadata.zip",
+      "sha256_before": "bdcae879ac148407d9a20c30b7375cd021c965af6cd6778dd3f3b28769476391",
+      "unsafe_members": [],
+      "zip_opened": true,
+      "zip_test_passed": true
+    }
+  },
+  "audit": {
+    "input_dir": "/home/anshumandutta/Downloads",
+    "name": "APEX-R Phase 1 Dataset Audit",
+    "output_dir": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/phase1_audit_20260911",
+    "python": "3.13.13 (main, Apr  8 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)]",
+    "run_completed_utc": "2026-09-11T08:54:21.125275+00:00",
+    "run_started_utc": "2026-09-11T08:53:19.693410+00:00",
+    "sealed_holdout_exclusion": "No path containing session 11353 was permitted; only 2018-2022 supplied telemetry archives were inspected."
+  },
+  "coverage": {
+    "driver_summary": {
+      "AIT": {
+        "race_identities": 1,
+        "rows": 521,
+        "seasons": [
+          "2020"
+        ],
+        "selected_laps": 1
+      },
+      "ALB": {
+        "race_identities": 41,
+        "rows": 30987,
+        "seasons": [
+          "2019",
+          "2020",
+          "2022"
+        ],
+        "selected_laps": 41
+      },
+      "ALO": {
+        "race_identities": 42,
+        "rows": 33574,
+        "seasons": [
+          "2018",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 42
+      },
+      "BOT": {
+        "race_identities": 70,
+        "rows": 53320,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 70
+      },
+      "DEV": {
+        "race_identities": 1,
+        "rows": 662,
+        "seasons": [
+          "2022"
+        ],
+        "selected_laps": 1
+      },
+      "ERI": {
+        "race_identities": 14,
+        "rows": 9778,
+        "seasons": [
+          "2018"
+        ],
+        "selected_laps": 14
+      },
+      "FIT": {
+        "race_identities": 2,
+        "rows": 1471,
+        "seasons": [
+          "2020"
+        ],
+        "selected_laps": 2
+      },
+      "GAS": {
+        "race_identities": 70,
+        "rows": 53981,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 70
+      },
+      "GIO": {
+        "race_identities": 42,
+        "rows": 33540,
+        "seasons": [
+          "2019",
+          "2020",
+          "2021"
+        ],
+        "selected_laps": 42
+      },
+      "GRO": {
+        "race_identities": 40,
+        "rows": 29381,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020"
+        ],
+        "selected_laps": 40
+      },
+      "HAM": {
+        "race_identities": 69,
+        "rows": 51646,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 69
+      },
+      "HAR": {
+        "race_identities": 14,
+        "rows": 10642,
+        "seasons": [
+          "2018"
+        ],
+        "selected_laps": 14
+      },
+      "HUL": {
+        "race_identities": 31,
+        "rows": 23460,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2022"
+        ],
+        "selected_laps": 31
+      },
+      "KUB": {
+        "race_identities": 15,
+        "rows": 10780,
+        "seasons": [
+          "2019",
+          "2021"
+        ],
+        "selected_laps": 15
+      },
+      "KVY": {
+        "race_identities": 26,
+        "rows": 20348,
+        "seasons": [
+          "2019",
+          "2020"
+        ],
+        "selected_laps": 26
+      },
+      "LAT": {
+        "race_identities": 41,
+        "rows": 33492,
+        "seasons": [
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 41
+      },
+      "LEC": {
+        "race_identities": 66,
+        "rows": 50383,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 66
+      },
+      "MAG": {
+        "race_identities": 52,
+        "rows": 38825,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2022"
+        ],
+        "selected_laps": 52
+      },
+      "MAZ": {
+        "race_identities": 12,
+        "rows": 11509,
+        "seasons": [
+          "2021"
+        ],
+        "selected_laps": 12
+      },
+      "MSC": {
+        "race_identities": 26,
+        "rows": 21361,
+        "seasons": [
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 26
+      },
+      "NOR": {
+        "race_identities": 52,
+        "rows": 40643,
+        "seasons": [
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 52
+      },
+      "OCO": {
+        "race_identities": 52,
+        "rows": 40823,
+        "seasons": [
+          "2018",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 52
+      },
+      "PER": {
+        "race_identities": 63,
+        "rows": 47747,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 63
+      },
+      "RAI": {
+        "race_identities": 50,
+        "rows": 42668,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021"
+        ],
+        "selected_laps": 50
+      },
+      "RIC": {
+        "race_identities": 65,
+        "rows": 49079,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 65
+      },
+      "RUS": {
+        "race_identities": 52,
+        "rows": 41116,
+        "seasons": [
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 52
+      },
+      "SAI": {
+        "race_identities": 65,
+        "rows": 49750,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 65
+      },
+      "SIR": {
+        "race_identities": 13,
+        "rows": 9392,
+        "seasons": [
+          "2018"
+        ],
+        "selected_laps": 13
+      },
+      "STR": {
+        "race_identities": 64,
+        "rows": 49681,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 64
+      },
+      "TSU": {
+        "race_identities": 26,
+        "rows": 20920,
+        "seasons": [
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 26
+      },
+      "VAN": {
+        "race_identities": 13,
+        "rows": 9126,
+        "seasons": [
+          "2018"
+        ],
+        "selected_laps": 13
+      },
+      "VER": {
+        "race_identities": 65,
+        "rows": 48486,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 65
+      },
+      "VET": {
+        "race_identities": 64,
+        "rows": 48421,
+        "seasons": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "selected_laps": 64
+      },
+      "ZHO": {
+        "race_identities": 13,
+        "rows": 9790,
+        "seasons": [
+          "2022"
+        ],
+        "selected_laps": 13
+      }
+    },
+    "lap_rows": 1332,
+    "physical_complete_lap_reason": "The archive has selected lap identifiers and observed spans, but no independent lap start/end metadata, track-length reference, or selection/collection code proving that each selected interval is a complete physical lap.",
+    "physical_complete_lap_supported": false,
+    "race_summary": {
+      "2018|Abu Dhabi Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 16912,
+        "selected_laps": 20
+      },
+      "2018|Austrian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 10683,
+        "selected_laps": 20
+      },
+      "2018|Azerbaijan Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17775,
+        "selected_laps": 20
+      },
+      "2018|Belgian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17875,
+        "selected_laps": 20
+      },
+      "2018|Brazilian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 11409,
+        "selected_laps": 20
+      },
+      "2018|British Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15048,
+        "selected_laps": 20
+      },
+      "2018|Canadian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 11949,
+        "selected_laps": 20
+      },
+      "2018|Chinese Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15118,
+        "selected_laps": 20
+      },
+      "2018|French Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15739,
+        "selected_laps": 20
+      },
+      "2018|German Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12137,
+        "selected_laps": 20
+      },
+      "2018|Hungarian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12583,
+        "selected_laps": 20
+      },
+      "2018|Italian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13743,
+        "selected_laps": 20
+      },
+      "2018|Japanese Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15529,
+        "selected_laps": 20
+      },
+      "2018|Mexican Grand Prix|Race": {
+        "drivers": 7,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 4751,
+        "selected_laps": 7
+      },
+      "2019|Abu Dhabi Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15912,
+        "selected_laps": 20
+      },
+      "2019|Australian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13879,
+        "selected_laps": 20
+      },
+      "2019|Austrian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 10695,
+        "selected_laps": 20
+      },
+      "2019|Azerbaijan Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 16848,
+        "selected_laps": 20
+      },
+      "2019|Bahrain Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15439,
+        "selected_laps": 20
+      },
+      "2019|Belgian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17544,
+        "selected_laps": 20
+      },
+      "2019|Brazilian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 11296,
+        "selected_laps": 20
+      },
+      "2019|British Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14546,
+        "selected_laps": 20
+      },
+      "2019|Canadian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 11938,
+        "selected_laps": 20
+      },
+      "2019|Chinese Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15362,
+        "selected_laps": 20
+      },
+      "2019|French Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14834,
+        "selected_laps": 20
+      },
+      "2019|German Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14439,
+        "selected_laps": 20
+      },
+      "2019|Hungarian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12671,
+        "selected_laps": 20
+      },
+      "2019|Italian Grand Prix|Race": {
+        "drivers": 7,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 4481,
+        "selected_laps": 7
+      },
+      "2020|70th Anniversary Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15851,
+        "selected_laps": 20
+      },
+      "2020|Abu Dhabi Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 23096,
+        "selected_laps": 20
+      },
+      "2020|Austrian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15417,
+        "selected_laps": 20
+      },
+      "2020|Bahrain Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17792,
+        "selected_laps": 20
+      },
+      "2020|Belgian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 19491,
+        "selected_laps": 20
+      },
+      "2020|British Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 16834,
+        "selected_laps": 20
+      },
+      "2020|Eifel Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 16780,
+        "selected_laps": 20
+      },
+      "2020|Emilia Romagna Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14208,
+        "selected_laps": 20
+      },
+      "2020|Hungarian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14732,
+        "selected_laps": 20
+      },
+      "2020|Italian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15048,
+        "selected_laps": 20
+      },
+      "2020|Portuguese Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14506,
+        "selected_laps": 20
+      },
+      "2020|Russian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 18322,
+        "selected_laps": 20
+      },
+      "2020|Sakhir Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 10478,
+        "selected_laps": 20
+      },
+      "2020|Spanish Grand Prix|Race": {
+        "drivers": 6,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 4435,
+        "selected_laps": 6
+      },
+      "2021|Abu Dhabi Grand Prix|Race": {
+        "drivers": 19,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15051,
+        "selected_laps": 19
+      },
+      "2021|Austrian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12570,
+        "selected_laps": 20
+      },
+      "2021|Azerbaijan Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 19344,
+        "selected_laps": 20
+      },
+      "2021|Bahrain Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17220,
+        "selected_laps": 20
+      },
+      "2021|Belgian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 39454,
+        "selected_laps": 20
+      },
+      "2021|British Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 16779,
+        "selected_laps": 20
+      },
+      "2021|Dutch Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13491,
+        "selected_laps": 20
+      },
+      "2021|Emilia Romagna Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17088,
+        "selected_laps": 20
+      },
+      "2021|French Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17548,
+        "selected_laps": 20
+      },
+      "2021|Hungarian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17195,
+        "selected_laps": 20
+      },
+      "2021|Italian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15702,
+        "selected_laps": 20
+      },
+      "2021|Mexico City Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15122,
+        "selected_laps": 20
+      },
+      "2021|Monaco Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13569,
+        "selected_laps": 20
+      },
+      "2021|Portuguese Grand Prix|Race": {
+        "drivers": 7,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 5119,
+        "selected_laps": 7
+      },
+      "2022|Abu Dhabi Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13843,
+        "selected_laps": 20
+      },
+      "2022|Australian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13542,
+        "selected_laps": 20
+      },
+      "2022|Austrian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 11089,
+        "selected_laps": 20
+      },
+      "2022|Azerbaijan Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 18588,
+        "selected_laps": 20
+      },
+      "2022|Bahrain Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15145,
+        "selected_laps": 20
+      },
+      "2022|Belgian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 17869,
+        "selected_laps": 20
+      },
+      "2022|British Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15551,
+        "selected_laps": 20
+      },
+      "2022|Canadian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12267,
+        "selected_laps": 20
+      },
+      "2022|Dutch Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12216,
+        "selected_laps": 20
+      },
+      "2022|Emilia Romagna Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 14820,
+        "selected_laps": 20
+      },
+      "2022|French Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 15635,
+        "selected_laps": 20
+      },
+      "2022|Hungarian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 12856,
+        "selected_laps": 20
+      },
+      "2022|Italian Grand Prix|Race": {
+        "drivers": 20,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 13131,
+        "selected_laps": 20
+      },
+      "2022|Japanese Grand Prix|Race": {
+        "drivers": 6,
+        "lap_gap_count": 0,
+        "lap_gap_max": null,
+        "lap_gap_median": null,
+        "lap_gap_p95": null,
+        "rows": 7374,
+        "selected_laps": 6
+      }
+    },
+    "season_summary": {
+      "2018": {
+        "driver_codes": 20,
+        "race_identities": 14,
+        "rows": 191251,
+        "selected_laps": 267
+      },
+      "2019": {
+        "driver_codes": 20,
+        "race_identities": 14,
+        "rows": 189884,
+        "selected_laps": 267
+      },
+      "2020": {
+        "driver_codes": 23,
+        "race_identities": 14,
+        "rows": 216990,
+        "selected_laps": 266
+      },
+      "2021": {
+        "driver_codes": 21,
+        "race_identities": 14,
+        "rows": 235252,
+        "selected_laps": 266
+      },
+      "2022": {
+        "driver_codes": 22,
+        "race_identities": 14,
+        "rows": 193926,
+        "selected_laps": 266
+      }
+    },
+    "time_interpretation": "time resets near zero within each selected lap and has no UTC/session anchor; lap-relative seconds is the supported interpretation, while actual clock/delivery time is UNKNOWN.",
+    "timestamp_metrics_scope": "Positive deltas were calculated only within each (season,event,session,driver,lap), never across laps or unrelated races."
+  },
+  "documented_provenance": {
+    "inventory": {
+      "candidate_files": 9569,
+      "commits": {
+        "2018": "ec6317adac6786e38b5d35e008f4b87926a3a55c",
+        "2019": "38741496a2d3736954069c3301e33737ffb3d777",
+        "2020": "264ae1db8f1381540fb839c89f7b249ae2d8957d",
+        "2021": "194dae5f5c876b0f8f80f176acd196e124dc2c0a",
+        "2022": "ad802a0ff6643998cc860d2a6712804270ab857d"
+      },
+      "groups": 1977,
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    "license_files_found": [],
+    "manifest_keys": [
+      "compressed_csv_bytes",
+      "downloaded_source_bytes",
+      "failures",
+      "files",
+      "holdout_exclusion",
+      "included",
+      "laps",
+      "missing",
+      "race_events",
+      "range_flags",
+      "rows",
+      "status",
+      "target_met",
+      "unique_driver_codes",
+      "unique_sample_keys",
+      "year_rows"
+    ],
+    "processing_versions_found": [],
+    "readme_files_found": [],
+    "repository_urls_found": [],
+    "scripts_found": [],
+    "validation_keys": [
+      "causal_training_ready",
+      "compressed_csv_bytes",
+      "driver_codes",
+      "driver_list",
+      "missing",
+      "note",
+      "race_events",
+      "range_flags_preserved",
+      "rows",
+      "selected_laps",
+      "structural_validation_passed",
+      "uncompressed_csv_bytes",
+      "unique_sample_keys",
+      "year_rows"
+    ]
+  },
+  "duplicates": {
+    "collector_sample_key_missing_rows": 0,
+    "collector_sample_key_rows": 1027303,
+    "duplicate_examples": [],
+    "exact_duplicate_rows_by_full_payload_hash": 0,
+    "observation_key_justification": "source_data_key is a repeated lap/file lineage key in this CSV, not a unique observation key. The collector-style observation key tested is (source_data_key, sample_index), matching the metadata's unique_sample_keys claim. Canonical fallback is (year,event,session,driver,lap,sample_index). A race identity includes season plus event plus session.",
+    "repeated_canonical_key_rows": 0,
+    "repeated_canonical_keys_with_conflicting_payload": 0,
+    "repeated_collector_sample_key_rows": 0,
+    "repeated_collector_sample_keys_with_conflicting_payload": 0,
+    "source_data_key_lineage_rows": 1027303,
+    "source_data_key_lineage_unique_values": 1332
+  },
+  "independent_count_cross_check": {
+    "2018": {
+      "header_match": true,
+      "match": true,
+      "pandas_rows": 191251,
+      "rows": 191251,
+      "uncompressed_bytes": 51650690
+    },
+    "2019": {
+      "header_match": true,
+      "match": true,
+      "pandas_rows": 189884,
+      "rows": 189884,
+      "uncompressed_bytes": 52018395
+    },
+    "2020": {
+      "header_match": true,
+      "match": true,
+      "pandas_rows": 216990,
+      "rows": 216990,
+      "uncompressed_bytes": 58989854
+    },
+    "2021": {
+      "header_match": true,
+      "match": true,
+      "pandas_rows": 235252,
+      "rows": 235252,
+      "uncompressed_bytes": 63369945
+    },
+    "2022": {
+      "header_match": true,
+      "match": true,
+      "pandas_rows": 193926,
+      "rows": 193926,
+      "uncompressed_bytes": 52509821
+    }
+  },
+  "integrity": {
+    "all_expected_members_safe": true,
+    "all_separate_zip_crc_tests_passed": true,
+    "gzip_csv_decompression_and_crc_passed": true,
+    "input_sha256_after": {
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2018.zip": "ebc40d2f4bdd12ee9533c14cf985bc109b660ae825125a4d474504e430a9be2d",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2019.zip": "5d3e8e478db4733ce458b939f197d32e62d677b16bd1f830425c714808170faa",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2020.zip": "d71f85f4d582d9c6c9b2a48d6f7e9e17b2711bd95250b53ab9c77af0f8de40f7",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2021.zip": "81005874086bfdecdbee6da91438b75e3fe72dd1028ede825b2c2a8685ce1526",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2022.zip": "12cce78f843aaf59c09f22cb6d08d5827a98b5a8b6adbb78866aa86dbba6a1fd",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_Metadata.zip": "bdcae879ac148407d9a20c30b7375cd021c965af6cd6778dd3f3b28769476391"
+    },
+    "input_sha256_before": {
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2018.zip": "ebc40d2f4bdd12ee9533c14cf985bc109b660ae825125a4d474504e430a9be2d",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2019.zip": "5d3e8e478db4733ce458b939f197d32e62d677b16bd1f830425c714808170faa",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2020.zip": "d71f85f4d582d9c6c9b2a48d6f7e9e17b2711bd95250b53ab9c77af0f8de40f7",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2021.zip": "81005874086bfdecdbee6da91438b75e3fe72dd1028ede825b2c2a8685ce1526",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_2022.zip": "12cce78f843aaf59c09f22cb6d08d5827a98b5a8b6adbb78866aa86dbba6a1fd",
+      "/home/anshumandutta/Downloads/APEX-R_Telemetry_Metadata.zip": "bdcae879ac148407d9a20c30b7375cd021c965af6cd6778dd3f3b28769476391"
+    },
+    "legacy_combined_archive_checked": false,
+    "legacy_combined_archive_error": null,
+    "legacy_combined_archive_opened": null,
+    "metadata_errors": [],
+    "raw_parse_errors": [],
+    "source_hashes_unchanged": true
+  },
+  "metadata_top_level_keys": {
+    "inventory": [
+      "candidate_files",
+      "commits",
+      "groups",
+      "years"
+    ],
+    "manifest": [
+      "compressed_csv_bytes",
+      "downloaded_source_bytes",
+      "failures",
+      "files",
+      "holdout_exclusion",
+      "included",
+      "laps",
+      "missing",
+      "race_events",
+      "range_flags",
+      "rows",
+      "status",
+      "target_met",
+      "unique_driver_codes",
+      "unique_sample_keys",
+      "year_rows"
+    ],
+    "validation": [
+      "causal_training_ready",
+      "compressed_csv_bytes",
+      "driver_codes",
+      "driver_list",
+      "missing",
+      "note",
+      "race_events",
+      "range_flags_preserved",
+      "rows",
+      "selected_laps",
+      "structural_validation_passed",
+      "uncompressed_csv_bytes",
+      "unique_sample_keys",
+      "year_rows"
+    ]
+  },
+  "missingness": {
+    "by_race": {
+      "2018|Abu Dhabi Grand Prix|Race": {
+        "DistanceToDriverAhead": 778,
+        "DriverAhead": 844
+      },
+      "2018|Austrian Grand Prix|Race": {
+        "DistanceToDriverAhead": 523,
+        "DriverAhead": 587
+      },
+      "2018|Azerbaijan Grand Prix|Race": {
+        "DistanceToDriverAhead": 811,
+        "DriverAhead": 873
+      },
+      "2018|Belgian Grand Prix|Race": {
+        "DistanceToDriverAhead": 817,
+        "DriverAhead": 910
+      },
+      "2018|Brazilian Grand Prix|Race": {
+        "DistanceToDriverAhead": 561,
+        "DriverAhead": 624
+      },
+      "2018|British Grand Prix|Race": {
+        "DistanceToDriverAhead": 706,
+        "DriverAhead": 770
+      },
+      "2018|Canadian Grand Prix|Race": {
+        "DistanceToDriverAhead": 566,
+        "DriverAhead": 711
+      },
+      "2018|Chinese Grand Prix|Race": {
+        "DistanceToDriverAhead": 744,
+        "DriverAhead": 803
+      },
+      "2018|French Grand Prix|Race": {
+        "DistanceToDriverAhead": 732,
+        "DriverAhead": 792
+      },
+      "2018|German Grand Prix|Race": {
+        "DistanceToDriverAhead": 595,
+        "DriverAhead": 654
+      },
+      "2018|Hungarian Grand Prix|Race": {
+        "DistanceToDriverAhead": 613,
+        "DriverAhead": 672
+      },
+      "2018|Italian Grand Prix|Race": {
+        "DistanceToDriverAhead": 644,
+        "DriverAhead": 705
+      },
+      "2018|Japanese Grand Prix|Race": {
+        "DistanceToDriverAhead": 706,
+        "DriverAhead": 768
+      },
+      "2018|Mexican Grand Prix|Race": {
+        "DriverAhead": 36
+      },
+      "2019|Abu Dhabi Grand Prix|Race": {
+        "DistanceToDriverAhead": 779,
+        "DriverAhead": 842
+      },
+      "2019|Australian Grand Prix|Race": {
+        "DistanceToDriverAhead": 681,
+        "DriverAhead": 745
+      },
+      "2019|Austrian Grand Prix|Race": {
+        "DistanceToDriverAhead": 518,
+        "DriverAhead": 580
+      },
+      "2019|Azerbaijan Grand Prix|Race": {
+        "DistanceToDriverAhead": 817,
+        "DriverAhead": 879
+      },
+      "2019|Bahrain Grand Prix|Race": {
+        "DistanceToDriverAhead": 740,
+        "DriverAhead": 801
+      },
+      "2019|Belgian Grand Prix|Race": {
+        "DistanceToDriverAhead": 820,
+        "DriverAhead": 889
+      },
+      "2019|Brazilian Grand Prix|Race": {
+        "DistanceToDriverAhead": 555,
+        "DriverAhead": 615
+      },
+      "2019|British Grand Prix|Race": {
+        "DistanceToDriverAhead": 695,
+        "DriverAhead": 753
+      },
+      "2019|Canadian Grand Prix|Race": {
+        "DistanceToDriverAhead": 581,
+        "DriverAhead": 643
+      },
+      "2019|Chinese Grand Prix|Race": {
+        "DistanceToDriverAhead": 748,
+        "DriverAhead": 811
+      },
+      "2019|French Grand Prix|Race": {
+        "DistanceToDriverAhead": 726,
+        "DriverAhead": 787
+      },
+      "2019|German Grand Prix|Race": {
+        "DistanceToDriverAhead": 683,
+        "DriverAhead": 745
+      },
+      "2019|Hungarian Grand Prix|Race": {
+        "DistanceToDriverAhead": 614,
+        "DriverAhead": 673
+      },
+      "2019|Italian Grand Prix|Race": {
+        "DriverAhead": 24
+      },
+      "2020|70th Anniversary Grand Prix|Race": {
+        "DistanceToDriverAhead": 776,
+        "DriverAhead": 841
+      },
+      "2020|Abu Dhabi Grand Prix|Race": {
+        "DistanceToDriverAhead": 1093,
+        "DriverAhead": 1164
+      },
+      "2020|Austrian Grand Prix|Race": {
+        "DistanceToDriverAhead": 605,
+        "DriverAhead": 748
+      },
+      "2020|Bahrain Grand Prix|Race": {
+        "DistanceToDriverAhead": 821,
+        "DriverAhead": 1423
+      },
+      "2020|Belgian Grand Prix|Race": {
+        "DistanceToDriverAhead": 958,
+        "DriverAhead": 1029,
+        "rel_distance": 978
+      },
+      "2020|British Grand Prix|Race": {
+        "DistanceToDriverAhead": 794,
+        "DriverAhead": 871,
+        "rel_distance": 822
+      },
+      "2020|Eifel Grand Prix|Race": {
+        "DistanceToDriverAhead": 802,
+        "DriverAhead": 869
+      },
+      "2020|Emilia Romagna Grand Prix|Race": {
+        "DistanceToDriverAhead": 686,
+        "DriverAhead": 757
+      },
+      "2020|Hungarian Grand Prix|Race": {
+        "DistanceToDriverAhead": 713,
+        "DriverAhead": 787
+      },
+      "2020|Italian Grand Prix|Race": {
+        "DistanceToDriverAhead": 744,
+        "DriverAhead": 813
+      },
+      "2020|Portuguese Grand Prix|Race": {
+        "DistanceToDriverAhead": 711,
+        "DriverAhead": 783
+      },
+      "2020|Russian Grand Prix|Race": {
+        "DistanceToDriverAhead": 884,
+        "DriverAhead": 957
+      },
+      "2020|Sakhir Grand Prix|Race": {
+        "DistanceToDriverAhead": 507,
+        "DriverAhead": 576
+      },
+      "2020|Spanish Grand Prix|Race": {
+        "DistanceToDriverAhead": 723,
+        "DriverAhead": 742
+      },
+      "2021|Abu Dhabi Grand Prix|Race": {
+        "DistanceToDriverAhead": 772,
+        "DriverAhead": 835
+      },
+      "2021|Austrian Grand Prix|Race": {
+        "DistanceToDriverAhead": 603,
+        "DriverAhead": 678
+      },
+      "2021|Azerbaijan Grand Prix|Race": {
+        "DistanceToDriverAhead": 937,
+        "DriverAhead": 1006
+      },
+      "2021|Bahrain Grand Prix|Race": {
+        "DistanceToDriverAhead": 840,
+        "DriverAhead": 925
+      },
+      "2021|Belgian Grand Prix|Race": {
+        "DistanceToDriverAhead": 1809,
+        "DriverAhead": 2303
+      },
+      "2021|British Grand Prix|Race": {
+        "DistanceToDriverAhead": 812,
+        "DriverAhead": 899
+      },
+      "2021|Dutch Grand Prix|Race": {
+        "DistanceToDriverAhead": 656,
+        "DriverAhead": 730
+      },
+      "2021|Emilia Romagna Grand Prix|Race": {
+        "DistanceToDriverAhead": 778,
+        "DriverAhead": 859
+      },
+      "2021|French Grand Prix|Race": {
+        "DistanceToDriverAhead": 867,
+        "DriverAhead": 932
+      },
+      "2021|Hungarian Grand Prix|Race": {
+        "DistanceToDriverAhead": 735,
+        "DriverAhead": 802
+      },
+      "2021|Italian Grand Prix|Race": {
+        "DistanceToDriverAhead": 757,
+        "DriverAhead": 835,
+        "rel_distance": 855
+      },
+      "2021|Mexico City Grand Prix|Race": {
+        "DistanceToDriverAhead": 709,
+        "DriverAhead": 777
+      },
+      "2021|Monaco Grand Prix|Race": {
+        "DistanceToDriverAhead": 667,
+        "DriverAhead": 739,
+        "rel_distance": 717
+      },
+      "2021|Portuguese Grand Prix|Race": {
+        "DistanceToDriverAhead": 721,
+        "DriverAhead": 742
+      },
+      "2022|Abu Dhabi Grand Prix|Race": {
+        "DistanceToDriverAhead": 681,
+        "DriverAhead": 746
+      },
+      "2022|Australian Grand Prix|Race": {
+        "DistanceToDriverAhead": 642,
+        "DriverAhead": 708
+      },
+      "2022|Austrian Grand Prix|Race": {
+        "DriverAhead": 595
+      },
+      "2022|Azerbaijan Grand Prix|Race": {
+        "DistanceToDriverAhead": 868,
+        "DriverAhead": 943
+      },
+      "2022|Bahrain Grand Prix|Race": {
+        "DistanceToDriverAhead": 728,
+        "DriverAhead": 793
+      },
+      "2022|Belgian Grand Prix|Race": {
+        "DistanceToDriverAhead": 882,
+        "DriverAhead": 963
+      },
+      "2022|British Grand Prix|Race": {
+        "DistanceToDriverAhead": 723,
+        "DriverAhead": 801
+      },
+      "2022|Canadian Grand Prix|Race": {
+        "DistanceToDriverAhead": 600,
+        "DriverAhead": 669
+      },
+      "2022|Dutch Grand Prix|Race": {
+        "DistanceToDriverAhead": 582,
+        "DriverAhead": 647
+      },
+      "2022|Emilia Romagna Grand Prix|Race": {
+        "DistanceToDriverAhead": 705,
+        "DriverAhead": 777
+      },
+      "2022|French Grand Prix|Race": {
+        "DistanceToDriverAhead": 732,
+        "DriverAhead": 795
+      },
+      "2022|Hungarian Grand Prix|Race": {
+        "DistanceToDriverAhead": 634,
+        "DriverAhead": 702
+      },
+      "2022|Italian Grand Prix|Race": {
+        "DistanceToDriverAhead": 638,
+        "DriverAhead": 704
+      },
+      "2022|Japanese Grand Prix|Race": {
+        "DriverAhead": 21,
+        "rel_distance": 1293
+      }
+    },
+    "null_tokens": [
+      "",
+      "n/a",
+      "na",
+      "nan",
+      "nat",
+      "none",
+      "null"
+    ],
+    "percent_by_field": {
+      "DistanceToDriverAhead": 4.73550646693332,
+      "DriverAhead": 5.336497605867013,
+      "acc_x": 0.0,
+      "acc_y": 0.0,
+      "acc_z": 0.0,
+      "brake": 0.0,
+      "distance": 0.0,
+      "driver": 0.0,
+      "drs": 0.0,
+      "event": 0.0,
+      "gear": 0.0,
+      "lap": 0.0,
+      "rel_distance": 0.4541016623138451,
+      "rpm": 0.0,
+      "sample_index": 0.0,
+      "session": 0.0,
+      "source_data_key": 0.0,
+      "speed": 0.0,
+      "throttle": 0.0,
+      "time": 0.0,
+      "x": 0.0,
+      "y": 0.0,
+      "year": 0.0,
+      "z": 0.0
+    },
+    "total_by_field": {
+      "DistanceToDriverAhead": 48648,
+      "DriverAhead": 54822,
+      "rel_distance": 4665
+    }
+  },
+  "numeric_quality": {
+    "anomaly_counts": {
+      "distance_negative": 1548,
+      "gear_not_integer_or_outside_0_8": 37,
+      "rel_distance_outside_0_1_tolerance": 194,
+      "throttle_outside_0_100": 16052
+    },
+    "anomaly_example_counts_by_reason": {
+      "negative_value": 20,
+      "not_integer_or_outside_0_8": 20,
+      "outside_0_100": 583,
+      "outside_0_1_tolerance": 20
+    },
+    "anomaly_examples_written": 643,
+    "categorical_codes": {
+      "drs": {
+        "0": 989080,
+        "1": 38223
+      },
+      "session": {
+        "Race": 1027303
+      }
+    },
+    "nonfinite_by_field": {},
+    "parse_failures_by_field": {},
+    "rules": {
+      "brake_outside_0_1": "value < 0 or > 1",
+      "drs_not_0_or_1": "observed code not 0 or 1; not proof of error",
+      "gear_not_integer_or_outside_0_8": "not integer-valued or outside 0..8",
+      "negative_distance/rpm/speed": "value < 0; expected units remain unverified",
+      "rel_distance_outside_0_1_tolerance": "value outside [-1e-6,1+1e-6] because field is ratio-like by observed values",
+      "throttle_outside_0_100": "value < 0 or > 100"
+    },
+    "summary_by_field": {
+      "DistanceToDriverAhead": {
+        "max": 6518.643333333334,
+        "median": 85.85500000000002,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 1.6230555555555561,
+        "p95": 629.7674722222217,
+        "p999": 3958.074319865939,
+        "parse_failure_count": 0,
+        "valid_count": 978655
+      },
+      "acc_x": {
+        "max": 46.536480089111485,
+        "median": 1.7128463000374134,
+        "min": -73.65941188849615,
+        "nonfinite_count": 0,
+        "p01": -29.713804462401896,
+        "p95": 10.642947914364923,
+        "p999": 16.49873161380376,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "acc_y": {
+        "max": 74.36205345550492,
+        "median": -0.06711670390572767,
+        "min": -80.4220204611539,
+        "nonfinite_count": 0,
+        "p01": -40.76912125200059,
+        "p95": 26.16696700311345,
+        "p999": 47.826770685338325,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "acc_z": {
+        "max": 84.93442853885622,
+        "median": 0.0,
+        "min": -99.17540221795313,
+        "nonfinite_count": 0,
+        "p01": -31.210590087732115,
+        "p95": 7.418555003107472,
+        "p999": 51.65282821612905,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "brake": {
+        "max": 1.0,
+        "median": 0.0,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.0,
+        "p95": 1.0,
+        "p999": 1.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "distance": {
+        "max": 25814.953844745007,
+        "median": 2506.959166666667,
+        "min": -0.4465494769072837,
+        "nonfinite_count": 0,
+        "p01": 0.012273891915652965,
+        "p95": 5375.324062487538,
+        "p999": 18644.475450790636,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "drs": {
+        "max": 1.0,
+        "median": 0.0,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.0,
+        "p95": 0.0,
+        "p999": 1.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "gear": {
+        "max": 31.0,
+        "median": 5.0,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.0,
+        "p95": 8.0,
+        "p999": 8.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "lap": {
+        "max": 15.0,
+        "median": 9.0,
+        "min": 1.0,
+        "nonfinite_count": 0,
+        "p01": 1.0,
+        "p95": 12.0,
+        "p999": 15.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "rel_distance": {
+        "max": 1.0001266297018523,
+        "median": 0.5013341673294903,
+        "min": -0.0004853015478231505,
+        "nonfinite_count": 0,
+        "p01": 0.003335010753229649,
+        "p95": 0.9664978302934534,
+        "p999": 1.0000000000000002,
+        "parse_failure_count": 0,
+        "valid_count": 1022638
+      },
+      "rpm": {
+        "max": 13404.0,
+        "median": 10560.736412976532,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.0,
+        "p95": 11736.999990528,
+        "p999": 12444.90187754243,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "sample_index": {
+        "max": 3721.0,
+        "median": 385.0,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 7.0,
+        "p95": 866.0,
+        "p999": 2693.6980000000913,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "speed": {
+        "max": 362.0,
+        "median": 194.0,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.0,
+        "p95": 306.06666666666666,
+        "p999": 339.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "throttle": {
+        "max": 104.0,
+        "median": 83.65,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.0,
+        "p95": 100.0,
+        "p999": 104.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "time": {
+        "max": 429.41,
+        "median": 48.148,
+        "min": 0.0,
+        "nonfinite_count": 0,
+        "p01": 0.837,
+        "p95": 106.71,
+        "p999": 310.5772220000036,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "x": {
+        "max": 12738.267930921706,
+        "median": 0.0,
+        "min": -20742.793175467785,
+        "nonfinite_count": 0,
+        "p01": -15766.446719157639,
+        "p95": 7767.536003690231,
+        "p999": 12485.789510357128,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "y": {
+        "max": 16790.79736572525,
+        "median": 760.0,
+        "min": -18038.835611914066,
+        "nonfinite_count": 0,
+        "p01": -15086.485072574618,
+        "p95": 11664.0,
+        "p999": 16658.109275747996,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "year": {
+        "max": 2022.0,
+        "median": 2020.0,
+        "min": 2018.0,
+        "nonfinite_count": 0,
+        "p01": 2018.0,
+        "p95": 2022.0,
+        "p999": 2022.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      },
+      "z": {
+        "max": 25222.15387677934,
+        "median": 1789.5742680828598,
+        "min": -1265.688212859986,
+        "nonfinite_count": 0,
+        "p01": -241.05829236498454,
+        "p95": 7566.0,
+        "p999": 22288.0,
+        "parse_failure_count": 0,
+        "valid_count": 1027303
+      }
+    }
+  },
+  "prediction_time_readiness": {
+    "feature_classes": [
+      {
+        "availability_class": "SAFE",
+        "earliest_availability": "At row ingestion",
+        "evidence": "Source values are identifiers only",
+        "feature": "year",
+        "future_dependence": "No future dependence in the identifier; delivery latency is unknown",
+        "meaning": "Season identifier",
+        "provenance": "Observed CSV identifier; provenance archive",
+        "repair_required": "Keep as grouping key; do not treat as a physical measurement",
+        "units": "year"
+      },
+      {
+        "availability_class": "SAFE",
+        "earliest_availability": "At row ingestion",
+        "evidence": "Source values are identifiers only",
+        "feature": "event",
+        "future_dependence": "No future dependence in the identifier; identity normalization is not documented",
+        "meaning": "Event name",
+        "provenance": "Observed CSV identifier; provenance archive",
+        "repair_required": "Obtain an event identity crosswalk before joins",
+        "units": "text"
+      },
+      {
+        "availability_class": "SAFE",
+        "earliest_availability": "At row ingestion",
+        "evidence": "Only Race is present in the supplied rows",
+        "feature": "session",
+        "future_dependence": "No future dependence in the identifier",
+        "meaning": "Session type",
+        "provenance": "Observed CSV identifier",
+        "repair_required": "Retain as grouping key",
+        "units": "text"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At row ingestion",
+        "evidence": "Driver codes are explicitly unverified identifiers",
+        "feature": "driver",
+        "future_dependence": "The code is available, but identity crosswalk and numbering provenance are absent",
+        "meaning": "Source driver code",
+        "provenance": "Observed CSV identifier",
+        "repair_required": "Obtain a verified driver/number crosswalk",
+        "units": "text"
+      },
+      {
+        "availability_class": "SAFE",
+        "earliest_availability": "At row ingestion",
+        "evidence": "Lap value is observed, but physical lap completeness is not proven",
+        "feature": "lap",
+        "future_dependence": "Available in the row; selected-lap context is incomplete",
+        "meaning": "Lap number",
+        "provenance": "Observed CSV identifier",
+        "repair_required": "Reconstruct full-lap boundaries and context",
+        "units": "lap number"
+      },
+      {
+        "availability_class": "SAFE",
+        "earliest_availability": "At row ingestion",
+        "evidence": "Does not establish external delivery time",
+        "feature": "sample_index",
+        "future_dependence": "Index is present; ordering is checked per lap",
+        "meaning": "Within-file/lap sample index",
+        "provenance": "Observed CSV identifier",
+        "repair_required": "Use only as an ordering key after validation",
+        "units": "index"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Lap-relative interpretation is supported; actual clock and delivery time are absent",
+        "feature": "time",
+        "future_dependence": "It resets near zero per selected lap and no UTC/session start is supplied",
+        "meaning": "Telemetry time within selected lap",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Obtain session/lap UTC anchors; do not assume real-time alignment",
+        "units": "seconds (apparent lap-relative)"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "No source documentation is packaged",
+        "feature": "rpm",
+        "future_dependence": "Value is present, but units/provenance and delivery latency are undocumented",
+        "meaning": "Engine rotational speed",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Recover source schema and validate units",
+        "units": "unknown; numeric values"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Range is physically plausible for km/h but that is not proof",
+        "feature": "speed",
+        "future_dependence": "Value is present; unit contract is absent",
+        "meaning": "Vehicle speed",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify provider units from source code/docs",
+        "units": "unknown; numeric values"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Most values are integer-like; anomalous values need source explanation",
+        "feature": "gear",
+        "future_dependence": "Values are present but encoding/flags are undocumented",
+        "meaning": "Selected gear",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify encoding and anomaly semantics",
+        "units": "integer-like code"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "A 0\u2013100 assumption would flag 104, but the provider may use another scale",
+        "feature": "throttle",
+        "future_dependence": "Values include 104 in the supplied data; no unit/encoding contract is packaged",
+        "meaning": "Throttle channel",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Recover authoritative channel definition before modelling",
+        "units": "unknown; numeric values"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Values are mostly binary-looking; that is not proof of semantics",
+        "feature": "brake",
+        "future_dependence": "Present, but encoding and units are undocumented",
+        "meaning": "Brake channel",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify source encoding",
+        "units": "unknown; numeric values"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Observed values need a provider-level codebook",
+        "feature": "drs",
+        "future_dependence": "Present, but DRS code semantics are not documented in the archive",
+        "meaning": "DRS channel",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Obtain DRS encoding documentation",
+        "units": "unknown code"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Some negative values occur near lap starts; no track-length anchor is supplied",
+        "feature": "distance",
+        "future_dependence": "Present and generally rises, but coordinate/reference units are undocumented",
+        "meaning": "Distance along lap",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify units and reconstruct lap boundaries",
+        "units": "unknown; numeric values"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "Unknown; may require full-lap context",
+        "evidence": "Potential full-lap/future dependence cannot be ruled out",
+        "feature": "rel_distance",
+        "future_dependence": "The name and values suggest normalisation, but the processing formula is absent",
+        "meaning": "Relative/normalised distance",
+        "provenance": "Observed derived-looking field",
+        "repair_required": "Recover formula or recompute causally",
+        "units": "unknown; numeric ratio-like"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Missing values and identity mapping are present; lookahead cannot be ruled out",
+        "feature": "DriverAhead",
+        "future_dependence": "Opponent matching logic is not packaged",
+        "meaning": "Source opponent identifier",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Reconstruct timestamp-safe opponent matching",
+        "units": "source code"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Missing values and timing alignment are unresolved",
+        "feature": "DistanceToDriverAhead",
+        "future_dependence": "Opponent matching and units are undocumented",
+        "meaning": "Distance to source-selected opponent",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify units/matching and causal construction",
+        "units": "unknown; numeric"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Large values occur, but expected axes/units are unknown",
+        "feature": "acc_x",
+        "future_dependence": "May be raw or derived; no processing code is available",
+        "meaning": "Acceleration channel x",
+        "provenance": "Observed derived-looking channel",
+        "repair_required": "Recover derivation and test prefix invariance",
+        "units": "unknown; numeric"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Expected axes/units are unknown",
+        "feature": "acc_y",
+        "future_dependence": "May be raw or derived; no processing code is available",
+        "meaning": "Acceleration channel y",
+        "provenance": "Observed derived-looking channel",
+        "repair_required": "Recover derivation and test prefix invariance",
+        "units": "unknown; numeric"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Expected axes/units are unknown",
+        "feature": "acc_z",
+        "future_dependence": "May be raw or derived; no processing code is available",
+        "meaning": "Acceleration channel z",
+        "provenance": "Observed derived-looking channel",
+        "repair_required": "Recover derivation and test prefix invariance",
+        "units": "unknown; numeric"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Values vary by year; no track coordinate contract is supplied",
+        "feature": "x",
+        "future_dependence": "Coordinate reference system is undocumented",
+        "meaning": "Track/position coordinate x",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify coordinate frame and event-specific geometry",
+        "units": "unknown; coordinate units"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Values vary by year; no track coordinate contract is supplied",
+        "feature": "y",
+        "future_dependence": "Coordinate reference system is undocumented",
+        "meaning": "Track/position coordinate y",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify coordinate frame and event-specific geometry",
+        "units": "unknown; coordinate units"
+      },
+      {
+        "availability_class": "UNKNOWN",
+        "earliest_availability": "At recorded sample",
+        "evidence": "Values vary by year; no track coordinate contract is supplied",
+        "feature": "z",
+        "future_dependence": "Coordinate reference system is undocumented",
+        "meaning": "Track/position coordinate z",
+        "provenance": "Observed telemetry CSV",
+        "repair_required": "Verify coordinate frame and event-specific geometry",
+        "units": "unknown; coordinate units"
+      },
+      {
+        "availability_class": "SAFE",
+        "earliest_availability": "At row ingestion",
+        "evidence": "It is metadata, not a causal model feature",
+        "feature": "source_data_key",
+        "future_dependence": "Key itself is available; its uniqueness is tested",
+        "meaning": "Collector source row key",
+        "provenance": "Observed provenance key",
+        "repair_required": "Use for audit lineage only",
+        "units": "text identifier"
+      }
+    ],
+    "overall_causal_training_ready": false,
+    "prefix_invariance_test": "NOT_EXECUTED: collection/processing scripts and formulas are absent from the supplied archives; a passing local check cannot be reconstructed honestly."
+  },
+  "readiness": {
+    "causal_training_ready": false,
+    "model_training_performed": false,
+    "overtake_labels_created": false,
+    "reason": "Readable telemetry and structural validation do not establish causal availability, full-race context, public event alignment, opponent identity provenance, or overtake labels.",
+    "telemetry_rows_are_not_independent_examples": true,
+    "unique_overtake_events_counted": false,
+    "weather_or_pit_data_joined": false
+  },
+  "schema": {
+    "all_headers_identical": true,
+    "expected_columns": [
+      "year",
+      "event",
+      "session",
+      "driver",
+      "lap",
+      "sample_index",
+      "time",
+      "rpm",
+      "speed",
+      "gear",
+      "throttle",
+      "brake",
+      "drs",
+      "distance",
+      "rel_distance",
+      "DriverAhead",
+      "DistanceToDriverAhead",
+      "acc_x",
+      "acc_y",
+      "acc_z",
+      "x",
+      "y",
+      "z",
+      "source_data_key"
+    ],
+    "observed_by_year": {
+      "2018": [
+        "year",
+        "event",
+        "session",
+        "driver",
+        "lap",
+        "sample_index",
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "source_data_key"
+      ],
+      "2019": [
+        "year",
+        "event",
+        "session",
+        "driver",
+        "lap",
+        "sample_index",
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "source_data_key"
+      ],
+      "2020": [
+        "year",
+        "event",
+        "session",
+        "driver",
+        "lap",
+        "sample_index",
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "source_data_key"
+      ],
+      "2021": [
+        "year",
+        "event",
+        "session",
+        "driver",
+        "lap",
+        "sample_index",
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "source_data_key"
+      ],
+      "2022": [
+        "year",
+        "event",
+        "session",
+        "driver",
+        "lap",
+        "sample_index",
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "source_data_key"
+      ]
+    }
+  },
+  "source_manifest_comparison": {
+    "archive_compressed_csv_bytes": 92414695,
+    "archive_driver_codes": 34,
+    "archive_race_events": 70,
+    "archive_rows": 1027303,
+    "archive_selected_laps": 1332,
+    "archive_uncompressed_csv_bytes": 278538705,
+    "archive_unique_collector_sample_keys": 1027303,
+    "archive_year_rows": {
+      "2018": 191251,
+      "2019": 189884,
+      "2020": 216990,
+      "2021": 235252,
+      "2022": 193926
+    },
+    "matches": {
+      "compressed_csv_bytes": true,
+      "driver_codes": true,
+      "race_events": true,
+      "rows": true,
+      "selected_laps": true,
+      "uncompressed_csv_bytes": true,
+      "unique_collector_sample_keys": true,
+      "year_rows": {
+        "2018": true,
+        "2019": true,
+        "2020": true,
+        "2021": true,
+        "2022": true
+      }
+    },
+    "metadata_compressed_csv_bytes": 92414695,
+    "metadata_driver_codes": 34,
+    "metadata_race_events": 70,
+    "metadata_rows": 1027303,
+    "metadata_selected_laps": 1332,
+    "metadata_uncompressed_csv_bytes": 278538705,
+    "metadata_unique_sample_keys": 1027303,
+    "metadata_year_rows": {
+      "2018": 191251,
+      "2019": 189884,
+      "2020": 216990,
+      "2021": 235252,
+      "2022": 193926
+    }
+  },
+  "totals": {
+    "compressed_csv_member_bytes": 92414695,
+    "driver_codes": 34,
+    "observations": 1027303,
+    "race_events_season_event_session": 70,
+    "season_event_names": 70,
+    "seasons": [
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "selected_laps": 1332,
+    "uncompressed_csv_bytes": 278538705,
+    "unique_canonical_observation_keys": 1027303,
+    "unique_collector_sample_keys": 1027303,
+    "unique_source_data_lineage_keys": 1332
+  }
+}

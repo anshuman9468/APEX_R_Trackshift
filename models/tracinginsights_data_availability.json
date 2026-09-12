@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-09-06T16:53:33+05:30",
+  "scope": "TracingInsights data-availability investigation only; no model training or refitting",
+  "sealed_holdout_accessed": false,
+  "repositories_inspected": [
+    {
+      "repository": "TracingInsights/2026",
+      "event": "Australian Grand Prix",
+      "session": "Race",
+      "session_laptime_rows": 1008,
+      "active_drivers_in_session_laptimes": 20,
+      "weather_rows": 148,
+      "race_control_rows": 167,
+      "retained_sample_bytes_approx": 507904
+    },
+    {
+      "repository": "TracingInsights/2024",
+      "event": "Australian Grand Prix",
+      "session": "Race",
+      "session_laptime_rows": 998,
+      "active_drivers_in_session_laptimes": 19,
+      "weather_rows": 144,
+      "race_control_rows": 82,
+      "retained_sample_bytes_approx": 626688
+    }
+  ],
+  "checklist": [
+    {
+      "requirement": "Multi-horizon gap-ahead slopes and volatility at 5/15/30/60 seconds",
+      "status": "PARTIAL",
+      "available": ["{lap}_tel.json.tel.time", "{lap}_tel.json.tel.DriverAhead", "{lap}_tel.json.tel.DistanceToDriverAhead"],
+      "missing": ["official time gap to car ahead in seconds", "direct gap to race leader"],
+      "fallback": "Use OpenF1 intervals for interval_sec and gap_to_leader_sec; TracingInsights can provide distance-gap trends or an approximate seconds conversion."
+    },
+    {
+      "requirement": "DRS eligibility/zone context and rival DRS-open state",
+      "status": "PARTIAL",
+      "available": ["{lap}_tel.json.tel.drs binary open/closed", "rcm.json global DRS enable/disable messages", "rival per-lap telemetry"],
+      "missing": ["raw DRS status 8 eligibility state", "explicit DRS detection point", "explicit DRS activation-zone geometry"],
+      "fallback": "Keep OpenF1 car_data.drs as authority for eligibility and raw state; infer zone geometry only as a documented proxy if necessary."
+    },
+    {
+      "requirement": "Opponent-relative tyre compound, age and stint",
+      "status": "CONFIRMED-PRESENT",
+      "available": ["session_laptimes.json.compound", "session_laptimes.json.life", "session_laptimes.json.fresh", "session_laptimes.json.stint", "drivers.json.drivers[].dn"],
+      "fallback": null
+    },
+    {
+      "requirement": "Relative sector and lap time to the specific car ahead",
+      "status": "CONFIRMED-PRESENT",
+      "available": ["session_laptimes.json.time", "session_laptimes.json.s1", "session_laptimes.json.s2", "session_laptimes.json.s3", "session_laptimes.json.s1T/s2T/s3T", "{lap}_tel.json.tel.DriverAhead"],
+      "fallback": null
+    },
+    {
+      "requirement": "Pit-out and recent-stop live flag",
+      "status": "CONFIRMED-PRESENT",
+      "available": ["session_laptimes.json.pin", "session_laptimes.json.pout", "session_laptimes.json.lST", "session_laptimes.json.lSD"],
+      "fallback": null
+    },
+    {
+      "requirement": "Track geometry for straight/braking/DRS-point proximity",
+      "status": "PARTIAL",
+      "available": ["corners.json CornerNumber/X/Y/Angle/Distance/Rotation", "{lap}_tel.json.tel.x/y/z/distance/speed/brake/throttle"],
+      "missing": ["explicit straight segments", "explicit braking zones", "DRS detection points", "DRS activation points"],
+      "fallback": "Compute straight and braking proxies from repeated telemetry and corner distance; supplement DRS points from a separate track-map source."
+    }
+  ],
+  "samples": {
+    "sub_lap_car_ahead_and_drs": {
+      "source": "TracingInsights/2024/Australian Grand Prix/Race/PIA/5_tel.json",
+      "path": "tel",
+      "index_time_seconds": 0.249,
+      "value": {
+        "speed": 307.0,
+        "drs": 1,
+        "DriverAhead": "16",
+        "DistanceToDriverAhead": 58.69083333333333,
+        "distance": 21.248888888888885,
+        "x": -1349.2832514159722,
+        "y": -1186.1699514960042
+      }
+    },
+    "relative_lap_and_sector": {
+      "attacker": {"drv": "PIA", "dNum": "81", "lap": 5, "time": 82.594, "s1": 28.691, "s2": 17.918, "s3": 35.985, "compound": "MEDIUM", "life": 5, "stint": 1},
+      "ahead": {"drv": "LEC", "dNum": "16", "lap": 5, "time": 82.632, "s1": 28.895, "s2": 17.93, "s3": 35.807, "compound": "MEDIUM", "life": 5, "stint": 1},
+      "ahead_minus_attacker": {"lap_time": 0.038, "s1": 0.204, "s2": 0.012, "s3": -0.178, "tyre_age": 0, "stint": 0}
+    },
+    "pit_out": {
+      "source": "TracingInsights/2024/Australian Grand Prix/Race/session_laptimes.json",
+      "value": {"drv": "ALB", "dNum": "23", "lap": 7, "pout": 4040.614, "stint": 2, "compound": "HARD", "life": 1}
+    },
+    "corner": {
+      "source": "TracingInsights/2026/Australian Grand Prix/Race/corners.json",
+      "value": {"CornerNumber": 1, "X": -3650.594482421875, "Y": 1193.7841796875, "Angle": -176.6327301808908, "Distance": 353.88374054700716, "Rotation": 44.0}
+    },
+    "weather": {
+      "source": "TracingInsights/2024/Australian Grand Prix/Race/weather.json",
+      "value": {"wT": 8.798, "wAT": 19.0, "wH": 49.0, "wP": 1021.6, "wR": false, "wTT": 37.0, "wWD": 306, "wWS": 0.4}
+    },
+    "race_control_drs": {
+      "source": "TracingInsights/2024/Australian Grand Prix/Race/rcm.json",
+      "value": {"time": "2024-03-24T04:04:44.000000000", "cat": "Drs", "msg": "DRS ENABLED", "status": "ENABLED", "lap": 2}
+    }
+  },
+  "sampling_observations": [
+    {"source": "2024 PIA lap 5", "samples": 633, "duration_seconds": 82.594, "median_delta_seconds": 0.13, "effective_hz": 7.664},
+    {"source": "2024 LEC lap 5", "samples": 634, "duration_seconds": 82.632, "median_delta_seconds": 0.13, "effective_hz": 7.673},
+    {"source": "2026 NOR lap 10", "samples": 645, "duration_seconds": 85.295, "median_delta_seconds": 0.125, "effective_hz": 7.562}
+  ],
+  "recommendation": "Merge TracingInsights with OpenF1. Use TracingInsights for full-field lap/sector/tyre/pit data and rival telemetry; retain OpenF1 for official time intervals, gap to leader, raw DRS eligibility state, and a canonical UTC event timeline.",
+  "disk": {
+    "venv": "446M",
+    "retained_reference_data": "1.2M",
+    "temporary_race_data": "0",
+    "peak_single_race_temporary_data": "1.1M",
+    "download_cap": "500M"
+  }
+}

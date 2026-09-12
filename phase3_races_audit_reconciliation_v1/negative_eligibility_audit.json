@@ -1,0 +1,17 @@
+{
+  "all_outcome_counts": {
+    "PROXY_NEGATIVE": 14600,
+    "PROXY_POSITIVE": 823,
+    "UNKNOWN_CENSORED": 25414
+  },
+  "current_endpoint_event_exclusion": "NOT_APPLIED_BY_ORIGINAL_LABEL_CONTRACT; audit flag only",
+  "future_event_conditioning_note": "Decision-lap pit/race-control rows cause UNKNOWN in original contract; endpoint events are not converted to negatives and require review.",
+  "negative_basis_counts": {
+    "FIXED_PAIR_REMAINS_IN_CLASSIFIED_ORDER_AT_NEXT_LAP_BOUNDARY": 14600
+  },
+  "negative_rows": 14600,
+  "negative_rows_with_endpoint_pit": 575,
+  "negative_rows_with_endpoint_race_control_record": 5818,
+  "negative_rows_with_long_horizon": 0,
+  "negative_rows_with_matched_candidate": 0
+}

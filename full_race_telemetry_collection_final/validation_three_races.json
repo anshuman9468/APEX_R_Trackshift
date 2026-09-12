@@ -1,0 +1,66 @@
+{
+  "all_three_passed": true,
+  "expansion_authorized": true,
+  "race_records": [
+    {
+      "car_rows": 475304,
+      "driver_hours_car": 31.95659527777778,
+      "driver_hours_position": 31.95565611111111,
+      "drivers_with_telemetry_coverage_pass": 20,
+      "error": "",
+      "event": "Chinese Grand Prix",
+      "expected_driver_count": 20,
+      "fastf1_missing_expected_drivers": "",
+      "fastf1_participant_count": 20,
+      "position_rows": 387297,
+      "race_id": "2018:Chinese Grand Prix:Race",
+      "session": "Race",
+      "source_retrieval_status": "SUCCESS",
+      "split": "train",
+      "telemetry_coverage_status": "PASS",
+      "year": 2018
+    },
+    {
+      "car_rows": 398270,
+      "driver_hours_car": 26.180329722222226,
+      "driver_hours_position": 26.180069444444445,
+      "drivers_with_telemetry_coverage_pass": 20,
+      "error": "",
+      "event": "Australian Grand Prix",
+      "expected_driver_count": 20,
+      "fastf1_missing_expected_drivers": "",
+      "fastf1_participant_count": 20,
+      "position_rows": 317300,
+      "race_id": "2019:Australian Grand Prix:Race",
+      "session": "Race",
+      "source_retrieval_status": "SUCCESS",
+      "split": "train",
+      "telemetry_coverage_status": "PASS",
+      "year": 2019
+    },
+    {
+      "car_rows": 460025,
+      "driver_hours_car": 31.0398225,
+      "driver_hours_position": 31.04105333333333,
+      "drivers_with_telemetry_coverage_pass": 20,
+      "error": "",
+      "event": "Hungarian Grand Prix",
+      "expected_driver_count": 20,
+      "fastf1_missing_expected_drivers": "",
+      "fastf1_participant_count": 20,
+      "position_rows": 509488,
+      "race_id": "2020:Hungarian Grand Prix:Race",
+      "session": "Race",
+      "source_retrieval_status": "SUCCESS",
+      "split": "train",
+      "telemetry_coverage_status": "PASS",
+      "year": 2020
+    }
+  ],
+  "races": [
+    "2018:Chinese Grand Prix:Race",
+    "2019:Australian Grand Prix:Race",
+    "2020:Hungarian Grand Prix:Race"
+  ],
+  "stage": "THREE_RACE_VALIDATION_BEFORE_EXPANSION"
+}

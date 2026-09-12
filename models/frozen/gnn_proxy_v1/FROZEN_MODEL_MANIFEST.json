@@ -1,0 +1,60 @@
+{
+  "artifact_sha256": {
+    "EXPERIMENT_REPORT.md": "5cf92287d6496ad08369c5bd5b85a2cb20b45f4a60daa2ff3c8dceb7dc2a9cdf",
+    "EXPERIMENT_SPEC.md": "576d31a4f4ab1494ae62914d6178c6b0cba4e8bd4b44630ed9655e98a823fd15",
+    "FEATURE_SCHEMA.json": "6fd6bdf23b1e007e6bf0560b559203953c4defe0c81deb750ddb1527fe5e39a7",
+    "GRAPH_SCHEMA.json": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+    "MODEL_CARD.md": "47a8053ec6e3c0aeb54c41615a1c0d751122fd979db4ed45d0424188a1bde966",
+    "README.md": "4b5b0ca89313ba6271c7bccf6127b979305456ebbae286eae4927c88fb14e66b",
+    "SOURCE_IMMUTABILITY.json": "295644fba1424894a1fe815904cb8414abcf4e102be72b277fed3733ba69656a",
+    "approved_smoke_fixture.json": "c42852f6e3f9e5851ef22c8b7f5687c9e44c4c81e363bce32d6a05bf71320c9f",
+    "frozen_split_manifest.json": "e2e3a206c3caa2d3edd4e98540cade6d5c9613ad9a116f2b3b982db055b52e5e",
+    "gnn_run_registry.json": "a8fe39d99cb4515a30424523831bc24d812617f771d0cd458ff66962a0c7fd4a",
+    "gnn_seed_42_best.pt": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+    "gpu_config_after.json": "cc30d4dd5f6f3a38067e45c2157416c4e17db423cd635a1d74dfebe539133f16",
+    "graph_counts.json": "ad3addd5bd68a6821c437ac5aa1163c84a04e0164b899057fe8ec93d30c1ee62",
+    "metrics.json": "473507cee1aa4f92690485be97ba591937269672ff182b6d7999daf4a439ca5a",
+    "metrics_summary.json": "811dcb859c4c5131bc6527eb1321031d4255e8b432b0a709e89044e007e18228",
+    "model_config.json": "e804d05d59e74d00706301ae0fb055e8fd983363ddf86c625fb4e6204a353cf4",
+    "preprocessing_state.json": "425c6e8459a81d9dfc8bcd017557ec4b7eabecdac9f59d7a6bde9fdffe58ecc2",
+    "smoke_test.py": "a0f73a4590faee791aa04dce5b4ead66bd5b8535784c7faae8753f782f3e7eb2"
+  },
+  "checkpoint_path": "models/frozen/gnn_proxy_v1/gnn_seed_42_best.pt",
+  "checkpoint_sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+  "created_timestamp_utc": "2026-09-12T13:10:36.055039+00:00",
+  "dataset": {
+    "archive_bytes": 495988397,
+    "archive_path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/phase3_passed_races/APEX-R_37_Passed_Races.zip",
+    "archive_sha256": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+    "description": "37 telemetry-coverage PASS races",
+    "excluded_missing_attacker_target_telemetry": 19,
+    "negative_proxy_windows": 14582,
+    "positive_proxy_windows": 822,
+    "supervised_graphs": 15404
+  },
+  "display_name": "APEX-R GNN Proxy v1",
+  "experiment_report_path": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/gnn_proxy_experiment_gpu_v1/GPU_RUN_REPORT.md",
+  "metrics": {
+    "development_test": {
+      "average_precision": 0.10433820299403382,
+      "brier_score": 0.04596526598472098,
+      "log_loss": 0.19036481652666773,
+      "roc_auc": 0.7008568957128184
+    },
+    "development_validation": {
+      "average_precision": 0.12760248880353492,
+      "brier_score": 0.03875358886809885,
+      "log_loss": 0.1660807449189008,
+      "roc_auc": 0.6892724439650006
+    }
+  },
+  "model_version": "gnn_proxy_v1",
+  "output_label": "experimental boundary position-swap proxy signal",
+  "packaged_experiment_report": "EXPERIMENT_REPORT.md",
+  "protected_holdout_exclusion": "Protected session 11353 and every declared sealed holdout were excluded and were not accessed during freezing or smoke testing.",
+  "selected_epoch": 28,
+  "selected_seed": 42,
+  "selection_statement": "Seed 42, epoch 28 was selected by validation average precision before development-test evaluation; no retraining or weight change occurred during freezing.",
+  "task": "fixed-pair next-lap-boundary classified-order position-swap proxy",
+  "usage": "Advisory proxy signal only; the APEX-R rule/energy simulator makes the final recommendation."
+}

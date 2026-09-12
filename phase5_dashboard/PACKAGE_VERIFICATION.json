@@ -1,0 +1,11 @@
+{
+  "compression": "ZIP_DEFLATED",
+  "files": 50,
+  "final_extraction_checksums": "passed",
+  "fixture_drivers": 20,
+  "fixture_frames": 77,
+  "fresh_extraction_checksums": "passed",
+  "status": "VERIFIED",
+  "zip_bytes": 334456,
+  "zip_sha256": "b9f4a3f750c9366da1d516266b373a8cfad12cecc19e6be9f2dff960dcb79d67"
+}

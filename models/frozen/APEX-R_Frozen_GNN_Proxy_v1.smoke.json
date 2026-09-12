@@ -1,0 +1,20 @@
+{
+  "approved_sample_race": "2019:Abu Dhabi Grand Prix:Race",
+  "approved_sample_split": "development_validation",
+  "checkpoint": "gnn_seed_42_best.pt",
+  "device": "cpu",
+  "inference_mode_used": true,
+  "model_in_eval_mode": true,
+  "model_output_label": "experimental boundary position-swap proxy signal",
+  "model_version": "gnn_proxy_v1",
+  "note": "Raw sigmoid proxy signal; not a calibrated overtake probability or an ATTACK-benefit probability.",
+  "protected_session_accessed": false,
+  "score": 0.0052168904803693295,
+  "score_is_between_zero_and_one": true,
+  "score_is_finite": true,
+  "selected_epoch": 28,
+  "selected_seed": 42,
+  "status": "PASS",
+  "training_code_executed": false,
+  "window_id": "ee38ba6e51b8d9dbba9b"
+}

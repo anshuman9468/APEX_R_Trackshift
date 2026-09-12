@@ -1,0 +1,38 @@
+race_id,year,event,session,chronology_rank,chronology_epoch_utc,original_split,proposed_split,selection_rule,boundary_selected_before_outcome_distribution,previously_accessed_development_data,untouched_final_holdout
+2018:Chinese Grand Prix:Race,2018,Chinese Grand Prix,Race,1,2018-04-15T06:13:36.058000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Azerbaijan Grand Prix:Race,2018,Azerbaijan Grand Prix,Race,2,2018-04-29T12:13:42.330000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Canadian Grand Prix:Race,2018,Canadian Grand Prix,Race,3,2018-06-10T18:12:56.924000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:French Grand Prix:Race,2018,French Grand Prix,Race,4,2018-06-24T14:13:26.509000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Austrian Grand Prix:Race,2018,Austrian Grand Prix,Race,5,2018-07-01T13:12:43.611000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:British Grand Prix:Race,2018,British Grand Prix,Race,6,2018-07-08T13:13:17.555000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:German Grand Prix:Race,2018,German Grand Prix,Race,7,2018-07-22T13:13:03.619000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Hungarian Grand Prix:Race,2018,Hungarian Grand Prix,Race,8,2018-07-29T13:12:57.363000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Belgian Grand Prix:Race,2018,Belgian Grand Prix,Race,9,2018-08-26T13:13:34.188000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Japanese Grand Prix:Race,2018,Japanese Grand Prix,Race,11,2018-10-07T05:13:32.001000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Mexican Grand Prix:Race,2018,Mexican Grand Prix,Race,12,2018-10-28T19:12:58.805000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Brazilian Grand Prix:Race,2018,Brazilian Grand Prix,Race,13,2018-11-11T17:13:23.410000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2018:Abu Dhabi Grand Prix:Race,2018,Abu Dhabi Grand Prix,Race,14,2018-11-25T13:13:34.535000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Australian Grand Prix:Race,2019,Australian Grand Prix,Race,15,2019-03-17T05:13:33.030000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Bahrain Grand Prix:Race,2019,Bahrain Grand Prix,Race,16,2019-03-31T15:13:31.471000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Chinese Grand Prix:Race,2019,Chinese Grand Prix,Race,17,2019-04-14T06:13:29.012000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Azerbaijan Grand Prix:Race,2019,Azerbaijan Grand Prix,Race,18,2019-04-28T12:13:37.658000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Canadian Grand Prix:Race,2019,Canadian Grand Prix,Race,19,2019-06-09T18:13:04.084000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:French Grand Prix:Race,2019,French Grand Prix,Race,20,2019-06-23T13:13:25.245000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Austrian Grand Prix:Race,2019,Austrian Grand Prix,Race,21,2019-06-30T13:12:52.435000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:British Grand Prix:Race,2019,British Grand Prix,Race,22,2019-07-14T13:13:08.911000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:German Grand Prix:Race,2019,German Grand Prix,Race,23,2019-07-28T13:19:58.860000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Hungarian Grand Prix:Race,2019,Hungarian Grand Prix,Race,24,2019-08-04T13:12:49.128000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Belgian Grand Prix:Race,2019,Belgian Grand Prix,Race,25,2019-09-01T13:13:26.907000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Italian Grand Prix:Race,2019,Italian Grand Prix,Race,26,2019-09-08T13:13:21.425000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Brazilian Grand Prix:Race,2019,Brazilian Grand Prix,Race,27,2019-11-17T17:13:00.100000+00:00,train,development_train,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2019:Abu Dhabi Grand Prix:Race,2019,Abu Dhabi Grand Prix,Race,28,2019-12-01T13:13:31.397000+00:00,train,development_validation,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Hungarian Grand Prix:Race,2020,Hungarian Grand Prix,Race,30,2020-07-19T13:12:57.686000+00:00,train,development_validation,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:70th Anniversary Grand Prix:Race,2020,70th Anniversary Grand Prix,Race,32,2020-08-09T13:13:17.118000+00:00,train,development_validation,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Spanish Grand Prix:Race,2020,Spanish Grand Prix,Race,33,2020-08-16T13:13:19.298000+00:00,train,development_validation,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Italian Grand Prix:Race,2020,Italian Grand Prix,Race,35,2020-09-06T13:13:28.275000+00:00,train,development_validation,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Russian Grand Prix:Race,2020,Russian Grand Prix,Race,36,2020-09-27T11:13:33.505000+00:00,train,development_validation,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Eifel Grand Prix:Race,2020,Eifel Grand Prix,Race,37,2020-10-11T12:13:21.762000+00:00,train,development_test,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Portuguese Grand Prix:Race,2020,Portuguese Grand Prix,Race,38,2020-10-25T13:13:10.885000+00:00,train,development_test,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Emilia Romagna Grand Prix:Race,2020,Emilia Romagna Grand Prix,Race,39,2020-11-01T12:13:12.701000+00:00,train,development_test,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Bahrain Grand Prix:Race,2020,Bahrain Grand Prix,Race,40,2020-11-29T14:13:36.973000+00:00,train,development_test,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE
+2020:Sakhir Grand Prix:Race,2020,Sakhir Grand Prix,Race,41,2020-12-06T17:12:43.657000+00:00,train,development_test,chronological order; ceil(70%)/ceil(85%) boundaries; whole races,TRUE,TRUE,FALSE

@@ -1,0 +1,22 @@
+{
+  "all_members_deflate": true,
+  "fresh_extract_checksums": true,
+  "legacy_nested_graph_cache_included": false,
+  "member_count": 61,
+  "package": "APEX-R_GNN_Proxy_Experiment_v1_RAM_safe.zip",
+  "package_bytes": 21012562,
+  "package_sha256": "dc2cce4b8373806bb2801de815fced9ff222fff91ec94735729e45437b2a982f",
+  "passed": true,
+  "raw_telemetry_included": false,
+  "row_counts_after_fresh_extract": {
+    "graph_coverage.csv": 15423,
+    "graph_exclusion_summary.csv": 1,
+    "graph_positive_lineage.csv": 823,
+    "labelled_window_context_audit.csv": 15423,
+    "metrics.csv": 15,
+    "per_window_predictions.csv": 77020,
+    "precision_recall_curves.csv": 61623,
+    "reliability_bins.csv": 61,
+    "whole_race_bootstrap.csv": 8
+  }
+}

@@ -1,0 +1,5 @@
+outcome_status,censoring_reason,endpoint_pit_flag,endpoint_race_control_record_flag,windows,semantics,verified_no_on_track_pass
+PROXY_NEGATIVE,FIXED_PAIR_REMAINS_IN_CLASSIFIED_ORDER_AT_NEXT_LAP_BOUNDARY,FALSE,FALSE,8411,boundary-order proxy negative only,FALSE
+PROXY_NEGATIVE,FIXED_PAIR_REMAINS_IN_CLASSIFIED_ORDER_AT_NEXT_LAP_BOUNDARY,FALSE,TRUE,5614,boundary-order proxy negative only,FALSE
+PROXY_NEGATIVE,FIXED_PAIR_REMAINS_IN_CLASSIFIED_ORDER_AT_NEXT_LAP_BOUNDARY,TRUE,FALSE,371,boundary-order proxy negative only,FALSE
+PROXY_NEGATIVE,FIXED_PAIR_REMAINS_IN_CLASSIFIED_ORDER_AT_NEXT_LAP_BOUNDARY,TRUE,TRUE,204,boundary-order proxy negative only,FALSE

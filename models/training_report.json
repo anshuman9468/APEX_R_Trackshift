@@ -1,0 +1,102 @@
+{
+  "model": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/models/overtake_model.json",
+  "metadata": {
+    "trained_at": "2026-09-05T17:16:53.147981+00:00",
+    "data_source": "OpenF1 historical API",
+    "data_source_note": "OpenF1 is an unofficial public data service; imported data does not contain private ERS/battery telemetry.",
+    "target": "overtake_next_60s",
+    "horizon_seconds": 60.0,
+    "sample_interval_seconds": 10.0,
+    "train_sessions": [
+      7779,
+      7787,
+      7953
+    ],
+    "test_sessions": [
+      9070
+    ],
+    "session_manifests": [
+      {
+        "session_key": 7953,
+        "rows": 7213,
+        "positive": 802,
+        "urls": {
+          "intervals": "https://api.openf1.org/v1/intervals?session_key=7953",
+          "position": "https://api.openf1.org/v1/position?session_key=7953",
+          "laps": "https://api.openf1.org/v1/laps?session_key=7953",
+          "stints": "https://api.openf1.org/v1/stints?session_key=7953",
+          "weather": "https://api.openf1.org/v1/weather?session_key=7953",
+          "overtakes": "https://api.openf1.org/v1/overtakes?session_key=7953"
+        }
+      },
+      {
+        "session_key": 7779,
+        "rows": 7148,
+        "positive": 611,
+        "urls": {
+          "intervals": "https://api.openf1.org/v1/intervals?session_key=7779",
+          "position": "https://api.openf1.org/v1/position?session_key=7779",
+          "laps": "https://api.openf1.org/v1/laps?session_key=7779",
+          "stints": "https://api.openf1.org/v1/stints?session_key=7779",
+          "weather": "https://api.openf1.org/v1/weather?session_key=7779",
+          "overtakes": "https://api.openf1.org/v1/overtakes?session_key=7779"
+        }
+      },
+      {
+        "session_key": 7787,
+        "rows": 6851,
+        "positive": 522,
+        "urls": {
+          "intervals": "https://api.openf1.org/v1/intervals?session_key=7787",
+          "position": "https://api.openf1.org/v1/position?session_key=7787",
+          "laps": "https://api.openf1.org/v1/laps?session_key=7787",
+          "stints": "https://api.openf1.org/v1/stints?session_key=7787",
+          "weather": "https://api.openf1.org/v1/weather?session_key=7787",
+          "overtakes": "https://api.openf1.org/v1/overtakes?session_key=7787"
+        }
+      },
+      {
+        "session_key": 9070,
+        "rows": 7944,
+        "positive": 499,
+        "urls": {
+          "intervals": "https://api.openf1.org/v1/intervals?session_key=9070",
+          "position": "https://api.openf1.org/v1/position?session_key=9070",
+          "laps": "https://api.openf1.org/v1/laps?session_key=9070",
+          "stints": "https://api.openf1.org/v1/stints?session_key=9070",
+          "weather": "https://api.openf1.org/v1/weather?session_key=9070",
+          "overtakes": "https://api.openf1.org/v1/overtakes?session_key=9070"
+        }
+      }
+    ],
+    "train_rows": 21212,
+    "train_positive": 1935,
+    "train_positive_rate": 0.091222,
+    "algorithm": "Logistic Regression",
+    "hyperparameters": {
+      "solver": "lbfgs",
+      "max_iter": 2000,
+      "actual_iterations": [
+        12
+      ],
+      "C": 1.0,
+      "class_weight": null,
+      "random_state": 2026,
+      "feature_scaling": "StandardScaler"
+    },
+    "metrics": {
+      "test_rows": 7944,
+      "test_positive": 499,
+      "test_positive_rate": 0.062815,
+      "accuracy_at_0_5": 0.937185,
+      "roc_auc": 0.711676,
+      "average_precision": 0.122823,
+      "brier_score": 0.058589
+    },
+    "limitations": [
+      "Predicts observed overtake events, not private team strategy or ERS state.",
+      "Held-out performance is evidence for these sessions, not proof of race-wide generalisation.",
+      "The optimiser remains constraint-aware and does not hand control to the model."
+    ]
+  }
+}

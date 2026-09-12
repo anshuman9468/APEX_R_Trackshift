@@ -1,0 +1,115 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "name": "authoritative_split_mapping",
+      "status": "PASS",
+      "detail": "rows=37, mismatches=0"
+    },
+    {
+      "name": "unknown_assignment_not_train",
+      "status": "PASS",
+      "detail": "missing mappings are not represented as train"
+    },
+    {
+      "name": "proposed_whole_race_split",
+      "status": "PASS",
+      "detail": "one proposed assignment per race"
+    },
+    {
+      "name": "proposed_boundary_precedes_outcomes",
+      "status": "PASS",
+      "detail": "chronology proposal is development-only"
+    },
+    {
+      "name": "proposed_split_disjoint",
+      "status": "PASS",
+      "detail": "race IDs do not cross proposed partitions"
+    },
+    {
+      "name": "positive_lineage_cardinality",
+      "status": "PASS",
+      "detail": "lineage_rows=823"
+    },
+    {
+      "name": "positive_window_unique",
+      "status": "PASS",
+      "detail": "no duplicate positive windows"
+    },
+    {
+      "name": "positive_event_grouping",
+      "status": "PASS",
+      "detail": "event keys and window multiplicity reconcile"
+    },
+    {
+      "name": "positive_not_verified",
+      "status": "PASS",
+      "detail": "proxy positives are not promoted to verified overtakes"
+    },
+    {
+      "name": "candidate_lineage_reconciles",
+      "status": "PASS",
+      "detail": "412 inherited links plus 411 outside-list endpoint reversals"
+    },
+    {
+      "name": "negative_count",
+      "status": "PASS",
+      "detail": "reported negative row count"
+    },
+    {
+      "name": "negative_semantics",
+      "status": "PASS",
+      "detail": "negative means endpoint proxy condition only"
+    },
+    {
+      "name": "negative_not_candidate_absence",
+      "status": "PASS",
+      "detail": "no negative is justified solely by absent candidate-list membership"
+    },
+    {
+      "name": "lap_counter_repaired",
+      "status": "PASS",
+      "detail": "old aggregate unit is explicit"
+    },
+    {
+      "name": "driver_lap_count",
+      "status": "PASS",
+      "detail": "race-qualified driver-lap identities reconcile"
+    },
+    {
+      "name": "driver_lap_set_match",
+      "status": "PASS",
+      "detail": "continuous streams match laptime boundary sets"
+    },
+    {
+      "name": "race_lap_distinct_count",
+      "status": "PASS",
+      "detail": "distinct race-lap identities"
+    },
+    {
+      "name": "asof_backward_only",
+      "status": "PASS",
+      "detail": "one-second as-of contract"
+    },
+    {
+      "name": "asof_missingness_explicit",
+      "status": "PASS",
+      "detail": "unmatched fields remain counted"
+    },
+    {
+      "name": "source_immutability",
+      "status": "PASS",
+      "detail": "before/after source hashes equal"
+    },
+    {
+      "name": "protected_holdout_exclusion",
+      "status": "PASS",
+      "detail": "protected token absent from emitted audit content"
+    },
+    {
+      "name": "companion_package",
+      "status": "PASS",
+      "detail": "661147 bytes, 33 DEFLATE members"
+    }
+  ]
+}

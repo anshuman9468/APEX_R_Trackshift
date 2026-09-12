@@ -1,0 +1,326 @@
+[
+  {
+    "decision_lap": 8,
+    "decision_timestamp_session_sec": 2745.795,
+    "freshness": {
+      "asof_tolerance_sec": 1.0,
+      "attacker_car_age_sec": 0.05999999999994543,
+      "attacker_position_age_sec": 0.09500000000025466,
+      "interpolation": false,
+      "join_policy": "backward-only",
+      "lookback_sec": 10.0,
+      "target_car_age_sec": 0.05999999999994543,
+      "target_position_age_sec": 0.09500000000025466
+    },
+    "graph_fingerprint_sha256": "0a5a8a78d7d9671dc0228d83adbebe3f0cf56cd0bc1f6250ce945d63b888d7c5",
+    "model": {
+      "attacker_driver": "ALB",
+      "checkpoint_sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+      "decision_timestamp_session_sec": 2745.795,
+      "inference_latency_ms": 6016.14,
+      "input_freshness": {
+        "asof_tolerance_sec": 1.0,
+        "interpolation": false,
+        "join_policy": "backward-only",
+        "lookback_sec": 10.0,
+        "source_timestamp_semantics": "session-relative; reconstructed from approved full-race telemetry"
+      },
+      "input_quality": {
+        "attacker_car_age_sec": 0.05999999999994543,
+        "attacker_position_age_sec": 0.09500000000025466,
+        "edge_count": 60,
+        "missing_node_groups": 0,
+        "node_count": 20,
+        "status": "valid",
+        "target_car_age_sec": 0.05999999999994543,
+        "target_position_age_sec": 0.09500000000025466,
+        "warnings": []
+      },
+      "model_version": "gnn_proxy_v1",
+      "not_a_calibrated_overtake_probability": true,
+      "not_an_attack_benefit_probability": true,
+      "proxy_score": 0.0052168904803693295,
+      "request_id": "replay-ee38ba6e51b8d9dbba9b",
+      "score": 0.0052168904803693295,
+      "score_label": "experimental boundary position-swap proxy signal",
+      "status": "available",
+      "strategy_action": null,
+      "target_driver_fixed": "VET"
+    },
+    "model_applicability": "APPLICABLE",
+    "optimizer": {
+      "action": null,
+      "action_scores": {
+        "ATTACK": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "DEFEND": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "HARVEST": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "HOLD": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        }
+      },
+      "decision_reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+      "inputs": {
+        "attacker_target_xyz_euclidean_distance_m": 3028.1870814069594,
+        "battery_percent": null,
+        "battery_status": "UNOBSERVED_REAL_ERS_NOT_SIMULATED",
+        "front_gap_seconds": null,
+        "front_gap_status": "SOURCE_UNAVAILABLE_NOT_IMPUTED",
+        "gnn_influence": "zero; advisory only",
+        "gnn_status": "available",
+        "gnn_unavailable_reason": null,
+        "rear_gap_seconds": null,
+        "rear_gap_status": "SOURCE_UNAVAILABLE_NOT_IMPUTED",
+        "xyz_distance_status": "GNN_GRAPH_FEATURE_ONLY_NOT_RACE_GAP"
+      },
+      "status": "unavailable"
+    },
+    "proposed_split": "development_validation",
+    "race_id": "2019:Abu Dhabi Grand Prix:Race",
+    "race_state": {
+      "attacker_minus_target_speed_kmh": -37.0,
+      "attacker_speed_kmh": 221.0,
+      "attacker_target_xyz_euclidean_distance_m": 3028.1870814069594,
+      "rear_rival": null,
+      "rear_rival_status": "UNKNOWN_NO_ASOF_CLASSIFIED_ORDER_STREAM",
+      "target_speed_kmh": 258.0
+    },
+    "target_contract": {
+      "attacker_driver": "ALB",
+      "fixed_target_driver": "VET",
+      "not_claimed": "physical proximity, current on-track-ahead identity, or a target re-selected during the horizon",
+      "relationship": "classified direct predecessor at the previous completed lap boundary"
+    },
+    "trace_schema_version": "historical-replay-state-v1",
+    "window_id": "ee38ba6e51b8d9dbba9b"
+  },
+  {
+    "decision_lap": 2,
+    "decision_timestamp_session_sec": 2076.405,
+    "freshness": {
+      "asof_tolerance_sec": 1.0,
+      "attacker_car_age_sec": 0.20600000000013097,
+      "attacker_position_age_sec": 0.20400000000017826,
+      "interpolation": false,
+      "join_policy": "backward-only",
+      "lookback_sec": 10.0,
+      "target_car_age_sec": 0.20600000000013097,
+      "target_position_age_sec": 0.20400000000017826
+    },
+    "graph_fingerprint_sha256": "58a7c3fce7e4d098f8b2a97c0c01d2789ec197ca0bb244c94d5cdeaa5f18f970",
+    "model": {
+      "attacker_driver": "STR",
+      "checkpoint_sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+      "decision_timestamp_session_sec": 2076.405,
+      "inference_latency_ms": 3.149,
+      "input_freshness": {
+        "asof_tolerance_sec": 1.0,
+        "interpolation": false,
+        "join_policy": "backward-only",
+        "lookback_sec": 10.0,
+        "source_timestamp_semantics": "session-relative; reconstructed from approved full-race telemetry"
+      },
+      "input_quality": {
+        "attacker_car_age_sec": 0.20600000000013097,
+        "attacker_position_age_sec": 0.20400000000017826,
+        "edge_count": 60,
+        "missing_node_groups": 0,
+        "node_count": 20,
+        "status": "valid",
+        "target_car_age_sec": 0.20600000000013097,
+        "target_position_age_sec": 0.20400000000017826,
+        "warnings": []
+      },
+      "model_version": "gnn_proxy_v1",
+      "not_a_calibrated_overtake_probability": true,
+      "not_an_attack_benefit_probability": true,
+      "proxy_score": 0.002942829392850399,
+      "request_id": "replay-ae6642f0d421e08071e1",
+      "score": 0.002942829392850399,
+      "score_label": "experimental boundary position-swap proxy signal",
+      "status": "available",
+      "strategy_action": null,
+      "target_driver_fixed": "HAM"
+    },
+    "model_applicability": "APPLICABLE",
+    "optimizer": {
+      "action": null,
+      "action_scores": {
+        "ATTACK": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "DEFEND": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "HARVEST": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "HOLD": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        }
+      },
+      "decision_reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+      "inputs": {
+        "attacker_target_xyz_euclidean_distance_m": 2270.1599062621117,
+        "battery_percent": null,
+        "battery_status": "UNOBSERVED_REAL_ERS_NOT_SIMULATED",
+        "front_gap_seconds": null,
+        "front_gap_status": "SOURCE_UNAVAILABLE_NOT_IMPUTED",
+        "gnn_influence": "zero; advisory only",
+        "gnn_status": "available",
+        "gnn_unavailable_reason": null,
+        "rear_gap_seconds": null,
+        "rear_gap_status": "SOURCE_UNAVAILABLE_NOT_IMPUTED",
+        "xyz_distance_status": "GNN_GRAPH_FEATURE_ONLY_NOT_RACE_GAP"
+      },
+      "status": "unavailable"
+    },
+    "proposed_split": "development_validation",
+    "race_id": "2020:Hungarian Grand Prix:Race",
+    "race_state": {
+      "attacker_minus_target_speed_kmh": -33.0,
+      "attacker_speed_kmh": 243.0,
+      "attacker_target_xyz_euclidean_distance_m": 2270.1599062621117,
+      "rear_rival": null,
+      "rear_rival_status": "UNKNOWN_NO_ASOF_CLASSIFIED_ORDER_STREAM",
+      "target_speed_kmh": 276.0
+    },
+    "target_contract": {
+      "attacker_driver": "STR",
+      "fixed_target_driver": "HAM",
+      "not_claimed": "physical proximity, current on-track-ahead identity, or a target re-selected during the horizon",
+      "relationship": "classified direct predecessor at the previous completed lap boundary"
+    },
+    "trace_schema_version": "historical-replay-state-v1",
+    "window_id": "ae6642f0d421e08071e1"
+  },
+  {
+    "decision_lap": 3,
+    "decision_timestamp_session_sec": 2182.527,
+    "freshness": {
+      "asof_tolerance_sec": 1.0,
+      "attacker_car_age_sec": 0.016999999999825377,
+      "attacker_position_age_sec": 0.01499999999987267,
+      "interpolation": false,
+      "join_policy": "backward-only",
+      "lookback_sec": 10.0,
+      "target_car_age_sec": 0.016999999999825377,
+      "target_position_age_sec": 0.01499999999987267
+    },
+    "graph_fingerprint_sha256": "8b8d6a74568de8c6d20a249d2ae57ac7b1fb6610781d321efd329de9c9c181bb",
+    "model": {
+      "attacker_driver": "HAM",
+      "checkpoint_sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+      "decision_timestamp_session_sec": 2182.527,
+      "inference_latency_ms": 3.977,
+      "input_freshness": {
+        "asof_tolerance_sec": 1.0,
+        "interpolation": false,
+        "join_policy": "backward-only",
+        "lookback_sec": 10.0,
+        "source_timestamp_semantics": "session-relative; reconstructed from approved full-race telemetry"
+      },
+      "input_quality": {
+        "attacker_car_age_sec": 0.016999999999825377,
+        "attacker_position_age_sec": 0.01499999999987267,
+        "edge_count": 60,
+        "missing_node_groups": 0,
+        "node_count": 20,
+        "status": "valid",
+        "target_car_age_sec": 0.016999999999825377,
+        "target_position_age_sec": 0.01499999999987267,
+        "warnings": []
+      },
+      "model_version": "gnn_proxy_v1",
+      "not_a_calibrated_overtake_probability": true,
+      "not_an_attack_benefit_probability": true,
+      "proxy_score": 0.030984047800302505,
+      "request_id": "replay-a102ed70a3c8f18c76c8",
+      "score": 0.030984047800302505,
+      "score_label": "experimental boundary position-swap proxy signal",
+      "status": "available",
+      "strategy_action": null,
+      "target_driver_fixed": "BOT"
+    },
+    "model_applicability": "APPLICABLE",
+    "optimizer": {
+      "action": null,
+      "action_scores": {
+        "ATTACK": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "DEFEND": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "HARVEST": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        },
+        "HOLD": {
+          "reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+          "score": null,
+          "status": "unavailable"
+        }
+      },
+      "decision_reason": "MISSING_SOURCE_BACKED_FRONT_AND_REAR_TIME_GAPS_SECONDS",
+      "inputs": {
+        "attacker_target_xyz_euclidean_distance_m": 857.6957502518011,
+        "battery_percent": null,
+        "battery_status": "UNOBSERVED_REAL_ERS_NOT_SIMULATED",
+        "front_gap_seconds": null,
+        "front_gap_status": "SOURCE_UNAVAILABLE_NOT_IMPUTED",
+        "gnn_influence": "zero; advisory only",
+        "gnn_status": "available",
+        "gnn_unavailable_reason": null,
+        "rear_gap_seconds": null,
+        "rear_gap_status": "SOURCE_UNAVAILABLE_NOT_IMPUTED",
+        "xyz_distance_status": "GNN_GRAPH_FEATURE_ONLY_NOT_RACE_GAP"
+      },
+      "status": "unavailable"
+    },
+    "proposed_split": "development_validation",
+    "race_id": "2020:70th Anniversary Grand Prix:Race",
+    "race_state": {
+      "attacker_minus_target_speed_kmh": -15.0,
+      "attacker_speed_kmh": 251.0,
+      "attacker_target_xyz_euclidean_distance_m": 857.6957502518011,
+      "rear_rival": null,
+      "rear_rival_status": "UNKNOWN_NO_ASOF_CLASSIFIED_ORDER_STREAM",
+      "target_speed_kmh": 266.0
+    },
+    "target_contract": {
+      "attacker_driver": "HAM",
+      "fixed_target_driver": "BOT",
+      "not_claimed": "physical proximity, current on-track-ahead identity, or a target re-selected during the horizon",
+      "relationship": "classified direct predecessor at the previous completed lap boundary"
+    },
+    "trace_schema_version": "historical-replay-state-v1",
+    "window_id": "a102ed70a3c8f18c76c8"
+  }
+]

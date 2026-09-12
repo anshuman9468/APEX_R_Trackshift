@@ -1,0 +1,61 @@
+{
+  "approved_races": [
+    "2019:Abu Dhabi Grand Prix:Race",
+    "2020:Hungarian Grand Prix:Race",
+    "2020:70th Anniversary Grand Prix:Race"
+  ],
+  "candidate_graphs": 3,
+  "chronological_candidate_windows_examined": {
+    "2019:Abu Dhabi Grand Prix:Race": 1,
+    "2020:70th Anniversary Grand Prix:Race": 1,
+    "2020:Hungarian Grand Prix:Race": 1
+  },
+  "generated_at_utc": "2026-09-12T14:56:11.502676+00:00",
+  "graph_exclusions": "not re-computed; canonical cache manifest reports 19 fixed_pair_missing_current_car_sample exclusions",
+  "input_counts": {
+    "eligible_target_windows": 3250,
+    "source_rows_seen": 40837
+  },
+  "model_applicable_states": 3,
+  "optimizer_available_states": 0,
+  "optimizer_blocker": "No verified timestamped front/rear time gaps in seconds; XYZ distance kept in metres only; real battery state unavailable",
+  "protected_session_11353": "EXCLUDED_BEFORE_SOURCE_ACCESS",
+  "selected_replay_states": 3,
+  "selection": "first model-applicable decision timestamp per approved race; no outcome columns read",
+  "stream_stats": [
+    {
+      "join_keys": [
+        "race_id",
+        "driver",
+        "session_time_sec"
+      ],
+      "kind": "car",
+      "lookback_sec": 10.0,
+      "nonmonotonic_source_rows_in_requested_keys": 0,
+      "requested_keys": 740,
+      "requested_timestamps": 582980,
+      "requests_resolved_or_attempted": 582980,
+      "source": "full_race_telemetry_collection_final/telemetry_car.csv.gz",
+      "source_rows_seen": 17031555,
+      "source_rows_used_for_requested_drivers": 15944390,
+      "tolerance_sec": 1.0
+    },
+    {
+      "join_keys": [
+        "race_id",
+        "driver",
+        "session_time_sec"
+      ],
+      "kind": "position",
+      "lookback_sec": 10.0,
+      "nonmonotonic_source_rows_in_requested_keys": 0,
+      "requested_keys": 740,
+      "requested_timestamps": 582980,
+      "requests_resolved_or_attempted": 582980,
+      "source": "full_race_telemetry_collection_final/telemetry_position.csv.gz",
+      "source_rows_seen": 15484853,
+      "source_rows_used_for_requested_drivers": 14277894,
+      "tolerance_sec": 1.0
+    }
+  ]
+}

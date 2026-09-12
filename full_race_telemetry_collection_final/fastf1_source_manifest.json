@@ -1,0 +1,4036 @@
+[
+  {
+    "cache_bytes_after": 70292003,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "4df1251fc74e5fb2f08b2e9c10fa693cd0f5e3f619938d0013fb98ae35a3598b",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1016310,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/_extended_timing_data.ff1pkl",
+        "sha256": "2c0128edf55be4f1e09f7ff0622749b3982ffc7601773258c439c087a0168d3a"
+      },
+      {
+        "bytes": 32747870,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/car_data.ff1pkl",
+        "sha256": "e0205d756ccdf556cfaed2d51449bd80840adaa5236685136024e264b4f3e7c3"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/driver_info.ff1pkl",
+        "sha256": "1ff2c0644d32d7d3ae90ea453c97cd9a28336ed7b0a2317847770d409224739c"
+      },
+      {
+        "bytes": 1164,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/lap_count.ff1pkl",
+        "sha256": "ac172f9c24faeb2bfd58a26aba6c3ce0ad62fa52ef78518f8f71a2de4274a2c5"
+      },
+      {
+        "bytes": 19875568,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/position_data.ff1pkl",
+        "sha256": "31e17c94f7e2ebbc4a058d8f9902e1eb880889a2923d5c65e4a0e69886e8eafb"
+      },
+      {
+        "bytes": 445,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/session_info.ff1pkl",
+        "sha256": "a15f4983de902ff7fcf6e100b7ab00c50116ff611d747a48b99d17f803420bc7"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/session_status_data.ff1pkl",
+        "sha256": "ace0c4718887f2a943d6388ec87eb62794e5e82942215b05ae2c40677c328471"
+      },
+      {
+        "bytes": 58996,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/timing_app_data.ff1pkl",
+        "sha256": "b4e4126eb9665a1de44d9264e98906338b739c35e1613dc54606721d5aeeaebf"
+      },
+      {
+        "bytes": 334,
+        "name": "2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/track_status_data.ff1pkl",
+        "sha256": "4f91c781b809a54ae39a556cadb8502ae78c78ed2423141312d8132209a81289"
+      },
+      {
+        "bytes": 16588800,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "e2b0693c2ce12bc4387ba04d88eacffc9b817683516fb03100e7477742079614"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 475304,
+    "event": "Chinese Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 70292003,
+    "participant_driver_count": 20,
+    "position_rows_written": 387297,
+    "provider": "FastF1",
+    "race_id": "2018:Chinese Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 74946071,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "c8a8c7b30e36e3212fe8d60e3b2a460e85972a0baaee93a06cde3ff006b0c88b",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1024812,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/_extended_timing_data.ff1pkl",
+        "sha256": "c5028fcf2fda0370c67770ade301a9df58b82f70a06500747064df933a4744c9"
+      },
+      {
+        "bytes": 36404811,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/car_data.ff1pkl",
+        "sha256": "ee3873199ec2fc2adecf25422e394cb291e35c654e37615e8af600f2606a10e6"
+      },
+      {
+        "bytes": 2315,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/driver_info.ff1pkl",
+        "sha256": "eb292b47434de056859615ae2be5529b1e396a3aa99da3b3d2927193648188c3"
+      },
+      {
+        "bytes": 1204,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/lap_count.ff1pkl",
+        "sha256": "a2f0dd82bdee404f04a57004f7927541871ad98fe3f2d0e56adb64719e75f79b"
+      },
+      {
+        "bytes": 21628689,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/position_data.ff1pkl",
+        "sha256": "700094ca1e229f7da97d917095f7b8f877c114dbad3f077de29ec978fde44e55"
+      },
+      {
+        "bytes": 457,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/session_info.ff1pkl",
+        "sha256": "afc091c3365caab45b3fc79cb0d21b88309c6cf2c009c6703bc3a7ba50cc23e7"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/session_status_data.ff1pkl",
+        "sha256": "9bf72b242327ba12c94f759e7775582430938ae97816b960cc6054b0a5c87a50"
+      },
+      {
+        "bytes": 101438,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/timing_app_data.ff1pkl",
+        "sha256": "1409b9b3d036ab09bbd88ddf61c7dec6cb286f69657a43ab5676be8a2144a36b"
+      },
+      {
+        "bytes": 241,
+        "name": "2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/track_status_data.ff1pkl",
+        "sha256": "fb2526d9ae41cc18396bdf31710ae16b9d6c6f89b8a506529c64d6922f64fc8f"
+      },
+      {
+        "bytes": 15781888,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "4fb5d576d1683c9623b37aa5de192d269a7f7b6f694e6e70fe945c5425a1da8c"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 398270,
+    "event": "Australian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 74946071,
+    "participant_driver_count": 20,
+    "position_rows_written": 317300,
+    "provider": "FastF1",
+    "race_id": "2019:Australian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 109079808,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "d76b94965f5202cb786576d78c1e288591cc37b86ec6dbba1635101c3ab7efd9",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1027755,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/_extended_timing_data.ff1pkl",
+        "sha256": "b9da5963357b0dae95d4a3d06fdd35a538ece8cd655e8ddd3185204f6956d364"
+      },
+      {
+        "bytes": 43436670,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/car_data.ff1pkl",
+        "sha256": "b89f409cda0d3dfa1225662423fa162beebe27005467295bd7b91585e35148b8"
+      },
+      {
+        "bytes": 5201,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/driver_info.ff1pkl",
+        "sha256": "377cb5d21595ab40fc51d3d469b66bb8c4cba87046754547e7001feccb8e73bf"
+      },
+      {
+        "bytes": 1432,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/lap_count.ff1pkl",
+        "sha256": "bcf606ed07be95aeb4c611b3bd2f6cf118842a265c07c2db687507392233d496"
+      },
+      {
+        "bytes": 40000251,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/position_data.ff1pkl",
+        "sha256": "b4e3b276773a126349061f1cb3f05b985ef7ddd8de5da6a98bfe48ef44497729"
+      },
+      {
+        "bytes": 454,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/session_info.ff1pkl",
+        "sha256": "77cd71fe4f134d13f92cdca075da0d9697e44d4d525204e5c2e5093ff0b93c70"
+      },
+      {
+        "bytes": 216,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/session_status_data.ff1pkl",
+        "sha256": "0d0a90907de46351d7220194c1f0eec480861e3ec828a4d44628202343eac311"
+      },
+      {
+        "bytes": 125686,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/timing_app_data.ff1pkl",
+        "sha256": "56de09293e8a39af449cebb93e998356271fc1ad34c70a2473da3405815623c7"
+      },
+      {
+        "bytes": 351,
+        "name": "2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/track_status_data.ff1pkl",
+        "sha256": "d8728f9c4600f05f545090880b574516aca3dcbe6002a689ed22779b7856279b"
+      },
+      {
+        "bytes": 24481792,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "20eb927fe99206b92ffb5bdb364a8ed9307fdd2dda459a11f03251e2e75d9f41"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 460025,
+    "event": "Hungarian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 109079808,
+    "participant_driver_count": 20,
+    "position_rows_written": 509488,
+    "provider": "FastF1",
+    "race_id": "2020:Hungarian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 69985018,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "10ce8ae6503212de6d535c510917257d71268778830460127790f188b89fe73f",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 839922,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/_extended_timing_data.ff1pkl",
+        "sha256": "a2239fa558a49863400d4dbba53cd8f24c8267b501ff359c54e3cf47fbc00d80"
+      },
+      {
+        "bytes": 33270650,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/car_data.ff1pkl",
+        "sha256": "1b47308f6675024aa678512cb77e75b1cc85c2244283a60027280b869681e997"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/driver_info.ff1pkl",
+        "sha256": "940188ad8cbaca4d22c81fc46693f36d1f0d158d465a6bd0ed4f454fa1083759"
+      },
+      {
+        "bytes": 1069,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/lap_count.ff1pkl",
+        "sha256": "660c6883520393643ba777489b537dc6220755a45a73ab3859e02394f8b9b914"
+      },
+      {
+        "bytes": 20210848,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/position_data.ff1pkl",
+        "sha256": "f1090cb6ed898463b14e94e645b0386c8139e97725756e17a2a7c2c8a35b3d9a"
+      },
+      {
+        "bytes": 448,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/session_info.ff1pkl",
+        "sha256": "06560d35fcae1305c73d2940c642ee97826e3f314e77bb751d60857931ffe135"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/session_status_data.ff1pkl",
+        "sha256": "a55573e4ab220a18a74d116afc251a83fa7d9fcd899bfa37a2ecdf38ca504e18"
+      },
+      {
+        "bytes": 81757,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/timing_app_data.ff1pkl",
+        "sha256": "52d23ece90a7d354cc22a1844c6f283d77adb2880e470e286afb250915de8326"
+      },
+      {
+        "bytes": 720,
+        "name": "2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/track_status_data.ff1pkl",
+        "sha256": "ab784fca01e2ed6366c4c06c12ba4dd1e644ea48593af718b8e0f54c75b6c11c"
+      },
+      {
+        "bytes": 15577088,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "b0c683b7643b9ca239332255874e08cb7d173ece7fa61101c178192671235fc8"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 427514,
+    "event": "Azerbaijan Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 69985018,
+    "participant_driver_count": 20,
+    "position_rows_written": 348130,
+    "provider": "FastF1",
+    "race_id": "2018:Azerbaijan Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 65205051,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "4cd9f2fd7e9c621747894e572b2142792c1003dda3f18ded1ff95db65ec3c8fd",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 902794,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/_extended_timing_data.ff1pkl",
+        "sha256": "b009bd5510dc647b2b8dcb15bab565cf1079a5e8872d7d126cc22b6eab9e01de"
+      },
+      {
+        "bytes": 30704070,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/car_data.ff1pkl",
+        "sha256": "16348a2a6d5d2f316ba97a8ed337cfd81bf504bc32e4674fa49c3bdca188d51d"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/driver_info.ff1pkl",
+        "sha256": "832ccd123223b0cb8042073b14231834e4ca3e8c4ad6b31947ecb761b0d02ae1"
+      },
+      {
+        "bytes": 1434,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/lap_count.ff1pkl",
+        "sha256": "9288760d24d3e0e4db3a20d34b8c164e3cb799a505d6237011e71f33428fa0d0"
+      },
+      {
+        "bytes": 18719128,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/position_data.ff1pkl",
+        "sha256": "002a60cd7464e1d5a1ddb251fadaef23849aa8a40a34977384b6743bc5db2894"
+      },
+      {
+        "bytes": 454,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/session_info.ff1pkl",
+        "sha256": "6798f88298d3115cb69b3188c74e1377fe9f4699c2c7f557833b6699663d5a77"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/session_status_data.ff1pkl",
+        "sha256": "765279c494b9f2289a9eb63b1bb0c280903c16b5560c52630bea762f14fe6e69"
+      },
+      {
+        "bytes": 108216,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/timing_app_data.ff1pkl",
+        "sha256": "9a5d879159cd41c4080e45da2b476f107fee171dff7aad5ec72b3ef60d3f8a95"
+      },
+      {
+        "bytes": 359,
+        "name": "2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/track_status_data.ff1pkl",
+        "sha256": "d43e648c858791d83765305eeae26b31cd40395ec3cc84d22066b167197bceb8"
+      },
+      {
+        "bytes": 14766080,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "1f1ac7d40fe4b404f90b0edbdaa6e9f3f1c38e9198bfdc05e5b5fc836cc07047"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 399509,
+    "event": "Canadian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 65205051,
+    "participant_driver_count": 20,
+    "position_rows_written": 326210,
+    "provider": "FastF1",
+    "race_id": "2018:Canadian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 64255330,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "836f87602eb4da667f9d759d6c60a93886ea2f256e7db80bd0b80368ca22c077",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 954926,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/_extended_timing_data.ff1pkl",
+        "sha256": "cf19c4ef5f87f1feca7741443b666459059c4e752350b80f5771e79a2428b909"
+      },
+      {
+        "bytes": 29894550,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/car_data.ff1pkl",
+        "sha256": "8e00ce65a35755cdbef5410bfe918901e764662f6104a0b36e822be7efb51ec2"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/driver_info.ff1pkl",
+        "sha256": "1e1406d60ab1357d239e4aa5ad0d11bcc0078cc91df6af88a4ce5215485e4ce0"
+      },
+      {
+        "bytes": 1103,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/lap_count.ff1pkl",
+        "sha256": "c90af65b3c45cd00748e16d64e1f2d8935a36c8b11e4a51c578be0d0c111c064"
+      },
+      {
+        "bytes": 18136528,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/position_data.ff1pkl",
+        "sha256": "18bcb1f3d04ae024b8d0785addcfac73d1b75028b09bdbbd0e722bb828507a84"
+      },
+      {
+        "bytes": 451,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/session_info.ff1pkl",
+        "sha256": "0ecbdb497d018700417efd7ccfbbb2aeb454ebdde80cec57b9d5fd4a40d34caa"
+      },
+      {
+        "bytes": 214,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/session_status_data.ff1pkl",
+        "sha256": "88ef00eff2d9d0147495f2f0b94bffbf58f87191fe2c06dbba867b12bc495acd"
+      },
+      {
+        "bytes": 85003,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/timing_app_data.ff1pkl",
+        "sha256": "308cd3cc1d0299f7000be2c86f3e33cbcf2ff71c1635457087d39805dd449c38"
+      },
+      {
+        "bytes": 479,
+        "name": "2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/track_status_data.ff1pkl",
+        "sha256": "4c17796be40f2f0db3438ef122d4c5d773f3be032b4f15b9ce31ef20893a455e"
+      },
+      {
+        "bytes": 15179776,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "2c823e58eb000f0e8cdc302014ddc290db25935da682375e4214b8f760d599be"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 396139,
+    "event": "French Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 64255330,
+    "participant_driver_count": 20,
+    "position_rows_written": 322496,
+    "provider": "FastF1",
+    "race_id": "2018:French Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 58424867,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "63a7fa96f3d29ed840c2108f43bb0299974343a62f5af2ad7e756180371a2279",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 983663,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/_extended_timing_data.ff1pkl",
+        "sha256": "b84e69da4300f2ffaf76f482ed7c10af4675ca58299e407c573fa0b2b61f8b40"
+      },
+      {
+        "bytes": 26932630,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/car_data.ff1pkl",
+        "sha256": "a15227f80c98f994a92b6651e541dd1a17e9d66520ace5f62983318116c6ae72"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/driver_info.ff1pkl",
+        "sha256": "a34fa1a8b894bf4f6f2368d1a4d6f3f85c9e0daafdec220f7e3cf6a61a6e6a33"
+      },
+      {
+        "bytes": 1439,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/lap_count.ff1pkl",
+        "sha256": "e4967cd503af9586e7cffffcd519c42ef5a66865fd01ca8b9783f1ff8e8c5f11"
+      },
+      {
+        "bytes": 16302448,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/position_data.ff1pkl",
+        "sha256": "65a06ca67df61edb19646dff799d76e3ee02318e3235ed858b2521486f43444c"
+      },
+      {
+        "bytes": 451,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/session_info.ff1pkl",
+        "sha256": "6bfbc31cf03609f1eac362291276cc288aae93eb31fc089bb62cc3ac5bdd5a0d"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/session_status_data.ff1pkl",
+        "sha256": "dc322bef9f9025d9b5075b8439311730d59076e57723b1ce57f320cc68cd60bd"
+      },
+      {
+        "bytes": 94312,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/timing_app_data.ff1pkl",
+        "sha256": "b591e997c3c522ea1d9e8288a2fae2bab3e9fa68fda414a3bc77aefc31adbc73"
+      },
+      {
+        "bytes": 784,
+        "name": "2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/track_status_data.ff1pkl",
+        "sha256": "f1320b3ecd3130d65b96a6d6b3f6e8d8db0889a17c86c944e705e5bd5d0721e8"
+      },
+      {
+        "bytes": 14106624,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "d798bbeb50768046607aedbd3d8f46290641ae16551ee215db14599eba7c4e80"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 366595,
+    "event": "Austrian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 58424867,
+    "participant_driver_count": 20,
+    "position_rows_written": 297614,
+    "provider": "FastF1",
+    "race_id": "2018:Austrian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 62147159,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "d25b54114096807f0391ec59a0ff1dfb280aada22f5b27788c80d9af046d37fc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 908372,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/_extended_timing_data.ff1pkl",
+        "sha256": "5996a67ea86d3d9ffa3b10d061115f0453e0225b8db925d9b5d5036c19a60c16"
+      },
+      {
+        "bytes": 29291530,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/car_data.ff1pkl",
+        "sha256": "781455a85c496b053b0ef8a24bce3bb41dee7be4cc6bbd6ab85dc3677b4172b2"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/driver_info.ff1pkl",
+        "sha256": "ad13a9e39dc1442824467a552d5d094b8110b30e5080119cf5e7bbfeba91138b"
+      },
+      {
+        "bytes": 1086,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/lap_count.ff1pkl",
+        "sha256": "1a475edc297d09892282ec416768ff95dd4a2d45a5aafaaf9f877c463b0d1b88"
+      },
+      {
+        "bytes": 17502848,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/position_data.ff1pkl",
+        "sha256": "c9323f9743b36c9055f172b4fc6e996a99742c97f84dce032666f8dfc538f6fd"
+      },
+      {
+        "bytes": 459,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/session_info.ff1pkl",
+        "sha256": "980fb01a9be5fa2a473a86108dd0eeb394ada94057332b068afcc57b26321da0"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/session_status_data.ff1pkl",
+        "sha256": "3b3271d674f46c09f8021a40155d01cb6a589cc718b3885303e3bc79c1c99099"
+      },
+      {
+        "bytes": 70858,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/timing_app_data.ff1pkl",
+        "sha256": "291ad752cb58d222310552b6c81654daf294f7f53306cfc8fae15520963d40b9"
+      },
+      {
+        "bytes": 722,
+        "name": "2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/track_status_data.ff1pkl",
+        "sha256": "9930bc765d4737a7cfb73ad25ac3ec966c7711f53fab0fe5df848f654a175a52"
+      },
+      {
+        "bytes": 14368768,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "9a855a522637ddcad9a6b2cf254b063223337b89c25664f557b7f76bec3359af"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 385086,
+    "event": "British Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 62147159,
+    "participant_driver_count": 20,
+    "position_rows_written": 307994,
+    "provider": "FastF1",
+    "race_id": "2018:British Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 66581183,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "77c8916f2249ded6239fa7955c49ad20754daef4604995c137fd8f7ccc8714aa",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1110574,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/_extended_timing_data.ff1pkl",
+        "sha256": "fd2bc61e6f61314f5078ad16519d9493965844957b94115552fd50886f5cb2f2"
+      },
+      {
+        "bytes": 30849210,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/car_data.ff1pkl",
+        "sha256": "ed5a508cb6a7ccebe8de5d96039c43223e81bf2585c9f3fdc95876f68de2bc15"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/driver_info.ff1pkl",
+        "sha256": "f34bb972b2ca00f1b386fe49d218e4d0cb8dbfdc3377136dbb5c8ad1c5addce4"
+      },
+      {
+        "bytes": 1369,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/lap_count.ff1pkl",
+        "sha256": "ff0d034fa59236428bf730f7cad215f7f56674f2262042d3fe0ca6a0feabdbaf"
+      },
+      {
+        "bytes": 18402288,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/position_data.ff1pkl",
+        "sha256": "cd7abad03bb8bf2a0def86c78e09f443237c388b3defa564e92d71e584efe122"
+      },
+      {
+        "bytes": 449,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/session_info.ff1pkl",
+        "sha256": "b1b9fa72798dc452bd3a9d147e1ea20eae2cf951610fd96941442330a51f9d73"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/session_status_data.ff1pkl",
+        "sha256": "079fc374d875352c1a97c1076c84b0d6b81e9ee488867232361e52f2a3728fcd"
+      },
+      {
+        "bytes": 104738,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/timing_app_data.ff1pkl",
+        "sha256": "8efeb3e56a7738f7dd4e9b6f21ee15a154bc6c17897e9f0be14be8276d4f3541"
+      },
+      {
+        "bytes": 471,
+        "name": "2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/track_status_data.ff1pkl",
+        "sha256": "b4478291457756b3679a2d33fd04c595890c40b14d659bdb2f95114981d69e6a"
+      },
+      {
+        "bytes": 16109568,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "79f751f017a0d346d06e23b4237b4684859091945ab525192c7dbc79e0b73105"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 439177,
+    "event": "German Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 66581183,
+    "participant_driver_count": 20,
+    "position_rows_written": 351162,
+    "provider": "FastF1",
+    "race_id": "2018:German Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 68487500,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "7423ff0eedc9370103f326cf71042cf2b6a0c1f815bd2e94cb8489470d2e5592",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 992286,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/_extended_timing_data.ff1pkl",
+        "sha256": "4f7d9873288f9e80421ea0c87088eb8df3ae56812b033fc590afd3e3a6909512"
+      },
+      {
+        "bytes": 31943110,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/car_data.ff1pkl",
+        "sha256": "8ecc6576a19430e8561955b50a42518c7e1654005437cbb738ee09af3cdb6f63"
+      },
+      {
+        "bytes": 2300,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/driver_info.ff1pkl",
+        "sha256": "d9428f6565712777c4242d158684c883e642b9a1dbf4da30339e0cc1bbd52132"
+      },
+      {
+        "bytes": 1432,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/lap_count.ff1pkl",
+        "sha256": "c03cef5fd532d07a172203b6547bc664e9061a789e71bb533882d63cf35ba185"
+      },
+      {
+        "bytes": 19079088,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/position_data.ff1pkl",
+        "sha256": "8f58ec5e31783b2277ad6031a90485536ee4aa4e010e90e0c274a6be05bdde5e"
+      },
+      {
+        "bytes": 454,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/session_info.ff1pkl",
+        "sha256": "172d5f207f728db112c40557790ebfd19e275d41d2fe974d95c960546df4ea89"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/session_status_data.ff1pkl",
+        "sha256": "228feacc9ebcdddf46a26049a69a1d2350c289dde9001632f695f9e8a2db287f"
+      },
+      {
+        "bytes": 100658,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/timing_app_data.ff1pkl",
+        "sha256": "deee29f10949bbf5fd4a325174b4cff36cfd1e8f83b51c41254710e7960e13ff"
+      },
+      {
+        "bytes": 340,
+        "name": "2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/track_status_data.ff1pkl",
+        "sha256": "ad959b1a38a107038819182f349237b4ae57c4029862fe03e73886eaf14b2342"
+      },
+      {
+        "bytes": 16367616,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "499d42c6d1354a48484c80a244da3bc797b05be0ad81025ade378a6a2e7484aa"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 441752,
+    "event": "Hungarian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 68487500,
+    "participant_driver_count": 20,
+    "position_rows_written": 353489,
+    "provider": "FastF1",
+    "race_id": "2018:Hungarian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 64064223,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "d6f734f2e0acc037acfe167addef65ee3ebe42b6b7165566cd130464f23f9b9a",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 709213,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/_extended_timing_data.ff1pkl",
+        "sha256": "cc3fae1b35e593e43d0e07c284a3affd12adcbf00016c17202a25b58bb966718"
+      },
+      {
+        "bytes": 30910570,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/car_data.ff1pkl",
+        "sha256": "a7f365d7a803f0d42698044f2ff882515e11fe93769dd96aae5b50b2aab89609"
+      },
+      {
+        "bytes": 2302,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/driver_info.ff1pkl",
+        "sha256": "3971d3198f6388211f7424dd918638a4e8b483813a6c08939b39da5b1a75dbc0"
+      },
+      {
+        "bytes": 940,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/lap_count.ff1pkl",
+        "sha256": "aa03caf397ee085ed4eaee29eee37986851823d362d08fb5ccac2dabb6ce9ed1"
+      },
+      {
+        "bytes": 18839688,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/position_data.ff1pkl",
+        "sha256": "41e091f392e69952d0a0638126fc1baa64cc3d333376267ef42f01c433a5ac65"
+      },
+      {
+        "bytes": 465,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/session_info.ff1pkl",
+        "sha256": "9c387faed51c3e0fe460835b51901989d8cf87e89cd1b52b656e95567e120e3d"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/session_status_data.ff1pkl",
+        "sha256": "2407026b189b25e1eeb3ff9012c3eef3ac19ad97dab168ff882409dc854ab47e"
+      },
+      {
+        "bytes": 63219,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/timing_app_data.ff1pkl",
+        "sha256": "8fc35d89eb1df114330f5f5554b6eb1d132ba526806a52fac0459808d9761bc7"
+      },
+      {
+        "bytes": 330,
+        "name": "2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/track_status_data.ff1pkl",
+        "sha256": "18e35dc43ade830700e2bfd41210f20bd79d30010868887005fa85e828a7d6ed"
+      },
+      {
+        "bytes": 13537280,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "168d17e83c0c2fb7d8d4e639022b66f5db767128e02f825edc02343beaf7f46b"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 334113,
+    "event": "Belgian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 64064223,
+    "participant_driver_count": 20,
+    "position_rows_written": 273116,
+    "provider": "FastF1",
+    "race_id": "2018:Belgian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 62722109,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "e47a8debedcf0baf8f0d299b79486338762d51dc9662753771118e3c86c4b734",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 919345,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/_extended_timing_data.ff1pkl",
+        "sha256": "3fae7edf971084e0fa45ef7ff2e5c580808ce2f1477a88d4847aeec2fc359b21"
+      },
+      {
+        "bytes": 29958270,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/car_data.ff1pkl",
+        "sha256": "6bf7cf0438531217a9a165a64dd2e3f2b5fea56251df3d587bc9edaecb8880af"
+      },
+      {
+        "bytes": 2302,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/driver_info.ff1pkl",
+        "sha256": "b3593a1122e1f4635b5fe4c11f1632389ede263ccec0fb457b1dd869ccc4d9f0"
+      },
+      {
+        "bytes": 1097,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/lap_count.ff1pkl",
+        "sha256": "78246e35de32de90938cf48778e6c01e2791028566d82bff4245752714558028"
+      },
+      {
+        "bytes": 17758968,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/position_data.ff1pkl",
+        "sha256": "b5be60388e7d75445bd00d699ce4fc0d5074fac15c25f6d19ba4855ef525e2be"
+      },
+      {
+        "bytes": 439,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/session_info.ff1pkl",
+        "sha256": "64315c51aad8143623c69ae21435418d3585dfa58605b4b615415819c6534c30"
+      },
+      {
+        "bytes": 214,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/session_status_data.ff1pkl",
+        "sha256": "7863d9fe908385f4fe7c58ed4f2966b4dfc56d5f3f091e4673f1a9eee2177f6e"
+      },
+      {
+        "bytes": 76910,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/timing_app_data.ff1pkl",
+        "sha256": "413041a8f04f14bce8091df4f177cf593bdfeda3e848d3a90a91af150967c5ff"
+      },
+      {
+        "bytes": 340,
+        "name": "2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/track_status_data.ff1pkl",
+        "sha256": "cc0c6a9e058ededd75f46fa26e6b49579002fce2ef2a934677a1c2c79d513f5a"
+      },
+      {
+        "bytes": 14004224,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "07741ea48fa8ef97c3ccfa756b71c36d34abbab6a76d7bbc66bcbc074a09fe9d"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "DataNotLoadedError: The data you are trying to access has not been loaded yet. See `Session.load`",
+    "event": "Italian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 62722109,
+    "provider": "FastF1",
+    "race_id": "2018:Italian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 67664548,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "76cb24fdb64f987acc648db943d825310de14fb49e2d8e5613e8a210d9b4f7ae",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 981034,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/_extended_timing_data.ff1pkl",
+        "sha256": "f264a18c31dc6592a5ddcdaa8cd2c025b08776ad6be138836b5acf1a4bbef547"
+      },
+      {
+        "bytes": 31540690,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/car_data.ff1pkl",
+        "sha256": "75e47284809c40e1c6e6ecf47a45d30695275d049254bef796199c3c5c496ae1"
+      },
+      {
+        "bytes": 2302,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/driver_info.ff1pkl",
+        "sha256": "69854b21391232e3db475ec941039c1ad3ea0f48f7cd55741672297e7b0ae06f"
+      },
+      {
+        "bytes": 1107,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/lap_count.ff1pkl",
+        "sha256": "859bfba59f686b2733630536099b016895b5f5d3230cec641d4b5b1270d0e1fe"
+      },
+      {
+        "bytes": 19290288,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/position_data.ff1pkl",
+        "sha256": "db535ed7c1197ffad2be85e38fe9ac77edf3adb1a929450acd8fb0d6ca6a0aba"
+      },
+      {
+        "bytes": 443,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/session_info.ff1pkl",
+        "sha256": "00264cf84d231e72de7cbe31f52b8207b46c3d2809bb03b00850d19d8d6bc806"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/session_status_data.ff1pkl",
+        "sha256": "7499edba6bcd9cfb3e16800de5a4513aa38c68580c74fa21867a4a312aefbe8e"
+      },
+      {
+        "bytes": 74343,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/timing_app_data.ff1pkl",
+        "sha256": "aa9dd0db64a3808b28203bcc347b120dcc60014f4eb407e3ed6fb46e368ba3ee"
+      },
+      {
+        "bytes": 429,
+        "name": "2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/track_status_data.ff1pkl",
+        "sha256": "c2bd7be88b0e01b72d67694f74f29187007d3fa6502d1ed2c1223486ae249558"
+      },
+      {
+        "bytes": 15773696,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "efdb07996b2883b4eed984e735520dd6a4a9a1cdcc5ef4238f8506bd9e020203"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 405161,
+    "event": "Japanese Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 67664548,
+    "participant_driver_count": 20,
+    "position_rows_written": 332199,
+    "provider": "FastF1",
+    "race_id": "2018:Japanese Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 82890223,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "9fcaaf4e2851cded06abdc84c471da26cc6487c88ee62d84e36fad23cec1edfb",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1021886,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/_extended_timing_data.ff1pkl",
+        "sha256": "b50b30956185d3772aa76d8923dcb472d75d579b4b3723f18ca0a43224b4d6f9"
+      },
+      {
+        "bytes": 40015730,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/car_data.ff1pkl",
+        "sha256": "53474595fee8459a99a64f69480feaffef0b5c73f7cdda48fdef93c29fbcd221"
+      },
+      {
+        "bytes": 2302,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/driver_info.ff1pkl",
+        "sha256": "e199ae0c3e922ee50f1f5060edb0e15022514cea5dbaaeb4cea4de04d98e2785"
+      },
+      {
+        "bytes": 1439,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/lap_count.ff1pkl",
+        "sha256": "7bbbdd3a7b6ebaf939d6f881380f1949726b12e9ae310f5f97b47755633b52d8"
+      },
+      {
+        "bytes": 24471328,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/position_data.ff1pkl",
+        "sha256": "d99913ff009022cd577c4141d2908a221e71f98bc52c791eae474fc0c047c982"
+      },
+      {
+        "bytes": 455,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/session_info.ff1pkl",
+        "sha256": "6bcb0f3394408cc4bafcf56f5458104a2a64589d2c248b37e4a7726aff7962ae"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/session_status_data.ff1pkl",
+        "sha256": "ca73ddf2c62a84bedf1e809ec882ba0cc15fa3074e7bc890069ce5f42dfedfbc"
+      },
+      {
+        "bytes": 99394,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/timing_app_data.ff1pkl",
+        "sha256": "a6d35587893d69a4d421cbc509ab57f5cfdb86ef751850b78cd9043b2a0b1da7"
+      },
+      {
+        "bytes": 545,
+        "name": "2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/track_status_data.ff1pkl",
+        "sha256": "27c98a8e6412485a2926e0e7415a14d643be6f07919231fd4962ba12e1aeb8d7"
+      },
+      {
+        "bytes": 17276928,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "2c683a403bce6091def52a7f31a3a80b8f5bd18b2810f3ab0f6769b0cd264210"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 438984,
+    "event": "Mexican Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 82890223,
+    "participant_driver_count": 20,
+    "position_rows_written": 359641,
+    "provider": "FastF1",
+    "race_id": "2018:Mexican Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 77458074,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "a132e6409098adce94222550ebdd9387a48dd41b989da5d61407d09c54d1cfa7",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1072061,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/_extended_timing_data.ff1pkl",
+        "sha256": "75a99285976331e7838b85baadbbe53d7e6911d41438ea20420cfd510640178f"
+      },
+      {
+        "bytes": 37033790,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/car_data.ff1pkl",
+        "sha256": "d8dcf1889ca085386e6b9ff4b2e356ed04d5df4b5dc89013c441d75c62103f45"
+      },
+      {
+        "bytes": 2302,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/driver_info.ff1pkl",
+        "sha256": "a6baf31238934dc0e2840958897174d4ea9f5cbcf22d0b2cea6a31b5340e0455"
+      },
+      {
+        "bytes": 1451,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/lap_count.ff1pkl",
+        "sha256": "7b6add6edc0cfe03bb5dd6147de672c0cfc1f450f4dc5dd96857a75a54302eee"
+      },
+      {
+        "bytes": 22179608,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/position_data.ff1pkl",
+        "sha256": "4d504b23071cfb16410d4fb802c3325c7a5b22f8107458bdea5e2b072f2dd790"
+      },
+      {
+        "bytes": 459,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/session_info.ff1pkl",
+        "sha256": "d11109d23d9785f991a3c4f64f90e375875c93744eadb103340b0bee8405e818"
+      },
+      {
+        "bytes": 216,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/session_status_data.ff1pkl",
+        "sha256": "e36e112703bb4b9e775bf670110c361b75169899229c2b024704678a25a7ccca"
+      },
+      {
+        "bytes": 112146,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/timing_app_data.ff1pkl",
+        "sha256": "67d16fdf93028d2d5f7f09a87b2250dcbc4d89be619055dbad108ce13a97ff68"
+      },
+      {
+        "bytes": 297,
+        "name": "2018/2018-11-11_Brazilian_Grand_Prix/2018-11-11_Race/track_status_data.ff1pkl",
+        "sha256": "bc96721ecaa4eb2f8be9828cdfdc95bd30dcead71c7b36193e8570bba6346669"
+      },
+      {
+        "bytes": 17055744,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "8e4bf6de592d1bc3f7807d66eff1f2703b414db2933bb3ed0b6f1a38765f1306"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 414062,
+    "event": "Brazilian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 77458074,
+    "participant_driver_count": 20,
+    "position_rows_written": 332439,
+    "provider": "FastF1",
+    "race_id": "2018:Brazilian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 82833808,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "c6e5541cc4e8d7462970aad692208eb6a2a5a6e8104bfe178ef335429d2de8ee",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 906587,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/_extended_timing_data.ff1pkl",
+        "sha256": "23826c4ca178b1b0e1a0de029e341754464b1477797afef8362874a68d8f15c9"
+      },
+      {
+        "bytes": 40462990,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/car_data.ff1pkl",
+        "sha256": "a18ce6e4f3a0177459e8e0d30e5cc691f68f195afafaa2d350681ed3d7871699"
+      },
+      {
+        "bytes": 2302,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/driver_info.ff1pkl",
+        "sha256": "3554960bee094aedff175e41baff22f8ef63ccda706b45f15b9ff5fe9375e6b9"
+      },
+      {
+        "bytes": 1139,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/lap_count.ff1pkl",
+        "sha256": "0859c47d2a0cd367959ad4307850497723ce599f89e5b4f896801a48d4da9489"
+      },
+      {
+        "bytes": 24362208,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/position_data.ff1pkl",
+        "sha256": "59e7946a02148ffba33e8323393dc9985ec7182defa9612af2d59ed4580d892b"
+      },
+      {
+        "bytes": 476,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/session_info.ff1pkl",
+        "sha256": "2fb01a25789a74de0b03b539696e3a58daa9734370217cac3e5f513e81bbe4f2"
+      },
+      {
+        "bytes": 214,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/session_status_data.ff1pkl",
+        "sha256": "c7b11266949fb6da54dbe64b3e943ba1e5e74e12da229674d65551a386a140db"
+      },
+      {
+        "bytes": 86692,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/timing_app_data.ff1pkl",
+        "sha256": "40ea1c0906a1485be62309eb97bce56b9a66506b4995f06c5e009843b86e14fd"
+      },
+      {
+        "bytes": 512,
+        "name": "2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/track_status_data.ff1pkl",
+        "sha256": "7dc3768c4ed0720d1407ef403e2e4dc39c6f217f24edd3cf1700b06a7ac22400"
+      },
+      {
+        "bytes": 17010688,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "9c13502781cd569708a5148f710086766ac15064d71a11a6c1ae7641733cf0d6"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 438984,
+    "event": "Abu Dhabi Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 82833808,
+    "participant_driver_count": 20,
+    "position_rows_written": 353374,
+    "provider": "FastF1",
+    "race_id": "2018:Abu Dhabi Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2018
+  },
+  {
+    "cache_bytes_after": 80766520,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "e2086bfcba564cf4be56add36c035ea82aba6dedb60caf7c5d6c6b91c67a1655",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1200689,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/_extended_timing_data.ff1pkl",
+        "sha256": "3d2118915924fc8bf3356ad3b57c77cde10390aad84c87ba450d019c1b6d58f2"
+      },
+      {
+        "bytes": 38632731,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/car_data.ff1pkl",
+        "sha256": "f8cf9515723f27b5e9dc28f1aba91e21b2afbb47e13859955b8df042887150a2"
+      },
+      {
+        "bytes": 2315,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/driver_info.ff1pkl",
+        "sha256": "5b395d90a09490b4b1a11fbe84c06e369cc3b410e15e33eebf30acd6f5bd8a10"
+      },
+      {
+        "bytes": 1181,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/lap_count.ff1pkl",
+        "sha256": "013c2add2d33fd43f50005c21001ad9f8ceb49c33f451dfa5c855565a8877bdb"
+      },
+      {
+        "bytes": 23017449,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/position_data.ff1pkl",
+        "sha256": "345cc736f1e6a963daf5cf8db560a2c57e8d6b36dec0446dccf7896643d19da8"
+      },
+      {
+        "bytes": 443,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/session_info.ff1pkl",
+        "sha256": "cd8a096ad9675867ae61cb74a7f4aa3f32e6e347bc30a3ebe0f60dc63948f6fc"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/session_status_data.ff1pkl",
+        "sha256": "eb6a3c05d91f66c60716d8f7e61b9a19e1ea2888dba8ae2b447d0c07d3e6d805"
+      },
+      {
+        "bytes": 97127,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/timing_app_data.ff1pkl",
+        "sha256": "09471b93ee27d8839c727ffc6cf7daf63763d7ea420a74c7c403ea5657ee018d"
+      },
+      {
+        "bytes": 865,
+        "name": "2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/track_status_data.ff1pkl",
+        "sha256": "5f5d1fd28d69d0f9fbf1ac6c07c3743a70af8a7b7a89c320ec17ab94b099b1e8"
+      },
+      {
+        "bytes": 17813504,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "fe8897a5ce515c4c50c656eb9880f912d502456fca1627ad16ebf70a950aa43a"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 458170,
+    "event": "Bahrain Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 80766520,
+    "participant_driver_count": 20,
+    "position_rows_written": 366254,
+    "provider": "FastF1",
+    "race_id": "2019:Bahrain Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 78241925,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "c13fda04ab8c35c20dcb394535695bb8b1ca2c59b0453980d8f12edb8c8666ed",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 933053,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/_extended_timing_data.ff1pkl",
+        "sha256": "cb961c7d04872b2ad487a8198e38f0d6a13198167c4293ad80f45ee3063a709c"
+      },
+      {
+        "bytes": 37934171,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/car_data.ff1pkl",
+        "sha256": "2f3d49fff13a056a50c0e06e8419cad94b600f1ced0fb95788351df6af40473a"
+      },
+      {
+        "bytes": 2315,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/driver_info.ff1pkl",
+        "sha256": "51b280020fd31f8b9b99ffdaa3a11c380e947607b6a3ea8983bcdde4a75d731c"
+      },
+      {
+        "bytes": 1166,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/lap_count.ff1pkl",
+        "sha256": "8a7c7750068f4c744ff0d44511049100b3bafaf7be7624d878e7115932b1edcb"
+      },
+      {
+        "bytes": 22659249,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/position_data.ff1pkl",
+        "sha256": "8c4ba4aa467b21e592bd6f676859c3c061bd12bf176e40e2743c04207d7c82ac"
+      },
+      {
+        "bytes": 445,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/session_info.ff1pkl",
+        "sha256": "b6a12ec58a523517371b693136f3c846f4e34a05a8a364d21647257d8a748c0a"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/session_status_data.ff1pkl",
+        "sha256": "7cbf8d653978fb693a18e61a1c74c9e09f47be96c4ee1b686f6d95ebcfc7835f"
+      },
+      {
+        "bytes": 97651,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/timing_app_data.ff1pkl",
+        "sha256": "378f952524f5fdc7f67dd4ebc78e903133a8aa62ec3d4245ed38654074055e8b"
+      },
+      {
+        "bytes": 283,
+        "name": "2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/track_status_data.ff1pkl",
+        "sha256": "465e681d380fde5f30d59a97430da40c4998d2e0d1e7ae62303a6a76e469020d"
+      },
+      {
+        "bytes": 16613376,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "6802a0e6557c1a403055ac508cf8c502aea84b0a9e4c162d76abf3cdbb62b2b8"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 444546,
+    "event": "Chinese Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 78241925,
+    "participant_driver_count": 20,
+    "position_rows_written": 355298,
+    "provider": "FastF1",
+    "race_id": "2019:Chinese Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 78207292,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "f8ef5161bfc99f2f9ba5a1caf4acec4500debc7073cb30ecb4c40b0c6c964299",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 954563,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/_extended_timing_data.ff1pkl",
+        "sha256": "d8bcf5060b3ea31ed86bfbe88eca089ec08c048cfb80b864b7b9c9872d995e7c"
+      },
+      {
+        "bytes": 37516411,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/car_data.ff1pkl",
+        "sha256": "e94c3dadbc38edc566ac9046a96dfeba1769f6d42476388919cb3115d632e675"
+      },
+      {
+        "bytes": 2315,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/driver_info.ff1pkl",
+        "sha256": "ec3b8e3ed01f514f03678602446357709b362cf9fc505308db732f218f769e0f"
+      },
+      {
+        "bytes": 1071,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/lap_count.ff1pkl",
+        "sha256": "56fe0f189b67e57aafa59cd3fa9985c5d1806021674da754964a6d204b56af6a"
+      },
+      {
+        "bytes": 22920649,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/position_data.ff1pkl",
+        "sha256": "9f32470032441f790127506bad88ac4684c69bd546e8102d43f0d4d985a872ec"
+      },
+      {
+        "bytes": 448,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/session_info.ff1pkl",
+        "sha256": "bb92209ea95d3e491be3dc3b21203067062c0dd06e61efdcb1bd3bd94b07bd51"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/session_status_data.ff1pkl",
+        "sha256": "1228055fa6a38ddc085bbbebc11557aea588aa97dbea646e1efa7fd96628c020"
+      },
+      {
+        "bytes": 99306,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/timing_app_data.ff1pkl",
+        "sha256": "17d2e9cc0ce10a0d2dce4951ff604e22f854a62226e20da4ec645a5482147f00"
+      },
+      {
+        "bytes": 633,
+        "name": "2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/track_status_data.ff1pkl",
+        "sha256": "048a057fa2562298f543defe751dcce6411da1eefd27dca60d6d8df1caf7673c"
+      },
+      {
+        "bytes": 16711680,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "432aae16551b9ee41deb3417a23d4b0e8cba3a2969860334816a5c74662b204f"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 430129,
+    "event": "Azerbaijan Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 78207292,
+    "participant_driver_count": 20,
+    "position_rows_written": 352215,
+    "provider": "FastF1",
+    "race_id": "2019:Azerbaijan Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 76706618,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "3749ec3a2270daac8bd4220cb827dfd40a42ca3ef36304361b2c605ffcc8dc39",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 975885,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/_extended_timing_data.ff1pkl",
+        "sha256": "ecdd0f677bf764e9577de021e94e3f99f7c820d68285f497eff4b0f52082801b"
+      },
+      {
+        "bytes": 36726991,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/car_data.ff1pkl",
+        "sha256": "f6b5527fadbd2c8f12361390f8ab4c14b2c8b03db5ee4ee2132de89c9a04a5ac"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/driver_info.ff1pkl",
+        "sha256": "5798ae4220701b5b3bff5579526cd41e3b26aa4839032293bea9bd129389efbf"
+      },
+      {
+        "bytes": 1434,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/lap_count.ff1pkl",
+        "sha256": "3811c94c3fe5b0fc37c603b4541f1b04b71d27f10a0f2bec8f36cd2765c1d9c4"
+      },
+      {
+        "bytes": 22389049,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/position_data.ff1pkl",
+        "sha256": "4a2abed6ebc5111c9649c95db4fbd974b98d156ce9a2c14edf5357c84b23661d"
+      },
+      {
+        "bytes": 454,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/session_info.ff1pkl",
+        "sha256": "38f923fe647072af8da8ba4972d81cb35d00bbab1025b61850e04e0ec07a84e3"
+      },
+      {
+        "bytes": 214,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/session_status_data.ff1pkl",
+        "sha256": "82f99a93fe39f647369a8c89116d869e859dce384cfd3cbfb44a011376f67940"
+      },
+      {
+        "bytes": 121122,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/timing_app_data.ff1pkl",
+        "sha256": "7678be19221ac2ee70c9c6a9828ea569eaf1ac08a919019923aa496432b031a9"
+      },
+      {
+        "bytes": 461,
+        "name": "2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/track_status_data.ff1pkl",
+        "sha256": "649cf5aae73ca30cb9e8ca78ca4551683ef3428f2696c5cbc7a14961cd364f3b"
+      },
+      {
+        "bytes": 16486400,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "d9b6212d8a5fa17d4278113f2e6e221f6f75f6c2bd000040fbd2be4e12c74b8d"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 421573,
+    "event": "Canadian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 76706618,
+    "participant_driver_count": 20,
+    "position_rows_written": 344875,
+    "provider": "FastF1",
+    "race_id": "2019:Canadian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 75172773,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "fde008e95b6b5cfef990165ad41d0a66d473848dbd12984becbdfb24cf4a5874",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1063692,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/_extended_timing_data.ff1pkl",
+        "sha256": "5198a056647938738ee4cee1db33f254697928dea7fad6eb3b695c1fb958a9ad"
+      },
+      {
+        "bytes": 35903311,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/car_data.ff1pkl",
+        "sha256": "7cc3bd54668ef7c30d39be7b13e488eba71744394852d7edc50cc00de2f8af43"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/driver_info.ff1pkl",
+        "sha256": "07c0ed9f8efc686fba56cc6c24fdd1d5cefa0ecfea253fef7bed738d768dce7c"
+      },
+      {
+        "bytes": 1105,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/lap_count.ff1pkl",
+        "sha256": "512dd88d5e8957712de79d02078d8ef42022e0dbdd3ff9f3ee9621f9afcf9990"
+      },
+      {
+        "bytes": 21486969,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/position_data.ff1pkl",
+        "sha256": "fce5ee42b49f76474aaec1864e0e08c836b544bbfc8abc13866b3026e86a4175"
+      },
+      {
+        "bytes": 451,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/session_info.ff1pkl",
+        "sha256": "d6aefd890a82cbdd1ff0c33689474d31cb91e241dafc28b40cc433a974cb4848"
+      },
+      {
+        "bytes": 214,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/session_status_data.ff1pkl",
+        "sha256": "9d6ff1afc036d7e342cfebdc64416e5ba2606c6430e01cdd8a0fbd4626c69203"
+      },
+      {
+        "bytes": 110856,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/timing_app_data.ff1pkl",
+        "sha256": "af5ffa9f06e71669f8c91595fb10ea8be16472c5409bf824d0d2fceb6540f280"
+      },
+      {
+        "bytes": 479,
+        "name": "2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/track_status_data.ff1pkl",
+        "sha256": "81d31c7e3a8484b116cc601b246db858d4d3a709a8c7a2f6eeb1977478f3b4e5"
+      },
+      {
+        "bytes": 16601088,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "32f7a44e4f156297d770bb63e80f25ee0898d400e2574082df822f5c6a52a4e9"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 425219,
+    "event": "French Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 75172773,
+    "participant_driver_count": 20,
+    "position_rows_written": 341213,
+    "provider": "FastF1",
+    "race_id": "2019:French Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 73916500,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "b6525a0137a282e59b80f265f4821be76c1cef7eaca521699a8f801c1804d6eb",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1141231,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/_extended_timing_data.ff1pkl",
+        "sha256": "14e29902667df44fe2e0acb54a49599922f7ce4cad781b06653f26e5bf0f3017"
+      },
+      {
+        "bytes": 35073731,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/car_data.ff1pkl",
+        "sha256": "58e4d44acca7db7babb28df17e38c23678bc5bbb6736d57ad2e96ca8496b87eb"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/driver_info.ff1pkl",
+        "sha256": "e3312712d14bf0b9a42b1028c8da5472c7bfb7f2691a2210587c198a7df6a4e9"
+      },
+      {
+        "bytes": 1451,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/lap_count.ff1pkl",
+        "sha256": "af9e26f7f75432622acc25122e83df62f81f502e4c7f6eed6ea4c09239e7f3e7"
+      },
+      {
+        "bytes": 20974769,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/position_data.ff1pkl",
+        "sha256": "11ed9d65e12237662b194943e2cde9e236fe621d3289574231380e69aac09ae1"
+      },
+      {
+        "bytes": 451,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/session_info.ff1pkl",
+        "sha256": "b57cfb8274af5d9bb9ceff968f40e28df2f9852f2e14a519c9fa40bf81841972"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/session_status_data.ff1pkl",
+        "sha256": "a46a01ded1ee2b10f9b99585d2b986f35519c9320f0d368740e6365ee94730ec"
+      },
+      {
+        "bytes": 127020,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/timing_app_data.ff1pkl",
+        "sha256": "4a6475f3251e363caab3858b3ed1cd73c1f8e81637b715861fe3a80952d4b497"
+      },
+      {
+        "bytes": 127,
+        "name": "2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/track_status_data.ff1pkl",
+        "sha256": "b13c86d0813ae67fbac51c6e40f245b77e5d406e9a3495c908e3af16352a279e"
+      },
+      {
+        "bytes": 16592896,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "2489bad661e4783639a5cffb00ccba117e6c54db5340c9a66eed0ff57901528a"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 415099,
+    "event": "Austrian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 73916500,
+    "participant_driver_count": 20,
+    "position_rows_written": 332933,
+    "provider": "FastF1",
+    "race_id": "2019:Austrian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 72092179,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "582c7b0a90191c73fc4cf0d51b76fda90a037764b21997b35ad8c315d0552798",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 918409,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/_extended_timing_data.ff1pkl",
+        "sha256": "db02ef0f59d6e942f87724607933ebbbe0356ff07ad3576e8b36a5101ab1ac93"
+      },
+      {
+        "bytes": 35148071,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/car_data.ff1pkl",
+        "sha256": "8e99bfe82fe6c5a2040ffbeb50646613cc0c4afdc1ac574631745fe315dea079"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/driver_info.ff1pkl",
+        "sha256": "ad0e575333634a64489bf612c6c6eda093912d04c2e32a091a4c9c220ff04025"
+      },
+      {
+        "bytes": 1084,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/lap_count.ff1pkl",
+        "sha256": "63199bf9a102be5635d9a0b306931b9f23aae126e98de53ca59508526d393819"
+      },
+      {
+        "bytes": 20907889,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/position_data.ff1pkl",
+        "sha256": "5596f69dfe3f30e92562d94fb672fe25637a4987eb255f5da9ad45f6a33b5fbe"
+      },
+      {
+        "bytes": 459,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/session_info.ff1pkl",
+        "sha256": "9b922a9316a01270fd3df74fe9e00cf2f2661e92381ee1b1b34abb5afe6a0adf"
+      },
+      {
+        "bytes": 212,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/session_status_data.ff1pkl",
+        "sha256": "ef9aac3974cc05bc9820d85276bc744519170df1708b4f45e9d30bbdf0dd03ac"
+      },
+      {
+        "bytes": 103371,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/timing_app_data.ff1pkl",
+        "sha256": "c47fd09a85a19c807816c359fd13e0f3b3e58593b233eb3a7d044926cebcc602"
+      },
+      {
+        "bytes": 332,
+        "name": "2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/track_status_data.ff1pkl",
+        "sha256": "a20f8a470c39ce53d19469252b68a9d808864101740c27eff9fa166bc96169d9"
+      },
+      {
+        "bytes": 15007744,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "7079ea12057895059ac02b5fe303a3eb08f3e751919ba8fb9c0a3cb902aa592a"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 366861,
+    "event": "British Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 72092179,
+    "participant_driver_count": 20,
+    "position_rows_written": 292815,
+    "provider": "FastF1",
+    "race_id": "2019:British Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 89310735,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "9bbd251fdc3c47d67691ed5335a164452b93a12cbf534772eda0b337910d910b",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 951644,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/_extended_timing_data.ff1pkl",
+        "sha256": "7fd129f614c09f2f646ac0397ffc194e1bde8fdf663a9c8583111ce0a517bd8c"
+      },
+      {
+        "bytes": 43836731,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/car_data.ff1pkl",
+        "sha256": "77ae4c33a81b4e0a1b64ed8cd7dde208958aacb56d358eb722edb180fd5e8f6a"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/driver_info.ff1pkl",
+        "sha256": "af4eb4c75185365f79be7380a414eaf9e81a87812529cb78f3d7fb0ccce4d153"
+      },
+      {
+        "bytes": 1327,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/lap_count.ff1pkl",
+        "sha256": "645d870eec4d3e6ec4d4424903fe9b99129beebcd83af0359a2e325001e092b3"
+      },
+      {
+        "bytes": 26097729,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/position_data.ff1pkl",
+        "sha256": "4bc744edae86161833276cc19f2c5a174f2c020b9ed26730680f524ba610070b"
+      },
+      {
+        "bytes": 449,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/session_info.ff1pkl",
+        "sha256": "ef3c4c5841068aedd3af70cd5088f448f49d42bf0e5670cb8b3fd74435e656b0"
+      },
+      {
+        "bytes": 214,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/session_status_data.ff1pkl",
+        "sha256": "2967801b5fc642ac02fd12f909b0700657605986c6323c174c8c0714179e61d4"
+      },
+      {
+        "bytes": 116243,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/timing_app_data.ff1pkl",
+        "sha256": "56b3e8a0cb45ef383811b8859fc3915d8415a20fd16fecebf9c83e73821f608b"
+      },
+      {
+        "bytes": 862,
+        "name": "2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/track_status_data.ff1pkl",
+        "sha256": "11d03e9e06e03bbb8125d9680e22828d078f40d3067a48b19ddd09d6c29dbad0"
+      },
+      {
+        "bytes": 18300928,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "d3d7d96829712fea6ef01a821a164bcc1b7df55df636a2444aa9d324dac82a3d"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 440547,
+    "event": "German Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 89310735,
+    "participant_driver_count": 20,
+    "position_rows_written": 351886,
+    "provider": "FastF1",
+    "race_id": "2019:German Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 81320580,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "2591d0d830ab749ada2d62d0a7dec6f96968070ee6d0155611a93afaa416e349",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1086589,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/_extended_timing_data.ff1pkl",
+        "sha256": "537aa9f9f4885e7be8238044af8196c216147988506bf86a5350f9b0a7ae376d"
+      },
+      {
+        "bytes": 38681111,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/car_data.ff1pkl",
+        "sha256": "2696b71e921488eab5ac59dbaec5f90e8dd3a937b1dba4be89a4bea574926a6c"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/driver_info.ff1pkl",
+        "sha256": "293b336761c5df7eedc87495f9c269a34a7c0a364f326f434ae2d27fbd54dce2"
+      },
+      {
+        "bytes": 1429,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/lap_count.ff1pkl",
+        "sha256": "702a6e7717a255eabd516d0c43bf7539faef92344d9fecedaefe598a820927bb"
+      },
+      {
+        "bytes": 23196089,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/position_data.ff1pkl",
+        "sha256": "0c73bb6d2d322ac67edf21104dad2b015813fea4f9e354f76af887f495706bf1"
+      },
+      {
+        "bytes": 454,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/session_info.ff1pkl",
+        "sha256": "7c2da1337b0040533a8218ceba6ef684d02ca19775f4a2a9db509124606a36d5"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/session_status_data.ff1pkl",
+        "sha256": "ad039ad83959704ed8d8151240ddbd1b021ff016469c9eec0567d33335aace75"
+      },
+      {
+        "bytes": 122695,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/timing_app_data.ff1pkl",
+        "sha256": "428d0040feb48cfeb21ebe6633120d0fd1d0a0093abf210f3ccbd24ae7f010fd"
+      },
+      {
+        "bytes": 189,
+        "name": "2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/track_status_data.ff1pkl",
+        "sha256": "65cb3342640dfde2f2cf2ba16a73fc0dcea8bf7f0f5751e29ad13e251db37e17"
+      },
+      {
+        "bytes": 18227200,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "32267393038238c2fd4461380e9a4db5b348ec8e7be2f8e8c1b25205bece4733"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 476494,
+    "event": "Hungarian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 81320580,
+    "participant_driver_count": 20,
+    "position_rows_written": 381898,
+    "provider": "FastF1",
+    "race_id": "2019:Hungarian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 72462273,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "7422576cee4f1a467e5c521c05c8719cdc4346fb3e26c4e5b285a3249176cb57",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 851827,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/_extended_timing_data.ff1pkl",
+        "sha256": "a1a296c6bfb0e673a431c06db6a7bc31295ecc0f10ed3f064cedf2c450101460"
+      },
+      {
+        "bytes": 34808231,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/car_data.ff1pkl",
+        "sha256": "8b914f7a518f8e667a947d2bfcd3552664f97bff28f7094735b24370d8822b2b"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/driver_info.ff1pkl",
+        "sha256": "9382e857bb093a3a4b29367388e4279b5fbacde90f54b59030c895be72394af2"
+      },
+      {
+        "bytes": 936,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/lap_count.ff1pkl",
+        "sha256": "7298f40e34e0f99ee09608c1db465cc9f3a9bdc74ca6fe07ddec70a8a5b53502"
+      },
+      {
+        "bytes": 21354089,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/position_data.ff1pkl",
+        "sha256": "b41ac165afdf3967ee4b855d7a7646bc84e8f2107abaac044a626aacf86f751e"
+      },
+      {
+        "bytes": 465,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/session_info.ff1pkl",
+        "sha256": "9dac18752c170dd4a10fb9aaa9af7ae1de5c0b96e6240ea8b747bf0f7782c7e3"
+      },
+      {
+        "bytes": 214,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/session_status_data.ff1pkl",
+        "sha256": "8e077ea1c6d433bd32b1263a0d4fd51f7cc3316ce87353f4505325e9aad0778f"
+      },
+      {
+        "bytes": 77396,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/timing_app_data.ff1pkl",
+        "sha256": "06b3eac62107ad2c879c9395b00da78fd6a09cd9b5ad84d9301d851453d52b7f"
+      },
+      {
+        "bytes": 411,
+        "name": "2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/track_status_data.ff1pkl",
+        "sha256": "5de804fda01865ea36eb66db9b17055d104d4b2f715a16c178765596c92e29fd"
+      },
+      {
+        "bytes": 15364096,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "23ebec4e1f327a10a383cfab0e337ca8a994c6e6a94a476889e9a319d76004bc"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 375646,
+    "event": "Belgian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 72462273,
+    "participant_driver_count": 20,
+    "position_rows_written": 308797,
+    "provider": "FastF1",
+    "race_id": "2019:Belgian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 67848356,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "f258bcc4fe57b7f295ac6115c4386838406bc0bd6d96c46423784ed73f30112b",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 987831,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/_extended_timing_data.ff1pkl",
+        "sha256": "e6d11bf0c0d0f8766bb67a24c0f17ddd7cf8ceb1cf363c17f11a0a066ebe73d5"
+      },
+      {
+        "bytes": 32412751,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/car_data.ff1pkl",
+        "sha256": "054f750999fcc1f94849c870c2c7618a2877e9193f4b311f52f86d169edc5ab4"
+      },
+      {
+        "bytes": 4608,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/driver_info.ff1pkl",
+        "sha256": "866c2aefef7dadc93e22f3809e30b8971973d81a08e75e99cb712bf4de3c0fa8"
+      },
+      {
+        "bytes": 1105,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/lap_count.ff1pkl",
+        "sha256": "640a6bee82a2f44de77d2719d9fdad978987296788be53f501da54cb91a99ee7"
+      },
+      {
+        "bytes": 19828929,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/position_data.ff1pkl",
+        "sha256": "b1b566ab23047ea4d14e13a7ffe5500eee072c4f65056ccd671c29539f593b67"
+      },
+      {
+        "bytes": 439,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/session_info.ff1pkl",
+        "sha256": "8d86427e1209881b66cde21942b894a4c117db9b765b8398b4a56e7a9ae3e281"
+      },
+      {
+        "bytes": 214,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/session_status_data.ff1pkl",
+        "sha256": "073a87e71e9a1ebcdab7758d1f86524e7bdfb6786de647c2ba5799b475074a29"
+      },
+      {
+        "bytes": 95720,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/timing_app_data.ff1pkl",
+        "sha256": "772822e0644a9fa97034fb8d6d7a6e3a0a37f88d33f572313bce2db011e84b42"
+      },
+      {
+        "bytes": 535,
+        "name": "2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/track_status_data.ff1pkl",
+        "sha256": "bce9051a44fee06fde46d829e083e2ee84c457972fdf421750f0def8588873d2"
+      },
+      {
+        "bytes": 14516224,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "61a3c17af6cc86913f69b30b51a2a51a633c1c9745694904a5661219bce13433"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 354821,
+    "event": "Italian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 67848356,
+    "participant_driver_count": 20,
+    "position_rows_written": 290978,
+    "provider": "FastF1",
+    "race_id": "2019:Italian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 90784440,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "37a012e89e81cd1857241f56ed87d2f650b400c358dad96265aff02127fc5da4",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1126926,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/_extended_timing_data.ff1pkl",
+        "sha256": "2bb8845d437071fa0a2f615bd86b2499df211f236380f822a715c8fbc1cbd374"
+      },
+      {
+        "bytes": 38820351,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/car_data.ff1pkl",
+        "sha256": "b5a100732def011e2068593beb7536723d8c8439d3863144579b45e80644c19b"
+      },
+      {
+        "bytes": 2846,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/driver_info.ff1pkl",
+        "sha256": "ab5b7a73c5c0d2d2c31333f9277bb682029369777423b06e1aae2d5c4c0db8ae"
+      },
+      {
+        "bytes": 1441,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/lap_count.ff1pkl",
+        "sha256": "5392fc650fc4a1d9a3466143c43984e1e76b36da3e039c8478e7a2b463e60caf"
+      },
+      {
+        "bytes": 29351856,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/position_data.ff1pkl",
+        "sha256": "aca84ea08b2e81f56ff0991b41b620f736219ac33ed6153194dc9b49fe5e56da"
+      },
+      {
+        "bytes": 459,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/session_info.ff1pkl",
+        "sha256": "e37d5bad01982419ab32e642f650d71626f899e4c1261dac58826178c8c8bf2b"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/session_status_data.ff1pkl",
+        "sha256": "a6d81ede0ccf6f2abe175f006f67e18ad377764d407fbf26ea48091944cf8958"
+      },
+      {
+        "bytes": 119317,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/timing_app_data.ff1pkl",
+        "sha256": "8b1d3db528f6422cfdf7f0b669526e38dd784257dbc1f71f43c349198a08fdd0"
+      },
+      {
+        "bytes": 388,
+        "name": "2019/2019-11-17_Brazilian_Grand_Prix/2019-11-17_Race/track_status_data.ff1pkl",
+        "sha256": "dbb240fab1f59a52c9293e0de325e3f50d32f2ae5281bf7bdd187891da57cae9"
+      },
+      {
+        "bytes": 21360640,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "69f6b6c37acb88738511c7f97018722e8ffece42dd089acbf73b818d49c3c159"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 456324,
+    "event": "Brazilian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 90784440,
+    "participant_driver_count": 20,
+    "position_rows_written": 367368,
+    "provider": "FastF1",
+    "race_id": "2019:Brazilian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 90893912,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "2c866effde9a752ce5a090697744bbf596efbe4210b7981ea04eec802a6e988b",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1027483,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/_extended_timing_data.ff1pkl",
+        "sha256": "d5d0bcf3cb56e6aa1ecec6029804e57390d8c84838ca31fcaa252fc8a997e4e5"
+      },
+      {
+        "bytes": 39275871,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/car_data.ff1pkl",
+        "sha256": "1da187ee9ebe7001c468ba401a2062181ac80479e40f133e1d4e23a9c1e63611"
+      },
+      {
+        "bytes": 5120,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/driver_info.ff1pkl",
+        "sha256": "673edf73a5923608b9842b581f295ee9b479a1d64d24703e2f89c7de8b234324"
+      },
+      {
+        "bytes": 1142,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/lap_count.ff1pkl",
+        "sha256": "fe26b19b6ba27e782804a41ba4e0283a111664342292193a08b9b493a73ff7cd"
+      },
+      {
+        "bytes": 29718778,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/position_data.ff1pkl",
+        "sha256": "c11e0f6b4ad98b50c8f4468002284acce01a39def7ed981dda36ca7b11cc565a"
+      },
+      {
+        "bytes": 476,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/session_info.ff1pkl",
+        "sha256": "3fd8fef87620580639cbb5874ae79eef6d1681148bf5a06ad68514fccbee1da6"
+      },
+      {
+        "bytes": 216,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/session_status_data.ff1pkl",
+        "sha256": "4f56199ddb723da11a5ae256cf5080a00e85e0c2e53f44a2469765bba7ac729d"
+      },
+      {
+        "bytes": 102017,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/timing_app_data.ff1pkl",
+        "sha256": "c3691c854617c682d7beb4a1468b58063b711a276c69f85e3a0df575bfc6f8d4"
+      },
+      {
+        "bytes": 185,
+        "name": "2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/track_status_data.ff1pkl",
+        "sha256": "a8968fbe52109ba10e1389f5497e156d8b0a1ec394ab7c5710198503c91e313f"
+      },
+      {
+        "bytes": 20762624,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "e7317b25d06d30ddd3d39929e64cfcfccd15c1cfe64acecefae2f8472b601c84"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 471410,
+    "event": "Abu Dhabi Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 90893912,
+    "participant_driver_count": 20,
+    "position_rows_written": 380053,
+    "provider": "FastF1",
+    "race_id": "2019:Abu Dhabi Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2019
+  },
+  {
+    "cache_bytes_after": 102515034,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "4d2fe81a1bf2e51867287cad5939388d2d835abca34bce9377171ead12b8f5ee",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 850520,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/_extended_timing_data.ff1pkl",
+        "sha256": "65a28bf89219741b644cbe8c975c3ff462bc0b98d2fb3b209dcf5931c1ac6064"
+      },
+      {
+        "bytes": 36797790,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/car_data.ff1pkl",
+        "sha256": "b6c3cf703c279623033a34d46493729bc58168503ef4d0424c4c9e2c370745cc"
+      },
+      {
+        "bytes": 5203,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/driver_info.ff1pkl",
+        "sha256": "ab9715a480677ca750bb12ab928d295e4ba7f106dcf7913c4ee5c9d7fe9dbd56"
+      },
+      {
+        "bytes": 1374,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/lap_count.ff1pkl",
+        "sha256": "32e32db4461be6425c48786dcca0c1b44d64bbdde73c55ff5533abb34c816785"
+      },
+      {
+        "bytes": 44604863,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/position_data.ff1pkl",
+        "sha256": "2c5e77c053368596fdff5d2c080abec96e7b06dd1c975b1667f531963e30bacd"
+      },
+      {
+        "bytes": 451,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/session_info.ff1pkl",
+        "sha256": "2a8deeebff8a00a6ad372c0ad9a4bfefb7f2bc5994e7d382dafc22ff57ef73c4"
+      },
+      {
+        "bytes": 210,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/session_status_data.ff1pkl",
+        "sha256": "ffe68a5c69e9a729dbbb25dc196636301cb2bdadac03f6aa804658fb79264d16"
+      },
+      {
+        "bytes": 113971,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/timing_app_data.ff1pkl",
+        "sha256": "06f76eb743104dcf94f2458baf2a580ea46dcfc37c9b9cd19bef24f84ebc1ec3"
+      },
+      {
+        "bytes": 620,
+        "name": "2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/track_status_data.ff1pkl",
+        "sha256": "a6d3263e32f219d6a39460356e9d9e8d998d47845c0a9fcb08c2bc363211fda2"
+      },
+      {
+        "bytes": 20140032,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "c6800d9a9745c0fa097e05fb29ef37bcbe20feab8e44f3e6a76a6562cd09cc6e"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 338344,
+    "event": "Austrian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 102515034,
+    "participant_driver_count": 20,
+    "position_rows_written": 381627,
+    "provider": "FastF1",
+    "race_id": "2020:Austrian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 103921557,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "c5b17bb5ef8e9ebfac7e0e8580a8f5a53676ec512deb36a1e3f1736b4a75cb02",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 900957,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/_extended_timing_data.ff1pkl",
+        "sha256": "59c63e0d6646e9b2c8ea9eda21fbb67842b0b4b8ca668e73b55221dc13c3dbb6"
+      },
+      {
+        "bytes": 37580130,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/car_data.ff1pkl",
+        "sha256": "7c8088c70473a68cdfef0492a3e97451ad8b558e2cd22474965a227e6acc703b"
+      },
+      {
+        "bytes": 4983,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/driver_info.ff1pkl",
+        "sha256": "1889fd02e92f3a6ce0455b67711e10b9e0394214a674ae11386abadde6bfc99c"
+      },
+      {
+        "bytes": 1086,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/lap_count.ff1pkl",
+        "sha256": "0c3b111bef7f7a85823edccee0809666b20e62521489470d05071b37b93cbbeb"
+      },
+      {
+        "bytes": 44763547,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/position_data.ff1pkl",
+        "sha256": "52b7da3488500125e606fe9ac4804166c8e77b8d13bb87b5372fda44dc568238"
+      },
+      {
+        "bytes": 459,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/session_info.ff1pkl",
+        "sha256": "a9184ffd90ec10dc599c52e66a37d5377a05ec912ea4be924f187a424518e3af"
+      },
+      {
+        "bytes": 212,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/session_status_data.ff1pkl",
+        "sha256": "ff7e92e4adf8eb8691d19d40107ffd0fc46fe04b4321bea38653ba13c17145d0"
+      },
+      {
+        "bytes": 99708,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/timing_app_data.ff1pkl",
+        "sha256": "35f7172c5032ba9ddec2e397412b07c35410f773890cde60fa4cf95c0c6aef24"
+      },
+      {
+        "bytes": 363,
+        "name": "2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/track_status_data.ff1pkl",
+        "sha256": "bc004a728521dd4c394c2c455f0a56156fd11105c683e8ce09f7ee6202dedbb1"
+      },
+      {
+        "bytes": 20570112,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "181833ab5c41d19ebaabef99ce06f4717e7daf1b8e7dd5cf53432a159bd7fdbf"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 381195,
+    "event": "British Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [
+      "HUL"
+    ],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 103921557,
+    "participant_driver_count": 19,
+    "position_rows_written": 419448,
+    "provider": "FastF1",
+    "race_id": "2020:British Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 90528097,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "f64d3b0e3147490562dd02b3aa577e437176aecfaf87313b495b659ec8baeec7",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1035970,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/_extended_timing_data.ff1pkl",
+        "sha256": "1b931746c98a496901dc88cd912e4b880b3278fd044e4bb38ffb5d02d9b18e2e"
+      },
+      {
+        "bytes": 33818170,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/car_data.ff1pkl",
+        "sha256": "d4abec5ba5d962a4d70350ab9a3641c00530b41c2ef25c60a5430bda57d57682"
+      },
+      {
+        "bytes": 4983,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/driver_info.ff1pkl",
+        "sha256": "827b6fdce3d19e8d6db79c6aa8f1cbdc5ed163e1edde481ac52a4a4bb2cecb61"
+      },
+      {
+        "bytes": 1084,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/lap_count.ff1pkl",
+        "sha256": "9bee89e86815628bfa9b14403e6e7a6bd74bf77745db66614ceda1c33646aca8"
+      },
+      {
+        "bytes": 34882511,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/position_data.ff1pkl",
+        "sha256": "f09c81b59fef59d2ee5dc241d99ba22c3f9e25faf388e8242de8d37d3b53c385"
+      },
+      {
+        "bytes": 477,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/session_info.ff1pkl",
+        "sha256": "11e9dbc23f3f3091dd270a0de696ef8aa08413f6a0709f66d23e8d7d3153dfe3"
+      },
+      {
+        "bytes": 212,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/session_status_data.ff1pkl",
+        "sha256": "de9138adb7eab32523a052650b30d6fb3b43d459de06ddb30397072a6fe51329"
+      },
+      {
+        "bytes": 107843,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/timing_app_data.ff1pkl",
+        "sha256": "507e3fd4e837420f3c71b247fcc8f49b98f229713f1d30451f165a52ff0bb0b2"
+      },
+      {
+        "bytes": 239,
+        "name": "2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/track_status_data.ff1pkl",
+        "sha256": "cadc0e1588c3fcc068894d44fd579605ba0dd2e1c120be0fd0edf1313d0837d3"
+      },
+      {
+        "bytes": 20676608,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "3e29181ab0ae3c2c51db350ce11c78b51dc3efbce2a009c3f04cf87e466dfbeb"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 394392,
+    "event": "70th Anniversary Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 90528097,
+    "participant_driver_count": 20,
+    "position_rows_written": 436407,
+    "provider": "FastF1",
+    "race_id": "2020:70th Anniversary Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 101118267,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "5e238fbe381a3dcf684c8ca3643e7def60507f0f22e0dc5ee9b672b1f5af8f83",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1072697,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/_extended_timing_data.ff1pkl",
+        "sha256": "3edc981c78a8de9675a234f9d714cc7373cd9d6fd4705bf964dcad99d5dbc22a"
+      },
+      {
+        "bytes": 37767750,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/car_data.ff1pkl",
+        "sha256": "7c7575ff691c8041bf729962d120718ccdffd3943fe1c6f2815624f025ae25ab"
+      },
+      {
+        "bytes": 5095,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/driver_info.ff1pkl",
+        "sha256": "2a01ef2be845c52eb81d11edd09296cf361d2f53839b8a432a824aeb44719e56"
+      },
+      {
+        "bytes": 1358,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/lap_count.ff1pkl",
+        "sha256": "11cee4d66b990d9c51cf30f101e1da49c1346988b3f7ae8b42150ae1437da7d6"
+      },
+      {
+        "bytes": 38875971,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/position_data.ff1pkl",
+        "sha256": "844cfc73183a7ca9c0985d7389a464b022d71ebfabbea526c40a8a7b97dff7e4"
+      },
+      {
+        "bytes": 447,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/session_info.ff1pkl",
+        "sha256": "54337e9d3e9b253d4e6779ad828d6bab5443bf4cb85022935114c51259beb3a6"
+      },
+      {
+        "bytes": 216,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/session_status_data.ff1pkl",
+        "sha256": "909835868dc9d8b3e440356e203340aecb7c685e85a1929bc5492ae9fa961840"
+      },
+      {
+        "bytes": 116976,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/timing_app_data.ff1pkl",
+        "sha256": "821a65755d7ea48bef18416f6f615712d67328afe81a7f46420b4ee4e6292af0"
+      },
+      {
+        "bytes": 189,
+        "name": "2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/track_status_data.ff1pkl",
+        "sha256": "9b07aa19e61e2a8ec6781cbde7aac1a95388af9a75dff2e095cd6bf33f26b233"
+      },
+      {
+        "bytes": 23277568,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "65e0e3d30f513ba470b881237a4b599cf5cc1e84d1f2b8ef9ef43b9552eb4b71"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 447097,
+    "event": "Spanish Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 101118267,
+    "participant_driver_count": 20,
+    "position_rows_written": 495493,
+    "provider": "FastF1",
+    "race_id": "2020:Spanish Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 98562535,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "019703f659adf76383b9530355580be9b7a56c545a6f06d80c5f12d1452aa4c1",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 828818,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/_extended_timing_data.ff1pkl",
+        "sha256": "19b7d39ff31ad80ff6f08dadadd687eb3a8f959ccecded6ded5b0c45d8f83307"
+      },
+      {
+        "bytes": 35460810,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/car_data.ff1pkl",
+        "sha256": "bc8ea5c9d85c1e9e02a60d84b24be0f6094d8a09b1cd1711b519faf15a35b2f1"
+      },
+      {
+        "bytes": 5095,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/driver_info.ff1pkl",
+        "sha256": "5a0ebd4a1fa2caa56df75c4b42d4be411419d4c730e7e5187438f0ff051d3181"
+      },
+      {
+        "bytes": 924,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/lap_count.ff1pkl",
+        "sha256": "eebb9101727bc7c48edd5af04915d5a6298e5b4cee75d54521fd54b8a9b281ba"
+      },
+      {
+        "bytes": 42425593,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/position_data.ff1pkl",
+        "sha256": "63edc61e0f3f2fa39d1921c5624a4edace34aeac0a6503a01927ef590255db1e"
+      },
+      {
+        "bytes": 465,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/session_info.ff1pkl",
+        "sha256": "95eef0ffabcc9fb284f440030a858266b8eb48fc53acb0a032663b882f68a4f7"
+      },
+      {
+        "bytes": 216,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/session_status_data.ff1pkl",
+        "sha256": "f0d88e5bce8d0565d8cfeebe6233ff78a73a6a6d0164fc0bfe3d7cfa661954e7"
+      },
+      {
+        "bytes": 81149,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/timing_app_data.ff1pkl",
+        "sha256": "490dba8b39abc4b4821736b68bbcc521b3a9038eb87ab654f34834d7f1c64d0a"
+      },
+      {
+        "bytes": 361,
+        "name": "2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/track_status_data.ff1pkl",
+        "sha256": "8021835119d9eeb366b2773fe1dcb8c03fe6b306e919abe7cb6194ecf3603a9d"
+      },
+      {
+        "bytes": 19759104,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "28e5d1646ee05c9163bdcd12e97b832b1469ddf139187b7bb22b3888aaa190b0"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 367626,
+    "event": "Belgian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [
+      "SAI"
+    ],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 98562535,
+    "participant_driver_count": 19,
+    "position_rows_written": 405884,
+    "provider": "FastF1",
+    "race_id": "2020:Belgian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 113999784,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "cab3eb4413dd32aa22ef1b336eee6c525faec3217819cde50b000dbf1942813c",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 936756,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/_extended_timing_data.ff1pkl",
+        "sha256": "8d9196081cba4451488e183e6d553908ec41b370e07d3b8548a3acfe5917fc15"
+      },
+      {
+        "bytes": 41955730,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/car_data.ff1pkl",
+        "sha256": "5940350c6a0e04ffa0c159eefaa992eafdf678386b01445094096ec138033534"
+      },
+      {
+        "bytes": 5095,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/driver_info.ff1pkl",
+        "sha256": "ffb8d4aa9814ea3cefa5be33f91e32676366e02787749f4747437582d7c31816"
+      },
+      {
+        "bytes": 1107,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/lap_count.ff1pkl",
+        "sha256": "6f28f1d13204ac124a91a8165d6e050143fad5fac8a392cca0633f2d242d6b5f"
+      },
+      {
+        "bytes": 50203879,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/position_data.ff1pkl",
+        "sha256": "65937c31554bea7ee8a8827d013f9e4ed28807f1ee6ddab986dd4e93bc6059ec"
+      },
+      {
+        "bytes": 439,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/session_info.ff1pkl",
+        "sha256": "7ff783de23aa1e5e35989135cf8607475bec8de171f52908ae700fd1052dd92c"
+      },
+      {
+        "bytes": 268,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/session_status_data.ff1pkl",
+        "sha256": "2c346930478a8ccf60777288fc0ea8e47757b3cd616c839d4f96fc27fdc28e80"
+      },
+      {
+        "bytes": 59773,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/timing_app_data.ff1pkl",
+        "sha256": "6040c7152b11abec476ef1f85ea241d4c8c6541d78cad1cf3299c2947b4e409e"
+      },
+      {
+        "bytes": 385,
+        "name": "2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/track_status_data.ff1pkl",
+        "sha256": "76c5a03e9a56d06fa5b638a99c626c02e11aac903467979078ec88042fa197bf"
+      },
+      {
+        "bytes": 20836352,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "d221f3c70248120d57fcccf95b09a3778c3d47bf12af3c6a0291116ed6e10c1d"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 467992,
+    "event": "Italian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 113999784,
+    "participant_driver_count": 20,
+    "position_rows_written": 516828,
+    "provider": "FastF1",
+    "race_id": "2020:Italian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 106985784,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "be86e2a3e0b4b3b5a254c939e41c9dbe2150649166729e7d725a5d3a833afd6b",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 951867,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/_extended_timing_data.ff1pkl",
+        "sha256": "cb02307dc276d3e96fa743034569091ee6eed5025e06bfdb045c7e93c157c525"
+      },
+      {
+        "bytes": 38454550,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/car_data.ff1pkl",
+        "sha256": "7b831e7631089ce9ddb2b4a4325a159732049e184509311e35dce7883ba2c0a1"
+      },
+      {
+        "bytes": 5203,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/driver_info.ff1pkl",
+        "sha256": "e96e1871c35fd35793f91c7dfb8367161b5d5642771b991f34eadda7a55b3e4e"
+      },
+      {
+        "bytes": 1105,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/lap_count.ff1pkl",
+        "sha256": "fa60f5283f374c1b681516be3ac1605680498ed983d63c0735aeddf6ebcaaf1b"
+      },
+      {
+        "bytes": 46149231,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/position_data.ff1pkl",
+        "sha256": "f0c28d5212a6d895c197f130685782dd94c4cf1c63f42eb8347863798f9a38d2"
+      },
+      {
+        "bytes": 440,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/session_info.ff1pkl",
+        "sha256": "bb5780009ae97385635e9e37f545138b08973a205ac5d11002647d1da6c87833"
+      },
+      {
+        "bytes": 214,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/session_status_data.ff1pkl",
+        "sha256": "1b99bf247bf96e7bce0eb7b6982d02b0338aff1c1ad7884fa397da636418e5bd"
+      },
+      {
+        "bytes": 99054,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/timing_app_data.ff1pkl",
+        "sha256": "baf34de73ff14368b1a0ad3f07c7f4229ace3b3fd625e3f3e478a70a9059e413"
+      },
+      {
+        "bytes": 344,
+        "name": "2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/track_status_data.ff1pkl",
+        "sha256": "4ff6c998622f3d170883fa0ef8c2b9cdd42f12097ade326ec18e22c1cc4473e3"
+      },
+      {
+        "bytes": 21323776,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "53b917f863ea3b785ff6b1d6845626198015ad0a21c859f6021784560ae4c3f9"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 422011,
+    "event": "Russian Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 106985784,
+    "participant_driver_count": 20,
+    "position_rows_written": 467519,
+    "provider": "FastF1",
+    "race_id": "2020:Russian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 83665473,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "4616e2cf99fd667f00061c3d3b2a7d467cb1b6bb3d3acaca4a973f6aed5f167d",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1008476,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/_extended_timing_data.ff1pkl",
+        "sha256": "6a140461ee11e201ebaf406acc9f0e8a0c4b782eec4660ebda4e7961a2a84244"
+      },
+      {
+        "bytes": 28338050,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/car_data.ff1pkl",
+        "sha256": "9a4f4771d05743ed916f95bfde81fc5a4e2d0b77a7f1c39d6cc0026db336d3e6"
+      },
+      {
+        "bytes": 5090,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/driver_info.ff1pkl",
+        "sha256": "b1694bb82e7c52a087a01dd5bd79118439368df0f28ab6fd6d08dbb9c64ce846"
+      },
+      {
+        "bytes": 1235,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/lap_count.ff1pkl",
+        "sha256": "3a1215e1892e7e7aadd03ab92c5c7fd8ebc4a55bedf0b91160c47ca6e7e67ef8"
+      },
+      {
+        "bytes": 34081455,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/position_data.ff1pkl",
+        "sha256": "5683365e31ecf70b90421245339921b0b79abb8720087e9cdf84241606750bfd"
+      },
+      {
+        "bytes": 451,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/session_info.ff1pkl",
+        "sha256": "6d1e9569c2db33d5f16c5fa85002b8fceb86ce85b727ba879eed9e90ed8e7ef4"
+      },
+      {
+        "bytes": 189,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/session_status_data.ff1pkl",
+        "sha256": "2143e411c192b2064efdf9569611de85a1685da27854146046aebe1cfcc4f7a0"
+      },
+      {
+        "bytes": 102303,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/timing_app_data.ff1pkl",
+        "sha256": "aea569978f2a23b558290f5908de7e079456891ef8659d737a0a0934323bfc5a"
+      },
+      {
+        "bytes": 480,
+        "name": "2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/track_status_data.ff1pkl",
+        "sha256": "9d5311a6b3d340228f0f81ef70a925817d13818aed2f5f219f134d5c1531ed95"
+      },
+      {
+        "bytes": 20127744,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "944815084096b3c9d6b21f9defbf6b780d875f8caf1b447b016a7f0d6f893a0d"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 402357,
+    "event": "Eifel Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 83665473,
+    "participant_driver_count": 20,
+    "position_rows_written": 446755,
+    "provider": "FastF1",
+    "race_id": "2020:Eifel Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 100432722,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "f0a9c36ea261c88162236c039afc1de7e5ac867334fcb659a47f682ec575153a",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1224080,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/_extended_timing_data.ff1pkl",
+        "sha256": "d64161d879e20e3e704264f4e63dc8bbc1300893c550681ea4c7a5194a9f208e"
+      },
+      {
+        "bytes": 37151790,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/car_data.ff1pkl",
+        "sha256": "57bf3b29afea88b049c43232eac4995d0a666e0f7e2e1ea08471fcb33379b8f2"
+      },
+      {
+        "bytes": 5095,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/driver_info.ff1pkl",
+        "sha256": "14745286422046582ad79fd97eee0d86af36e33dd9565adf3ff9533fa1a5766e"
+      },
+      {
+        "bytes": 1356,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/lap_count.ff1pkl",
+        "sha256": "10e9da1cb4c650907a61e4ee8c2399977772a5989f9ecbdea0024489e768d0bb"
+      },
+      {
+        "bytes": 38396151,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/position_data.ff1pkl",
+        "sha256": "9dccfc8be86aab70c93ec36e88d7b9534e103da517c5d43d12fa6cd6704bad93"
+      },
+      {
+        "bytes": 475,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/session_info.ff1pkl",
+        "sha256": "bbdf313b870bf6753bc18be41ead37bf21e5a7ef3258d025f75f26e3119677c4"
+      },
+      {
+        "bytes": 212,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/session_status_data.ff1pkl",
+        "sha256": "b70a38d279c02e3cb58f2c3744ec589572c349486834772be9e97259176889d9"
+      },
+      {
+        "bytes": 125952,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/timing_app_data.ff1pkl",
+        "sha256": "12d1302b468b9427623a12c91c9f622fc6d484af38b8aec618f5fc85c5b864bd"
+      },
+      {
+        "bytes": 187,
+        "name": "2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/track_status_data.ff1pkl",
+        "sha256": "2a4e767341f5c30529b02bda16214f57c388c6c42d2013afc298be165220b330"
+      },
+      {
+        "bytes": 23527424,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "4cd1eb0e9841e1d0557d6292aa3d9f20481e30d2183d7eeb98c3236004827d75"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 442426,
+    "event": "Portuguese Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 100432722,
+    "participant_driver_count": 20,
+    "position_rows_written": 490437,
+    "provider": "FastF1",
+    "race_id": "2020:Portuguese Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 102864278,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "f2df2b9e210cfde5b96a8356988dd73eb65a6cfd73d2692187636ef0620ce76d",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 979373,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/_extended_timing_data.ff1pkl",
+        "sha256": "739fca2a40c7a1109db23e27765e8e9670bef925afdac0703919d8a45346497f"
+      },
+      {
+        "bytes": 36578270,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/car_data.ff1pkl",
+        "sha256": "fccc8fd71221e64cf167322a8bfb3b828168b8a56030a2847869e60ef9a63891"
+      },
+      {
+        "bytes": 5203,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/driver_info.ff1pkl",
+        "sha256": "fbda676cfb78a570731a98f82e1c32c5303b057e97362237c7da9b6d369a94ec"
+      },
+      {
+        "bytes": 1303,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/lap_count.ff1pkl",
+        "sha256": "fab90131a1674565eba5c8207c19751ab85fcee6f0b7d2aa896109162ff8823d"
+      },
+      {
+        "bytes": 44056050,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/position_data.ff1pkl",
+        "sha256": "73825c40dc67bba200b0ee93266052133ecc123f4c6246ef7d2e6e65c3c43110"
+      },
+      {
+        "bytes": 453,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/session_info.ff1pkl",
+        "sha256": "6a2d087a85aca7f8f67cc14f9f60e167bd2462e928a20c83fea64da34e679a5e"
+      },
+      {
+        "bytes": 212,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/session_status_data.ff1pkl",
+        "sha256": "5bbb644fd65cc4c6c499ae1156549287befae7e0d576c78a6941144f08c30f0b"
+      },
+      {
+        "bytes": 119832,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/timing_app_data.ff1pkl",
+        "sha256": "a26c6e9f05e4be08cdc83ab17d5f3f634c39d8c3fdb0ce19d6452a202f829c28"
+      },
+      {
+        "bytes": 510,
+        "name": "2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/track_status_data.ff1pkl",
+        "sha256": "05620835f89b7367010a76205465045cb1a07435bf1f5f0f044e1fb1ab743e21"
+      },
+      {
+        "bytes": 21123072,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "2166bf0aa81dc0f283998e46b930abe1df06f47ccbcfbde818d6b1e3c30775ea"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 390911,
+    "event": "Emilia Romagna Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 102864278,
+    "participant_driver_count": 20,
+    "position_rows_written": 434810,
+    "provider": "FastF1",
+    "race_id": "2020:Emilia Romagna Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 167985102,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "e1c69c57bdb6246d568864362ba60c0a65abb3272aca3b46d5f3c382bd1f8ad1",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1129420,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/_extended_timing_data.ff1pkl",
+        "sha256": "7caa479090bd0baabbeee93cafb2c27f372b0a899935dbb0f67cbcac67191dfc"
+      },
+      {
+        "bytes": 63183650,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/car_data.ff1pkl",
+        "sha256": "6d94a8ce7cd57dc8697dda8f5f460ccc8377eac5bf5b86ea7342929dac64466a"
+      },
+      {
+        "bytes": 5095,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/driver_info.ff1pkl",
+        "sha256": "360cc1cb2fa6382560392b075233b6b9ec2b963c7653d483485769d1cc1ff6ef"
+      },
+      {
+        "bytes": 1179,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/lap_count.ff1pkl",
+        "sha256": "1ef15438706908ede2d164a851ee1b28bc42da10d80e1358abc97be8ca493ff2"
+      },
+      {
+        "bytes": 75727184,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/position_data.ff1pkl",
+        "sha256": "b7bc1d325722513202c3f4c9dbe8fecb1611dc678af701bc581bf774eda6e20e"
+      },
+      {
+        "bytes": 443,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/session_info.ff1pkl",
+        "sha256": "a196570c71d85edbf6a07aebab77d14da276ab425515ee189c681c54c97bb5da"
+      },
+      {
+        "bytes": 264,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/session_status_data.ff1pkl",
+        "sha256": "9b387545eb2f2a1176c7f5031d862f96cf95e2073aefe994fe81e3158d673415"
+      },
+      {
+        "bytes": 96942,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/timing_app_data.ff1pkl",
+        "sha256": "dd70474f1f06d4f3cfff344e2fb752008082cd54e4674335ce040de3f14ca9fc"
+      },
+      {
+        "bytes": 413,
+        "name": "2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/track_status_data.ff1pkl",
+        "sha256": "3d9adcc61d30bd362be8afced3330c86b8c254e579c446d99c179739ace919cc"
+      },
+      {
+        "bytes": 27840512,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "0e898cd9c90494aa26ed01477aec21837ab1728212db50ae9b2423671a565522"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 821775,
+    "event": "Bahrain Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 167985102,
+    "participant_driver_count": 20,
+    "position_rows_written": 909003,
+    "provider": "FastF1",
+    "race_id": "2020:Bahrain Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 104521133,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "060cb113c12d75ae534c53caa2bc3854be6b0a42857011ce8ba6e2a7bee96a8d",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 1154565,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/_extended_timing_data.ff1pkl",
+        "sha256": "3259592cf0eb9567be28cc38ba74cfff468a573a20d654d581056f3b759aa3d2"
+      },
+      {
+        "bytes": 36794251,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/car_data.ff1pkl",
+        "sha256": "edea1a9ea98801acaf718b3db96f9eccae0f3d6be36a93890b72c73599c4f3c3"
+      },
+      {
+        "bytes": 4846,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/driver_info.ff1pkl",
+        "sha256": "7cadc494e6b57f74ca933363b39f38bb7eafa1c3e004142555a7e6bf59f75ab5"
+      },
+      {
+        "bytes": 1747,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/lap_count.ff1pkl",
+        "sha256": "71f25e9aaae2c1c0130cfd60ad7ea1a6692d4c6b018ee4ddbf0ef1acf8a7fd8e"
+      },
+      {
+        "bytes": 44296211,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/position_data.ff1pkl",
+        "sha256": "a573a41d924791141d38ca4eeb4cea928620734023352ef2f9f7d41a210cf114"
+      },
+      {
+        "bytes": 453,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/session_info.ff1pkl",
+        "sha256": "f774c0d27228d61fb836b63a91cd001709a0665d8bf61dca295386d82f580e22"
+      },
+      {
+        "bytes": 214,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/session_status_data.ff1pkl",
+        "sha256": "2d2ea0a19d067a468a1e1502fd59c7af58c8a4e50cdcd20dbf7f3693f32ba98a"
+      },
+      {
+        "bytes": 137587,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/timing_app_data.ff1pkl",
+        "sha256": "232511466db0037a26fe120c6cc74beccac6f4b789adcb2da6e98d781afdf0d9"
+      },
+      {
+        "bytes": 571,
+        "name": "2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/track_status_data.ff1pkl",
+        "sha256": "deca7cd0f2d5ad546ae540fb0accec57b3e44efeccc345a5d8b5c3a03e0db5d9"
+      },
+      {
+        "bytes": 22130688,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "68e3e03786bf4f5747d97bef3ea3ee1b1718069aeb8c175a5506c9f18c020587"
+      }
+    ],
+    "cache_files_after": 10,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "car_rows_written": 397915,
+    "event": "Sakhir Grand Prix",
+    "expected_driver_count": 20,
+    "fastf1_extra_drivers": [],
+    "fastf1_missing_expected_drivers": [],
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 104521133,
+    "participant_driver_count": 20,
+    "position_rows_written": 442110,
+    "provider": "FastF1",
+    "race_id": "2020:Sakhir Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "SUCCESS",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 84900,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "2cb51731fa7ba5a6457e3aeccde38a0a7fd3e6919464157ec20e18a0c4b384f6",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 4979,
+        "name": "2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-13_Race/driver_info.ff1pkl",
+        "sha256": "8fc7cc884063513fa9ac7b928cfb068d928541a1c0b663fa766ed52c53b59527"
+      },
+      {
+        "bytes": 1149,
+        "name": "2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-13_Race/lap_count.ff1pkl",
+        "sha256": "117412adb729393dd7863a7952ec2d695cde2460bc7f98a780cc0c74d279db74"
+      },
+      {
+        "bytes": 476,
+        "name": "2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-13_Race/session_info.ff1pkl",
+        "sha256": "50c5c4636b9d2da7ec4943ca6dbfc2b906a45b7e7aff2b0d5caca206550bf18f"
+      },
+      {
+        "bytes": 216,
+        "name": "2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-13_Race/session_status_data.ff1pkl",
+        "sha256": "5f9d413851bb58c66fad3a5fc97477c1e3bf7e04f5cc3d2ed9a19bde981dba2e"
+      },
+      {
+        "bytes": 256,
+        "name": "2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-13_Race/track_status_data.ff1pkl",
+        "sha256": "1a98eadcd9d9f4b0d2cd8b4db22468e682717562facd3ab9bda66453d9369b9d"
+      },
+      {
+        "bytes": 77824,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "c15d6e113591aba9954380437ad5648035c0c46f525bb39b1fce523590d9dac4"
+      }
+    ],
+    "cache_files_after": 6,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Abu Dhabi Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 84900,
+    "provider": "FastF1",
+    "race_id": "2020:Abu Dhabi Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2020
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Bahrain Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Bahrain Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Emilia Romagna Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Emilia Romagna Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Portuguese Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Portuguese Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Monaco Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Monaco Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Azerbaijan Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Azerbaijan Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "French Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:French Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Austrian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Austrian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "British Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:British Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Hungarian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Hungarian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Belgian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Belgian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Dutch Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Dutch Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Italian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Italian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Mexico City Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Mexico City Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Abu Dhabi Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2021:Abu Dhabi Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2021
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Bahrain Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Bahrain Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Australian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Australian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Emilia Romagna Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Emilia Romagna Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Azerbaijan Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Azerbaijan Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Canadian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Canadian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "British Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:British Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Austrian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Austrian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "French Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:French Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Hungarian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Hungarian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Belgian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Belgian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Dutch Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Dutch Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Italian Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Italian Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Japanese Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Japanese Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  },
+  {
+    "cache_bytes_after": 24576,
+    "cache_bytes_before": 0,
+    "cache_cleanup_status": "CLEANED",
+    "cache_digest_after": "94821faef54e29bbab6a01a7e98a9cb89561552502667f11a4b023195fb431cc",
+    "cache_digest_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache_file_metadata": [
+      {
+        "bytes": 24576,
+        "name": "fastf1_http_cache.sqlite",
+        "sha256": "5134df8c2909dbe3e9ae9f48fa283dcf321770d2b69be42bb4b25fdadb632421"
+      }
+    ],
+    "cache_files_after": 1,
+    "cache_files_before": 0,
+    "cache_state_before_load": "NEW_DOWNLOAD_EXPECTED",
+    "error": "RateLimitExceededError: any API: 500 calls/h",
+    "event": "Abu Dhabi Grand Prix",
+    "fastf1_version": "3.8.3",
+    "new_cache_bytes": 24576,
+    "provider": "FastF1",
+    "race_id": "2022:Abu Dhabi Grand Prix:Race",
+    "raw_cache_retained": false,
+    "request_scope_guard": "approved split row checked before get_session",
+    "retrieval_status": "FAILED",
+    "session": "Race",
+    "year": 2022
+  }
+]

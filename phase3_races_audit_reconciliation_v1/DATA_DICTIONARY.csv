@@ -1,0 +1,10 @@
+artifact,meaning
+split_reconciliation.csv,authoritative-vs-exported race split mapping
+proposed_chronological_split_37.csv,non-authoritative chronological development proposal
+positive_window_event_lineage.csv,one row per original proxy-positive window; not verified events
+positive_proxy_event_summary.csv,unique boundary proxy keys and windows per key
+negative_label_audit.csv.gz,per-negative semantic and boundary-context audit
+driver_lap_reconciliation.csv,laptime boundary vs car/position driver-lap sets
+race_lap_reconciliation.csv,"the old 2,318 distinct race-lap counter"
+asof_coverage_by_race.csv,one-second backward-only feature join coverage
+repaired_metrics.json,machine-readable measured audit metrics

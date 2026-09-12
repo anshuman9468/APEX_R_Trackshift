@@ -1,0 +1,164 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "detail": 70,
+      "passed": true,
+      "test": "approved_race_count"
+    },
+    {
+      "detail": {
+        "driver_inventory": 1399,
+        "supplied": 1399
+      },
+      "passed": true,
+      "test": "per_driver_inventory_count"
+    },
+    {
+      "detail": 70,
+      "passed": true,
+      "test": "source_manifest_count"
+    },
+    {
+      "detail": {
+        "coverage_rows": 800,
+        "successful_sessions": 40
+      },
+      "passed": true,
+      "test": "coverage_rows_are_successful_sessions_only"
+    },
+    {
+      "detail": {
+        "actual": 17031555,
+        "expected": 17031555
+      },
+      "passed": true,
+      "test": "car_gzip_row_count"
+    },
+    {
+      "detail": {
+        "actual": 15484853,
+        "expected": 15484853
+      },
+      "passed": true,
+      "test": "position_gzip_row_count"
+    },
+    {
+      "detail": {
+        "outside_scope": [],
+        "races": 40
+      },
+      "passed": true,
+      "test": "car_race_scope"
+    },
+    {
+      "detail": {
+        "outside_scope": [],
+        "races": 40
+      },
+      "passed": true,
+      "test": "position_race_scope"
+    },
+    {
+      "detail": {
+        "car": 40,
+        "position": 40
+      },
+      "passed": true,
+      "test": "car_position_race_sets_match"
+    },
+    {
+      "detail": [],
+      "passed": true,
+      "test": "protected_token_absent_from_outputs"
+    },
+    {
+      "detail": "stream race_ids checked against the protected-session token",
+      "passed": true,
+      "test": "protected_token_absent_from_streams"
+    },
+    {
+      "detail": 0,
+      "passed": true,
+      "test": "no_verified_overtake_labels_created"
+    },
+    {
+      "detail": {
+        "metric": true
+      },
+      "passed": true,
+      "test": "source_archives_unchanged"
+    },
+    {
+      "detail": {
+        "metric": true
+      },
+      "passed": true,
+      "test": "prior_lap_context_package_unchanged"
+    },
+    {
+      "detail": {
+        "/home/anshumandutta/Downloads/APEX-R_Telemetry_2018.zip": "ebc40d2f4bdd12ee9533c14cf985bc109b660ae825125a4d474504e430a9be2d",
+        "/home/anshumandutta/Downloads/APEX-R_Telemetry_2019.zip": "5d3e8e478db4733ce458b939f197d32e62d677b16bd1f830425c714808170faa",
+        "/home/anshumandutta/Downloads/APEX-R_Telemetry_2020.zip": "d71f85f4d582d9c6c9b2a48d6f7e9e17b2711bd95250b53ab9c77af0f8de40f7",
+        "/home/anshumandutta/Downloads/APEX-R_Telemetry_2021.zip": "81005874086bfdecdbee6da91438b75e3fe72dd1028ede825b2c2a8685ce1526",
+        "/home/anshumandutta/Downloads/APEX-R_Telemetry_2022.zip": "12cce78f843aaf59c09f22cb6d08d5827a98b5a8b6adbb78866aa86dbba6a1fd"
+      },
+      "passed": true,
+      "test": "source_archive_hashes_match_current_files"
+    },
+    {
+      "detail": "e01179c76ada24240d35a5b1d9ab69c50cd8264f0898791464296e651eaa8de9",
+      "passed": true,
+      "test": "prior_package_hash_matches_current_file"
+    },
+    {
+      "detail": "ec9f5e9c0f859c39576e1adc44007b4207a876edbab9e47e836e31528b1cd982",
+      "passed": true,
+      "test": "position_swap_candidate_hash_preserved"
+    },
+    {
+      "detail": "fastf1_cache contains no files",
+      "passed": true,
+      "test": "temporary_fastf1_cache_clean"
+    },
+    {
+      "detail": {
+        "actual_bytes": 530147346,
+        "manifest": {
+          "bytes": 530147346,
+          "compression": "ZIP_DEFLATED",
+          "member_count": 20,
+          "path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_telemetry_collection_final/APEX-R_Full_Race_Telemetry_Collection.zip",
+          "sha256": "d4a0123cbe7b6ed76690eddf443b6580e3f9a2c49e7cb5aa62b77c21f396e323"
+        }
+      },
+      "passed": true,
+      "test": "package_bytes_and_hash_match_manifest"
+    },
+    {
+      "detail": "PASS",
+      "passed": true,
+      "test": "package_crc"
+    },
+    {
+      "detail": [],
+      "passed": true,
+      "test": "package_extracted_checksums"
+    },
+    {
+      "detail": [],
+      "passed": true,
+      "test": "package_row_counts"
+    },
+    {
+      "detail": {
+        "actual": 20,
+        "expected": 20
+      },
+      "passed": true,
+      "test": "package_member_set"
+    }
+  ],
+  "root": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_telemetry_collection_final"
+}

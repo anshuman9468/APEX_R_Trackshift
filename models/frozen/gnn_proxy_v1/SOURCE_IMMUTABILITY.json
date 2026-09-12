@@ -1,0 +1,35 @@
+{
+  "after_sha256": {
+    "gnn_proxy_experiment_gpu_v1/EXPERIMENT_SPEC.md": "576d31a4f4ab1494ae62914d6178c6b0cba4e8bd4b44630ed9655e98a823fd15",
+    "gnn_proxy_experiment_gpu_v1/FEATURE_AVAILABILITY.json": "6fd6bdf23b1e007e6bf0560b559203953c4defe0c81deb750ddb1527fe5e39a7",
+    "gnn_proxy_experiment_gpu_v1/GPU_RUN_REPORT.md": "5cf92287d6496ad08369c5bd5b85a2cb20b45f4a60daa2ff3c8dceb7dc2a9cdf",
+    "gnn_proxy_experiment_gpu_v1/GRAPH_CACHE_SCHEMA.json": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+    "gnn_proxy_experiment_gpu_v1/frozen_split_manifest.json": "e2e3a206c3caa2d3edd4e98540cade6d5c9613ad9a116f2b3b982db055b52e5e",
+    "gnn_proxy_experiment_gpu_v1/gnn_run_registry.json": "a8fe39d99cb4515a30424523831bc24d812617f771d0cd458ff66962a0c7fd4a",
+    "gnn_proxy_experiment_gpu_v1/gnn_seed_42_best.pt": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+    "gnn_proxy_experiment_gpu_v1/gpu_config_after.json": "cc30d4dd5f6f3a38067e45c2157416c4e17db423cd635a1d74dfebe539133f16",
+    "gnn_proxy_experiment_gpu_v1/graph_counts.json": "ad3addd5bd68a6821c437ac5aa1163c84a04e0164b899057fe8ec93d30c1ee62",
+    "gnn_proxy_experiment_gpu_v1/metrics.json": "473507cee1aa4f92690485be97ba591937269672ff182b6d7999daf4a439ca5a",
+    "gnn_proxy_experiment_gpu_v1/preprocessing_state.json": "425c6e8459a81d9dfc8bcd017557ec4b7eabecdac9f59d7a6bde9fdffe58ecc2",
+    "phase3_passed_races/APEX-R_37_Passed_Races.zip": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+    "phase5_dashboard/fixture/phase5_fixture.json": "d1a4045c2bde24b91362fecb6013cf75b3c1160245653023895bafae76becc93"
+  },
+  "before_sha256": {
+    "gnn_proxy_experiment_gpu_v1/EXPERIMENT_SPEC.md": "576d31a4f4ab1494ae62914d6178c6b0cba4e8bd4b44630ed9655e98a823fd15",
+    "gnn_proxy_experiment_gpu_v1/FEATURE_AVAILABILITY.json": "6fd6bdf23b1e007e6bf0560b559203953c4defe0c81deb750ddb1527fe5e39a7",
+    "gnn_proxy_experiment_gpu_v1/GPU_RUN_REPORT.md": "5cf92287d6496ad08369c5bd5b85a2cb20b45f4a60daa2ff3c8dceb7dc2a9cdf",
+    "gnn_proxy_experiment_gpu_v1/GRAPH_CACHE_SCHEMA.json": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+    "gnn_proxy_experiment_gpu_v1/frozen_split_manifest.json": "e2e3a206c3caa2d3edd4e98540cade6d5c9613ad9a116f2b3b982db055b52e5e",
+    "gnn_proxy_experiment_gpu_v1/gnn_run_registry.json": "a8fe39d99cb4515a30424523831bc24d812617f771d0cd458ff66962a0c7fd4a",
+    "gnn_proxy_experiment_gpu_v1/gnn_seed_42_best.pt": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+    "gnn_proxy_experiment_gpu_v1/gpu_config_after.json": "cc30d4dd5f6f3a38067e45c2157416c4e17db423cd635a1d74dfebe539133f16",
+    "gnn_proxy_experiment_gpu_v1/graph_counts.json": "ad3addd5bd68a6821c437ac5aa1163c84a04e0164b899057fe8ec93d30c1ee62",
+    "gnn_proxy_experiment_gpu_v1/metrics.json": "473507cee1aa4f92690485be97ba591937269672ff182b6d7999daf4a439ca5a",
+    "gnn_proxy_experiment_gpu_v1/preprocessing_state.json": "425c6e8459a81d9dfc8bcd017557ec4b7eabecdac9f59d7a6bde9fdffe58ecc2",
+    "phase3_passed_races/APEX-R_37_Passed_Races.zip": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+    "phase5_dashboard/fixture/phase5_fixture.json": "d1a4045c2bde24b91362fecb6013cf75b3c1160245653023895bafae76becc93"
+  },
+  "note": "The freeze process only read source artifacts and copied selected files into the versioned frozen directory.",
+  "source_artifacts_unchanged": true,
+  "status": "PASS"
+}

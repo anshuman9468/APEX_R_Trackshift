@@ -1,0 +1,371 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "artifact_exists:driver_laps.csv.gz",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/driver_laps.csv.gz"
+    },
+    {
+      "test": "row_count:driver_laps.csv.gz",
+      "passed": true,
+      "detail": "actual=74084, expected=74084"
+    },
+    {
+      "test": "artifact_exists:race_context.csv",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/race_context.csv"
+    },
+    {
+      "test": "row_count:race_context.csv",
+      "passed": true,
+      "detail": "actual=70, expected=70"
+    },
+    {
+      "test": "artifact_exists:race_context.json",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/race_context.json"
+    },
+    {
+      "test": "row_count:race_context.json",
+      "passed": true,
+      "detail": "actual=70, expected=70"
+    },
+    {
+      "test": "artifact_exists:source_manifest.csv",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/source_manifest.csv"
+    },
+    {
+      "test": "row_count:source_manifest.csv",
+      "passed": true,
+      "detail": "actual=1654, expected=1654"
+    },
+    {
+      "test": "artifact_exists:source_manifest.json",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/source_manifest.json"
+    },
+    {
+      "test": "row_count:source_manifest.json",
+      "passed": true,
+      "detail": "actual=1654, expected=1654"
+    },
+    {
+      "test": "artifact_exists:unresolved_position_swap_candidates.csv.gz",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/unresolved_position_swap_candidates.csv.gz"
+    },
+    {
+      "test": "row_count:unresolved_position_swap_candidates.csv.gz",
+      "passed": true,
+      "detail": "actual=2095, expected=2095"
+    },
+    {
+      "test": "artifact_exists:unresolved_position_swap_candidates.json",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/unresolved_position_swap_candidates.json"
+    },
+    {
+      "test": "row_count:unresolved_position_swap_candidates.json",
+      "passed": true,
+      "detail": "actual=2095, expected=2095"
+    },
+    {
+      "test": "artifact_exists:validation_three_races.csv",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/validation_three_races.csv"
+    },
+    {
+      "test": "row_count:validation_three_races.csv",
+      "passed": true,
+      "detail": "actual=3, expected=3"
+    },
+    {
+      "test": "artifact_exists:validation_three_races.json",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/validation_three_races.json"
+    },
+    {
+      "test": "row_count:validation_three_races.json",
+      "passed": true,
+      "detail": "actual=3, expected=3"
+    },
+    {
+      "test": "artifact_exists:verified_public_events.csv.gz",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/verified_public_events.csv.gz"
+    },
+    {
+      "test": "row_count:verified_public_events.csv.gz",
+      "passed": true,
+      "detail": "actual=8020, expected=8020"
+    },
+    {
+      "test": "artifact_exists:verified_public_events.json",
+      "passed": true,
+      "detail": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/verified_public_events.json"
+    },
+    {
+      "test": "row_count:verified_public_events.json",
+      "passed": true,
+      "detail": "actual=8020, expected=8020"
+    },
+    {
+      "test": "driver_lap_key_unique",
+      "passed": true,
+      "detail": "duplicates=0"
+    },
+    {
+      "test": "lap_race_is_complete",
+      "passed": true,
+      "detail": "rows_from_incomplete_races=0"
+    },
+    {
+      "test": "race_id_unique",
+      "passed": true,
+      "detail": "70"
+    },
+    {
+      "test": "complete_race_count",
+      "passed": true,
+      "detail": "expected 69 complete source-lap races"
+    },
+    {
+      "test": "incomplete_race_quarantined",
+      "passed": true,
+      "detail": "one source-incomplete race remains in the race manifest"
+    },
+    {
+      "test": "candidates_not_verified",
+      "passed": true,
+      "detail": "2095"
+    },
+    {
+      "test": "no_verified_overtake_claim",
+      "passed": true,
+      "detail": "2095"
+    },
+    {
+      "test": "public_events_source_recorded",
+      "passed": true,
+      "detail": "8020"
+    },
+    {
+      "test": "public_events_not_overtakes",
+      "passed": true,
+      "detail": "8020"
+    },
+    {
+      "test": "no_new_network_requests",
+      "passed": true,
+      "detail": "reused pinned cache only"
+    },
+    {
+      "test": "source_immutability",
+      "passed": true,
+      "detail": "before and after input hashes match"
+    },
+    {
+      "test": "three_race_gate",
+      "passed": true,
+      "detail": "all three pre-expansion races passed"
+    },
+    {
+      "test": "expansion_after_gate",
+      "passed": true,
+      "detail": "expansion followed passing gate"
+    },
+    {
+      "test": "checksum_excludes_itself",
+      "passed": true,
+      "detail": "checksum file is not self-hashed"
+    },
+    {
+      "test": "checksum_target_exists:PHASE_FULL_RACE_REPORT.md",
+      "passed": true,
+      "detail": "PHASE_FULL_RACE_REPORT.md"
+    },
+    {
+      "test": "checksum:PHASE_FULL_RACE_REPORT.md",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:README.md",
+      "passed": true,
+      "detail": "README.md"
+    },
+    {
+      "test": "checksum:README.md",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:collection_pipeline.py",
+      "passed": true,
+      "detail": "collection_pipeline.py"
+    },
+    {
+      "test": "checksum:collection_pipeline.py",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:driver_laps.csv.gz",
+      "passed": true,
+      "detail": "driver_laps.csv.gz"
+    },
+    {
+      "test": "checksum:driver_laps.csv.gz",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:metrics.json",
+      "passed": true,
+      "detail": "metrics.json"
+    },
+    {
+      "test": "checksum:metrics.json",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:race_context.csv",
+      "passed": true,
+      "detail": "race_context.csv"
+    },
+    {
+      "test": "checksum:race_context.csv",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:race_context.json",
+      "passed": true,
+      "detail": "race_context.json"
+    },
+    {
+      "test": "checksum:race_context.json",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:source_manifest.csv",
+      "passed": true,
+      "detail": "source_manifest.csv"
+    },
+    {
+      "test": "checksum:source_manifest.csv",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:source_manifest.json",
+      "passed": true,
+      "detail": "source_manifest.json"
+    },
+    {
+      "test": "checksum:source_manifest.json",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:test_full_race_collection.py",
+      "passed": true,
+      "detail": "test_full_race_collection.py"
+    },
+    {
+      "test": "checksum:test_full_race_collection.py",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:unresolved_position_swap_candidates.csv.gz",
+      "passed": true,
+      "detail": "unresolved_position_swap_candidates.csv.gz"
+    },
+    {
+      "test": "checksum:unresolved_position_swap_candidates.csv.gz",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:unresolved_position_swap_candidates.json",
+      "passed": true,
+      "detail": "unresolved_position_swap_candidates.json"
+    },
+    {
+      "test": "checksum:unresolved_position_swap_candidates.json",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:validation_three_races.csv",
+      "passed": true,
+      "detail": "validation_three_races.csv"
+    },
+    {
+      "test": "checksum:validation_three_races.csv",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:validation_three_races.json",
+      "passed": true,
+      "detail": "validation_three_races.json"
+    },
+    {
+      "test": "checksum:validation_three_races.json",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:verified_public_events.csv.gz",
+      "passed": true,
+      "detail": "verified_public_events.csv.gz"
+    },
+    {
+      "test": "checksum:verified_public_events.csv.gz",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:verified_public_events.json",
+      "passed": true,
+      "detail": "verified_public_events.json"
+    },
+    {
+      "test": "checksum:verified_public_events.json",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "checksum_target_exists:verify_full_race_collection.py",
+      "passed": true,
+      "detail": "verify_full_race_collection.py"
+    },
+    {
+      "test": "checksum:verify_full_race_collection.py",
+      "passed": true,
+      "detail": "SHA256 match"
+    },
+    {
+      "test": "zip_crc",
+      "passed": true,
+      "detail": "all ZIP members pass CRC"
+    },
+    {
+      "test": "zip_member_set",
+      "passed": true,
+      "detail": "members=18"
+    },
+    {
+      "test": "zip_paths_safe",
+      "passed": true,
+      "detail": "no traversal members"
+    }
+  ],
+  "test_count": 73
+}

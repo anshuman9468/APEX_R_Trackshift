@@ -1,0 +1,2228 @@
+{
+  "generated_at": "2026-09-06T10:27:27.928883+00:00",
+  "protocol": {
+    "train_sessions": [
+      7953,
+      7779,
+      7787
+    ],
+    "validation_session": 9070,
+    "forbidden_final_holdout": 11353,
+    "holdout_loaded": false
+  },
+  "feature_audit_validation_only": [
+    {
+      "feature": "lap_time_delta_ahead_minus_self",
+      "validation_point_biserial_correlation": 0.032862,
+      "validation_mutual_information": 0.096707
+    },
+    {
+      "feature": "sector_3_delta_ahead_minus_self",
+      "validation_point_biserial_correlation": -0.001962,
+      "validation_mutual_information": 0.084182
+    },
+    {
+      "feature": "sector_1_delta_ahead_minus_self",
+      "validation_point_biserial_correlation": 0.007903,
+      "validation_mutual_information": 0.079241
+    },
+    {
+      "feature": "sector_2_delta_ahead_minus_self",
+      "validation_point_biserial_correlation": 0.085905,
+      "validation_mutual_information": 0.077599
+    },
+    {
+      "feature": "tyre_age_delta_ahead_minus_self",
+      "validation_point_biserial_correlation": 0.062528,
+      "validation_mutual_information": 0.018149
+    },
+    {
+      "feature": "speed_mean_10s",
+      "validation_point_biserial_correlation": -0.008838,
+      "validation_mutual_information": 0.013832
+    },
+    {
+      "feature": "gap_volatility_60s",
+      "validation_point_biserial_correlation": 0.055436,
+      "validation_mutual_information": 0.011827
+    },
+    {
+      "feature": "gap_slope_60s",
+      "validation_point_biserial_correlation": 0.017095,
+      "validation_mutual_information": 0.011632
+    },
+    {
+      "feature": "throttle_mean_10s",
+      "validation_point_biserial_correlation": -0.023232,
+      "validation_mutual_information": 0.010953
+    },
+    {
+      "feature": "gear_mean_10s",
+      "validation_point_biserial_correlation": -0.018177,
+      "validation_mutual_information": 0.010783
+    },
+    {
+      "feature": "gap_slope_15s",
+      "validation_point_biserial_correlation": 0.037721,
+      "validation_mutual_information": 0.010462
+    },
+    {
+      "feature": "stint_length_delta_ahead_minus_self",
+      "validation_point_biserial_correlation": 0.062448,
+      "validation_mutual_information": 0.009414
+    },
+    {
+      "feature": "gap_slope_30s",
+      "validation_point_biserial_correlation": 0.022845,
+      "validation_mutual_information": 0.009127
+    },
+    {
+      "feature": "gap_slope_5s",
+      "validation_point_biserial_correlation": 0.04043,
+      "validation_mutual_information": 0.006492
+    },
+    {
+      "feature": "brake_fraction_10s",
+      "validation_point_biserial_correlation": -0.005472,
+      "validation_mutual_information": 0.006131
+    },
+    {
+      "feature": "same_tyre_compound",
+      "validation_point_biserial_correlation": -0.119342,
+      "validation_mutual_information": 0.004511
+    },
+    {
+      "feature": "brake_fraction_5s",
+      "validation_point_biserial_correlation": -0.035209,
+      "validation_mutual_information": 0.003725
+    },
+    {
+      "feature": "speed_delta_5s",
+      "validation_point_biserial_correlation": 0.032821,
+      "validation_mutual_information": 0.003024
+    },
+    {
+      "feature": "rpm_mean_10s",
+      "validation_point_biserial_correlation": 0.006075,
+      "validation_mutual_information": 0.002411
+    },
+    {
+      "feature": "speed_delta_10s",
+      "validation_point_biserial_correlation": 0.017606,
+      "validation_mutual_information": 0.002393
+    },
+    {
+      "feature": "new_stint_proxy",
+      "validation_point_biserial_correlation": 0.066343,
+      "validation_mutual_information": 0.001667
+    },
+    {
+      "feature": "braking_approach_proxy",
+      "validation_point_biserial_correlation": -0.042601,
+      "validation_mutual_information": 0.000958
+    },
+    {
+      "feature": "rival_drs_open",
+      "validation_point_biserial_correlation": -0.033445,
+      "validation_mutual_information": 0.000774
+    },
+    {
+      "feature": "straight_approach_proxy",
+      "validation_point_biserial_correlation": 0.029039,
+      "validation_mutual_information": 0.000414
+    },
+    {
+      "feature": "relative_pace_available",
+      "validation_point_biserial_correlation": 0.020331,
+      "validation_mutual_information": 0.000403
+    },
+    {
+      "feature": "high_throttle_fraction_5s",
+      "validation_point_biserial_correlation": 0.003017,
+      "validation_mutual_information": 0.000337
+    },
+    {
+      "feature": "drs_open_fraction_10s",
+      "validation_point_biserial_correlation": -0.018036,
+      "validation_mutual_information": 0.000215
+    },
+    {
+      "feature": "drs_open",
+      "validation_point_biserial_correlation": 0.012656,
+      "validation_mutual_information": 7.3e-05
+    },
+    {
+      "feature": "drs_eligible_or_open",
+      "validation_point_biserial_correlation": -0.004219,
+      "validation_mutual_information": 9e-06
+    }
+  ],
+  "candidates_validation_only": [
+    {
+      "name": "XGBoost engineered, scale_pos_weight=1.0",
+      "kind": "xgboost",
+      "scale_pos_weight": 1.0,
+      "best_trees": 56,
+      "metrics": {
+        "roc_auc": 0.813796,
+        "average_precision": 0.170905,
+        "brier_score": 0.038155,
+        "precision_at_recall_70": 0.096641,
+        "recall_at_selected_threshold": 0.727626,
+        "threshold": 0.06019627,
+        "curve": [
+          {
+            "threshold": 0.02405668,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02862351,
+            "precision": 0.044993,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03202326,
+            "precision": 0.047208,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03388017,
+            "precision": 0.050244,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.0352353,
+            "precision": 0.0541,
+            "recall": 0.996109
+          },
+          {
+            "threshold": 0.03673251,
+            "precision": 0.056798,
+            "recall": 0.988327
+          },
+          {
+            "threshold": 0.03803299,
+            "precision": 0.05866,
+            "recall": 0.984436
+          },
+          {
+            "threshold": 0.03903817,
+            "precision": 0.061873,
+            "recall": 0.984436
+          },
+          {
+            "threshold": 0.04026654,
+            "precision": 0.063971,
+            "recall": 0.972763
+          },
+          {
+            "threshold": 0.04150248,
+            "precision": 0.06606,
+            "recall": 0.961089
+          },
+          {
+            "threshold": 0.04258705,
+            "precision": 0.069202,
+            "recall": 0.941634
+          },
+          {
+            "threshold": 0.0439483,
+            "precision": 0.072607,
+            "recall": 0.941634
+          },
+          {
+            "threshold": 0.04538801,
+            "precision": 0.074836,
+            "recall": 0.933852
+          },
+          {
+            "threshold": 0.04661781,
+            "precision": 0.077221,
+            "recall": 0.929961
+          },
+          {
+            "threshold": 0.04799806,
+            "precision": 0.080027,
+            "recall": 0.92607
+          },
+          {
+            "threshold": 0.04948903,
+            "precision": 0.083127,
+            "recall": 0.914397
+          },
+          {
+            "threshold": 0.05095671,
+            "precision": 0.085778,
+            "recall": 0.898833
+          },
+          {
+            "threshold": 0.0525458,
+            "precision": 0.08751,
+            "recall": 0.883268
+          },
+          {
+            "threshold": 0.05409169,
+            "precision": 0.090198,
+            "recall": 0.85214
+          },
+          {
+            "threshold": 0.05590883,
+            "precision": 0.090275,
+            "recall": 0.805447
+          },
+          {
+            "threshold": 0.05783306,
+            "precision": 0.093142,
+            "recall": 0.782101
+          },
+          {
+            "threshold": 0.05971429,
+            "precision": 0.095551,
+            "recall": 0.735409
+          },
+          {
+            "threshold": 0.06128358,
+            "precision": 0.094573,
+            "recall": 0.684825
+          },
+          {
+            "threshold": 0.06294732,
+            "precision": 0.10064,
+            "recall": 0.673152
+          },
+          {
+            "threshold": 0.06466384,
+            "precision": 0.10362,
+            "recall": 0.645914
+          },
+          {
+            "threshold": 0.06688873,
+            "precision": 0.110061,
+            "recall": 0.634241
+          },
+          {
+            "threshold": 0.06956603,
+            "precision": 0.113139,
+            "recall": 0.603113
+          },
+          {
+            "threshold": 0.07196314,
+            "precision": 0.115863,
+            "recall": 0.579767
+          },
+          {
+            "threshold": 0.07473894,
+            "precision": 0.128361,
+            "recall": 0.575875
+          },
+          {
+            "threshold": 0.07782631,
+            "precision": 0.140078,
+            "recall": 0.560311
+          },
+          {
+            "threshold": 0.08171911,
+            "precision": 0.147027,
+            "recall": 0.529183
+          },
+          {
+            "threshold": 0.0864135,
+            "precision": 0.163415,
+            "recall": 0.521401
+          },
+          {
+            "threshold": 0.09364817,
+            "precision": 0.183079,
+            "recall": 0.513619
+          },
+          {
+            "threshold": 0.09994825,
+            "precision": 0.202194,
+            "recall": 0.501946
+          },
+          {
+            "threshold": 0.10817428,
+            "precision": 0.214414,
+            "recall": 0.463035
+          },
+          {
+            "threshold": 0.11798937,
+            "precision": 0.224359,
+            "recall": 0.40856
+          },
+          {
+            "threshold": 0.1284537,
+            "precision": 0.225974,
+            "recall": 0.338521
+          },
+          {
+            "threshold": 0.14360827,
+            "precision": 0.23,
+            "recall": 0.268482
+          },
+          {
+            "threshold": 0.15949319,
+            "precision": 0.23301,
+            "recall": 0.18677
+          },
+          {
+            "threshold": 0.1782608,
+            "precision": 0.23622,
+            "recall": 0.116732
+          },
+          {
+            "threshold": 0.21708262,
+            "precision": 0.325,
+            "recall": 0.050584
+          }
+        ]
+      }
+    },
+    {
+      "name": "XGBoost engineered, scale_pos_weight=1.5",
+      "kind": "xgboost",
+      "scale_pos_weight": 1.5,
+      "best_trees": 125,
+      "metrics": {
+        "roc_auc": 0.820597,
+        "average_precision": 0.201444,
+        "brier_score": 0.038715,
+        "precision_at_recall_70": 0.109756,
+        "recall_at_selected_threshold": 0.700389,
+        "threshold": 0.08351822,
+        "curve": [
+          {
+            "threshold": 0.01104521,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.01554185,
+            "precision": 0.043693,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.01784091,
+            "precision": 0.044969,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.01944648,
+            "precision": 0.046365,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02090866,
+            "precision": 0.047681,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02249998,
+            "precision": 0.049074,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02365073,
+            "precision": 0.050521,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02491833,
+            "precision": 0.052056,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02615366,
+            "precision": 0.053665,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02735947,
+            "precision": 0.055388,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02880337,
+            "precision": 0.056768,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.03016287,
+            "precision": 0.058702,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.03175724,
+            "precision": 0.060888,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.03337812,
+            "precision": 0.062639,
+            "recall": 0.984436
+          },
+          {
+            "threshold": 0.03499117,
+            "precision": 0.064982,
+            "recall": 0.980545
+          },
+          {
+            "threshold": 0.03698951,
+            "precision": 0.067114,
+            "recall": 0.972763
+          },
+          {
+            "threshold": 0.038831,
+            "precision": 0.069091,
+            "recall": 0.961089
+          },
+          {
+            "threshold": 0.04108184,
+            "precision": 0.071846,
+            "recall": 0.957198
+          },
+          {
+            "threshold": 0.04350379,
+            "precision": 0.074549,
+            "recall": 0.949416
+          },
+          {
+            "threshold": 0.04617606,
+            "precision": 0.076136,
+            "recall": 0.92607
+          },
+          {
+            "threshold": 0.04865522,
+            "precision": 0.078939,
+            "recall": 0.914397
+          },
+          {
+            "threshold": 0.05131368,
+            "precision": 0.081272,
+            "recall": 0.894942
+          },
+          {
+            "threshold": 0.05396326,
+            "precision": 0.084265,
+            "recall": 0.879377
+          },
+          {
+            "threshold": 0.05706705,
+            "precision": 0.088003,
+            "recall": 0.867704
+          },
+          {
+            "threshold": 0.06050213,
+            "precision": 0.090336,
+            "recall": 0.836576
+          },
+          {
+            "threshold": 0.06443074,
+            "precision": 0.094128,
+            "recall": 0.817121
+          },
+          {
+            "threshold": 0.06894154,
+            "precision": 0.097409,
+            "recall": 0.789883
+          },
+          {
+            "threshold": 0.073452,
+            "precision": 0.100362,
+            "recall": 0.754864
+          },
+          {
+            "threshold": 0.07772755,
+            "precision": 0.104821,
+            "recall": 0.727626
+          },
+          {
+            "threshold": 0.08383655,
+            "precision": 0.109346,
+            "recall": 0.696498
+          },
+          {
+            "threshold": 0.08972627,
+            "precision": 0.114094,
+            "recall": 0.661479
+          },
+          {
+            "threshold": 0.09839813,
+            "precision": 0.119225,
+            "recall": 0.622568
+          },
+          {
+            "threshold": 0.10636543,
+            "precision": 0.123219,
+            "recall": 0.571984
+          },
+          {
+            "threshold": 0.11497862,
+            "precision": 0.136711,
+            "recall": 0.55642
+          },
+          {
+            "threshold": 0.12609889,
+            "precision": 0.150167,
+            "recall": 0.525292
+          },
+          {
+            "threshold": 0.14495036,
+            "precision": 0.169108,
+            "recall": 0.494163
+          },
+          {
+            "threshold": 0.16983119,
+            "precision": 0.190397,
+            "recall": 0.447471
+          },
+          {
+            "threshold": 0.20682609,
+            "precision": 0.212254,
+            "recall": 0.377432
+          },
+          {
+            "threshold": 0.2607457,
+            "precision": 0.255663,
+            "recall": 0.307393
+          },
+          {
+            "threshold": 0.33101022,
+            "precision": 0.341615,
+            "recall": 0.214008
+          },
+          {
+            "threshold": 0.5284763,
+            "precision": 0.384615,
+            "recall": 0.019455
+          }
+        ]
+      }
+    },
+    {
+      "name": "XGBoost engineered, scale_pos_weight=2.0",
+      "kind": "xgboost",
+      "scale_pos_weight": 2.0,
+      "best_trees": 77,
+      "metrics": {
+        "roc_auc": 0.824588,
+        "average_precision": 0.206596,
+        "brier_score": 0.041459,
+        "precision_at_recall_70": 0.113608,
+        "recall_at_selected_threshold": 0.708171,
+        "threshold": 0.12144033,
+        "curve": [
+          {
+            "threshold": 0.03222428,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03895764,
+            "precision": 0.043962,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04257137,
+            "precision": 0.045374,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04540403,
+            "precision": 0.047173,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04821211,
+            "precision": 0.049385,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.050416,
+            "precision": 0.051437,
+            "recall": 0.996109
+          },
+          {
+            "threshold": 0.05280012,
+            "precision": 0.053147,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.05539211,
+            "precision": 0.055459,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.0577048,
+            "precision": 0.058113,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.05973836,
+            "precision": 0.060118,
+            "recall": 0.988327
+          },
+          {
+            "threshold": 0.0617541,
+            "precision": 0.062084,
+            "recall": 0.980545
+          },
+          {
+            "threshold": 0.06418976,
+            "precision": 0.063813,
+            "recall": 0.968872
+          },
+          {
+            "threshold": 0.06654494,
+            "precision": 0.066272,
+            "recall": 0.957198
+          },
+          {
+            "threshold": 0.06920569,
+            "precision": 0.068551,
+            "recall": 0.953307
+          },
+          {
+            "threshold": 0.0719743,
+            "precision": 0.071196,
+            "recall": 0.937743
+          },
+          {
+            "threshold": 0.07485554,
+            "precision": 0.073674,
+            "recall": 0.929961
+          },
+          {
+            "threshold": 0.07835589,
+            "precision": 0.0766,
+            "recall": 0.922179
+          },
+          {
+            "threshold": 0.08164001,
+            "precision": 0.079125,
+            "recall": 0.914397
+          },
+          {
+            "threshold": 0.08477343,
+            "precision": 0.081985,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.08809306,
+            "precision": 0.086682,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.09199203,
+            "precision": 0.088075,
+            "recall": 0.879377
+          },
+          {
+            "threshold": 0.09572034,
+            "precision": 0.090872,
+            "recall": 0.863813
+          },
+          {
+            "threshold": 0.09963191,
+            "precision": 0.092601,
+            "recall": 0.832685
+          },
+          {
+            "threshold": 0.10317167,
+            "precision": 0.096536,
+            "recall": 0.81323
+          },
+          {
+            "threshold": 0.10708126,
+            "precision": 0.102011,
+            "recall": 0.809339
+          },
+          {
+            "threshold": 0.1112356,
+            "precision": 0.106116,
+            "recall": 0.789883
+          },
+          {
+            "threshold": 0.1157883,
+            "precision": 0.111425,
+            "recall": 0.766537
+          },
+          {
+            "threshold": 0.12018041,
+            "precision": 0.112264,
+            "recall": 0.715953
+          },
+          {
+            "threshold": 0.12561882,
+            "precision": 0.112143,
+            "recall": 0.657588
+          },
+          {
+            "threshold": 0.132103,
+            "precision": 0.114719,
+            "recall": 0.618677
+          },
+          {
+            "threshold": 0.13778575,
+            "precision": 0.119746,
+            "recall": 0.587549
+          },
+          {
+            "threshold": 0.14597796,
+            "precision": 0.128497,
+            "recall": 0.571984
+          },
+          {
+            "threshold": 0.15430768,
+            "precision": 0.144,
+            "recall": 0.560311
+          },
+          {
+            "threshold": 0.16348246,
+            "precision": 0.158803,
+            "recall": 0.536965
+          },
+          {
+            "threshold": 0.18043788,
+            "precision": 0.176707,
+            "recall": 0.513619
+          },
+          {
+            "threshold": 0.20409901,
+            "precision": 0.203883,
+            "recall": 0.490272
+          },
+          {
+            "threshold": 0.23095223,
+            "precision": 0.219316,
+            "recall": 0.424125
+          },
+          {
+            "threshold": 0.26640132,
+            "precision": 0.251989,
+            "recall": 0.36965
+          },
+          {
+            "threshold": 0.30522221,
+            "precision": 0.27027,
+            "recall": 0.272374
+          },
+          {
+            "threshold": 0.36336261,
+            "precision": 0.301471,
+            "recall": 0.159533
+          },
+          {
+            "threshold": 0.51008904,
+            "precision": 0.307692,
+            "recall": 0.015564
+          }
+        ]
+      }
+    },
+    {
+      "name": "XGBoost engineered, scale_pos_weight=3.0",
+      "kind": "xgboost",
+      "scale_pos_weight": 3.0,
+      "best_trees": 100,
+      "metrics": {
+        "roc_auc": 0.823136,
+        "average_precision": 0.203604,
+        "brier_score": 0.046523,
+        "precision_at_recall_70": 0.112485,
+        "recall_at_selected_threshold": 0.708171,
+        "threshold": 0.15391745,
+        "curve": [
+          {
+            "threshold": 0.02404455,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03079797,
+            "precision": 0.043626,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03488097,
+            "precision": 0.044797,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03904045,
+            "precision": 0.046057,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.0423317,
+            "precision": 0.047382,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04528432,
+            "precision": 0.048767,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04781337,
+            "precision": 0.050264,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.05052055,
+            "precision": 0.051825,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.05329779,
+            "precision": 0.053441,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.05558161,
+            "precision": 0.05534,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.05804509,
+            "precision": 0.056952,
+            "recall": 0.996109
+          },
+          {
+            "threshold": 0.06086703,
+            "precision": 0.058729,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.06343327,
+            "precision": 0.060621,
+            "recall": 0.988327
+          },
+          {
+            "threshold": 0.06684438,
+            "precision": 0.062345,
+            "recall": 0.980545
+          },
+          {
+            "threshold": 0.07007128,
+            "precision": 0.064218,
+            "recall": 0.972763
+          },
+          {
+            "threshold": 0.07338037,
+            "precision": 0.066845,
+            "recall": 0.972763
+          },
+          {
+            "threshold": 0.07713828,
+            "precision": 0.068715,
+            "recall": 0.957198
+          },
+          {
+            "threshold": 0.08148574,
+            "precision": 0.071096,
+            "recall": 0.949416
+          },
+          {
+            "threshold": 0.08567928,
+            "precision": 0.073431,
+            "recall": 0.937743
+          },
+          {
+            "threshold": 0.09006768,
+            "precision": 0.075966,
+            "recall": 0.92607
+          },
+          {
+            "threshold": 0.09465766,
+            "precision": 0.07878,
+            "recall": 0.914397
+          },
+          {
+            "threshold": 0.10013307,
+            "precision": 0.082303,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.10506863,
+            "precision": 0.084018,
+            "recall": 0.875486
+          },
+          {
+            "threshold": 0.11013339,
+            "precision": 0.086698,
+            "recall": 0.85214
+          },
+          {
+            "threshold": 0.11525621,
+            "precision": 0.088842,
+            "recall": 0.821012
+          },
+          {
+            "threshold": 0.12077329,
+            "precision": 0.09434,
+            "recall": 0.817121
+          },
+          {
+            "threshold": 0.12789223,
+            "precision": 0.099182,
+            "recall": 0.801556
+          },
+          {
+            "threshold": 0.13508929,
+            "precision": 0.10057,
+            "recall": 0.754864
+          },
+          {
+            "threshold": 0.14305353,
+            "precision": 0.105174,
+            "recall": 0.727626
+          },
+          {
+            "threshold": 0.1533397,
+            "precision": 0.111725,
+            "recall": 0.708171
+          },
+          {
+            "threshold": 0.16222067,
+            "precision": 0.11471,
+            "recall": 0.661479
+          },
+          {
+            "threshold": 0.17279765,
+            "precision": 0.11928,
+            "recall": 0.618677
+          },
+          {
+            "threshold": 0.18342368,
+            "precision": 0.126582,
+            "recall": 0.583658
+          },
+          {
+            "threshold": 0.19509901,
+            "precision": 0.138862,
+            "recall": 0.560311
+          },
+          {
+            "threshold": 0.21248476,
+            "precision": 0.156355,
+            "recall": 0.540856
+          },
+          {
+            "threshold": 0.24005245,
+            "precision": 0.179487,
+            "recall": 0.51751
+          },
+          {
+            "threshold": 0.27052453,
+            "precision": 0.205734,
+            "recall": 0.474708
+          },
+          {
+            "threshold": 0.31740031,
+            "precision": 0.226966,
+            "recall": 0.392996
+          },
+          {
+            "threshold": 0.37858015,
+            "precision": 0.272727,
+            "recall": 0.315175
+          },
+          {
+            "threshold": 0.44849974,
+            "precision": 0.315436,
+            "recall": 0.182879
+          },
+          {
+            "threshold": 0.68485576,
+            "precision": 0.0,
+            "recall": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "XGBoost engineered, scale_pos_weight=2.0, Platt calibrated",
+      "kind": "xgboost_platt",
+      "scale_pos_weight": 2.0,
+      "metrics": {
+        "roc_auc": 0.824588,
+        "average_precision": 0.206596,
+        "brier_score": 0.037802,
+        "precision_at_recall_70": 0.113608,
+        "recall_at_selected_threshold": 0.708171,
+        "threshold": 0.07970539,
+        "curve": [
+          {
+            "threshold": 0.02430714,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.02874402,
+            "precision": 0.043962,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03109225,
+            "precision": 0.045374,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03291918,
+            "precision": 0.047173,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03471951,
+            "precision": 0.049385,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03612556,
+            "precision": 0.051437,
+            "recall": 0.996109
+          },
+          {
+            "threshold": 0.03764029,
+            "precision": 0.053147,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.03928015,
+            "precision": 0.055459,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.04073764,
+            "precision": 0.058113,
+            "recall": 0.992218
+          },
+          {
+            "threshold": 0.04201508,
+            "precision": 0.060118,
+            "recall": 0.988327
+          },
+          {
+            "threshold": 0.04327775,
+            "precision": 0.062084,
+            "recall": 0.980545
+          },
+          {
+            "threshold": 0.04479896,
+            "precision": 0.063813,
+            "recall": 0.968872
+          },
+          {
+            "threshold": 0.04626553,
+            "precision": 0.066272,
+            "recall": 0.957198
+          },
+          {
+            "threshold": 0.04791755,
+            "precision": 0.068551,
+            "recall": 0.953307
+          },
+          {
+            "threshold": 0.04963146,
+            "precision": 0.071196,
+            "recall": 0.937743
+          },
+          {
+            "threshold": 0.05141002,
+            "precision": 0.073674,
+            "recall": 0.929961
+          },
+          {
+            "threshold": 0.05356431,
+            "precision": 0.0766,
+            "recall": 0.922179
+          },
+          {
+            "threshold": 0.05557967,
+            "precision": 0.079125,
+            "recall": 0.914397
+          },
+          {
+            "threshold": 0.05749772,
+            "precision": 0.081985,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.05952505,
+            "precision": 0.086682,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.06190058,
+            "precision": 0.088075,
+            "recall": 0.879377
+          },
+          {
+            "threshold": 0.06416706,
+            "precision": 0.090872,
+            "recall": 0.863813
+          },
+          {
+            "threshold": 0.06654017,
+            "precision": 0.092601,
+            "recall": 0.832685
+          },
+          {
+            "threshold": 0.06868396,
+            "precision": 0.096536,
+            "recall": 0.81323
+          },
+          {
+            "threshold": 0.07104805,
+            "precision": 0.102011,
+            "recall": 0.809339
+          },
+          {
+            "threshold": 0.07355649,
+            "precision": 0.106116,
+            "recall": 0.789883
+          },
+          {
+            "threshold": 0.07630173,
+            "precision": 0.111425,
+            "recall": 0.766537
+          },
+          {
+            "threshold": 0.07894704,
+            "precision": 0.112264,
+            "recall": 0.715953
+          },
+          {
+            "threshold": 0.08221915,
+            "precision": 0.112143,
+            "recall": 0.657588
+          },
+          {
+            "threshold": 0.08611687,
+            "precision": 0.114719,
+            "recall": 0.618677
+          },
+          {
+            "threshold": 0.08953076,
+            "precision": 0.119746,
+            "recall": 0.587549
+          },
+          {
+            "threshold": 0.09445075,
+            "precision": 0.128497,
+            "recall": 0.571984
+          },
+          {
+            "threshold": 0.09945396,
+            "precision": 0.144,
+            "recall": 0.560311
+          },
+          {
+            "threshold": 0.10496848,
+            "precision": 0.158803,
+            "recall": 0.536965
+          },
+          {
+            "threshold": 0.11517971,
+            "precision": 0.176707,
+            "recall": 0.513619
+          },
+          {
+            "threshold": 0.12950028,
+            "precision": 0.203883,
+            "recall": 0.490272
+          },
+          {
+            "threshold": 0.14589846,
+            "precision": 0.219316,
+            "recall": 0.424125
+          },
+          {
+            "threshold": 0.16786527,
+            "precision": 0.251989,
+            "recall": 0.36965
+          },
+          {
+            "threshold": 0.1924519,
+            "precision": 0.27027,
+            "recall": 0.272374
+          },
+          {
+            "threshold": 0.23058247,
+            "precision": 0.301471,
+            "recall": 0.159533
+          },
+          {
+            "threshold": 0.33653231,
+            "precision": 0.307692,
+            "recall": 0.015564
+          }
+        ]
+      }
+    },
+    {
+      "name": "Feed-forward MLP (64,32,16), class-weighted, L2 + early stopping; no dropout runtime",
+      "kind": "mlp",
+      "metrics": {
+        "roc_auc": 0.582879,
+        "average_precision": 0.055759,
+        "brier_score": 0.043294,
+        "precision_at_recall_70": 0.053428,
+        "recall_at_selected_threshold": 0.700389,
+        "threshold": 0.0,
+        "curve": [
+          {
+            "threshold": 0.0,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.043,
+            "recall": 0.988327
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.043954,
+            "recall": 0.984436
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.044068,
+            "recall": 0.961089
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.044004,
+            "recall": 0.933852
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.043937,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.043478,
+            "recall": 0.871595
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.044191,
+            "recall": 0.859922
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.045155,
+            "recall": 0.85214
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.046393,
+            "recall": 0.848249
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.047274,
+            "recall": 0.836576
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.048442,
+            "recall": 0.828794
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.048987,
+            "recall": 0.809339
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.049817,
+            "recall": 0.793774
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.050456,
+            "recall": 0.774319
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.051674,
+            "recall": 0.762646
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.052718,
+            "recall": 0.747082
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.052707,
+            "recall": 0.715953
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.053593,
+            "recall": 0.696498
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.053935,
+            "recall": 0.669261
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.054641,
+            "recall": 0.645914
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.05265,
+            "recall": 0.59144
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.053363,
+            "recall": 0.568093
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.053772,
+            "recall": 0.540856
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.055053,
+            "recall": 0.521401
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.053438,
+            "recall": 0.474708
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.054409,
+            "recall": 0.451362
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.056032,
+            "recall": 0.431907
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.056831,
+            "recall": 0.404669
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.058368,
+            "recall": 0.381323
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.055628,
+            "recall": 0.330739
+          },
+          {
+            "threshold": 0.0,
+            "precision": 0.054466,
+            "recall": 0.291829
+          },
+          {
+            "threshold": 1e-08,
+            "precision": 0.053834,
+            "recall": 0.256809
+          },
+          {
+            "threshold": 1e-08,
+            "precision": 0.055814,
+            "recall": 0.233463
+          },
+          {
+            "threshold": 2e-08,
+            "precision": 0.060606,
+            "recall": 0.217899
+          },
+          {
+            "threshold": 4e-08,
+            "precision": 0.062096,
+            "recall": 0.18677
+          },
+          {
+            "threshold": 9e-08,
+            "precision": 0.062701,
+            "recall": 0.151751
+          },
+          {
+            "threshold": 2.1e-07,
+            "precision": 0.061571,
+            "recall": 0.11284
+          },
+          {
+            "threshold": 7e-07,
+            "precision": 0.075,
+            "recall": 0.093385
+          },
+          {
+            "threshold": 5.89e-06,
+            "precision": 0.071006,
+            "recall": 0.046693
+          },
+          {
+            "threshold": 0.05090723,
+            "precision": 0.055556,
+            "recall": 0.003891
+          }
+        ]
+      }
+    },
+    {
+      "name": "XGBoost engineered interactions, scale_pos_weight=2.0",
+      "kind": "xgboost_interactions",
+      "scale_pos_weight": 2.0,
+      "best_trees": 87,
+      "metrics": {
+        "roc_auc": 0.819668,
+        "average_precision": 0.199591,
+        "brier_score": 0.041235,
+        "precision_at_recall_70": 0.112353,
+        "recall_at_selected_threshold": 0.70428,
+        "threshold": 0.11872336,
+        "curve": [
+          {
+            "threshold": 0.02681566,
+            "precision": 0.042423,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03343578,
+            "precision": 0.043969,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.03770454,
+            "precision": 0.045656,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04073036,
+            "precision": 0.04733,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04317599,
+            "precision": 0.049168,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04492449,
+            "precision": 0.051104,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04678581,
+            "precision": 0.052924,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.04855382,
+            "precision": 0.054833,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.05033099,
+            "precision": 0.056934,
+            "recall": 1.0
+          },
+          {
+            "threshold": 0.05219127,
+            "precision": 0.05915,
+            "recall": 0.996109
+          },
+          {
+            "threshold": 0.05429394,
+            "precision": 0.06092,
+            "recall": 0.984436
+          },
+          {
+            "threshold": 0.05660879,
+            "precision": 0.06289,
+            "recall": 0.980545
+          },
+          {
+            "threshold": 0.05872175,
+            "precision": 0.064323,
+            "recall": 0.961089
+          },
+          {
+            "threshold": 0.06154405,
+            "precision": 0.066703,
+            "recall": 0.961089
+          },
+          {
+            "threshold": 0.06382498,
+            "precision": 0.068567,
+            "recall": 0.945525
+          },
+          {
+            "threshold": 0.06703375,
+            "precision": 0.070443,
+            "recall": 0.933852
+          },
+          {
+            "threshold": 0.07008354,
+            "precision": 0.073163,
+            "recall": 0.92607
+          },
+          {
+            "threshold": 0.07315411,
+            "precision": 0.07586,
+            "recall": 0.918288
+          },
+          {
+            "threshold": 0.07610627,
+            "precision": 0.07824,
+            "recall": 0.906615
+          },
+          {
+            "threshold": 0.07930575,
+            "precision": 0.080937,
+            "recall": 0.88716
+          },
+          {
+            "threshold": 0.08264667,
+            "precision": 0.083768,
+            "recall": 0.875486
+          },
+          {
+            "threshold": 0.08612315,
+            "precision": 0.085232,
+            "recall": 0.844358
+          },
+          {
+            "threshold": 0.08951088,
+            "precision": 0.089212,
+            "recall": 0.836576
+          },
+          {
+            "threshold": 0.09374956,
+            "precision": 0.093544,
+            "recall": 0.828794
+          },
+          {
+            "threshold": 0.09783703,
+            "precision": 0.097948,
+            "recall": 0.817121
+          },
+          {
+            "threshold": 0.10211147,
+            "precision": 0.102041,
+            "recall": 0.797665
+          },
+          {
+            "threshold": 0.10684419,
+            "precision": 0.103632,
+            "recall": 0.754864
+          },
+          {
+            "threshold": 0.1132326,
+            "precision": 0.106774,
+            "recall": 0.723735
+          },
+          {
+            "threshold": 0.11910602,
+            "precision": 0.112015,
+            "recall": 0.696498
+          },
+          {
+            "threshold": 0.12551415,
+            "precision": 0.113388,
+            "recall": 0.645914
+          },
+          {
+            "threshold": 0.13276438,
+            "precision": 0.116541,
+            "recall": 0.603113
+          },
+          {
+            "threshold": 0.14059533,
+            "precision": 0.122195,
+            "recall": 0.571984
+          },
+          {
+            "threshold": 0.15033235,
+            "precision": 0.132643,
+            "recall": 0.548638
+          },
+          {
+            "threshold": 0.16006221,
+            "precision": 0.150215,
+            "recall": 0.544747
+          },
+          {
+            "threshold": 0.17447866,
+            "precision": 0.166042,
+            "recall": 0.51751
+          },
+          {
+            "threshold": 0.19139062,
+            "precision": 0.190193,
+            "recall": 0.498054
+          },
+          {
+            "threshold": 0.21607538,
+            "precision": 0.208872,
+            "recall": 0.439689
+          },
+          {
+            "threshold": 0.25281206,
+            "precision": 0.2457,
+            "recall": 0.389105
+          },
+          {
+            "threshold": 0.3050068,
+            "precision": 0.265455,
+            "recall": 0.284047
+          },
+          {
+            "threshold": 0.36468557,
+            "precision": 0.323529,
+            "recall": 0.171206
+          },
+          {
+            "threshold": 0.584521,
+            "precision": 0.166667,
+            "recall": 0.003891
+          }
+        ]
+      }
+    }
+  ],
+  "recommended_before_final_holdout": {
+    "name": "XGBoost engineered, scale_pos_weight=2.0, Platt calibrated",
+    "kind": "xgboost_platt",
+    "scale_pos_weight": 2.0,
+    "metrics": {
+      "roc_auc": 0.824588,
+      "average_precision": 0.206596,
+      "brier_score": 0.037802,
+      "precision_at_recall_70": 0.113608,
+      "recall_at_selected_threshold": 0.708171,
+      "threshold": 0.07970539,
+      "curve": [
+        {
+          "threshold": 0.02430714,
+          "precision": 0.042423,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.02874402,
+          "precision": 0.043962,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.03109225,
+          "precision": 0.045374,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.03291918,
+          "precision": 0.047173,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.03471951,
+          "precision": 0.049385,
+          "recall": 1.0
+        },
+        {
+          "threshold": 0.03612556,
+          "precision": 0.051437,
+          "recall": 0.996109
+        },
+        {
+          "threshold": 0.03764029,
+          "precision": 0.053147,
+          "recall": 0.992218
+        },
+        {
+          "threshold": 0.03928015,
+          "precision": 0.055459,
+          "recall": 0.992218
+        },
+        {
+          "threshold": 0.04073764,
+          "precision": 0.058113,
+          "recall": 0.992218
+        },
+        {
+          "threshold": 0.04201508,
+          "precision": 0.060118,
+          "recall": 0.988327
+        },
+        {
+          "threshold": 0.04327775,
+          "precision": 0.062084,
+          "recall": 0.980545
+        },
+        {
+          "threshold": 0.04479896,
+          "precision": 0.063813,
+          "recall": 0.968872
+        },
+        {
+          "threshold": 0.04626553,
+          "precision": 0.066272,
+          "recall": 0.957198
+        },
+        {
+          "threshold": 0.04791755,
+          "precision": 0.068551,
+          "recall": 0.953307
+        },
+        {
+          "threshold": 0.04963146,
+          "precision": 0.071196,
+          "recall": 0.937743
+        },
+        {
+          "threshold": 0.05141002,
+          "precision": 0.073674,
+          "recall": 0.929961
+        },
+        {
+          "threshold": 0.05356431,
+          "precision": 0.0766,
+          "recall": 0.922179
+        },
+        {
+          "threshold": 0.05557967,
+          "precision": 0.079125,
+          "recall": 0.914397
+        },
+        {
+          "threshold": 0.05749772,
+          "precision": 0.081985,
+          "recall": 0.906615
+        },
+        {
+          "threshold": 0.05952505,
+          "precision": 0.086682,
+          "recall": 0.906615
+        },
+        {
+          "threshold": 0.06190058,
+          "precision": 0.088075,
+          "recall": 0.879377
+        },
+        {
+          "threshold": 0.06416706,
+          "precision": 0.090872,
+          "recall": 0.863813
+        },
+        {
+          "threshold": 0.06654017,
+          "precision": 0.092601,
+          "recall": 0.832685
+        },
+        {
+          "threshold": 0.06868396,
+          "precision": 0.096536,
+          "recall": 0.81323
+        },
+        {
+          "threshold": 0.07104805,
+          "precision": 0.102011,
+          "recall": 0.809339
+        },
+        {
+          "threshold": 0.07355649,
+          "precision": 0.106116,
+          "recall": 0.789883
+        },
+        {
+          "threshold": 0.07630173,
+          "precision": 0.111425,
+          "recall": 0.766537
+        },
+        {
+          "threshold": 0.07894704,
+          "precision": 0.112264,
+          "recall": 0.715953
+        },
+        {
+          "threshold": 0.08221915,
+          "precision": 0.112143,
+          "recall": 0.657588
+        },
+        {
+          "threshold": 0.08611687,
+          "precision": 0.114719,
+          "recall": 0.618677
+        },
+        {
+          "threshold": 0.08953076,
+          "precision": 0.119746,
+          "recall": 0.587549
+        },
+        {
+          "threshold": 0.09445075,
+          "precision": 0.128497,
+          "recall": 0.571984
+        },
+        {
+          "threshold": 0.09945396,
+          "precision": 0.144,
+          "recall": 0.560311
+        },
+        {
+          "threshold": 0.10496848,
+          "precision": 0.158803,
+          "recall": 0.536965
+        },
+        {
+          "threshold": 0.11517971,
+          "precision": 0.176707,
+          "recall": 0.513619
+        },
+        {
+          "threshold": 0.12950028,
+          "precision": 0.203883,
+          "recall": 0.490272
+        },
+        {
+          "threshold": 0.14589846,
+          "precision": 0.219316,
+          "recall": 0.424125
+        },
+        {
+          "threshold": 0.16786527,
+          "precision": 0.251989,
+          "recall": 0.36965
+        },
+        {
+          "threshold": 0.1924519,
+          "precision": 0.27027,
+          "recall": 0.272374
+        },
+        {
+          "threshold": 0.23058247,
+          "precision": 0.301471,
+          "recall": 0.159533
+        },
+        {
+          "threshold": 0.33653231,
+          "precision": 0.307692,
+          "recall": 0.015564
+        }
+      ]
+    }
+  },
+  "frozen_candidate_path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/models/candidates/xgboost_engineered_scale2_platt_candidate.json",
+  "notes": [
+    "Pit endpoint returned no historical records for these sessions; new_stint_proxy is an auditable proxy, not a claimed pit-lane event.",
+    "Track geometry is represented by telemetry-only straight/braking proxies; no fabricated circuit map or DRS detection coordinate was used.",
+    "The MLP is an honest no-dropout fallback because PyTorch/TensorFlow are not installed.",
+    "No candidate was evaluated on session 11353.",
+    "The frozen candidate is not activated in the browser because the current one-driver replay cannot calculate rival-relative features."
+  ],
+  "session_manifests": [
+    {
+      "session_key": 7953,
+      "rows": 7213,
+      "positive": 802,
+      "urls": {
+        "intervals": "https://api.openf1.org/v1/intervals?session_key=7953",
+        "position": "https://api.openf1.org/v1/position?session_key=7953",
+        "laps": "https://api.openf1.org/v1/laps?session_key=7953",
+        "stints": "https://api.openf1.org/v1/stints?session_key=7953",
+        "weather": "https://api.openf1.org/v1/weather?session_key=7953",
+        "overtakes": "https://api.openf1.org/v1/overtakes?session_key=7953",
+        "pit": "https://api.openf1.org/v1/pit?session_key=7953",
+        "race_control": "https://api.openf1.org/v1/race_control?session_key=7953",
+        "overtakes_clean_label": "https://api.openf1.org/v1/overtakes?session_key=7953",
+        "car_data_by_driver": {
+          "1": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=1",
+          "10": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=10",
+          "2": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=2",
+          "4": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=4",
+          "11": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=11",
+          "14": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=14",
+          "16": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=16",
+          "21": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=21",
+          "18": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=18",
+          "20": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=20",
+          "22": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=22",
+          "23": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=23",
+          "31": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=31",
+          "27": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=27",
+          "24": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=24",
+          "55": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=55",
+          "77": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=77",
+          "44": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=44",
+          "63": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=63",
+          "81": "https://api.openf1.org/v1/car_data?session_key=7953&driver_number=81"
+        },
+        "location_by_driver": {
+          "1": "https://api.openf1.org/v1/location?session_key=7953&driver_number=1",
+          "10": "https://api.openf1.org/v1/location?session_key=7953&driver_number=10",
+          "2": "https://api.openf1.org/v1/location?session_key=7953&driver_number=2",
+          "4": "https://api.openf1.org/v1/location?session_key=7953&driver_number=4",
+          "11": "https://api.openf1.org/v1/location?session_key=7953&driver_number=11",
+          "14": "https://api.openf1.org/v1/location?session_key=7953&driver_number=14",
+          "16": "https://api.openf1.org/v1/location?session_key=7953&driver_number=16",
+          "21": "https://api.openf1.org/v1/location?session_key=7953&driver_number=21",
+          "18": "https://api.openf1.org/v1/location?session_key=7953&driver_number=18",
+          "20": "https://api.openf1.org/v1/location?session_key=7953&driver_number=20",
+          "22": "https://api.openf1.org/v1/location?session_key=7953&driver_number=22",
+          "23": "https://api.openf1.org/v1/location?session_key=7953&driver_number=23",
+          "31": "https://api.openf1.org/v1/location?session_key=7953&driver_number=31",
+          "27": "https://api.openf1.org/v1/location?session_key=7953&driver_number=27",
+          "24": "https://api.openf1.org/v1/location?session_key=7953&driver_number=24",
+          "55": "https://api.openf1.org/v1/location?session_key=7953&driver_number=55",
+          "77": "https://api.openf1.org/v1/location?session_key=7953&driver_number=77",
+          "44": "https://api.openf1.org/v1/location?session_key=7953&driver_number=44",
+          "63": "https://api.openf1.org/v1/location?session_key=7953&driver_number=63",
+          "81": "https://api.openf1.org/v1/location?session_key=7953&driver_number=81"
+        }
+      },
+      "rows_before_cleaning": 7213,
+      "rows_after_cleaning": 4917,
+      "positive_after_cleaning": 626,
+      "excluded_windows": 2296,
+      "raw_overtakes": 394,
+      "excluded_overtakes": 197,
+      "clean_overtakes": 197,
+      "car_data_records": 721300,
+      "location_records": 737200,
+      "pit_records": 0,
+      "race_control_records": 75,
+      "pit_endpoint_available": false,
+      "race_control_endpoint_available": true
+    },
+    {
+      "session_key": 7779,
+      "rows": 7148,
+      "positive": 611,
+      "urls": {
+        "intervals": "https://api.openf1.org/v1/intervals?session_key=7779",
+        "position": "https://api.openf1.org/v1/position?session_key=7779",
+        "laps": "https://api.openf1.org/v1/laps?session_key=7779",
+        "stints": "https://api.openf1.org/v1/stints?session_key=7779",
+        "weather": "https://api.openf1.org/v1/weather?session_key=7779",
+        "overtakes": "https://api.openf1.org/v1/overtakes?session_key=7779",
+        "pit": "https://api.openf1.org/v1/pit?session_key=7779",
+        "race_control": "https://api.openf1.org/v1/race_control?session_key=7779",
+        "overtakes_clean_label": "https://api.openf1.org/v1/overtakes?session_key=7779",
+        "car_data_by_driver": {
+          "1": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=1",
+          "10": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=10",
+          "2": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=2",
+          "4": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=4",
+          "11": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=11",
+          "14": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=14",
+          "18": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=18",
+          "22": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=22",
+          "20": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=20",
+          "16": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=16",
+          "21": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=21",
+          "23": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=23",
+          "24": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=24",
+          "27": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=27",
+          "31": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=31",
+          "77": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=77",
+          "63": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=63",
+          "44": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=44",
+          "55": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=55",
+          "81": "https://api.openf1.org/v1/car_data?session_key=7779&driver_number=81"
+        },
+        "location_by_driver": {
+          "1": "https://api.openf1.org/v1/location?session_key=7779&driver_number=1",
+          "10": "https://api.openf1.org/v1/location?session_key=7779&driver_number=10",
+          "2": "https://api.openf1.org/v1/location?session_key=7779&driver_number=2",
+          "4": "https://api.openf1.org/v1/location?session_key=7779&driver_number=4",
+          "11": "https://api.openf1.org/v1/location?session_key=7779&driver_number=11",
+          "14": "https://api.openf1.org/v1/location?session_key=7779&driver_number=14",
+          "18": "https://api.openf1.org/v1/location?session_key=7779&driver_number=18",
+          "22": "https://api.openf1.org/v1/location?session_key=7779&driver_number=22",
+          "20": "https://api.openf1.org/v1/location?session_key=7779&driver_number=20",
+          "16": "https://api.openf1.org/v1/location?session_key=7779&driver_number=16",
+          "21": "https://api.openf1.org/v1/location?session_key=7779&driver_number=21",
+          "23": "https://api.openf1.org/v1/location?session_key=7779&driver_number=23",
+          "24": "https://api.openf1.org/v1/location?session_key=7779&driver_number=24",
+          "27": "https://api.openf1.org/v1/location?session_key=7779&driver_number=27",
+          "31": "https://api.openf1.org/v1/location?session_key=7779&driver_number=31",
+          "77": "https://api.openf1.org/v1/location?session_key=7779&driver_number=77",
+          "63": "https://api.openf1.org/v1/location?session_key=7779&driver_number=63",
+          "44": "https://api.openf1.org/v1/location?session_key=7779&driver_number=44",
+          "55": "https://api.openf1.org/v1/location?session_key=7779&driver_number=55",
+          "81": "https://api.openf1.org/v1/location?session_key=7779&driver_number=81"
+        }
+      },
+      "rows_before_cleaning": 7148,
+      "rows_after_cleaning": 5128,
+      "positive_after_cleaning": 398,
+      "excluded_windows": 2020,
+      "raw_overtakes": 168,
+      "excluded_overtakes": 50,
+      "clean_overtakes": 118,
+      "car_data_records": 667480,
+      "location_records": 680860,
+      "pit_records": 0,
+      "race_control_records": 58,
+      "pit_endpoint_available": false,
+      "race_control_endpoint_available": true
+    },
+    {
+      "session_key": 7787,
+      "rows": 6851,
+      "positive": 522,
+      "urls": {
+        "intervals": "https://api.openf1.org/v1/intervals?session_key=7787",
+        "position": "https://api.openf1.org/v1/position?session_key=7787",
+        "laps": "https://api.openf1.org/v1/laps?session_key=7787",
+        "stints": "https://api.openf1.org/v1/stints?session_key=7787",
+        "weather": "https://api.openf1.org/v1/weather?session_key=7787",
+        "overtakes": "https://api.openf1.org/v1/overtakes?session_key=7787",
+        "pit": "https://api.openf1.org/v1/pit?session_key=7787",
+        "race_control": "https://api.openf1.org/v1/race_control?session_key=7787",
+        "overtakes_clean_label": "https://api.openf1.org/v1/overtakes?session_key=7787",
+        "car_data_by_driver": {
+          "10": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=10",
+          "1": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=1",
+          "4": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=4",
+          "2": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=2",
+          "18": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=18",
+          "11": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=11",
+          "14": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=14",
+          "21": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=21",
+          "16": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=16",
+          "22": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=22",
+          "24": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=24",
+          "23": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=23",
+          "20": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=20",
+          "27": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=27",
+          "44": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=44",
+          "31": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=31",
+          "55": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=55",
+          "81": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=81",
+          "77": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=77",
+          "63": "https://api.openf1.org/v1/car_data?session_key=7787&driver_number=63"
+        },
+        "location_by_driver": {
+          "10": "https://api.openf1.org/v1/location?session_key=7787&driver_number=10",
+          "1": "https://api.openf1.org/v1/location?session_key=7787&driver_number=1",
+          "4": "https://api.openf1.org/v1/location?session_key=7787&driver_number=4",
+          "2": "https://api.openf1.org/v1/location?session_key=7787&driver_number=2",
+          "18": "https://api.openf1.org/v1/location?session_key=7787&driver_number=18",
+          "11": "https://api.openf1.org/v1/location?session_key=7787&driver_number=11",
+          "14": "https://api.openf1.org/v1/location?session_key=7787&driver_number=14",
+          "21": "https://api.openf1.org/v1/location?session_key=7787&driver_number=21",
+          "16": "https://api.openf1.org/v1/location?session_key=7787&driver_number=16",
+          "22": "https://api.openf1.org/v1/location?session_key=7787&driver_number=22",
+          "24": "https://api.openf1.org/v1/location?session_key=7787&driver_number=24",
+          "23": "https://api.openf1.org/v1/location?session_key=7787&driver_number=23",
+          "20": "https://api.openf1.org/v1/location?session_key=7787&driver_number=20",
+          "27": "https://api.openf1.org/v1/location?session_key=7787&driver_number=27",
+          "44": "https://api.openf1.org/v1/location?session_key=7787&driver_number=44",
+          "31": "https://api.openf1.org/v1/location?session_key=7787&driver_number=31",
+          "55": "https://api.openf1.org/v1/location?session_key=7787&driver_number=55",
+          "81": "https://api.openf1.org/v1/location?session_key=7787&driver_number=81",
+          "77": "https://api.openf1.org/v1/location?session_key=7787&driver_number=77",
+          "63": "https://api.openf1.org/v1/location?session_key=7787&driver_number=63"
+        }
+      },
+      "rows_before_cleaning": 6851,
+      "rows_after_cleaning": 3867,
+      "positive_after_cleaning": 187,
+      "excluded_windows": 2984,
+      "raw_overtakes": 264,
+      "excluded_overtakes": 195,
+      "clean_overtakes": 69,
+      "car_data_records": 982600,
+      "location_records": 1008120,
+      "pit_records": 0,
+      "race_control_records": 111,
+      "pit_endpoint_available": false,
+      "race_control_endpoint_available": true
+    },
+    {
+      "session_key": 9070,
+      "rows": 7944,
+      "positive": 499,
+      "urls": {
+        "intervals": "https://api.openf1.org/v1/intervals?session_key=9070",
+        "position": "https://api.openf1.org/v1/position?session_key=9070",
+        "laps": "https://api.openf1.org/v1/laps?session_key=9070",
+        "stints": "https://api.openf1.org/v1/stints?session_key=9070",
+        "weather": "https://api.openf1.org/v1/weather?session_key=9070",
+        "overtakes": "https://api.openf1.org/v1/overtakes?session_key=9070",
+        "pit": "https://api.openf1.org/v1/pit?session_key=9070",
+        "race_control": "https://api.openf1.org/v1/race_control?session_key=9070",
+        "overtakes_clean_label": "https://api.openf1.org/v1/overtakes?session_key=9070",
+        "car_data_by_driver": {
+          "1": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=1",
+          "4": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=4",
+          "2": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=2",
+          "11": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=11",
+          "10": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=10",
+          "14": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=14",
+          "18": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=18",
+          "20": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=20",
+          "21": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=21",
+          "16": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=16",
+          "24": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=24",
+          "23": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=23",
+          "22": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=22",
+          "27": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=27",
+          "55": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=55",
+          "44": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=44",
+          "31": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=31",
+          "63": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=63",
+          "77": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=77",
+          "81": "https://api.openf1.org/v1/car_data?session_key=9070&driver_number=81"
+        },
+        "location_by_driver": {
+          "1": "https://api.openf1.org/v1/location?session_key=9070&driver_number=1",
+          "4": "https://api.openf1.org/v1/location?session_key=9070&driver_number=4",
+          "2": "https://api.openf1.org/v1/location?session_key=9070&driver_number=2",
+          "11": "https://api.openf1.org/v1/location?session_key=9070&driver_number=11",
+          "10": "https://api.openf1.org/v1/location?session_key=9070&driver_number=10",
+          "14": "https://api.openf1.org/v1/location?session_key=9070&driver_number=14",
+          "18": "https://api.openf1.org/v1/location?session_key=9070&driver_number=18",
+          "20": "https://api.openf1.org/v1/location?session_key=9070&driver_number=20",
+          "21": "https://api.openf1.org/v1/location?session_key=9070&driver_number=21",
+          "16": "https://api.openf1.org/v1/location?session_key=9070&driver_number=16",
+          "24": "https://api.openf1.org/v1/location?session_key=9070&driver_number=24",
+          "23": "https://api.openf1.org/v1/location?session_key=9070&driver_number=23",
+          "22": "https://api.openf1.org/v1/location?session_key=9070&driver_number=22",
+          "27": "https://api.openf1.org/v1/location?session_key=9070&driver_number=27",
+          "55": "https://api.openf1.org/v1/location?session_key=9070&driver_number=55",
+          "44": "https://api.openf1.org/v1/location?session_key=9070&driver_number=44",
+          "31": "https://api.openf1.org/v1/location?session_key=9070&driver_number=31",
+          "63": "https://api.openf1.org/v1/location?session_key=9070&driver_number=63",
+          "77": "https://api.openf1.org/v1/location?session_key=9070&driver_number=77",
+          "81": "https://api.openf1.org/v1/location?session_key=9070&driver_number=81"
+        }
+      },
+      "rows_before_cleaning": 7944,
+      "rows_after_cleaning": 6058,
+      "positive_after_cleaning": 257,
+      "excluded_windows": 1886,
+      "raw_overtakes": 177,
+      "excluded_overtakes": 95,
+      "clean_overtakes": 82,
+      "car_data_records": 721040,
+      "location_records": 731880,
+      "pit_records": 0,
+      "race_control_records": 54,
+      "pit_endpoint_available": false,
+      "race_control_endpoint_available": true
+    }
+  ]
+}

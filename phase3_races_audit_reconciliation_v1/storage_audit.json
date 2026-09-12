@@ -1,0 +1,11 @@
+{
+  "copy_created": false,
+  "note": "Large telemetry payload is kept in its verified persistent location; this companion does not duplicate it.",
+  "package_bytes": 495988397,
+  "package_is_under_tmp": false,
+  "package_path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/phase3_passed_races/APEX-R_37_Passed_Races.zip",
+  "package_persistently_stored": true,
+  "package_sha256": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+  "persistent_parent_filesystem_free_bytes_after": 2253094912,
+  "persistent_parent_filesystem_total_bytes": 74089234432
+}

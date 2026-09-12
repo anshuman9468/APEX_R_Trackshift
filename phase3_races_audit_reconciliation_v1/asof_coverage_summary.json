@@ -1,0 +1,12 @@
+{
+  "both_missing": 3177,
+  "both_streams_asof": 37658,
+  "car_asof_within_1s": 37658,
+  "car_unmatched": 3179,
+  "future_join_count": 0,
+  "interpolation_count": 0,
+  "position_asof_within_1s": 37660,
+  "position_unmatched": 3177,
+  "tolerance_sec": 1.0,
+  "total_windows": 40837
+}

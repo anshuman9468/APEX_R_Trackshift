@@ -1,0 +1,4 @@
+proposed_split,race_count,windows,proxy_positive,proxy_negative,unknown_or_censored,unique_positive_boundary_proxy_events,verified_on_track_events,status_note
+development_train,26,28271,613,10058,17600,613,0,previously accessed development data; not an untouched final holdout
+development_validation,6,6575,103,2430,4042,103,0,previously accessed development data; not an untouched final holdout
+development_test,5,5991,107,2112,3772,107,0,previously accessed development data; not an untouched final holdout

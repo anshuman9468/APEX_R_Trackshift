@@ -1,0 +1,180 @@
+{
+  "artifact_rows": {
+    "driver_laps.csv.gz": 74084,
+    "race_context.csv": 70,
+    "race_context.json": 70,
+    "source_manifest.csv": 1654,
+    "source_manifest.json": 1654,
+    "unresolved_position_swap_candidates.csv.gz": 2095,
+    "unresolved_position_swap_candidates.json": 2095,
+    "validation_three_races.csv": 3,
+    "validation_three_races.json": 3,
+    "verified_public_events.csv.gz": 8020,
+    "verified_public_events.json": 8020
+  },
+  "coverage": {
+    "approved_races": 70,
+    "complete_source_lap_context_races": 69,
+    "excluded_incomplete_races": 1,
+    "expected_driver_entries": 1399,
+    "field_max_lap": 87,
+    "field_min_lap": 1,
+    "included_driver_lap_rows": 74084,
+    "included_race_lap_rows": 74084
+  },
+  "events": {
+    "candidate_races": 68,
+    "unresolved_position_swap_candidates": 2095,
+    "verified_overtake_events": 0,
+    "verified_public_event_rows": 8020
+  },
+  "generated_at_utc": "2026-09-11T13:06:24.745370+00:00",
+  "input_hashes_after": {
+    "phase2_data_foundation/context/pit_stop_context.csv": "631c8b961e170f52c0ce9a5099ae5e2fabca8124345353f2c58bd7d21cdbb13a",
+    "phase2_data_foundation/context/race_control_context.csv": "5f6888190f0cbe78e58438909da14c07196d7f5c92cb704535cebcd7da9512b8",
+    "phase2_data_foundation/context/weather_context.csv": "f09cd91ba18331760186ee42c50a7887a34ca21ea779770e15c5cc382cdd8696",
+    "phase2_data_foundation/provenance/source_fetch_log.json": "e2cfe5a6092dad67f227ccd02ed42537bf277f270b097bc61398b6ac8b1ddf54",
+    "phase3_prediction_dataset/context/laptime_coverage.csv": "497c7c3f77362a89c3e46354a7f635c86b49991b0701cc78489acc80a4d0e87e",
+    "phase3_prediction_dataset/excluded_sessions_manifest.json": "b3e1e7979594c8660dbfa98b2a6e0a63d407ab7c87bf4b802119b673ed63c68a",
+    "phase3_prediction_dataset/phase3_split_manifest.csv": "744f620524aa5377a4dbfe1b97907377c93c2b95ea597c1cf2e451cd5b23f9b7",
+    "phase3_prediction_dataset/provenance/phase3_provenance_manifest.json": "a958b1c447b364ae7f049cec13ee77d03cf5934083129ac6018506292f19923c"
+  },
+  "input_hashes_before": {
+    "phase2_data_foundation/context/pit_stop_context.csv": "631c8b961e170f52c0ce9a5099ae5e2fabca8124345353f2c58bd7d21cdbb13a",
+    "phase2_data_foundation/context/race_control_context.csv": "5f6888190f0cbe78e58438909da14c07196d7f5c92cb704535cebcd7da9512b8",
+    "phase2_data_foundation/context/weather_context.csv": "f09cd91ba18331760186ee42c50a7887a34ca21ea779770e15c5cc382cdd8696",
+    "phase2_data_foundation/provenance/source_fetch_log.json": "e2cfe5a6092dad67f227ccd02ed42537bf277f270b097bc61398b6ac8b1ddf54",
+    "phase3_prediction_dataset/context/laptime_coverage.csv": "497c7c3f77362a89c3e46354a7f635c86b49991b0701cc78489acc80a4d0e87e",
+    "phase3_prediction_dataset/excluded_sessions_manifest.json": "b3e1e7979594c8660dbfa98b2a6e0a63d407ab7c87bf4b802119b673ed63c68a",
+    "phase3_prediction_dataset/phase3_split_manifest.csv": "744f620524aa5377a4dbfe1b97907377c93c2b95ea597c1cf2e451cd5b23f9b7",
+    "phase3_prediction_dataset/provenance/phase3_provenance_manifest.json": "a958b1c447b364ae7f049cec13ee77d03cf5934083129ac6018506292f19923c"
+  },
+  "notes": [
+    "Complete means every source-listed driver has a readable laptimes.json beginning at lap 1 with contiguous observed lap identifiers; it does not prove uninterrupted physical track coverage.",
+    "Position reversals are unresolved candidates because the source has lap-boundary positions but no verified sub-lap overtake timestamp.",
+    "Source payloads are not repackaged; only derived exports and retrieval/hash manifests are distributed.",
+    "No labels, model features, model training, holdout scoring or decision-engine changes were performed."
+  ],
+  "package": {
+    "compression": "ZIP_DEFLATED",
+    "member_count": 18,
+    "verification_passed": true
+  },
+  "scope": {
+    "approved_manifest_races": 70,
+    "network_requests_issued": 0,
+    "protected_exclusion_enforced": true,
+    "session": "Race",
+    "source_mode": "REUSED_PINNED_PHASE2_PHASE3_CACHES",
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  "source_immutability_passed": true,
+  "split_coverage": {
+    "development_test": {
+      "complete_races": 14,
+      "lap_rows": 14716,
+      "unresolved_candidates": 469,
+      "verified_public_events": 1706
+    },
+    "train": {
+      "complete_races": 41,
+      "lap_rows": 44688,
+      "unresolved_candidates": 1281,
+      "verified_public_events": 4594
+    },
+    "validation": {
+      "complete_races": 14,
+      "lap_rows": 14680,
+      "unresolved_candidates": 345,
+      "verified_public_events": 1720
+    }
+  },
+  "validation_gate": {
+    "all_three_passed": true,
+    "expansion_authorized": true,
+    "race_results": [
+      {
+        "chronology_rank": "1",
+        "complete_context_reason": "ALL_EXPECTED_DRIVERS_VALID_CONTIGUOUS_FROM_LAP1",
+        "complete_source_lap_context": "PASS",
+        "event": "Chinese Grand Prix",
+        "expected_driver_count": 20,
+        "field_max_lap": 56,
+        "field_min_lap": 1,
+        "lap_rows": 1115,
+        "laptime_file_count": 20,
+        "physical_complete_lap_note": "Source is lap-level timing context; it is not continuous sub-lap telemetry and cannot prove every physical lap segment.",
+        "physical_complete_lap_proven": "NO",
+        "pit_event_rows": 30,
+        "race_control_rows": 37,
+        "race_id": "2018:Chinese Grand Prix:Race",
+        "session": "Race",
+        "split": "train",
+        "unresolved_position_swap_candidate_count": 0,
+        "valid_laptime_file_count": 20,
+        "verified_overtake_event_count": 0,
+        "weather_rows": 112,
+        "year": "2018"
+      },
+      {
+        "chronology_rank": "15",
+        "complete_context_reason": "ALL_EXPECTED_DRIVERS_VALID_CONTIGUOUS_FROM_LAP1",
+        "complete_source_lap_context": "PASS",
+        "event": "Australian Grand Prix",
+        "expected_driver_count": 20,
+        "field_max_lap": 58,
+        "field_min_lap": 1,
+        "lap_rows": 1041,
+        "laptime_file_count": 20,
+        "physical_complete_lap_note": "Source is lap-level timing context; it is not continuous sub-lap telemetry and cannot prove every physical lap segment.",
+        "physical_complete_lap_proven": "NO",
+        "pit_event_rows": 22,
+        "race_control_rows": 62,
+        "race_id": "2019:Australian Grand Prix:Race",
+        "session": "Race",
+        "split": "train",
+        "unresolved_position_swap_candidate_count": 0,
+        "valid_laptime_file_count": 20,
+        "verified_overtake_event_count": 0,
+        "weather_rows": 122,
+        "year": "2019"
+      },
+      {
+        "chronology_rank": "29",
+        "complete_context_reason": "ALL_EXPECTED_DRIVERS_VALID_CONTIGUOUS_FROM_LAP1",
+        "complete_source_lap_context": "PASS",
+        "event": "Austrian Grand Prix",
+        "expected_driver_count": 20,
+        "field_max_lap": 71,
+        "field_min_lap": 1,
+        "lap_rows": 1140,
+        "laptime_file_count": 20,
+        "physical_complete_lap_note": "Source is lap-level timing context; it is not continuous sub-lap telemetry and cannot prove every physical lap segment.",
+        "physical_complete_lap_proven": "NO",
+        "pit_event_rows": 38,
+        "race_control_rows": 87,
+        "race_id": "2020:Austrian Grand Prix:Race",
+        "session": "Race",
+        "split": "train",
+        "unresolved_position_swap_candidate_count": 0,
+        "valid_laptime_file_count": 20,
+        "verified_overtake_event_count": 0,
+        "weather_rows": 120,
+        "year": "2020"
+      }
+    ],
+    "races": [
+      "2018:Chinese Grand Prix:Race",
+      "2019:Australian Grand Prix:Race",
+      "2020:Austrian Grand Prix:Race"
+    ],
+    "stage": "THREE_RACE_VALIDATION_GATE"
+  },
+  "version": "full-race-collection-v1.0"
+}

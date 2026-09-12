@@ -1,0 +1,30 @@
+{
+  "architecture": {
+    "decoder": "attacker embedding + target embedding + pair features",
+    "dropout": 0.2,
+    "hidden_width": 32,
+    "message_passing": "two GINEConv layers"
+  },
+  "best_epoch": 28,
+  "best_validation_ap": 0.12760248880353492,
+  "checkpoint_config": {
+    "batch_size": 32,
+    "device": "cuda",
+    "dropout": 0.2,
+    "edge_dim": 4,
+    "hidden": 32,
+    "loss": "unweighted BCEWithLogitsLoss",
+    "lr": 0.001,
+    "node_dim": 18,
+    "optimizer": "Adam",
+    "pair_dim": 12,
+    "seed": 42,
+    "weight_decay": 0.0001
+  },
+  "epochs_run": 43,
+  "model_class": "EdgeAwareGNN",
+  "model_version": "gnn_proxy_v1",
+  "output_label": "experimental boundary position-swap proxy signal",
+  "preprocessing_version": "train-only-mean-standardize-v1",
+  "storage": "disk_graph_store lazy slices"
+}

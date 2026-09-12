@@ -1,0 +1,11 @@
+{
+  "full_race_telemetry_collection_final/telemetry_car.csv.gz": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+  "full_race_telemetry_collection_final/telemetry_position.csv.gz": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+  "gnn_proxy_experiment_v1/EXPERIMENT_SPEC.md": "50b604c017ab03d6f5f614f83c7e8aab0407302bd5604c7ed9996c6689c8d22b",
+  "gnn_proxy_experiment_v1/GRAPH_CACHE_SCHEMA.json": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+  "gnn_proxy_experiment_v1/graph_cache.pt": "f5b4d6806fb9004c7e080ed4fa594519f6d708d465c487015a7c36c99358597a",
+  "gnn_proxy_experiment_v1/graph_counts.json": "ad3addd5bd68a6821c437ac5aa1163c84a04e0164b899057fe8ec93d30c1ee62",
+  "gnn_proxy_experiment_v1/run_gnn_experiment.py": "e03e2dabc9940c7c19e2e5b0e2066082f0d83d79cd80211fdbc32ee0a02d45fe",
+  "phase3_passed_races/prediction_windows_37.csv.gz": "03a5b634245f0431479c2297d744b905ca803b888b3dd10705c81f4b4c98e01b",
+  "phase3_races_audit_reconciliation_v1/proposed_chronological_split_37.csv": "f613de06f939b7527984639776dcdcc7d00d5cde05b699bb5b20a3983f302557"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "apex-r-devsez",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first race strategy simulator and pit wall",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs",
+    "start": "python3 run.py",
+    "validate": "node scripts/validate.cjs"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,38 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "detail": "PASS",
+      "passed": true,
+      "test": "zip_crc"
+    },
+    {
+      "detail": [],
+      "passed": true,
+      "test": "extracted_sha256"
+    },
+    {
+      "detail": {
+        "actual": 1399,
+        "expected": 1399
+      },
+      "passed": true,
+      "test": "row_count:driver_telemetry_coverage.csv"
+    },
+    {
+      "detail": {
+        "actual": 1399,
+        "expected": 1399
+      },
+      "passed": true,
+      "test": "row_count:driver_telemetry_coverage.json"
+    }
+  ],
+  "member_count": 13,
+  "package": {
+    "bytes": 123390,
+    "compression": "ZIP_DEFLATED",
+    "path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_telemetry_collection_final/APEX-R_Telemetry_Audit_Companion.zip",
+    "sha256": "0afdbc632ea4ce1af764cdc6c2e6b197b8a4775378c5f1e1fb82ae7db1cb3b21"
+  }
+}

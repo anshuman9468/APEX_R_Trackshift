@@ -1,0 +1,72 @@
+{
+  "bounded_conversion_seconds": 144.92925763130188,
+  "comparison_memory_policy": "one pickle graph and one store slice at a time",
+  "equivalence": {
+    "edge_index_mismatches": 0,
+    "edge_mismatches": 0,
+    "graphs_compared": 15404,
+    "label_mismatches": 0,
+    "legacy_graphs_parsed": 15404,
+    "max_abs_difference": 0.0,
+    "metadata_mismatches": 0,
+    "node_mismatches": 0,
+    "pair_mismatches": 0,
+    "passed": true
+  },
+  "layout_validation": {
+    "edge_bounds": true,
+    "edge_offset_count": true,
+    "edge_total": true,
+    "finite_pair_indices": true,
+    "graph_count": true,
+    "node_offset_count": true,
+    "node_total": true,
+    "passed": true
+  },
+  "legacy_bytes": 101042629,
+  "legacy_path": "gnn_proxy_experiment_v1/graph_cache.pt",
+  "legacy_torch_load_used": false,
+  "store_manifest": {
+    "conversion_passes": 2,
+    "conversion_seconds": 95.91588115692139,
+    "edge_feature_count": 4,
+    "edge_index_shape": [
+      863262,
+      2
+    ],
+    "edge_shape": [
+      863262,
+      4
+    ],
+    "files": [
+      "node_values.npy",
+      "edge_values.npy",
+      "edge_index.npy",
+      "pair_values.npy",
+      "labels.npy",
+      "node_offsets.npy",
+      "edge_offsets.npy",
+      "metadata.json"
+    ],
+    "graphs": 15404,
+    "index_dtype": "int64",
+    "label_dtype": "int8",
+    "legacy_source": "gnn_proxy_experiment_v1/graph_cache.pt",
+    "node_feature_count": 18,
+    "node_shape": [
+      308080,
+      18
+    ],
+    "pair_feature_count": 12,
+    "pair_shape": [
+      15404,
+      12
+    ],
+    "raw_numeric_dtype": "float64",
+    "streaming_parser": true,
+    "total_edges": 863262,
+    "total_nodes": 308080,
+    "version": "disk-graph-store-v1"
+  },
+  "store_path": "gnn_proxy_experiment_v1/disk_graph_store"
+}

@@ -1,0 +1,71 @@
+{
+  "device": "cpu",
+  "direct_inference": {
+    "all_available": true,
+    "p50_ms": 2.564,
+    "p95_ms": 2.833,
+    "repeated_requests": 20,
+    "score": 0.0052168904803693295,
+    "stable_score": true,
+    "warmup_ms": 5455.606
+  },
+  "http_inference": {
+    "all_available": true,
+    "all_http_200": true,
+    "p50_ms": 5.309,
+    "p95_ms": 5.985,
+    "repeated_requests": 20,
+    "score": 0.0052168904803693295,
+    "server_startup_ms": 174.724,
+    "status_available": true,
+    "status_request_code": 200,
+    "status_request_ms": 10.271
+  },
+  "model_status": {
+    "action_influence": "zero; advisory only",
+    "checkpoint": "gnn_seed_42_best.pt",
+    "checkpoint_sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+    "device": "cpu",
+    "failure_reason": null,
+    "input_schema_version": "gnn-proxy-graph-cache-v1",
+    "loaded": true,
+    "model_version": "gnn_proxy_v1",
+    "output_label": "experimental boundary position-swap proxy signal",
+    "selected_epoch": 28,
+    "selected_seed": 42,
+    "status": "available",
+    "task": "fixed-pair next-lap-boundary classified-order position-swap proxy"
+  },
+  "output_label": "experimental boundary position-swap proxy signal",
+  "protected_session_accessed": false,
+  "reference_parity": {
+    "max_absolute_difference": 0.0,
+    "passed": true,
+    "samples": [
+      {
+        "absolute_difference": 0.0,
+        "backend_score": 0.0006161518394947052,
+        "race_id": "2018:Abu Dhabi Grand Prix:Race",
+        "reference_score": 0.0006161518394947052,
+        "window_id": "a59423891f0f101fd31d"
+      },
+      {
+        "absolute_difference": 0.0,
+        "backend_score": 0.030313290655612946,
+        "race_id": "2018:Abu Dhabi Grand Prix:Race",
+        "reference_score": 0.030313290655612946,
+        "window_id": "919ffab5f8e5b6e35f50"
+      },
+      {
+        "absolute_difference": 0.0,
+        "backend_score": 0.11714006215333939,
+        "race_id": "2018:Abu Dhabi Grand Prix:Race",
+        "reference_score": 0.11714006215333939,
+        "window_id": "7c9903f30ad04874ab43"
+      }
+    ],
+    "tolerance": 1e-07
+  },
+  "status": "PASS",
+  "training_executed": false
+}

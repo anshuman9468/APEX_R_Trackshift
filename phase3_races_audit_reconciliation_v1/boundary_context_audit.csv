@@ -1,0 +1,25 @@
+outcome_status,decision_pit,endpoint_pit,decision_race_control,endpoint_race_control,windows,label_mutation_performed,interpretation
+PROXY_NEGATIVE,FALSE,FALSE,FALSE,FALSE,8411,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_NEGATIVE,FALSE,FALSE,FALSE,TRUE,5614,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_NEGATIVE,FALSE,TRUE,FALSE,FALSE,371,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_NEGATIVE,FALSE,TRUE,FALSE,TRUE,204,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_POSITIVE,FALSE,FALSE,FALSE,FALSE,364,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_POSITIVE,FALSE,FALSE,FALSE,TRUE,195,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_POSITIVE,FALSE,TRUE,FALSE,FALSE,163,FALSE,audit flag; endpoint context is not a verified on-track event
+PROXY_POSITIVE,FALSE,TRUE,FALSE,TRUE,101,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,FALSE,FALSE,FALSE,536,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,FALSE,FALSE,TRUE,454,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,FALSE,TRUE,FALSE,6728,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,FALSE,TRUE,TRUE,14652,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,TRUE,FALSE,FALSE,25,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,TRUE,FALSE,TRUE,18,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,TRUE,TRUE,FALSE,252,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,FALSE,TRUE,TRUE,TRUE,684,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,FALSE,FALSE,FALSE,479,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,FALSE,FALSE,TRUE,287,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,FALSE,TRUE,FALSE,293,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,FALSE,TRUE,TRUE,816,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,TRUE,FALSE,FALSE,42,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,TRUE,FALSE,TRUE,56,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,TRUE,TRUE,FALSE,25,FALSE,audit flag; endpoint context is not a verified on-track event
+UNKNOWN_CENSORED,TRUE,TRUE,TRUE,TRUE,67,FALSE,audit flag; endpoint context is not a verified on-track event

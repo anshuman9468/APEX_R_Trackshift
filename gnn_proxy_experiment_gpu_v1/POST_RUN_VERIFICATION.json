@@ -1,0 +1,36 @@
+{
+  "checkpoint_reload_passed": true,
+  "checkpoints": [
+    {
+      "best_epoch": 33,
+      "device": "cuda",
+      "finite_state": true,
+      "seed": 17
+    },
+    {
+      "best_epoch": 16,
+      "device": "cuda",
+      "finite_state": true,
+      "seed": 23
+    },
+    {
+      "best_epoch": 28,
+      "device": "cuda",
+      "finite_state": true,
+      "seed": 42
+    }
+  ],
+  "checksum_list_entries": 39,
+  "checksum_mismatches": [],
+  "checksums_passed": true,
+  "expected_graphs_eligible": 15404,
+  "gpu_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "graph_store_race_count": 37,
+  "metrics_prediction_row_counts_passed": true,
+  "metrics_rows": 15,
+  "prediction_rows": 77020,
+  "protected_session_absent_from_graph_store": true,
+  "source_hashes_unchanged": true,
+  "split_isolation_passed": true
+}

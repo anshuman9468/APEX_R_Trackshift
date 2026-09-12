@@ -1,0 +1,38 @@
+race_id,expected_distinct_race_laps,car_distinct_race_laps,position_distinct_race_laps,car_position_intersection_race_laps,car_expected_set_match,position_expected_set_match
+2018:Abu Dhabi Grand Prix:Race,55,55,55,55,TRUE,TRUE
+2018:Austrian Grand Prix:Race,71,71,71,71,TRUE,TRUE
+2018:Azerbaijan Grand Prix:Race,51,51,51,51,TRUE,TRUE
+2018:Belgian Grand Prix:Race,44,44,44,44,TRUE,TRUE
+2018:Brazilian Grand Prix:Race,71,71,71,71,TRUE,TRUE
+2018:British Grand Prix:Race,52,52,52,52,TRUE,TRUE
+2018:Canadian Grand Prix:Race,70,70,70,70,TRUE,TRUE
+2018:Chinese Grand Prix:Race,56,56,56,56,TRUE,TRUE
+2018:French Grand Prix:Race,53,53,53,53,TRUE,TRUE
+2018:German Grand Prix:Race,67,67,67,67,TRUE,TRUE
+2018:Hungarian Grand Prix:Race,70,70,70,70,TRUE,TRUE
+2018:Japanese Grand Prix:Race,53,53,53,53,TRUE,TRUE
+2018:Mexican Grand Prix:Race,71,71,71,71,TRUE,TRUE
+2019:Abu Dhabi Grand Prix:Race,55,55,55,55,TRUE,TRUE
+2019:Australian Grand Prix:Race,58,58,58,58,TRUE,TRUE
+2019:Austrian Grand Prix:Race,71,71,71,71,TRUE,TRUE
+2019:Azerbaijan Grand Prix:Race,51,51,51,51,TRUE,TRUE
+2019:Bahrain Grand Prix:Race,57,57,57,57,TRUE,TRUE
+2019:Belgian Grand Prix:Race,44,44,44,44,TRUE,TRUE
+2019:Brazilian Grand Prix:Race,71,71,71,71,TRUE,TRUE
+2019:British Grand Prix:Race,52,52,52,52,TRUE,TRUE
+2019:Canadian Grand Prix:Race,70,70,70,70,TRUE,TRUE
+2019:Chinese Grand Prix:Race,56,56,56,56,TRUE,TRUE
+2019:French Grand Prix:Race,53,53,53,53,TRUE,TRUE
+2019:German Grand Prix:Race,64,64,64,64,TRUE,TRUE
+2019:Hungarian Grand Prix:Race,70,70,70,70,TRUE,TRUE
+2019:Italian Grand Prix:Race,53,53,53,53,TRUE,TRUE
+2020:70th Anniversary Grand Prix:Race,52,52,52,52,TRUE,TRUE
+2020:Bahrain Grand Prix:Race,57,57,57,57,TRUE,TRUE
+2020:Eifel Grand Prix:Race,60,60,60,60,TRUE,TRUE
+2020:Emilia Romagna Grand Prix:Race,63,63,63,63,TRUE,TRUE
+2020:Hungarian Grand Prix:Race,70,70,70,70,TRUE,TRUE
+2020:Italian Grand Prix:Race,53,53,53,53,TRUE,TRUE
+2020:Portuguese Grand Prix:Race,66,66,66,66,TRUE,TRUE
+2020:Russian Grand Prix:Race,53,53,53,53,TRUE,TRUE
+2020:Sakhir Grand Prix:Race,87,87,87,87,TRUE,TRUE
+2020:Spanish Grand Prix:Race,66,66,66,66,TRUE,TRUE

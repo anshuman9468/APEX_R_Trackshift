@@ -1,0 +1,35 @@
+# Local environments, package caches and temporary runtime files
+.venv*/
+.pip-cache/
+.tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime logs and local state
+runtime/*.log
+runtime/*.json
+*.pid
+
+# Large raw/derived telemetry payloads and experiment caches
+*.zip
+*.csv.gz
+*.pt
+*.npy
+*.ff1pkl
+full_race_telemetry_collection*/fastf1_cache/
+
+# The small frozen demo checkpoint is intentionally versioned.
+!models/frozen/gnn_proxy_v1/gnn_seed_42_best.pt
+!phase5_dashboard/frozen/gnn_seed_42_best.pt
+
+# Local cached API payloads and bulk audit datasets
+data/
+phase1_audit_output/
+phase2_data_foundation/enriched/
+phase3_prediction_dataset/corrected/
+
+# Local secrets and machine-specific files
+.env
+.env.*
+!.env.example

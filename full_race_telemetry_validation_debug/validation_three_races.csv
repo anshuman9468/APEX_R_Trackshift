@@ -1,0 +1,4 @@
+race_id,split,year,event,session,expected_driver_count,fastf1_participant_count,car_rows,position_rows,driver_hours_car,driver_hours_position,drivers_with_telemetry_coverage_pass,telemetry_coverage_status,source_retrieval_status,error,fastf1_missing_expected_drivers
+2018:Chinese Grand Prix:Race,train,2018,Chinese Grand Prix,Race,20,20,475304,387297,31.95659527777778,31.95565611111111,20,PASS,SUCCESS,,
+2019:Australian Grand Prix:Race,train,2019,Australian Grand Prix,Race,20,20,398270,317300,26.180329722222226,26.180069444444445,20,PASS,SUCCESS,,
+2020:Austrian Grand Prix:Race,train,2020,Austrian Grand Prix,Race,20,20,338344,381627,23.227831388888887,23.22800722222222,0,INCOMPLETE_OR_UNVERIFIED,SUCCESS,,

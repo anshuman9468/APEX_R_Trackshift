@@ -1,0 +1,14 @@
+{
+  "asof_tolerance_sec": 1.0,
+  "checkpoint_sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14",
+  "decision_time": "one fixed decision at the start of selected lap L, immediately after boundary L-1",
+  "join_policy": "backward-only; no interpolation, backfill, or future sample",
+  "lookback_sec": 10.0,
+  "model_version": "gnn_proxy_v1",
+  "output_label": "experimental boundary position-swap proxy signal",
+  "prohibited_interpretation": "not a rolling five-second overtake prediction; not a calibrated pass probability; not an ATTACK-benefit probability",
+  "selected_epoch": 28,
+  "selected_seed": 42,
+  "target_selection": "fixed classified direct predecessor at prior completed lap boundary; never recomputed within horizon",
+  "task": "fixed-pair next-lap-boundary classified-order position-swap proxy"
+}

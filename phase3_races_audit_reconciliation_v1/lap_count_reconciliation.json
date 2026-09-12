@@ -1,0 +1,14 @@
+{
+  "car_driver_lap_set_match_to_laptime": true,
+  "car_telemetry_distinct_race_lap_ids": 2236,
+  "car_telemetry_driver_lap_ids": 40837,
+  "car_telemetry_driver_race_entries": 740,
+  "expected_laptime_driver_lap_ids": 40837,
+  "expected_laptime_driver_race_entries": 740,
+  "partial_or_unmatched_driver_race_entries": 0,
+  "position_driver_lap_set_match_to_laptime": true,
+  "position_telemetry_distinct_race_lap_ids": 2236,
+  "position_telemetry_driver_lap_ids": 40837,
+  "position_telemetry_driver_race_entries": 740,
+  "reported_2318_interpretation": "distinct (driver, lap) number pairs with race identity omitted; not unique driver-lap identities"
+}

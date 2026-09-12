@@ -1,0 +1,28 @@
+TAP version 13
+# Subtest: Phase 5 energy model exposes battery-side constraints and explicit infeasibility
+ok 1 - Phase 5 energy model exposes battery-side constraints and explicit infeasibility
+  ---
+  duration_ms: 1.601389
+  type: 'test'
+  ...
+# Subtest: Phase 5 branch snapshot and GNN advisory remain zero-influence
+ok 2 - Phase 5 branch snapshot and GNN advisory remain zero-influence
+  ---
+  duration_ms: 10.678219
+  type: 'test'
+  ...
+# Subtest: historical fixture has causal frames and no target outcome labels
+ok 3 - historical fixture has causal frames and no target outcome labels
+  ---
+  duration_ms: 3.964801
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 3
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 135.316371

@@ -1,0 +1,224 @@
+[
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Abu Dhabi Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Austrian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Azerbaijan Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Belgian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Brazilian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:British Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Canadian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Chinese Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:French Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:German Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Hungarian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Japanese Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2018:Mexican Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_validation",
+    "race_id": "2019:Abu Dhabi Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Australian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Austrian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Azerbaijan Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Bahrain Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Belgian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Brazilian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:British Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Canadian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Chinese Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:French Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:German Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Hungarian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_train",
+    "race_id": "2019:Italian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_validation",
+    "race_id": "2020:70th Anniversary Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_test",
+    "race_id": "2020:Bahrain Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_test",
+    "race_id": "2020:Eifel Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_test",
+    "race_id": "2020:Emilia Romagna Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_validation",
+    "race_id": "2020:Hungarian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_validation",
+    "race_id": "2020:Italian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_test",
+    "race_id": "2020:Portuguese Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_validation",
+    "race_id": "2020:Russian Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_test",
+    "race_id": "2020:Sakhir Grand Prix:Race",
+    "untouched_final_holdout": false
+  },
+  {
+    "previously_accessed_development_data": true,
+    "proposed_split": "development_validation",
+    "race_id": "2020:Spanish Grand Prix:Race",
+    "untouched_final_holdout": false
+  }
+]

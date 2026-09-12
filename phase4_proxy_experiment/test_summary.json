@@ -1,0 +1,14 @@
+{
+  "feature_label_separation": true,
+  "protected_session_excluded": true,
+  "saved_model_parity": true,
+  "source_hashes_unchanged": true,
+  "timestamp_first_sample": {
+    "bad_first_rows": 0,
+    "evidence": "all selected rows were found with sample_index=0 and source-relative time 0 matching the stored lap-start anchors",
+    "first_rows_found": 1332,
+    "selected_keys": 1332,
+    "status": "PASS"
+  },
+  "whole_race_split_isolation": true
+}

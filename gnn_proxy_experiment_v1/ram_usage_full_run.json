@@ -1,0 +1,38 @@
+{
+  "elapsed_seconds": 394.99829149246216,
+  "legacy_cache_eagerly_loaded": false,
+  "peak_rss_bytes": 623767552,
+  "peak_rss_mib": 594.87109375,
+  "snapshots": [
+    {
+      "current_rss_bytes": 393781248,
+      "peak_rss_bytes": 393289728,
+      "stage": "start"
+    },
+    {
+      "current_rss_bytes": 444731392,
+      "peak_rss_bytes": 444088320,
+      "stage": "after_lazy_store_open"
+    },
+    {
+      "current_rss_bytes": 497209344,
+      "peak_rss_bytes": 496660480,
+      "stage": "after_streaming_train_preprocessing"
+    },
+    {
+      "current_rss_bytes": 514109440,
+      "peak_rss_bytes": 513437696,
+      "stage": "after_fixed_baselines"
+    },
+    {
+      "current_rss_bytes": 594415616,
+      "peak_rss_bytes": 592887808,
+      "stage": "after_validation_training"
+    },
+    {
+      "current_rss_bytes": 614109184,
+      "peak_rss_bytes": 612679680,
+      "stage": "after_development_test"
+    }
+  ]
+}

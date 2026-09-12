@@ -1,0 +1,17 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const {spawnSync}=require('node:child_process');
+const root=path.join(__dirname,'..');
+const out=path.resolve(process.argv[2]||path.join(root,'release'));
+fs.mkdirSync(out,{recursive:true});
+let html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
+const replaceOnce=(needle,replacement)=>{if(html.split(needle).length!==2)throw new Error('Unexpected HTML asset marker: '+needle);html=html.replace(needle,()=>replacement);};
+replaceOnce('<link rel="stylesheet" href="./styles.css">','<style>'+fs.readFileSync(path.join(root,'dist/styles.css'),'utf8')+'</style>');
+for(const file of ['engine.js','telemetry.js','app.js'])replaceOnce('<script src="./'+file+'"></script>','<script>'+fs.readFileSync(path.join(root,'dist',file),'utf8').replace(/<\/script/gi,'<\\/script')+'</script>');
+replaceOnce('href="./favicon.svg"','href="data:image/svg+xml;base64,'+fs.readFileSync(path.join(root,'dist/favicon.svg')).toString('base64')+'"');
+fs.writeFileSync(path.join(out,'APEX-R_Devsez_Offline.html'),html);
+const files=['dist','backend','scripts','tests','docs','README.md','requirements.txt','package.json','run.py'];
+const zip=spawnSync('zip',['-q','-r',path.join(out,'APEX-R_Devsez_Full_Application.zip'),...files,'-x','*/__pycache__/*','*.pyc'],{cwd:root,encoding:'utf8'});
+if(zip.status!==0)throw new Error(zip.stderr||'Zip failed');
+console.log(JSON.stringify({offline:path.join(out,'APEX-R_Devsez_Offline.html'),source:path.join(out,'APEX-R_Devsez_Full_Application.zip'),htmlBytes:Buffer.byteLength(html),zipBytes:fs.statSync(path.join(out,'APEX-R_Devsez_Full_Application.zip')).size}));

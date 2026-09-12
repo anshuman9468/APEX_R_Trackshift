@@ -1,0 +1,111 @@
+{
+  "all_races_in_authoritative_status": {
+    "actual": 70,
+    "match": true,
+    "reported": 70
+  },
+  "candidate_other_changes": {
+    "actual": 620,
+    "match": true,
+    "reported": 620
+  },
+  "candidate_subset": {
+    "actual": 1195,
+    "match": true,
+    "reported": 1195
+  },
+  "candidate_unresolved": {
+    "actual": 575,
+    "match": true,
+    "reported": 575
+  },
+  "car_rows": {
+    "actual": 15944390,
+    "match": true,
+    "reported": 15944390
+  },
+  "driver_race_entries_car": {
+    "actual": 740,
+    "match": true,
+    "reported": 740
+  },
+  "driver_race_entries_position": {
+    "actual": 740,
+    "match": true,
+    "reported": 740
+  },
+  "existing_metrics_car_driver_hours": {
+    "independent": 1066.944765,
+    "reported": 1066.944765
+  },
+  "existing_metrics_position_driver_hours": {
+    "independent": 1066.939238611111,
+    "reported": 1066.939238611111
+  },
+  "expected_laptime_driver_lap_ids": {
+    "actual": 40837,
+    "match": true,
+    "reported_inferred_from_windows": 40837
+  },
+  "package": {
+    "bytes": 495988397,
+    "compression_types": [
+      8
+    ],
+    "crc_failures": [],
+    "large_members": [
+      {
+        "compressed_size": 246979952,
+        "file_size": 250845416,
+        "name": "telemetry_car_37_passed.csv.gz"
+      },
+      {
+        "compressed_size": 243848647,
+        "file_size": 254475021,
+        "name": "telemetry_position_37_passed.csv.gz"
+      }
+    ],
+    "member_count": 33,
+    "path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/phase3_passed_races/APEX-R_37_Passed_Races.zip",
+    "sha256": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+    "unsafe_member_paths": [],
+    "zip_integrity_pass": true
+  },
+  "pass_races": {
+    "actual": 37,
+    "match": true,
+    "reported": 37
+  },
+  "position_rows": {
+    "actual": 14277894,
+    "match": true,
+    "reported": 14277894
+  },
+  "proxy_negative": {
+    "actual": 14600,
+    "match": true,
+    "reported": 14600
+  },
+  "proxy_positive": {
+    "actual": 823,
+    "match": true,
+    "reported": 823
+  },
+  "reported_2318_driver_lap_streams": {
+    "actual_distinct_driver_lap_ids_car": 40837,
+    "actual_distinct_driver_lap_number_pairs_car": 2318,
+    "actual_distinct_race_lap_ids_car": 2236,
+    "reported": 2318,
+    "status": "COUNT_REPRODUCED_AS_DRIVER_LAP_NUMBER_PAIRS_WITH_RACE_ID_OMITTED; LABEL_REPAIRED"
+  },
+  "unknown_censored": {
+    "actual": 25414,
+    "match": true,
+    "reported": 25414
+  },
+  "windows": {
+    "actual": 40837,
+    "match": true,
+    "reported": 40837
+  }
+}

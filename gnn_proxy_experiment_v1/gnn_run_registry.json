@@ -1,0 +1,26 @@
+[
+  {
+    "best_epoch": 24,
+    "best_validation_ap": 0.12080590397759569,
+    "checkpoint": "gnn_seed_17_best.pt",
+    "epochs_run": 39,
+    "seed": 17,
+    "training_seconds": 126.27184653282166
+  },
+  {
+    "best_epoch": 21,
+    "best_validation_ap": 0.10605370414540201,
+    "checkpoint": "gnn_seed_23_best.pt",
+    "epochs_run": 36,
+    "seed": 23,
+    "training_seconds": 114.14379620552063
+  },
+  {
+    "best_epoch": 22,
+    "best_validation_ap": 0.117812112042323,
+    "checkpoint": "gnn_seed_42_best.pt",
+    "epochs_run": 37,
+    "seed": 42,
+    "training_seconds": 117.07234621047974
+  }
+]

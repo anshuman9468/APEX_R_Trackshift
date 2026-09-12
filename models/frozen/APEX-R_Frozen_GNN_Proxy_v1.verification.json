@@ -1,0 +1,40 @@
+{
+  "archive": "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application/models/frozen/APEX-R_Frozen_GNN_Proxy_v1.zip",
+  "archive_bytes": 69297,
+  "archive_sha256": "dd246c9883e1719d445d2d5063750ecec54523acc923424064b30eabcd124d81",
+  "checksum_failures": [],
+  "checksums_checked": 19,
+  "declared_graph_counts": {
+    "eligible": 15404,
+    "excluded": 19,
+    "negative_proxy": 14582,
+    "positive_proxy": 822
+  },
+  "fresh_extraction": "PASS",
+  "note": "No training, tuning, label construction, data collection or protected-session read was performed.",
+  "protected_session_accessed": false,
+  "smoke_test": {
+    "approved_sample_race": "2019:Abu Dhabi Grand Prix:Race",
+    "approved_sample_split": "development_validation",
+    "checkpoint": "gnn_seed_42_best.pt",
+    "device": "cpu",
+    "inference_mode_used": true,
+    "model_in_eval_mode": true,
+    "model_output_label": "experimental boundary position-swap proxy signal",
+    "model_version": "gnn_proxy_v1",
+    "note": "Raw sigmoid proxy signal; not a calibrated overtake probability or an ATTACK-benefit probability.",
+    "protected_session_accessed": false,
+    "score": 0.0052168904803693295,
+    "score_is_between_zero_and_one": true,
+    "score_is_finite": true,
+    "selected_epoch": 28,
+    "selected_seed": 42,
+    "status": "PASS",
+    "training_code_executed": false,
+    "window_id": "ee38ba6e51b8d9dbba9b"
+  },
+  "source_artifacts_unchanged_after_packaging": true,
+  "status": "PASS",
+  "zip_crc": "PASS",
+  "zip_file_compression": "ZIP_DEFLATED"
+}

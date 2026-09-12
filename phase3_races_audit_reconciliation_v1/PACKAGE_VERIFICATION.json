@@ -1,0 +1,266 @@
+{
+  "all_passed": true,
+  "bytes": 661430,
+  "checks": [
+    {
+      "detail": "all members",
+      "name": "zip_crc",
+      "status": "PASS"
+    },
+    {
+      "detail": "members=33",
+      "name": "compression",
+      "status": "PASS"
+    },
+    {
+      "detail": "60bae8db37f02fb3dbe9df07f8d612d4cdab65b3bee671a4644b0c7a79687c29",
+      "name": "checksum:DATA_DICTIONARY.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "94eac51dcbfb88c5c900fae1cbd04f0e6518818d7a484dcb5d68b13dda076415",
+      "name": "checksum:PHASE3_PASSED_RACES_REPAIR_AUDIT.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "03d20538079203a9b8d00a0cf10209dd324680dd5bc15850c98fe83d410f371f",
+      "name": "checksum:README.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "f99fa555e916145cd225851198d63f3deda45834a682444704676416a179b753",
+      "name": "checksum:asof_coverage_by_race.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "05891dea5a67055f1bdb768b8c3231d36669f062669393d6abf049e0875eaef2",
+      "name": "checksum:asof_coverage_summary.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "3245d9d29b4686897761723dcacf1b8be1df4cc761a4cacc3a067c1b95835d97",
+      "name": "checksum:boundary_context_audit.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "c2b213394cfda82272567fab610e59dbac18e7e4aa30588e6977e22a96cc41bc",
+      "name": "checksum:coverage_count_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "f881307e2e62ccbf5469ccc58f7f3c997730051b1678780bc48fdc5ff0b92889",
+      "name": "checksum:driver_lap_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "fa048f5c2336163b884d0838f56a55f29eaf2b19b3318c2b5394f505b4a4489d",
+      "name": "checksum:independent_stream_counts.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "a04ac1e08baa72097112bbd839e40e7f2aebf42c69ee22bd59da6fc9f1a4b2d9",
+      "name": "checksum:lap_count_reconciliation.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "b05e3ca45429154fdd29dd7c62eb4f8ba4d89c4d89378f2fddb418c2d25afdff",
+      "name": "checksum:laptime_parse_check.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "bcc070f0c7a6eb3f5030499debd5eff23651321a66967bbbc0b9fc87822c4b12",
+      "name": "checksum:negative_eligibility_audit.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "7a8118f411035d644d9406b179e7215c3f8a3ce41a5fe714256697ed2018841b",
+      "name": "checksum:negative_label_audit.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "b908f2f8a212f8bf1c62f44b458919f83b4606bac539e2f47f48e049880f0914",
+      "name": "checksum:negative_label_audit_summary.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "4d4b5bfa09067f2e09a44dff883139be5e40b71eb882ec2a2bb7d057c91af44e",
+      "name": "checksum:package_companion.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "058cf9078c831d25eefbc92cd3dbef95b7964ab193bb1ec8827e3c4b30a31f96",
+      "name": "checksum:positive_lineage_reconciliation.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "ac8e1c066487d4f04d9fa081064aebccd2a1d5c38c20e0c855df09083d3b7d28",
+      "name": "checksum:positive_proxy_event_summary.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "b85a50f96276df9fab275002b70058fc8326cc64b920bba4ceb2e71351104dff",
+      "name": "checksum:positive_window_event_lineage.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "f613de06f939b7527984639776dcdcc7d00d5cde05b699bb5b20a3983f302557",
+      "name": "checksum:proposed_chronological_split_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "a59c4e02d9128d26af6e6ed9ef551d6fec96b3c8afefa1ea49e34011ba9a5265",
+      "name": "checksum:proposed_split_decision.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "7744dea722f723bb514cb0f7ace8b8dddb7257d9e4479c5ed87229005d45cc8b",
+      "name": "checksum:proposed_split_support.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "af5b6470408b6d7236c97bc86e54babb8e365d84b203eb499c506bc50645a3f6",
+      "name": "checksum:race_lap_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "863921f548c8426e4e7ecec9f184ffd7c74ca1f7136cc680fbe93661a6e56820",
+      "name": "checksum:repair_audit.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "30c7f11fa46390809118417e5326f041a2245988ae7447d701faf2e08041782e",
+      "name": "checksum:repair_tests.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "3fd069f492c0a83370a55259dc6a85ee3468dd28bbb020d3d11fbcbc8a26d039",
+      "name": "checksum:repaired_metrics.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "b5c2627e4201d6e9a272fa40146b7aad170aa1b2826b1064381a6266bdc27bea",
+      "name": "checksum:reported_state_verification.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "85e8b3a5c6b4871e61e62ea0aa31f58d7ca5914c3bf3a800742d1bdd2a8a4d64",
+      "name": "checksum:source_hashes_after.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "85e8b3a5c6b4871e61e62ea0aa31f58d7ca5914c3bf3a800742d1bdd2a8a4d64",
+      "name": "checksum:source_hashes_before.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "e8a716d7df618c147ca189f3a8ef86b721d2eb3b7768ccf5ede473249ccfceb5",
+      "name": "checksum:source_immutability_check.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "0b0e6b07de9012f67c8cae65658d774f56539c728b4e7ecbebc7192949248460",
+      "name": "checksum:split_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "8877c386a75d0497aba4ac29325cea1b437cce0f1989c3d4e4558370294410b8",
+      "name": "checksum:storage_audit.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "b1aa549ee3b9e7dc4dc58ec12a87d641982e5db23d6d8ca635a553fa6c33e7b6",
+      "name": "checksum:test_repairs.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=9, expected=9",
+      "name": "row_count:DATA_DICTIONARY.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=37, expected=37",
+      "name": "row_count:asof_coverage_by_race.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=24, expected=24",
+      "name": "row_count:boundary_context_audit.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=5, expected=5",
+      "name": "row_count:coverage_count_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=740, expected=740",
+      "name": "row_count:driver_lap_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=14600, expected=14600",
+      "name": "row_count:negative_label_audit.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=4, expected=4",
+      "name": "row_count:negative_label_audit_summary.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=823, expected=823",
+      "name": "row_count:positive_proxy_event_summary.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=823, expected=823",
+      "name": "row_count:positive_window_event_lineage.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=37, expected=37",
+      "name": "row_count:proposed_chronological_split_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=3, expected=3",
+      "name": "row_count:proposed_split_support.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=37, expected=37",
+      "name": "row_count:race_lap_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=37, expected=37",
+      "name": "row_count:split_reconciliation.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "checksums and expected row counts verified",
+      "name": "fresh_extraction",
+      "status": "PASS"
+    }
+  ],
+  "compression": "ZIP_DEFLATED",
+  "member_count": 33,
+  "package_path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/phase3_races_audit_reconciliation_v1/APEX-R_Phase3_Passed_Races_Reconciliation_v1.zip",
+  "row_counts": {
+    "DATA_DICTIONARY.csv": 9,
+    "asof_coverage_by_race.csv": 37,
+    "boundary_context_audit.csv": 24,
+    "coverage_count_reconciliation.csv": 5,
+    "driver_lap_reconciliation.csv": 740,
+    "negative_label_audit.csv.gz": 14600,
+    "negative_label_audit_summary.csv": 4,
+    "positive_proxy_event_summary.csv": 823,
+    "positive_window_event_lineage.csv": 823,
+    "proposed_chronological_split_37.csv": 37,
+    "proposed_split_support.csv": 3,
+    "race_lap_reconciliation.csv": 37,
+    "split_reconciliation.csv": 37
+  },
+  "sha256": "a879f6678eab2d7a816d4c38db07266edae4ec1170c51fe88c3f10dfabfe48d2",
+  "verified_from_fresh_extraction": true
+}

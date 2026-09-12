@@ -1,0 +1,28 @@
+{
+  "candidate_review_classification_all_passed_candidates": {
+    "OTHER_POSITION_CHANGE": 620,
+    "UNRESOLVED": 575
+  },
+  "candidate_source_rows_all_races": 2095,
+  "candidate_source_rows_passed_races": 1195,
+  "contradictory_candidate_classifications": 0,
+  "explanation": "The 823 positives are generated from all eligible boundary windows. Only 412 have an exact inherited-candidate link; 411 are endpoint reversals outside the inherited candidate list. All remain boundary-order proxy labels, not verified overtakes.",
+  "human_review_performed": false,
+  "lineage_rows": 823,
+  "matched_to_1195_candidate_universe": 412,
+  "original_positive_windows": 823,
+  "outside_inherited_candidate_universe": 411,
+  "positive_candidate_classification": {
+    "OTHER_POSITION_CHANGE": 137,
+    "OUTSIDE_CANDIDATE_UNIVERSE": 411,
+    "UNRESOLVED": 275
+  },
+  "target_change_status": "NOT_DETERMINABLE_FROM_BOUNDARY_LAP_SNAPSHOTS; fixed pair retained by contract",
+  "unique_boundary_proxy_events": 823,
+  "unique_supporting_candidate_ids": 412,
+  "verified_on_track_events": 0,
+  "version": "phase3-passed-races-reconciliation-v1",
+  "windows_per_event": {
+    "1": 823
+  }
+}

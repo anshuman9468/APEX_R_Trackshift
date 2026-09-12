@@ -1,0 +1,203 @@
+{
+  "checks": [
+    {
+      "detail": "PASS",
+      "passed": true,
+      "test": "zip_crc"
+    },
+    {
+      "detail": "cb01354a7f968856d265cca4086a2a1ae1c87317030bbb46506fdd7a21677fc4",
+      "passed": true,
+      "test": "extracted_sha256:PHASE_FULL_RACE_REPORT.md"
+    },
+    {
+      "detail": "56283b3194f90432951877c8998ba1470b2c89c0a3a8a687099121ec3f14c678",
+      "passed": true,
+      "test": "extracted_sha256:README.md"
+    },
+    {
+      "detail": "dadedbca3ac0f44ec94c6b04955dc0d2719f03c7f1bdceb5e232a40282ce1afa",
+      "passed": true,
+      "test": "extracted_sha256:collection_pipeline.py"
+    },
+    {
+      "detail": "5c3ff8cbcb8640be478ce2cefe0e8019405f8cd28f1ab7ef9a475efd68961d4f",
+      "passed": true,
+      "test": "extracted_sha256:driver_laps.csv.gz"
+    },
+    {
+      "detail": "511f722f0dfb797abd70c78ddbc7f76a4360542af5daa07a4ffd5d3b9116dad2",
+      "passed": true,
+      "test": "extracted_sha256:metrics.json"
+    },
+    {
+      "detail": "e937e63629bdb61b5d6106dd3bbe85881eaf4808a487710075f68ba51dd682e8",
+      "passed": true,
+      "test": "extracted_sha256:race_context.csv"
+    },
+    {
+      "detail": "16dcae2bffb4f689ddc28151cc85503707c95ce239bd905f4262be60d88966ed",
+      "passed": true,
+      "test": "extracted_sha256:race_context.json"
+    },
+    {
+      "detail": "8b6af79aa38fcae9c878916187b71b673d024fcfd31da26b2467d2b58c96e8b3",
+      "passed": true,
+      "test": "extracted_sha256:source_manifest.csv"
+    },
+    {
+      "detail": "4c7bed272d5ff6440ed942269c2d6ffbc5dbbe411b9bcc755e2c73aa470c618f",
+      "passed": true,
+      "test": "extracted_sha256:source_manifest.json"
+    },
+    {
+      "detail": "dea2277680743618d4adc6c135c55428fe9bf2570d2e528e2773238a167e74da",
+      "passed": true,
+      "test": "extracted_sha256:test_full_race_collection.py"
+    },
+    {
+      "detail": "ec9f5e9c0f859c39576e1adc44007b4207a876edbab9e47e836e31528b1cd982",
+      "passed": true,
+      "test": "extracted_sha256:unresolved_position_swap_candidates.csv.gz"
+    },
+    {
+      "detail": "248533907520069516d624a9e5cce1d39a423ae724a47853fd08a67819fca1af",
+      "passed": true,
+      "test": "extracted_sha256:unresolved_position_swap_candidates.json"
+    },
+    {
+      "detail": "32f1081dd6ca937d373ec4fab02b253d1b093d35d9b36f4e0b9550d6d4dee52b",
+      "passed": true,
+      "test": "extracted_sha256:validation_three_races.csv"
+    },
+    {
+      "detail": "5f3867320e7b8ee7141d0aba11e3a74202d2b6ce6103293eaddeb8ee160da907",
+      "passed": true,
+      "test": "extracted_sha256:validation_three_races.json"
+    },
+    {
+      "detail": "07c1a29b4378fd1ca8884aac3cc15c069973603918ff9727cef4670c7036a794",
+      "passed": true,
+      "test": "extracted_sha256:verified_public_events.csv.gz"
+    },
+    {
+      "detail": "9eccd2825fc73e3d4ab5d5cd8566cdaf74fe8fd1f916e402f7846704be371f8e",
+      "passed": true,
+      "test": "extracted_sha256:verified_public_events.json"
+    },
+    {
+      "detail": "840c1039a89db0b8d1537b17f2af3a885d24062a1568c5b439be9b89604f7b15",
+      "passed": true,
+      "test": "extracted_sha256:verify_full_race_collection.py"
+    },
+    {
+      "detail": "files=17",
+      "passed": true,
+      "test": "all_extracted_sha256"
+    },
+    {
+      "detail": {
+        "actual": 70,
+        "expected": 70
+      },
+      "passed": true,
+      "test": "row_count:race_context.csv"
+    },
+    {
+      "detail": {
+        "actual": 70,
+        "expected": 70
+      },
+      "passed": true,
+      "test": "row_count:race_context.json"
+    },
+    {
+      "detail": {
+        "actual": 74084,
+        "expected": 74084
+      },
+      "passed": true,
+      "test": "row_count:driver_laps.csv.gz"
+    },
+    {
+      "detail": {
+        "actual": 8020,
+        "expected": 8020
+      },
+      "passed": true,
+      "test": "row_count:verified_public_events.csv.gz"
+    },
+    {
+      "detail": {
+        "actual": 8020,
+        "expected": 8020
+      },
+      "passed": true,
+      "test": "row_count:verified_public_events.json"
+    },
+    {
+      "detail": {
+        "actual": 2095,
+        "expected": 2095
+      },
+      "passed": true,
+      "test": "row_count:unresolved_position_swap_candidates.csv.gz"
+    },
+    {
+      "detail": {
+        "actual": 2095,
+        "expected": 2095
+      },
+      "passed": true,
+      "test": "row_count:unresolved_position_swap_candidates.json"
+    },
+    {
+      "detail": {
+        "actual": 1654,
+        "expected": 1654
+      },
+      "passed": true,
+      "test": "row_count:source_manifest.csv"
+    },
+    {
+      "detail": {
+        "actual": 1654,
+        "expected": 1654
+      },
+      "passed": true,
+      "test": "row_count:source_manifest.json"
+    },
+    {
+      "detail": {
+        "actual": 3,
+        "expected": 3
+      },
+      "passed": true,
+      "test": "row_count:validation_three_races.csv"
+    },
+    {
+      "detail": {
+        "actual": 3,
+        "expected": 3
+      },
+      "passed": true,
+      "test": "row_count:validation_three_races.json"
+    },
+    {
+      "detail": "files=11",
+      "passed": true,
+      "test": "all_row_counts"
+    }
+  ],
+  "fresh_extraction_cleaned": true,
+  "generated_at_utc": "2026-09-11T13:06:25.895096+00:00",
+  "package": {
+    "bytes": 6551938,
+    "compression": "ZIP_DEFLATED",
+    "member_count": 18,
+    "path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_collection/APEX-R_Full_Race_Collection.zip",
+    "sha256": "e01179c76ada24240d35a5b1d9ab69c50cd8264f0898791464296e651eaa8de9"
+  },
+  "package_verification_note": "This file is retained outside the distributable ZIP to avoid changing the package after verification.",
+  "zip_crc_and_extracted_sha256_and_row_counts_passed": true
+}

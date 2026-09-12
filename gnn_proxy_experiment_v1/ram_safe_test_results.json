@@ -1,0 +1,374 @@
+{
+  "checks": {
+    "asof_age_within_tolerance": {
+      "detail": {
+        "max_age": 0.7609999999999673,
+        "tolerance": 1.0
+      },
+      "passed": true
+    },
+    "attacker_target_mapping": {
+      "detail": 15404,
+      "passed": true
+    },
+    "checkpoint_reload_parity": {
+      "detail": {
+        "17": {
+          "max_abs_difference": 0.0,
+          "passed": true
+        },
+        "23": {
+          "max_abs_difference": 0.0,
+          "passed": true
+        },
+        "42": {
+          "max_abs_difference": 0.0,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    "configuration_unchanged": {
+      "detail": {},
+      "passed": true
+    },
+    "coverage_cache_consistency": {
+      "detail": {
+        "cache": 15404,
+        "coverage_rows": 15423,
+        "eligible": 15404
+      },
+      "passed": true
+    },
+    "edge_index_bounds": {
+      "detail": 15404,
+      "passed": true
+    },
+    "feature_label_separation": {
+      "detail": {
+        "edge": [
+          "distance_m",
+          "relative_speed_kmh",
+          "source_position_age_i_sec",
+          "source_position_age_j_sec"
+        ],
+        "node": [
+          "speed_kmh",
+          "throttle_pct",
+          "brake",
+          "n_gear",
+          "rpm",
+          "drs_binary",
+          "car_sample_age_sec",
+          "x_m",
+          "y_m",
+          "z_m",
+          "position_sample_age_sec",
+          "speed_delta_10s_kmh",
+          "speed_trend_10s_kmh_per_s",
+          "car_missing_mask",
+          "position_missing_mask",
+          "drs_missing_mask",
+          "role_attacker",
+          "role_target"
+        ],
+        "pair": [
+          "attacker_target_speed_delta_kmh",
+          "attacker_target_distance_m",
+          "attacker_target_speed_delta_10s_kmh",
+          "attacker_car_age_sec",
+          "target_car_age_sec",
+          "attacker_position_age_sec",
+          "target_position_age_sec",
+          "attacker_car_missing",
+          "target_car_missing",
+          "attacker_position_missing",
+          "target_position_missing",
+          "pair_position_available"
+        ]
+      },
+      "passed": true
+    },
+    "full_run_memory_bounded": {
+      "detail": {
+        "elapsed_seconds": 394.99829149246216,
+        "legacy_cache_eagerly_loaded": false,
+        "peak_rss_bytes": 623767552,
+        "peak_rss_mib": 594.87109375,
+        "snapshots": [
+          {
+            "current_rss_bytes": 393781248,
+            "peak_rss_bytes": 393289728,
+            "stage": "start"
+          },
+          {
+            "current_rss_bytes": 444731392,
+            "peak_rss_bytes": 444088320,
+            "stage": "after_lazy_store_open"
+          },
+          {
+            "current_rss_bytes": 497209344,
+            "peak_rss_bytes": 496660480,
+            "stage": "after_streaming_train_preprocessing"
+          },
+          {
+            "current_rss_bytes": 514109440,
+            "peak_rss_bytes": 513437696,
+            "stage": "after_fixed_baselines"
+          },
+          {
+            "current_rss_bytes": 594415616,
+            "peak_rss_bytes": 592887808,
+            "stage": "after_validation_training"
+          },
+          {
+            "current_rss_bytes": 614109184,
+            "peak_rss_bytes": 612679680,
+            "stage": "after_development_test"
+          }
+        ]
+      },
+      "passed": true
+    },
+    "graph_shapes": {
+      "detail": 15404,
+      "passed": true
+    },
+    "lazy_batching": {
+      "detail": {
+        "batch": 32,
+        "edge_attr": [
+          1710,
+          4
+        ],
+        "pair_x": [
+          32,
+          12
+        ],
+        "x": [
+          640,
+          18
+        ]
+      },
+      "passed": true
+    },
+    "legacy_new_equivalence": {
+      "detail": {
+        "edge_index_mismatches": 0,
+        "edge_mismatches": 0,
+        "graphs_compared": 15404,
+        "label_mismatches": 0,
+        "legacy_graphs_parsed": 15404,
+        "max_abs_difference": 0.0,
+        "metadata_mismatches": 0,
+        "node_mismatches": 0,
+        "pair_mismatches": 0,
+        "passed": true
+      },
+      "passed": true
+    },
+    "legacy_not_eagerly_loaded": {
+      "detail": false,
+      "passed": true
+    },
+    "metric_row_consistency": {
+      "detail": {
+        "metrics": 15,
+        "models": 5
+      },
+      "passed": true
+    },
+    "pre_resume_memory_gate": {
+      "detail": {
+        "elapsed_seconds": 2.0055341720581055,
+        "formula_comparison": [
+          {
+            "differences_are_finite": true,
+            "mean_max_abs_difference": 1.3322676295501878e-14,
+            "mean_nonzero_difference_count": 3,
+            "name": "node",
+            "std_max_abs_difference": 1.2096279533579946e-10,
+            "std_nonzero_difference_count": 18
+          },
+          {
+            "differences_are_finite": true,
+            "mean_max_abs_difference": 7.753442332614213e-11,
+            "mean_nonzero_difference_count": 3,
+            "name": "edge",
+            "std_max_abs_difference": 1.2960299500264227e-11,
+            "std_nonzero_difference_count": 4
+          },
+          {
+            "differences_are_finite": true,
+            "mean_max_abs_difference": 0.0,
+            "mean_nonzero_difference_count": 0,
+            "name": "pair",
+            "std_max_abs_difference": 2.2737367544323206e-11,
+            "std_nonzero_difference_count": 7
+          },
+          {
+            "differences_are_finite": true,
+            "mean_max_abs_difference": 0.0,
+            "mean_nonzero_difference_count": 0,
+            "name": "tabular",
+            "std_max_abs_difference": 1.8280843505635858e-10,
+            "std_nonzero_difference_count": 35
+          }
+        ],
+        "legacy_graphs_eagerly_loaded": false,
+        "legacy_torch_load_used": false,
+        "memory_reference_note": "reference_stats concatenates training-only numeric slices for equivalence checking; production stats are streaming",
+        "one_batch": {
+          "all_gradients_finite": true,
+          "all_logits_finite": true,
+          "batch_size": 32,
+          "edge_tensor_dtype": "torch.float32",
+          "loss": 0.6679234504699707,
+          "node_tensor_dtype": "torch.float32",
+          "pair_tensor_dtype": "torch.float32"
+        },
+        "peak_rss_bytes": 522674176,
+        "peak_rss_mib": 498.4609375,
+        "preprocessing_fit_scope": "development_train only",
+        "snapshots": [
+          {
+            "current_rss_bytes": 326492160,
+            "peak_rss_bytes": 325947392,
+            "stage": "start"
+          },
+          {
+            "current_rss_bytes": 377417728,
+            "peak_rss_bytes": 376881152,
+            "stage": "after_lazy_store_open"
+          },
+          {
+            "current_rss_bytes": 428150784,
+            "peak_rss_bytes": 427479040,
+            "stage": "after_streaming_train_preprocessing"
+          },
+          {
+            "current_rss_bytes": 483020800,
+            "peak_rss_bytes": 522674176,
+            "stage": "after_bounded_formula_comparison"
+          },
+          {
+            "current_rss_bytes": 515076096,
+            "peak_rss_bytes": 522674176,
+            "stage": "after_one_lazy_training_batch_loaded"
+          },
+          {
+            "current_rss_bytes": 517431296,
+            "peak_rss_bytes": 522674176,
+            "stage": "after_one_forward_backward_batch"
+          }
+        ],
+        "split_counts": {
+          "development_test": 2200,
+          "development_train": 10671,
+          "development_validation": 2533
+        },
+        "status": "PASS",
+        "store_layout": {
+          "edge_bounds": true,
+          "edge_offset_count": true,
+          "edge_total": true,
+          "finite_pair_indices": true,
+          "graph_count": true,
+          "node_offset_count": true,
+          "node_total": true,
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    "prediction_row_consistency": {
+      "detail": {
+        "graphs": 15404,
+        "models": 5,
+        "rows": 77020
+      },
+      "passed": true
+    },
+    "protected_holdout_exclusion": {
+      "detail": 15404,
+      "passed": true
+    },
+    "race_split_isolation": {
+      "detail": 37,
+      "passed": true
+    },
+    "runner_avoids_legacy_torch_load": {
+      "detail": "legacy cache is named only for provenance; no torch.load call targets it",
+      "passed": true
+    },
+    "source_immutability": {
+      "detail": {
+        "after": {
+          "full_race_telemetry_collection_final/telemetry_car.csv.gz": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+          "full_race_telemetry_collection_final/telemetry_position.csv.gz": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+          "gnn_proxy_experiment_v1/EXPERIMENT_SPEC.md": "50b604c017ab03d6f5f614f83c7e8aab0407302bd5604c7ed9996c6689c8d22b",
+          "gnn_proxy_experiment_v1/GRAPH_CACHE_SCHEMA.json": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+          "gnn_proxy_experiment_v1/graph_cache.pt": "f5b4d6806fb9004c7e080ed4fa594519f6d708d465c487015a7c36c99358597a",
+          "gnn_proxy_experiment_v1/graph_counts.json": "ad3addd5bd68a6821c437ac5aa1163c84a04e0164b899057fe8ec93d30c1ee62",
+          "gnn_proxy_experiment_v1/run_gnn_experiment.py": "e03e2dabc9940c7c19e2e5b0e2066082f0d83d79cd80211fdbc32ee0a02d45fe",
+          "phase3_passed_races/prediction_windows_37.csv.gz": "03a5b634245f0431479c2297d744b905ca803b888b3dd10705c81f4b4c98e01b",
+          "phase3_races_audit_reconciliation_v1/proposed_chronological_split_37.csv": "f613de06f939b7527984639776dcdcc7d00d5cde05b699bb5b20a3983f302557"
+        },
+        "before": {
+          "full_race_telemetry_collection_final/telemetry_car.csv.gz": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+          "full_race_telemetry_collection_final/telemetry_position.csv.gz": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+          "gnn_proxy_experiment_v1/EXPERIMENT_SPEC.md": "50b604c017ab03d6f5f614f83c7e8aab0407302bd5604c7ed9996c6689c8d22b",
+          "gnn_proxy_experiment_v1/GRAPH_CACHE_SCHEMA.json": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+          "gnn_proxy_experiment_v1/graph_cache.pt": "f5b4d6806fb9004c7e080ed4fa594519f6d708d465c487015a7c36c99358597a",
+          "gnn_proxy_experiment_v1/graph_counts.json": "ad3addd5bd68a6821c437ac5aa1163c84a04e0164b899057fe8ec93d30c1ee62",
+          "gnn_proxy_experiment_v1/run_gnn_experiment.py": "e03e2dabc9940c7c19e2e5b0e2066082f0d83d79cd80211fdbc32ee0a02d45fe",
+          "phase3_passed_races/prediction_windows_37.csv.gz": "03a5b634245f0431479c2297d744b905ca803b888b3dd10705c81f4b4c98e01b",
+          "phase3_races_audit_reconciliation_v1/proposed_chronological_split_37.csv": "f613de06f939b7527984639776dcdcc7d00d5cde05b699bb5b20a3983f302557"
+        }
+      },
+      "passed": true
+    },
+    "split_partition": {
+      "detail": {
+        "development_test": 2200,
+        "development_train": 10671,
+        "development_validation": 2533
+      },
+      "passed": true
+    },
+    "store_layout": {
+      "detail": {
+        "edge_bounds": true,
+        "edge_offset_count": true,
+        "edge_total": true,
+        "finite_pair_indices": true,
+        "graph_count": true,
+        "node_offset_count": true,
+        "node_total": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    "tensor_dtypes_preserved": {
+      "detail": {
+        "edge": "torch.float32",
+        "pair": "torch.float32",
+        "x": "torch.float32"
+      },
+      "passed": true
+    },
+    "test_after_freeze": {
+      "detail": {
+        "frozen": "FROZEN_BEFORE_DEVELOPMENT_TEST",
+        "ledger": "after_freeze"
+      },
+      "passed": true
+    },
+    "train_only_preprocessing": {
+      "detail": "development_train eligible graphs only",
+      "passed": true
+    }
+  },
+  "failed": 0,
+  "passed": 24
+}

@@ -1,0 +1,9 @@
+{
+  "bytes": 852376,
+  "crc_status": "PASS",
+  "members": 29,
+  "package": "APEX-R_Phase4_Proxy_Experiment.zip",
+  "sha256": "50f04c17481cfff43f07601880b0247488689cbada36c15ea52f52c46e8a2ec8",
+  "sha256sums_entries": 28,
+  "verification_scope": "external_record; excluded from package and SHA256SUMS to avoid self-reference"
+}

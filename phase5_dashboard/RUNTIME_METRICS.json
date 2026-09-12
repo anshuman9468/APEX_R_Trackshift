@@ -1,0 +1,19 @@
+{
+  "complete_engine_decision_ms_max": 102.54984699895431,
+  "complete_engine_decision_ms_mean": 101.5865497996856,
+  "cpu": {
+    "device": "cpu",
+    "load_plus_first_inference_ms": 3963.1559280005604,
+    "status": "available",
+    "warm_inference_ms_max": 0.004522000381257385,
+    "warm_inference_ms_mean": 0.0013654998838319443
+  },
+  "cuda": {
+    "device": "cuda",
+    "load_plus_first_inference_ms": 218.84828499969444,
+    "status": "available",
+    "warm_inference_ms_max": 0.002996999683091417,
+    "warm_inference_ms_mean": 0.0011551997886272147
+  },
+  "process_peak_rss_mb": 1066.21875
+}

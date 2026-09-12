@@ -1,0 +1,15 @@
+{
+  "full_race_collection/source_manifest.json": "4c7bed272d5ff6440ed942269c2d6ffbc5dbbe411b9bcc755e2c73aa470c618f",
+  "full_race_collection/unresolved_position_swap_candidates.csv.gz": "ec9f5e9c0f859c39576e1adc44007b4207a876edbab9e47e836e31528b1cd982",
+  "full_race_telemetry_collection_final/driver_telemetry_coverage.csv": "f6aaa56edb024bfb6e0414a7922007fe0977bcafc01055e222327257dcd2d3c2",
+  "full_race_telemetry_collection_final/fastf1_source_manifest.csv": "99251dd9f72289eacb654aff024edfddffb01dc4ca7568bfc20ee6f381ab23e8",
+  "full_race_telemetry_collection_final/race_collection_status.csv": "ad6870fb74608cc9d64d651c1d4ccf0d4e8ae37194f2266331244bbfc5147e9e",
+  "full_race_telemetry_collection_final/telemetry_car.csv.gz": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+  "full_race_telemetry_collection_final/telemetry_coverage.csv": "e4826f73c20bae328e17bc9700cd8de7f5e3f9caa016226cece237dafae3c2e7",
+  "full_race_telemetry_collection_final/telemetry_position.csv.gz": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+  "phase2_data_foundation/context/pit_stop_context.csv": "631c8b961e170f52c0ce9a5099ae5e2fabca8124345353f2c58bd7d21cdbb13a",
+  "phase3_prediction_dataset/context/laptime_coverage.csv": "497c7c3f77362a89c3e46354a7f635c86b49991b0701cc78489acc80a4d0e87e",
+  "phase3_prediction_dataset/context/race_control_state_context.csv": "6e3c0ba0626bca8a160fb313fe9ed745164e8156c69fe941f9da5390d37261f6",
+  "phase3_prediction_dataset/excluded_sessions_manifest.json": "b3e1e7979594c8660dbfa98b2a6e0a63d407ab7c87bf4b802119b673ed63c68a",
+  "phase3_prediction_dataset/phase3_split_manifest.csv": "744f620524aa5377a4dbfe1b97907377c93c2b95ea597c1cf2e451cd5b23f9b7"
+}

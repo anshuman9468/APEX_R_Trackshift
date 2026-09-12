@@ -1,0 +1,741 @@
+race_id,driver,expected_laptime_laps,car_telemetry_laps,position_telemetry_laps,car_position_intersection_laps,car_missing_expected_laps,position_missing_expected_laps,car_extra_laps,position_extra_laps,car_expected_set_match,position_expected_set_match,coverage_criterion,lap_completeness_status
+2018:Abu Dhabi Grand Prix:Race,ALO,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,BOT,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,ERI,25,25,25,25,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,GAS,47,47,47,47,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,GRO,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,HAM,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,HAR,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,HUL,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,LEC,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,MAG,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,OCO,45,45,45,45,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,PER,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,RAI,7,7,7,7,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,RIC,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,SAI,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,SIR,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,STR,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,VAN,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,VER,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Abu Dhabi Grand Prix:Race,VET,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,ALO,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,BOT,14,14,14,14,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,ERI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,GAS,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,GRO,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,HAM,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,HAR,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,HUL,12,12,12,12,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,LEC,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,MAG,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,OCO,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,PER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,RAI,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,RIC,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,SAI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,SIR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,STR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,VAN,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,VER,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Austrian Grand Prix:Race,VET,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,ALO,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,BOT,49,49,49,49,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,ERI,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,GAS,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,GRO,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,HAM,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,HAR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,HUL,11,11,11,11,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,LEC,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,MAG,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,OCO,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,PER,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,RAI,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,RIC,40,40,40,40,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,SAI,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,SIR,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,STR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,VAN,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,VER,40,40,40,40,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Azerbaijan Grand Prix:Race,VET,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,ALO,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,BOT,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,ERI,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,GAS,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,GRO,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,HAM,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,HAR,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,HUL,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,LEC,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,MAG,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,OCO,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,PER,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,RAI,8,8,8,8,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,RIC,28,28,28,28,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,SAI,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,SIR,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,STR,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,VAN,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,VER,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Belgian Grand Prix:Race,VET,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,ALO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,BOT,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,ERI,20,20,20,20,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,GAS,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,GRO,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,HAM,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,HAR,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,HUL,32,32,32,32,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,LEC,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,MAG,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,OCO,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,PER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,RAI,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,RIC,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,SAI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,SIR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,STR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,VAN,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,VER,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Brazilian Grand Prix:Race,VET,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,ALO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,BOT,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,ERI,32,32,32,32,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,GAS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,GRO,38,38,38,38,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,HAM,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,HAR,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,HUL,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,LEC,18,18,18,18,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,MAG,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,OCO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,PER,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,RAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,RIC,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,SAI,38,38,38,38,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,SIR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,STR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,VAN,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,VER,47,47,47,47,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:British Grand Prix:Race,VET,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,ALO,41,41,41,41,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,BOT,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,ERI,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,GAS,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,GRO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,HAM,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,HAR,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,HUL,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,LEC,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,MAG,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,OCO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,PER,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,RAI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,RIC,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,SAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,SIR,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,STR,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,VAN,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,VER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Canadian Grand Prix:Race,VET,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,ALO,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,BOT,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,ERI,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,GAS,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,GRO,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,HAM,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,HAR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,HUL,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,LEC,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,MAG,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,OCO,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,PER,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,RAI,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,RIC,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,SAI,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,SIR,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,STR,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,VAN,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,VER,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Chinese Grand Prix:Race,VET,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,ALO,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,BOT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,ERI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,GAS,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,GRO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,HAM,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,HAR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,HUL,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,LEC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,MAG,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,OCO,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,PER,28,28,28,28,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,RAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,RIC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,SAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,SIR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,STR,49,49,49,49,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,VAN,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,VER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:French Grand Prix:Race,VET,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,ALO,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,BOT,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,ERI,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,GAS,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,GRO,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,HAM,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,HAR,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,HUL,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,LEC,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,MAG,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,OCO,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,PER,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,RAI,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,RIC,28,28,28,28,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,SAI,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,SIR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,STR,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,VAN,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,VER,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:German Grand Prix:Race,VET,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,ALO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,BOT,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,ERI,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,GAS,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,GRO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,HAM,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,HAR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,HUL,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,LEC,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,MAG,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,OCO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,PER,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,RAI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,RIC,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,SAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,SIR,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,STR,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,VAN,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,VER,6,6,6,6,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Hungarian Grand Prix:Race,VET,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,ALO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,BOT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,ERI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,GAS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,GRO,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,HAM,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,HAR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,HUL,37,37,37,37,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,LEC,39,39,39,39,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,MAG,8,8,8,8,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,OCO,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,PER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,RAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,RIC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,SAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,SIR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,STR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,VAN,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,VER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Japanese Grand Prix:Race,VET,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,ALO,4,4,4,4,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,BOT,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,ERI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,GAS,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,GRO,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,HAM,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,HAR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,HUL,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,LEC,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,MAG,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,OCO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,PER,38,38,38,38,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,RAI,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,RIC,62,62,62,62,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,SAI,29,29,29,29,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,SIR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,STR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,VAN,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,VER,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2018:Mexican Grand Prix:Race,VET,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,ALB,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,BOT,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,GAS,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,GIO,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,GRO,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,HAM,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,HUL,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,KUB,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,KVY,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,LEC,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,MAG,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,NOR,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,PER,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,RAI,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,RIC,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,RUS,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,SAI,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,STR,45,45,45,45,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,VER,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Abu Dhabi Grand Prix:Race,VET,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,ALB,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,BOT,58,58,58,58,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,GAS,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,GIO,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,GRO,30,30,30,30,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,HAM,58,58,58,58,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,HUL,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,KUB,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,KVY,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,LEC,58,58,58,58,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,MAG,58,58,58,58,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,NOR,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,PER,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,RAI,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,RIC,29,29,29,29,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,RUS,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,SAI,10,10,10,10,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,STR,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,VER,58,58,58,58,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Australian Grand Prix:Race,VET,58,58,58,58,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,ALB,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,BOT,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,GAS,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,GIO,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,GRO,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,HAM,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,HUL,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,KUB,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,KVY,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,LEC,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,MAG,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,NOR,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,PER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,RAI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,RIC,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,RUS,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,SAI,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,STR,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,VER,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Austrian Grand Prix:Race,VET,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,ALB,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,BOT,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,GAS,39,39,39,39,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,GIO,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,GRO,38,38,38,38,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,HAM,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,HUL,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,KUB,49,49,49,49,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,KVY,33,33,33,33,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,LEC,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,MAG,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,NOR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,PER,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,RAI,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,RIC,31,31,31,31,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,RUS,49,49,49,49,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,SAI,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,STR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,VER,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Azerbaijan Grand Prix:Race,VET,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,ALB,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,BOT,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,GAS,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,GIO,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,GRO,16,16,16,16,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,HAM,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,HUL,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,KUB,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,KVY,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,LEC,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,MAG,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,NOR,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,PER,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,RAI,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,RIC,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,RUS,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,SAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,STR,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,VER,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Bahrain Grand Prix:Race,VET,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,ALB,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,BOT,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,GAS,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,GIO,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,GRO,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,HAM,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,HUL,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,KUB,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,KVY,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,LEC,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,MAG,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,NOR,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,PER,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,RAI,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,RIC,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,RUS,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,SAI,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,STR,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,VER,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Belgian Grand Prix:Race,VET,44,44,44,44,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,ALB,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,BOT,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,GAS,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,GIO,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,GRO,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,HAM,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,HUL,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,KUB,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,KVY,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,LEC,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,MAG,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,NOR,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,PER,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,RAI,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,RIC,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,RUS,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,SAI,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,STR,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,VER,71,71,71,71,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Brazilian Grand Prix:Race,VET,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,ALB,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,BOT,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,GAS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,GIO,19,19,19,19,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,GRO,9,9,9,9,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,HAM,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,HUL,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,KUB,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,KVY,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,LEC,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,MAG,6,6,6,6,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,NOR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,PER,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,RAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,RIC,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,RUS,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,SAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,STR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,VER,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:British Grand Prix:Race,VET,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,ALB,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,BOT,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,GAS,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,GIO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,GRO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,HAM,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,HUL,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,KUB,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,KVY,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,LEC,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,MAG,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,NOR,9,9,9,9,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,PER,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,RAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,RIC,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,RUS,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,SAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,STR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,VER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Canadian Grand Prix:Race,VET,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,ALB,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,BOT,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,GAS,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,GIO,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,GRO,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,HAM,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,HUL,16,16,16,16,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,KUB,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,KVY,41,41,41,41,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,LEC,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,MAG,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,NOR,50,50,50,50,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,PER,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,RAI,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,RIC,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,RUS,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,SAI,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,STR,55,55,55,55,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,VER,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Chinese Grand Prix:Race,VET,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,ALB,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,BOT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,GAS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,GIO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,GRO,45,45,45,45,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,HAM,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,HUL,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,KUB,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,KVY,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,LEC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,MAG,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,NOR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,PER,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,RAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,RIC,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,RUS,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,SAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,STR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,VER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:French Grand Prix:Race,VET,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,ALB,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,BOT,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,GAS,62,62,62,62,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,GIO,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,GRO,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,HAM,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,HUL,40,40,40,40,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,KUB,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,KVY,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,LEC,27,27,27,27,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,MAG,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,NOR,25,25,25,25,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,PER,2,2,2,2,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,RAI,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,RIC,14,14,14,14,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,RUS,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,SAI,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,STR,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,VER,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:German Grand Prix:Race,VET,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,ALB,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,BOT,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,GAS,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,GIO,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,GRO,49,49,49,49,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,HAM,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,HUL,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,KUB,67,67,67,67,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,KVY,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,LEC,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,MAG,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,NOR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,PER,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,RAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,RIC,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,RUS,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,SAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,STR,68,68,68,68,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,VER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Hungarian Grand Prix:Race,VET,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,ALB,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,BOT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,GAS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,GIO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,GRO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,HAM,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,HUL,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,KUB,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,KVY,30,30,30,30,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,LEC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,MAG,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,NOR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,PER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,RAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,RIC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,RUS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,SAI,27,27,27,27,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,STR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,VER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2019:Italian Grand Prix:Race,VET,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,ALB,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,BOT,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,GAS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,GIO,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,GRO,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,HAM,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,HUL,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,KVY,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,LAT,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,LEC,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,MAG,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,NOR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,OCO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,RAI,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,RIC,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,RUS,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,SAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,STR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,VER,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:70th Anniversary Grand Prix:Race,VET,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,ALB,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,BOT,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,GAS,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,GIO,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,GRO,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,HAM,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,KVY,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,LAT,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,LEC,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,MAG,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,NOR,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,OCO,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,PER,54,54,54,54,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,RAI,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,RIC,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,RUS,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,SAI,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,STR,3,3,3,3,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,VER,57,57,57,57,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Bahrain Grand Prix:Race,VET,56,56,56,56,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,ALB,23,23,23,23,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,BOT,18,18,18,18,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,GAS,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,GIO,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,GRO,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,HAM,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,HUL,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,KVY,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,LAT,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,LEC,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,MAG,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,NOR,43,43,43,43,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,OCO,22,22,22,22,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,PER,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,RAI,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,RIC,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,RUS,13,13,13,13,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,SAI,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,VER,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Eifel Grand Prix:Race,VET,60,60,60,60,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,ALB,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,BOT,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,GAS,8,8,8,8,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,GIO,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,GRO,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,HAM,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,KVY,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,LAT,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,LEC,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,MAG,47,47,47,47,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,NOR,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,OCO,28,28,28,28,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,PER,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,RAI,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,RIC,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,RUS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,SAI,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,STR,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,VER,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Emilia Romagna Grand Prix:Race,VET,63,63,63,63,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,ALB,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,BOT,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,GAS,15,15,15,15,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,GIO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,GRO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,HAM,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,KVY,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,LAT,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,LEC,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,MAG,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,NOR,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,OCO,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,PER,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,RAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,RIC,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,RUS,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,SAI,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,STR,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,VER,70,70,70,70,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Hungarian Grand Prix:Race,VET,69,69,69,69,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,ALB,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,BOT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,GAS,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,GIO,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,GRO,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,HAM,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,KVY,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,LAT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,LEC,24,24,24,24,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,MAG,18,18,18,18,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,NOR,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,OCO,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,PER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,RAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,RIC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,RUS,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,SAI,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,STR,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,VER,30,30,30,30,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Italian Grand Prix:Race,VET,6,6,6,6,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,ALB,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,BOT,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,GAS,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,GIO,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,GRO,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,HAM,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,KVY,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,LAT,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,LEC,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,MAG,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,NOR,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,OCO,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,PER,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,RAI,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,RIC,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,RUS,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,SAI,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,STR,51,51,51,51,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,VER,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Portuguese Grand Prix:Race,VET,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,ALB,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,BOT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,GAS,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,GIO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,GRO,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,HAM,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,KVY,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,LAT,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,LEC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,MAG,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,NOR,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,OCO,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,PER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,RAI,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,RIC,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,RUS,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,SAI,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,STR,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,VER,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Russian Grand Prix:Race,VET,52,52,52,52,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,AIT,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,ALB,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,BOT,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,FIT,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,GAS,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,GIO,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,KVY,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,LAT,53,53,53,53,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,LEC,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,MAG,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,NOR,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,OCO,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,PER,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,RAI,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,RIC,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,RUS,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,SAI,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,STR,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,VER,1,1,1,1,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Sakhir Grand Prix:Race,VET,87,87,87,87,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,ALB,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,BOT,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,GAS,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,GIO,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,GRO,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,HAM,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,KVY,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,LAT,64,64,64,64,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,LEC,38,38,38,38,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,MAG,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,NOR,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,OCO,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,PER,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,RAI,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,RIC,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,RUS,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,SAI,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,STR,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,VER,66,66,66,66,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY
+2020:Spanish Grand Prix:Race,VET,65,65,65,65,0,0,0,0,TRUE,TRUE,telemetry row with finite session_time_sec and integer lap; not proof of full physical-lap sampling,BOUNDARY_SET_MATCH_ONLY

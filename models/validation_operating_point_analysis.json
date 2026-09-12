@@ -1,0 +1,202 @@
+{
+  "scope": "validation session 9070 only; frozen final hold-out 11353 was not loaded",
+  "model_version": "2.0.0-xgboost-openf1-clean-base",
+  "validation_rows": 6058,
+  "positive": 257,
+  "positive_rate": 0.042423,
+  "ranking_metrics": {
+    "roc_auc": 0.806371,
+    "average_precision": 0.167085,
+    "brier_score": 0.03813
+  },
+  "selected_threshold": {
+    "value": 0.09427804,
+    "selection_split": "validation",
+    "selection_objective": "maximum_f1",
+    "validation_precision": 0.194277,
+    "validation_recall": 0.501946,
+    "validation_f1": 0.28013
+  },
+  "threshold_curve": [
+    {
+      "threshold": 0.03,
+      "predicted_positive": 5192,
+      "precision": 0.049499,
+      "recall": 1.0,
+      "f1": 0.094329
+    },
+    {
+      "threshold": 0.05,
+      "predicted_positive": 2844,
+      "precision": 0.077004,
+      "recall": 0.85214,
+      "f1": 0.141245
+    },
+    {
+      "threshold": 0.07,
+      "predicted_positive": 1304,
+      "precision": 0.125767,
+      "recall": 0.638132,
+      "f1": 0.210122
+    },
+    {
+      "threshold": 0.09427804,
+      "predicted_positive": 652,
+      "precision": 0.187117,
+      "recall": 0.474708,
+      "f1": 0.268427
+    },
+    {
+      "threshold": 0.1,
+      "predicted_positive": 570,
+      "precision": 0.196491,
+      "recall": 0.435798,
+      "f1": 0.270859
+    },
+    {
+      "threshold": 0.12,
+      "predicted_positive": 442,
+      "precision": 0.19457,
+      "recall": 0.33463,
+      "f1": 0.246066
+    },
+    {
+      "threshold": 0.15,
+      "predicted_positive": 305,
+      "precision": 0.229508,
+      "recall": 0.272374,
+      "f1": 0.24911
+    },
+    {
+      "threshold": 0.2,
+      "predicted_positive": 138,
+      "precision": 0.23913,
+      "recall": 0.128405,
+      "f1": 0.167089
+    },
+    {
+      "threshold": 0.25,
+      "predicted_positive": 13,
+      "precision": 0.307692,
+      "recall": 0.015564,
+      "f1": 0.02963
+    },
+    {
+      "threshold": 0.3,
+      "predicted_positive": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "best_precision_with_recall_at_least_70_percent": {
+    "threshold": 0.06124167,
+    "precision": 0.103925,
+    "recall": 0.731518
+  },
+  "calibration": {
+    "method": "raw XGBoost probabilities; decile-style quantile reliability bins",
+    "expected_calibration_error": 0.021474,
+    "bins": [
+      {
+        "score_from": 0.02051,
+        "score_to": 0.026756,
+        "count": 600,
+        "mean_predicted_probability": 0.023559,
+        "observed_positive_rate": 0.0
+      },
+      {
+        "score_from": 0.026756,
+        "score_to": 0.032854,
+        "count": 588,
+        "mean_predicted_probability": 0.029984,
+        "observed_positive_rate": 0.0
+      },
+      {
+        "score_from": 0.032854,
+        "score_to": 0.034404,
+        "count": 630,
+        "mean_predicted_probability": 0.033749,
+        "observed_positive_rate": 0.012698
+      },
+      {
+        "score_from": 0.034404,
+        "score_to": 0.03749,
+        "count": 602,
+        "mean_predicted_probability": 0.035675,
+        "observed_positive_rate": 0.013289
+      },
+      {
+        "score_from": 0.03749,
+        "score_to": 0.046155,
+        "count": 607,
+        "mean_predicted_probability": 0.041818,
+        "observed_positive_rate": 0.029654
+      },
+      {
+        "score_from": 0.046155,
+        "score_to": 0.055443,
+        "count": 601,
+        "mean_predicted_probability": 0.051302,
+        "observed_positive_rate": 0.02995
+      },
+      {
+        "score_from": 0.055443,
+        "score_to": 0.061046,
+        "count": 612,
+        "mean_predicted_probability": 0.05775,
+        "observed_positive_rate": 0.027778
+      },
+      {
+        "score_from": 0.061046,
+        "score_to": 0.072502,
+        "count": 601,
+        "mean_predicted_probability": 0.066252,
+        "observed_positive_rate": 0.051581
+      },
+      {
+        "score_from": 0.072502,
+        "score_to": 0.096508,
+        "count": 611,
+        "mean_predicted_probability": 0.083661,
+        "observed_positive_rate": 0.072013
+      },
+      {
+        "score_from": 0.096508,
+        "score_to": 0.300935,
+        "count": 606,
+        "mean_predicted_probability": 0.158261,
+        "observed_positive_rate": 0.186469
+      }
+    ]
+  },
+  "class_imbalance": {
+    "scale_pos_weight": 1,
+    "resampling": "not used",
+    "focal_loss": "not used"
+  },
+  "manifest": {
+    "session_key": 9070,
+    "rows": 7944,
+    "positive": 499,
+    "urls": {
+      "intervals": "https://api.openf1.org/v1/intervals?session_key=9070",
+      "position": "https://api.openf1.org/v1/position?session_key=9070",
+      "laps": "https://api.openf1.org/v1/laps?session_key=9070",
+      "stints": "https://api.openf1.org/v1/stints?session_key=9070",
+      "weather": "https://api.openf1.org/v1/weather?session_key=9070",
+      "overtakes": "https://api.openf1.org/v1/overtakes?session_key=9070",
+      "pit": "https://api.openf1.org/v1/pit?session_key=9070",
+      "race_control": "https://api.openf1.org/v1/race_control?session_key=9070",
+      "overtakes_clean_label": "https://api.openf1.org/v1/overtakes?session_key=9070"
+    },
+    "rows_before_cleaning": 7944,
+    "rows_after_cleaning": 6058,
+    "positive_after_cleaning": 257,
+    "raw_overtakes": 177,
+    "excluded_overtakes": 95,
+    "excluded_windows": 1886,
+    "pit_endpoint_available": false,
+    "race_control_endpoint_available": true
+  }
+}

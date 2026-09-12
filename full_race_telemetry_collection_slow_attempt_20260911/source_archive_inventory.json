@@ -1,0 +1,72 @@
+[
+  {
+    "archive": "APEX-R_Telemetry_2018.zip",
+    "archive_bytes": 17055630,
+    "archive_sha256": "ebc40d2f4bdd12ee9533c14cf985bc109b660ae825125a4d474504e430a9be2d",
+    "file_granularity": "seasonal gzip CSV; rows keyed by race/driver/lap/sample_index",
+    "member": "telemetry_2018.csv.gz",
+    "member_bytes": 17050290,
+    "member_compressed_bytes": 17055490,
+    "member_crc": 1169892248,
+    "parsed_rows": 191251,
+    "timestamp_semantics": "archive time is lap-relative seconds and resets per selected lap; no UTC/session anchor in this archive",
+    "year": 2018,
+    "zip_crc_status": "PASS"
+  },
+  {
+    "archive": "APEX-R_Telemetry_2019.zip",
+    "archive_bytes": 17558553,
+    "archive_sha256": "5d3e8e478db4733ce458b939f197d32e62d677b16bd1f830425c714808170faa",
+    "file_granularity": "seasonal gzip CSV; rows keyed by race/driver/lap/sample_index",
+    "member": "telemetry_2019.csv.gz",
+    "member_bytes": 17553058,
+    "member_compressed_bytes": 17558413,
+    "member_crc": 3527429970,
+    "parsed_rows": 189884,
+    "timestamp_semantics": "archive time is lap-relative seconds and resets per selected lap; no UTC/session anchor in this archive",
+    "year": 2019,
+    "zip_crc_status": "PASS"
+  },
+  {
+    "archive": "APEX-R_Telemetry_2020.zip",
+    "archive_bytes": 19469961,
+    "archive_sha256": "d71f85f4d582d9c6c9b2a48d6f7e9e17b2711bd95250b53ab9c77af0f8de40f7",
+    "file_granularity": "seasonal gzip CSV; rows keyed by race/driver/lap/sample_index",
+    "member": "telemetry_2020.csv.gz",
+    "member_bytes": 19463885,
+    "member_compressed_bytes": 19469821,
+    "member_crc": 117220896,
+    "parsed_rows": 216990,
+    "timestamp_semantics": "archive time is lap-relative seconds and resets per selected lap; no UTC/session anchor in this archive",
+    "year": 2020,
+    "zip_crc_status": "PASS"
+  },
+  {
+    "archive": "APEX-R_Telemetry_2021.zip",
+    "archive_bytes": 20780523,
+    "archive_sha256": "81005874086bfdecdbee6da91438b75e3fe72dd1028ede825b2c2a8685ce1526",
+    "file_granularity": "seasonal gzip CSV; rows keyed by race/driver/lap/sample_index",
+    "member": "telemetry_2021.csv.gz",
+    "member_bytes": 20774043,
+    "member_compressed_bytes": 20780383,
+    "member_crc": 2474724931,
+    "parsed_rows": 235252,
+    "timestamp_semantics": "archive time is lap-relative seconds and resets per selected lap; no UTC/session anchor in this archive",
+    "year": 2021,
+    "zip_crc_status": "PASS"
+  },
+  {
+    "archive": "APEX-R_Telemetry_2022.zip",
+    "archive_bytes": 17578909,
+    "archive_sha256": "12cce78f843aaf59c09f22cb6d08d5827a98b5a8b6adbb78866aa86dbba6a1fd",
+    "file_granularity": "seasonal gzip CSV; rows keyed by race/driver/lap/sample_index",
+    "member": "telemetry_2022.csv.gz",
+    "member_bytes": 17573419,
+    "member_compressed_bytes": 17578769,
+    "member_crc": 1947351959,
+    "parsed_rows": 193926,
+    "timestamp_semantics": "archive time is lap-relative seconds and resets per selected lap; no UTC/session anchor in this archive",
+    "year": 2022,
+    "zip_crc_status": "PASS"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "detail": "features=1332, labels=1332, repaired=1332",
+      "status": "PASS",
+      "test": "source_input_counts_preserved"
+    },
+    {
+      "detail": "all source and repaired example IDs match",
+      "status": "PASS",
+      "test": "repaired_feature_label_keys"
+    },
+    {
+      "detail": "only as-of-supported rows are model-eligible",
+      "status": "PASS",
+      "test": "repaired_eligibility_contract"
+    },
+    {
+      "detail": "previously eligible unresolved target rows are censored",
+      "status": "PASS",
+      "test": "asof_unresolved_censored"
+    },
+    {
+      "detail": "model feature names do not enter label table",
+      "status": "PASS",
+      "test": "feature_label_isolation"
+    },
+    {
+      "detail": "allowlist excludes outcome evidence",
+      "status": "PASS",
+      "test": "feature_view_has_no_outcome_fields"
+    },
+    {
+      "detail": "one manifest split per race",
+      "status": "PASS",
+      "test": "split_manifest_race_isolation"
+    },
+    {
+      "detail": "{'A': 'PASS_WITH_SUPPORT_WARNING', 'B': 'PASS_WITH_CENSORED_UNRESOLVED_ROWS', 'C': 'PASS_WITH_CONDITIONAL_PRIMARY_POPULATION', 'D': 'PASS_AUTOMATED_REVIEW_ONLY'}",
+      "status": "PASS",
+      "test": "gate_statuses_recorded"
+    },
+    {
+      "detail": "proxy rows do not claim verified on-track labels",
+      "status": "PASS",
+      "test": "no_true_ontrack_claim"
+    },
+    {
+      "detail": "[{'model': 'constant_train_prevalence', 'split': 'train'}, {'model': 'logistic_regression_C1', 'split': 'train'}, {'model': 'constant_train_prevalence', 'split': 'validation'}, {'model': 'logistic_regression_C1', 'split': 'validation'}, {'model': 'constant_train_prevalence', 'split': 'development_test'}, {'model': 'logistic_regression_C1', 'split': 'development_test'}]",
+      "status": "PASS",
+      "test": "both_candidates_and_splits_present"
+    },
+    {
+      "detail": "precision/recall curve rows present",
+      "status": "PASS",
+      "test": "curves_present"
+    },
+    {
+      "detail": "race bootstrap reports one-class resamples",
+      "status": "PASS",
+      "test": "uncertainty_contains_degenerate_count"
+    },
+    {
+      "detail": "serialized pipeline present",
+      "status": "PASS",
+      "test": "saved_model_exists"
+    },
+    {
+      "detail": "serialized sklearn pipeline loads",
+      "status": "PASS",
+      "test": "saved_model_loads"
+    },
+    {
+      "detail": "{'max_abs_probability_difference': 0.0, 'status': 'PASS', 'validation_rows': 117}",
+      "status": "PASS",
+      "test": "saved_model_parity"
+    },
+    {
+      "detail": "before/after input hashes agree",
+      "status": "PASS",
+      "test": "source_hashes_unchanged"
+    },
+    {
+      "detail": "protected data not accessed; no network requests",
+      "status": "PASS",
+      "test": "protected_access_ledger"
+    },
+    {
+      "detail": "ZIP CRC test passed",
+      "status": "PASS",
+      "test": "package_crc"
+    },
+    {
+      "detail": "core files are inside package",
+      "status": "PASS",
+      "test": "package_contains_core_artifacts"
+    },
+    {
+      "detail": "entries=28",
+      "status": "PASS",
+      "test": "sha256sums_verify"
+    }
+  ]
+}

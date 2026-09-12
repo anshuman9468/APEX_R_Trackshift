@@ -1,0 +1,33 @@
+{
+  "by_split": {
+    "development_test": {
+      "graphs": 2200,
+      "negative": 2094,
+      "positive": 106,
+      "races": 5,
+      "unique_pairs": 440
+    },
+    "development_train": {
+      "graphs": 10671,
+      "negative": 10058,
+      "positive": 613,
+      "races": 26,
+      "unique_pairs": 2300
+    },
+    "development_validation": {
+      "graphs": 2533,
+      "negative": 2430,
+      "positive": 103,
+      "races": 6,
+      "unique_pairs": 505
+    }
+  },
+  "eligible_negative": 14582,
+  "eligible_positive": 822,
+  "exclusions": {
+    "fixed_pair_missing_current_car_sample": 19
+  },
+  "graphs_eligible": 15404,
+  "graphs_excluded": 19,
+  "windows_labelled": 15423
+}

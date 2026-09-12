@@ -1,0 +1,8 @@
+field,rule,flagged_rows,disposition,explanation
+throttle,throttle_outside_0_100,16052,SUSPICIOUS_UNRESOLVED,"Preserve source values; 0–100 is an audit rule, not a verified provider contract."
+gear,gear_not_integer_or_outside_0_8,37,SUSPICIOUS_UNRESOLVED,Preserve source values; verify channel encoding before any repair.
+distance,distance_negative,1548,SUSPICIOUS_UNRESOLVED,Preserve source values; may be lap-boundary/reference behavior.
+rel_distance,rel_distance_outside_0_1_tolerance,194,SUSPICIOUS_UNRESOLVED,Preserve source values; formula and normalization provenance remain absent.
+DriverAhead,missing,54822,MISSING_RETAINED,No zero-fill; opponent identity remains unavailable on these rows.
+DistanceToDriverAhead,missing,48648,MISSING_RETAINED,No zero-fill; missing opponent distance remains explicit.
+rel_distance,missing,4665,MISSING_RETAINED,No zero-fill; missing derived value remains explicit.

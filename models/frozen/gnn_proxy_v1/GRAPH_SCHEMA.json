@@ -1,0 +1,113 @@
+{
+  "asof_tolerance_sec": 1.0,
+  "edge_feature_names": [
+    "distance_m",
+    "relative_speed_kmh",
+    "source_position_age_i_sec",
+    "source_position_age_j_sec"
+  ],
+  "edge_rule": "directed up to three nearest finite XYZ neighbours; no classified adjacency",
+  "eligible_graph_count": 15404,
+  "excluded_window_count": 19,
+  "future_join_policy": "backward-only; no interpolation/backfill/forward fill",
+  "graph_record_fields": [
+    "window_id",
+    "race_id",
+    "proposed_split",
+    "decision_lap",
+    "decision_session_time_sec",
+    "endpoint_lap",
+    "drivers",
+    "attacker_driver",
+    "target_driver_fixed",
+    "attacker_idx",
+    "target_idx",
+    "node_raw",
+    "edge_index",
+    "edge_raw",
+    "pair_raw",
+    "asof_tolerance_sec",
+    "lookback_sec",
+    "label",
+    "outcome_status"
+  ],
+  "join_keys": [
+    "race_id",
+    "driver",
+    "session_time_sec"
+  ],
+  "lookback_sec": 10.0,
+  "node_feature_names": [
+    "speed_kmh",
+    "throttle_pct",
+    "brake",
+    "n_gear",
+    "rpm",
+    "drs_binary",
+    "car_sample_age_sec",
+    "x_m",
+    "y_m",
+    "z_m",
+    "position_sample_age_sec",
+    "speed_delta_10s_kmh",
+    "speed_trend_10s_kmh_per_s",
+    "car_missing_mask",
+    "position_missing_mask",
+    "drs_missing_mask",
+    "role_attacker",
+    "role_target"
+  ],
+  "node_order": "sorted source driver identifier per race",
+  "pair_feature_names": [
+    "attacker_target_speed_delta_kmh",
+    "attacker_target_distance_m",
+    "attacker_target_speed_delta_10s_kmh",
+    "attacker_car_age_sec",
+    "target_car_age_sec",
+    "attacker_position_age_sec",
+    "target_position_age_sec",
+    "attacker_car_missing",
+    "target_car_missing",
+    "attacker_position_missing",
+    "target_position_missing",
+    "pair_position_available"
+  ],
+  "raw_nan_policy": "NaNs retained in cache; explicit missing masks; training-only transform handles NaNs",
+  "stream_stats": [
+    {
+      "join_keys": [
+        "race_id",
+        "driver",
+        "session_time_sec"
+      ],
+      "kind": "car",
+      "lookback_sec": 10.0,
+      "nonmonotonic_source_rows_in_requested_keys": 0,
+      "requested_keys": 740,
+      "requested_timestamps": 582980,
+      "requests_resolved_or_attempted": 582980,
+      "source": "full_race_telemetry_collection_final/telemetry_car.csv.gz",
+      "source_rows_seen": 17031555,
+      "source_rows_used_for_requested_drivers": 15944390,
+      "tolerance_sec": 1.0
+    },
+    {
+      "join_keys": [
+        "race_id",
+        "driver",
+        "session_time_sec"
+      ],
+      "kind": "position",
+      "lookback_sec": 10.0,
+      "nonmonotonic_source_rows_in_requested_keys": 0,
+      "requested_keys": 740,
+      "requested_timestamps": 582980,
+      "requests_resolved_or_attempted": 582980,
+      "source": "full_race_telemetry_collection_final/telemetry_position.csv.gz",
+      "source_rows_seen": 15484853,
+      "source_rows_used_for_requested_drivers": 14277894,
+      "tolerance_sec": 1.0
+    }
+  ],
+  "version": "gnn-proxy-graph-cache-v1"
+}

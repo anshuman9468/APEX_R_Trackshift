@@ -1,0 +1,20 @@
+{
+  "full_race_collection/unresolved_position_swap_candidates.csv.gz": "ec9f5e9c0f859c39576e1adc44007b4207a876edbab9e47e836e31528b1cd982",
+  "full_race_telemetry_collection_final/race_collection_status.csv": "ad6870fb74608cc9d64d651c1d4ccf0d4e8ae37194f2266331244bbfc5147e9e",
+  "full_race_telemetry_collection_final/telemetry_car.csv.gz": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+  "full_race_telemetry_collection_final/telemetry_position.csv.gz": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+  "phase3_passed_races/APEX-R_37_Passed_Races.zip": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+  "phase3_passed_races/event_review_37.csv": "4155b0132f49af8e2d406851624cd1796f94cd40a605494395b71990298c6999",
+  "phase3_passed_races/laptime_source_inventory_37.csv": "a671a57826d0810447857c70e97c5b16eecc6238d2f0071d59734954ee7d4dd8",
+  "phase3_passed_races/passed_race_manifest.csv": "25cb75b4de79a1c4e4c40387b0da3d3a707d029dfd5e3c6ffebbe3642a3fbadc",
+  "phase3_passed_races/phase3_passed_metrics.json": "8b7622b68a54253320dd9741f68ca74029dfd4728061f873ab7b63829486cfea",
+  "phase3_passed_races/phase3_split_manifest_37.csv": "4fb811b33e24eff94e7466fe954ec10dde2fdf671b5754390378319aa9afc58c",
+  "phase3_passed_races/pit_context_37.csv": "4e46cdd04a310094b0c82aea9c7d38faba6941994d405ab59b9d14c7bf27c06c",
+  "phase3_passed_races/position_swap_candidates_37.csv.gz": "1a9107faac1f250bb7cd68a54f7e8c961ea7c5b0ab43edd30aa08bb97075efbd",
+  "phase3_passed_races/prediction_windows_37.csv.gz": "03a5b634245f0431479c2297d744b905ca803b888b3dd10705c81f4b4c98e01b",
+  "phase3_passed_races/proxy_feature_view_37.csv.gz": "da7aab45d82256eda3498ebfafb0b4ba430794bc8085f927c1201e10f47c7ef3",
+  "phase3_passed_races/proxy_labels_37.csv.gz": "9308020b4252b795f2281a6ec0473182db2b057fda0f50b5a71b7299327767b7",
+  "phase3_passed_races/race_control_context_37.csv": "a0e491f6302e0edfab8cc977c194657d14178e662571b43db499572f29bcaa91",
+  "phase3_prediction_dataset/excluded_sessions_manifest.json": "b3e1e7979594c8660dbfa98b2a6e0a63d407ab7c87bf4b802119b673ed63c68a",
+  "phase3_prediction_dataset/phase3_split_manifest.csv": "744f620524aa5377a4dbfe1b97907377c93c2b95ea597c1cf2e451cd5b23f9b7"
+}

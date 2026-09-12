@@ -1,0 +1,14 @@
+field,meaning,units,source,join_keys,join_rule,causal_status
+phase2_session_time_sec,Session-relative telemetry time,seconds,TracingInsights laptimes.json:lST + base time,same race/driver/lap; arithmetic only,"latest weather sample <= time, max age 60 s",UNKNOWN/HISTORICAL_ONLY
+phase2_utc_timestamp,Historical UTC sample anchor where lSD exists,ISO-8601 UTC,TracingInsights laptimes.json:lSD + base time,same race/driver/lap,not used when lSD absent,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_air_temp_c,Air temperature,°C,TracingInsights weather.json:wAT,same season/event/session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_track_temp_c,Track temperature,°C,TracingInsights weather.json:wTT,same season/event/session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_humidity_pct,Relative humidity,%,TracingInsights weather.json:wH,same session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_pressure_mbar,Atmospheric pressure,mbar,TracingInsights weather.json:wP,same session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_rainfall_flag,Rainfall indicator,boolean,TracingInsights weather.json:wR,same session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_wind_direction_deg,Wind direction,degrees,TracingInsights weather.json:wWD,same session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_weather_wind_speed_mps,Wind speed,m/s,TracingInsights weather.json:wWS,same session; session seconds,backward-only; 60 s max age,UNKNOWN/HISTORICAL_ONLY
+phase2_pit_current_recent_flag,Current driver stopped on immediately preceding completed lap,boolean,Jolpica pitstops:driverId/lap/stop/time/duration,same season/event/session/driver; lap,strict pit lap < telemetry lap; no same-lap join,UNKNOWN/HISTORICAL_ONLY
+phase2_pit_ahead_recent_flag,Car ahead stopped on immediately preceding completed lap,boolean,Jolpica pitstops plus verified source DriverAhead code,same session/driver code; lap,strict pit lap < telemetry lap; no same-lap join,UNKNOWN/HISTORICAL_ONLY
+phase2_rc_*,Most recent race-control message context,provider codes/text + UTC,TracingInsights rcm.json:time/cat/msg/status/flag/scope/sector/lap,same season/event/session; UTC,backward-only; 60 s max age; no state inference,UNKNOWN/HISTORICAL_ONLY
+phase2_driver_number,Session-specific driver number,source string,TracingInsights drivers.json:driver/dn/fn/ln/team,same season/event/session/driver code,exact identity lookup,UNKNOWN/HISTORICAL_ONLY

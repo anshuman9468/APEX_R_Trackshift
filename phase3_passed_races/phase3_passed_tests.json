@@ -1,0 +1,86 @@
+{
+  "all_passed": true,
+  "count": 16,
+  "tests": [
+    {
+      "detail": "before/after SHA-256 maps equal",
+      "name": "source_inputs_immutable",
+      "status": "PASS"
+    },
+    {
+      "detail": "derived PASS races=37",
+      "name": "pass_filter_derives_37_or_actual_count",
+      "status": "PASS"
+    },
+    {
+      "detail": "pit and race-control context rows equal PASS-race scope",
+      "name": "context_tables_filtered_only_to_pass_races",
+      "status": "PASS"
+    },
+    {
+      "detail": "coverage rows equal derived PASS IDs",
+      "name": "streams_filtered_only_to_pass_races",
+      "status": "PASS"
+    },
+    {
+      "detail": "separate files and counts",
+      "name": "car_position_streams_separate",
+      "status": "PASS"
+    },
+    {
+      "detail": "no duplicate/non-monotonic timestamps",
+      "name": "source_timestamp_order_car",
+      "status": "PASS"
+    },
+    {
+      "detail": "no duplicate/non-monotonic timestamps",
+      "name": "source_timestamp_order_position",
+      "status": "PASS"
+    },
+    {
+      "detail": "windows do not cross selected race IDs",
+      "name": "cross_driver_race_isolation",
+      "status": "PASS"
+    },
+    {
+      "detail": "proxy feature view has no outcome fields",
+      "name": "feature_label_separation",
+      "status": "PASS"
+    },
+    {
+      "detail": "copied approved race split",
+      "name": "split_preservation",
+      "status": "PASS"
+    },
+    {
+      "detail": "protected token absent from requested/output race values",
+      "name": "protected_exclusion",
+      "status": "PASS"
+    },
+    {
+      "detail": "pipeline is offline; downloads=0",
+      "name": "no_network_downloads",
+      "status": "PASS"
+    },
+    {
+      "detail": "subset=1195, source=2095",
+      "name": "candidate_subset_lineage",
+      "status": "PASS"
+    },
+    {
+      "detail": "no FastF1 XYZ sample was promoted to a pass",
+      "name": "proxy_not_verified_overtake",
+      "status": "PASS"
+    },
+    {
+      "detail": "features use prior/as-of sample only",
+      "name": "no_future_feature_join",
+      "status": "PASS"
+    },
+    {
+      "detail": "long session intervals have explicit audit fields",
+      "name": "candidate_interval_discontinuity_explicit",
+      "status": "PASS"
+    }
+  ]
+}

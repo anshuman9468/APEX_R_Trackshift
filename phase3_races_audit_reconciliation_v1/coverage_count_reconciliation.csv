@@ -1,0 +1,6 @@
+metric,old_reported_label,old_reported_value,corrected_metric_name,corrected_value,basis,status
+aggregate lap counter,driver-lap streams,2318,distinct_driver_lap_number_pairs_without_race_id,2318,"independent source scan grouped by (driver, lap) across races; race identity omitted by old aggregate counter",REPAIRED_NAME_AND_SCOPE
+distinct race-lap identities,not separately reported,,distinct_race_lap_ids,2236,"independent source scan grouped by (race_id, lap)",ADDED
+car telemetry driver-lap identities,not separately reported,,distinct_driver_lap_ids,40837,"independent source scan grouped by (race_id, driver, lap)",ADDED
+position telemetry driver-lap identities,not separately reported,,distinct_driver_lap_ids,40837,"independent source scan grouped by (race_id, driver, lap)",ADDED
+laptime boundary records,windows,40837,expected_laptime_driver_lap_ids,40837,740 cached driver laptime records; distinct lap IDs,RECONCILED

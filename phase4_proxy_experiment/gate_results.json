@@ -1,0 +1,83 @@
+{
+  "A": {
+    "duplicate_example_ids": 0,
+    "eligible_windows": 563,
+    "max_windows_per_race_pair": 1,
+    "negatives": 547,
+    "positives": 16,
+    "repeated_event_ids": 0,
+    "status": "PASS_WITH_SUPPORT_WARNING",
+    "support_warning": "Only a small number of positive proxy events support evaluation; uncertainty is race-level and material.",
+    "unique_driver_pairs_within_race": 324,
+    "unique_positive_events": 16,
+    "unique_races": 56,
+    "whole_race_split_isolation": true
+  },
+  "B": {
+    "asof_target_matches": 709,
+    "asof_unresolved_previously_eligible": 227,
+    "decision_order_rule": "latest completed laptime record with session_end_sec <= driver decision time + 1e-6",
+    "first_selected_sample": {
+      "bad_first_rows": 0,
+      "evidence": "all selected rows were found with sample_index=0 and source-relative time 0 matching the stored lap-start anchors",
+      "first_rows_found": 1332,
+      "selected_keys": 1332,
+      "status": "PASS"
+    },
+    "instantaneous_running_order_proven": false,
+    "limitation": "A completed-record as-of order supports a historical proxy only; it does not prove the exact continuous running order between different driver crossings.",
+    "live_publication_latency_proven": false,
+    "status": "PASS_WITH_CENSORED_UNRESOLVED_ROWS"
+  },
+  "C": {
+    "all_cause_task": {
+      "negatives": 687,
+      "positives": 19,
+      "rows": 706,
+      "used_for_primary_fit": false
+    },
+    "original_future_conditioning": [
+      "same-horizon pit events",
+      "race-control state at outcome endpoint",
+      "missing outcome endpoints"
+    ],
+    "primary_task": "Restricted Phase 3 proxy retained, now additionally censored when as-of target support fails.",
+    "selection_warning": "The restricted population is not a general live-performance population; exclusions depend partly on future horizon evidence.",
+    "status": "PASS_WITH_CONDITIONAL_PRIMARY_POPULATION"
+  },
+  "D": {
+    "ambiguous_included": 769,
+    "human_review_claimed": false,
+    "positives_included": 16,
+    "representative_negatives_included": 105,
+    "rows": 890,
+    "status": "PASS_AUTOMATED_REVIEW_ONLY"
+  },
+  "generated_at_utc": "2026-09-11T12:25:13.898410+00:00",
+  "invariants": {
+    "feature_label_separation": true,
+    "no_remote_requests": true,
+    "protected_session_excluded": true,
+    "repaired_eligible_count": 563,
+    "repaired_rows_equal_source_examples": true,
+    "source_counts": {
+      "example_rows": 1332,
+      "feature_rows": 1332,
+      "label_rows": 1332,
+      "split_races": 70
+    },
+    "source_hashes_unchanged": true,
+    "whole_race_split_isolation": true
+  },
+  "tests_authorized": [
+    "timestamp ordering",
+    "target identity as-of support",
+    "future-conditioned reconciliation",
+    "feature/label isolation",
+    "train-only preprocessing",
+    "whole-race split isolation",
+    "saved-model parity",
+    "source immutability",
+    "protected-session exclusion"
+  ]
+}

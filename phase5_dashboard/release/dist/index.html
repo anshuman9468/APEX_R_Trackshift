@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="APEX-R by Team Devsez: an offline race strategy simulator, energy optimiser, and interactive pit wall.">
+  <title>APEX-R | Race Strategy Studio</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <header class="masthead">
+    <div class="identity"><span class="brand">APEX<span>-R</span></span><span class="brand-rule"></span><div><b>RACE STRATEGY STUDIO</b><small>TEAM DEVSEZ / VIPS-TC (GGSIPU)</small></div></div>
+    <div class="top-actions"><span id="connection" class="pill">Offline engine</span><button id="guideButton" class="button quiet" type="button">Judge demo</button><button id="dataButton" class="button quiet" type="button">Data &amp; model</button></div>
+  </header>
+  <div class="navigation"><nav aria-label="Workspace"><button class="tab active" data-tab="pitwall" aria-current="page">01 <span>Pit wall</span></button><button class="tab" data-tab="lab">02 <span>Strategy lab</span></button><button class="tab" data-tab="validation">03 <span>Validation</span></button><button class="tab" data-tab="audit">04 <span>Decision log</span><span id="logCount" class="count">0</span></button></nav><span class="nav-note">DECISION SUPPORT / SIMULATION v1.0</span></div>
+  <main id="main">
+    <section class="session-bar" aria-label="Scenario controls">
+      <label class="field scenario-field"><span>RACE SCENARIO</span><select id="scenario"></select></label>
+      <div class="session-description"><strong id="scenarioCaption">A better window is one lap away.</strong><span id="dataBadge">Synthetic replay / modelled energy</span></div>
+      <label class="field compact"><span>HORIZON</span><select id="horizon"><option value="2">2 laps</option><option value="3" selected>3 laps</option><option value="4">4 laps</option><option value="5">5 laps</option></select></label>
+      <label class="field seed-field"><span>RANDOM SEED</span><input id="seed" type="number" min="0" max="4294967295" step="1" value="2026"></label>
+      <button id="resetButton" class="button quiet" type="button" title="Reset scenario and replay">Reset</button>
+    </section>
+    <p id="errorBanner" class="error-banner" role="alert" hidden></p>
+    <section id="view-pitwall" class="view">
+      <div class="pit-grid">
+        <section class="track-panel">
+          <div class="section-heading"><div><p class="eyebrow">TELEMETRY REPLAY</p><h1 id="trackTitle">Strategy circuit</h1></div><span id="replayBadge" class="pill">SYNTHETIC</span></div>
+          <div class="track-layout">
+            <div class="timing-tower" aria-label="Simulated nearby cars">
+              <div><span id="aheadPosition">06</span><b class="rival-ahead">RIV</b><small>AHEAD</small><strong id="towerAhead">+0.680</strong></div>
+              <div class="your-car"><span id="yourPosition">07</span><b>DEV</b><small>YOUR CAR</small><strong id="towerLap">LAP 37</strong></div>
+              <div><span id="behindPosition">08</span><b class="rival-behind">CHS</b><small>BEHIND</small><strong id="towerBehind">-0.650</strong></div>
+            </div>
+            <div class="circuit-stage">
+              <svg id="circuit" viewBox="0 0 800 440" role="img" aria-label="Schematic strategy circuit with three simulated car markers">
+                <defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#232526" stroke-width="0.6"/></pattern></defs>
+                <rect width="800" height="440" fill="url(#grid)"/>
+                <path id="trackOutline" class="track-outline"/><path id="trackPath" class="track-path"/><path id="trackDash" class="track-dash"/>
+                <g id="zones"><path d="M110 340 L250 340 L350 322" class="zone-attack"/><path d="M600 65 L638 105 L610 162" class="zone-harvest"/><text x="174" y="386" class="zone-label">DEPLOYMENT WINDOW</text><text x="648" y="122" class="zone-label">RECOVER</text><path d="M120 328V352" stroke="#f1f1f1" stroke-width="4"/></g>
+                <g id="historicalCars"></g>
+                <g id="carAhead"><circle r="8" fill="#61d3e6" stroke="#101112" stroke-width="3"/><text y="-18" class="car-label">RIV</text></g>
+                <g id="carRear"><circle r="8" fill="#eabe63" stroke="#101112" stroke-width="3"/><text y="24" class="car-label">CHS</text></g>
+                <g id="carMain"><circle r="14" fill="none" stroke="#f44747" stroke-width="1"/><circle r="8" fill="#f44747" stroke="#fff" stroke-width="2"/><text y="-23" class="car-label">DEV</text></g>
+              </svg>
+              <div class="circuit-caption"><span id="circuitNote">Schematic circuit / simulated car positions</span><span id="sectorLabel">SECTOR 1</span></div>
+            </div>
+          </div>
+          <div class="telemetry-strip">
+            <div><span>SPEED</span><strong id="speedValue">0 <small>km/h</small></strong><svg id="speedSpark" viewBox="0 0 160 24" aria-hidden="true"></svg></div>
+            <div><span>GEAR</span><strong id="gearValue">1</strong></div>
+            <div><span>THROTTLE</span><strong id="throttleValue">0<small>%</small></strong><div class="microbar"><i id="throttleBar"></i></div></div>
+            <div><span>BRAKE</span><strong id="brakeValue">0<small>%</small></strong><div class="microbar brake"><i id="brakeBar"></i></div></div>
+            <div><span>MODEL ENERGY</span><strong id="liveEnergy">42<small>%</small></strong><div class="microbar energy"><i id="liveEnergyBar"></i></div></div>
+          </div>
+          <div class="replay-controls"><button id="playButton" class="icon-button" aria-label="Play replay" title="Play or pause"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path id="playIcon" d="M8 5v14l11-7z" fill="currentColor"/></svg></button><output id="replayTime">00:00</output><input id="scrubber" type="range" min="0" max="900" value="0" aria-label="Replay position"><label><span class="sr-only">Replay speed</span><select id="playbackSpeed"><option value="1">1x</option><option value="4" selected>4x</option><option value="8">8x</option></select></label><button id="captureButton" class="button quiet">Capture window</button></div>
+        </section>
+        <aside class="recommendation-panel" aria-live="polite">
+          <div class="section-heading"><p class="eyebrow">APEX-R STRATEGY</p><span id="modelStatus" class="pill good">DATA MODEL + CHECKS PASS</span></div>
+          <div class="decision-heading"><h2 id="recommendation">HOLD</h2><span id="decisionIndex">01 / 03</span></div>
+          <p id="explanation" class="explanation"></p>
+          <div class="gnn-advisory"><span>FROZEN GNN ADVISORY</span><strong id="gnnScore">--</strong><small id="gnnStatus">Not evaluated. Advisory has zero influence on action selection.</small></div>
+          <div id="sequence" class="sequence" aria-label="Recommended action sequence"></div>
+          <dl class="decision-metrics"><div><dt>Expected position gain</dt><dd id="expectedGain">--</dd></div><div><dt>Overtake in horizon</dt><dd id="passChance">--</dd></div><div><dt>End energy</dt><dd id="endEnergy">--</dd></div><div><dt>Any position loss</dt><dd id="lossChance">--</dd></div></dl>
+          <div class="compute-line"><span id="searchCount">0 feasible sequences</span><span id="computeTime">-- ms</span></div>
+          <p class="meta-note">96 simulated futures. Historical replay separates observed telemetry, the frozen GNN advisory, and simulated energy/branches. The advisory has zero influence on the optimiser.</p>
+          <button id="inspectButton" class="button full quiet">Inspect strategy scores <span aria-hidden="true">&rarr;</span></button>
+        </aside>
+      </div>
+      <section class="decision-bar"><div><p class="eyebrow">YOUR STRATEGY</p><p>Choose the first move.</p></div><div id="actionPicker" class="action-picker" role="group" aria-label="Judge first action"></div><button id="compareButton" class="button primary">Compare futures <span aria-hidden="true">&rarr;</span></button></section>
+      <section class="comparison-section">
+        <div class="section-heading"><div><p class="eyebrow">COUNTERFACTUAL COMPARISON</p><h2>Same start. Two decisions.</h2></div><span id="comparisonStatus" class="pill">READY TO COMPARE</span></div>
+        <div id="comparisonEmpty" class="empty-comparison"><span class="empty-index">A / B</span><p>Your first action is followed by HOLD. APEX-R chooses the full sequence. Both run against identical random conditions.</p></div>
+        <div id="comparisonResult" hidden>
+          <div class="comparison-grid"><div><div class="chart-heading"><h3>Energy across the horizon</h3><div class="legend"><span class="key judge">Your strategy</span><span class="key apex">APEX-R</span></div></div><svg id="energyChart" class="energy-chart" viewBox="0 0 640 225" role="img" aria-label="Energy levels after each lap"></svg><p class="meta-note">Lines show the selected seed. Summary values below average 96 paired simulations; the data model estimates overtake opportunity from historical OpenF1 patterns.</p></div><div id="comparisonTable" class="table-wrap"></div></div>
+          <div class="branch-heading"><h3>One seeded race future</h3><span id="sampleNote" class="meta-note"></span></div><div id="branchTimeline" class="branch-timeline"></div>
+          <div class="result-footer"><p id="comparisonVerdict"></p><button id="exportComparison" class="button quiet">Export decision JSON</button></div>
+        </div>
+      </section>
+    </section>
+    <section id="view-lab" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">SCENARIO WORKBENCH</p><h1>Find the decision boundary.</h1></div><p>Change the starting state. Recalculate every feasible strategy.</p></div>
+      <div class="lab-grid"><section class="inputs-panel"><h2>Race state</h2><div id="stateInputs"></div><label class="slider-field"><span>Risk aversion <output id="riskOutput">45%</output></span><input id="risk" type="range" min="0" max="100" value="45"></label><div class="model-readout"><span>BATTERY MODEL</span><strong>4.00 MJ capacity</strong><small>0.12 MJ reserve / 300 kW peak ceiling</small><small>Illustrative limits, not a complete FIA rule set.</small></div></section><div><section class="ranking-panel"><div class="section-heading"><h2>Best sequence by first action</h2><span id="labRecommendation" class="pill">HOLD</span></div><div id="rankingTable" class="table-wrap"></div><p class="meta-note">Utility = 6 x expected position gain + 0.9 x remaining charge fraction - risk-weighted threats - 0.065 x deployed MJ.</p></section><section class="constraints-panel"><div class="section-heading"><h2>Constraint shield</h2><span class="meta-note">CHECKED BEFORE RECOVERY</span></div><div id="constraints"></div></section><section class="window-panel"><h2>Upcoming opportunity quality</h2><div id="windowInputs" class="window-inputs"></div><p class="meta-note">Scenario assumptions from 0 to 1. One decision window represents one lap.</p></section></div></div>
+    </section>
+    <section id="view-validation" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">BENCHMARK WORKBENCH</p><h1>Make the advantage measurable.</h1></div><button id="runValidation" class="button primary">Run benchmark</button></div>
+      <div class="benchmark-toolbar"><label class="field"><span>SCENARIOS</span><select id="benchmarkCount"><option value="12">12 scenarios</option><option value="24" selected>24 scenarios</option><option value="60">60 scenarios</option></select></label><span>48 paired trials per scenario and strategy</span><span class="pill">SYNTHETIC VALIDATION</span></div>
+      <p class="validation-method">APEX-R, attack-now, conserve, and threshold policies see the same starting states and random draws. Outcome-model perturbations are hidden from the planner.</p>
+      <div id="validationEmpty" class="empty-state"><h2>No benchmark run yet.</h2><p>Run the suite to measure gains, losses, energy use, and blocked actions. Results are calculated on this device.</p></div>
+      <div id="validationResult" hidden><div id="validationMetrics" class="validation-metrics"></div><div id="validationTable" class="table-wrap"></div><div class="section-heading benchmark-details"><h2>Scenario results</h2><button id="exportValidation" class="button quiet">Export benchmark JSON</button></div><div id="validationDetails" class="table-wrap"></div><p class="meta-note">This tests behaviour inside a simplified simulator. It does not establish real-race accuracy or prove superiority over professional F1 strategy systems.</p></div>
+    </section>
+    <section id="view-audit" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">REPRODUCIBLE DECISIONS</p><h1>The reasoning stays on record.</h1></div><button id="exportAudit" class="button quiet">Export decision log</button></div><p id="auditStorage" class="validation-method">Stored on this device. Each comparison records inputs, seed, model version, scores, and outcome.</p><div id="auditContent"></div>
+    </section>
+    <footer><span>APEX-R <b>/</b> DEVSEZ</span><span>Observed, inferred, simulated. Always labelled.</span><span>HUMAN DECISION / MODEL ASSISTANCE</span></footer>
+  </main>
+  <dialog id="dataDialog"><div class="dialog-heading"><div><p class="eyebrow">DATA &amp; MODEL</p><h2>Know what the numbers mean.</h2></div><button class="icon-button close-dialog" aria-label="Close dialog">&times;</button></div><div class="dialog-body"><div class="provenance-table"><div><b>Replay</b><p id="provenanceText">Bundled synthetic telemetry on a schematic circuit. No team data is included.</p></div><div><b>Energy &amp; outcomes</b><p>Battery energy, branch gaps/positions and outcomes are simulated with explicit demo constraints. Historical telemetry is shown separately as reference evidence.</p></div><div><b>Frozen model</b><p>Seed 42, best validation checkpoint epoch 28. The experimental boundary position-swap score is advisory-only and does not select the action.</p></div></div><h3>Historical replay</h3><p>The bundled fixture is an approved development-validation race segment. Car and position values are real FastF1 samples selected backward-only within one second; no outcome labels or protected holdouts are bundled.</p><button id="historicalButton" class="button primary">Load approved historical replay</button><h3>Load historical telemetry</h3><p>Import an OpenF1 car_data JSON array or a combined file made by the included fetch script. Speed, throttle, brake and gear become recorded values. Rival gaps and energy remain simulated.</p><label class="file-field">Telemetry JSON<input id="telemetryFile" type="file" accept=".json,application/json"></label><p id="importStatus" class="meta-note" role="status"></p><button id="syntheticButton" class="button quiet">Use bundled synthetic replay</button><details><summary>Model limits and sources</summary><p>Energy follows E_next = E_start - E_deploy + E_recovered at the battery-side boundary. Deployment and recovery are power/capacity constrained; infeasible requests are logged.</p><p>The objective is a weighted utility. Position value per MJ is a reporting metric, not a claimed new scientific law. Limits are demo constraints, not FIA compliance claims.</p><p><a href="https://openf1.org/docs/" target="_blank" rel="noreferrer">OpenF1 documentation</a> / <a href="https://docs.fastf1.dev/" target="_blank" rel="noreferrer">FastF1 documentation</a></p><p>Replay data must have a valid timestamp and finite speed. Files stay on this device in offline mode. Historical playback is not a live team connection.</p></details></div></dialog>
+  <dialog id="guideDialog"><div class="dialog-heading"><div><p class="eyebrow">90-SECOND DEMO</p><h2>Let the judge make the first call.</h2></div><button class="icon-button close-dialog" aria-label="Close dialog">&times;</button></div><div class="dialog-body"><ol class="demo-steps"><li><span>00-20 SEC</span><h3>Set the scene.</h3><p>Show the race state and identify which data is simulated. Ask whether to attack, hold, harvest, or defend.</p></li><li><span>20-45 SEC</span><h3>Commit to a decision.</h3><p>Select their first move and compare futures. Show the full action sequences and identical random seed.</p></li><li><span>45-70 SEC</span><h3>Test the explanation.</h3><p>Open Strategy lab. Change energy or rear gap and watch the recommended decision change.</p></li><li><span>70-90 SEC</span><h3>Show the evidence.</h3><p>Run validation. Show wins, ties, losses and model constraints. Export a decision so it can be reproduced.</p></li></ol><button id="startDemo" class="button primary full">Start with the patient attack</button></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+    <script src="./engine.js"></script><script src="./telemetry.js"></script><script src="./apex-model.js"></script><script src="./phase5_fixture.js"></script><script src="./app.js"></script>
+</body>
+</html>

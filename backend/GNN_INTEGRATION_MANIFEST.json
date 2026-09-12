@@ -1,0 +1,83 @@
+{
+  "manifest_version": "backend-gnn-integration-v1",
+  "model_manifest": "models/frozen/gnn_proxy_v1/FROZEN_MODEL_MANIFEST.json",
+  "model_version": "gnn_proxy_v1",
+  "task": "fixed-pair next-lap-boundary classified-order position-swap proxy",
+  "output_label": "experimental boundary position-swap proxy signal",
+  "selected_seed": 42,
+  "selected_epoch": 28,
+  "checkpoint": {
+    "path": "models/frozen/gnn_proxy_v1/gnn_seed_42_best.pt",
+    "sha256": "d5ce7258fa2ec62f953d516816497f1cdbd04b1b839e362ef447f79c4e618d14"
+  },
+  "frozen_artifacts": {
+    "manifest_sha256": "97bd462899be13c43e127c50c03cb6a40819c93097b0355687a1ab9b4f78fc2a",
+    "checksum_file_sha256": "f1aa31b4552ff97cb24e42e3a86eaf5b825224699cacbcf55239c34df9da2194",
+    "preprocessing_sha256": "425c6e8459a81d9dfc8bcd017557ec4b7eabecdac9f59d7a6bde9fdffe58ecc2",
+    "graph_schema_sha256": "34f54f748cacd9fdaf79110a5576bd28a31e9a6ff0b5ac579d4c838572021bb3",
+    "feature_schema_sha256": "6fd6bdf23b1e007e6bf0560b559203953c4defe0c81deb750ddb1527fe5e39a7",
+    "approved_fixture_sha256": "c42852f6e3f9e5851ef22c8b7f5687c9e44c4c81e363bce32d6a05bf71320c9f",
+    "package_sha256": "dd246c9883e1719d445d2d5063750ecec54523acc923424064b30eabcd124d81"
+  },
+  "architecture": {
+    "model_class": "EdgeAwareGNN",
+    "node_dim": 18,
+    "edge_dim": 4,
+    "pair_dim": 12,
+    "hidden_width": 32,
+    "message_passing_layers": 2,
+    "message_passing": "GINEConv with encoded edge features",
+    "dropout": 0.2
+  },
+  "input_pipeline": {
+    "schema_version": "gnn-proxy-graph-cache-v1",
+    "asof_tolerance_sec": 1.0,
+    "lookback_sec": 10.0,
+    "join_policy": "backward-only",
+    "interpolation": false,
+    "missingness": "non-finite raw values are replaced with training means at transform; explicit masks retained",
+    "node_order": "sorted source driver identifier per race",
+    "topology": "directed up to three nearest finite XYZ neighbours; no classified adjacency"
+  },
+  "runtime": {
+    "python": "3.13.13",
+    "torch": "2.11.0+cu128",
+    "torch_geometric": "2.8.0.post1",
+    "numpy": "2.5.3",
+    "device_selection": "APEX_GNN_DEVICE=auto|cpu|cuda; auto selects CUDA when available",
+    "load_policy": "checksum and load once per Service instance; eval mode; torch.inference_mode"
+  },
+  "endpoints": {
+    "status": "GET /api/model/status",
+    "predict": "POST /api/model/predict",
+    "request_contract": "Complete raw multi-car canonical graph with node_raw, edge_index, edge_raw, pair_raw, fixed attacker/target indices, decision timestamp and freshness declaration",
+    "response_contract": "proxy_score or null, score label, input quality, freshness, checkpoint hash and measured inference latency; no strategy action"
+  },
+  "implementation_sha256": {
+    "backend/gnn_adapter.py": "7526846798a9c964693864e3f8cd5274e4cebd530be27013c3eff2647da9551b",
+    "backend/service.py": "c620afc9b8372144a62dccfd32e9b634f1f76672bead6f74669211caf170135e",
+    "backend/phase5.py": "fe15666982e1d1941992038b277b84d07bd799560fdc366af0c3292133e4c8fd",
+    "backend/app.py": "e7f6012759bc54d0fed9cbc973b159c0c58fa00991b8b32aa1e1d14ff5e798e5",
+    "backend/standalone.py": "b76ba5f21ac77a36986976ed1903ebefc3eec5f594e7ba89b92c60f7d8b3025a",
+    "backend/measure_gnn_integration.py": "208aae4e012e4099687730d76ea693a92ebab131912f88e98cdbb4157847725c",
+    "scripts/build_gnn_predict_example.py": "a114cf2e2f1cb5cc8e52284b7a7e5dfc666b421846637ee50635fdab882778f7",
+    "tests/test_gnn_backend.py": "383535f841b816055810d50b318d9800cf81db4228ad0188633615dbf7783a60",
+    "examples/gnn_predict_request.json": "8e45d6487dd8bb07791dc5c1b073de7ec879c99753e5f64ac59ee47d25ccf691"
+  },
+  "validation": {
+    "focused_http_tests": "5 passed",
+    "existing_api_tests": "4 passed",
+    "reference_parity_samples": 3,
+    "reference_parity_max_absolute_difference": 0.0,
+    "reference_parity_tolerance": 1e-07,
+    "protected_session_accessed": false,
+    "training_executed": false,
+    "strategy_engine_changed": false
+  },
+  "limitations": [
+    "The score is an experimental boundary position-swap proxy signal, not a calibrated overtake probability.",
+    "The endpoint does not infer ATTACK, HOLD, HARVEST or DEFEND.",
+    "Historical graph timestamps do not prove live publication latency.",
+    "Actual ERS/battery/SOH/temperature and private pit-wall data are unavailable."
+  ]
+}

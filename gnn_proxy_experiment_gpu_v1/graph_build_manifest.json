@@ -1,0 +1,150 @@
+{
+  "feature_builder_excludes_outcome_fields": true,
+  "graph_counts": {
+    "by_split": {
+      "development_test": {
+        "graphs": 2200,
+        "negative": 2094,
+        "positive": 106,
+        "races": 5,
+        "unique_pairs": 440
+      },
+      "development_train": {
+        "graphs": 10671,
+        "negative": 10058,
+        "positive": 613,
+        "races": 26,
+        "unique_pairs": 2300
+      },
+      "development_validation": {
+        "graphs": 2533,
+        "negative": 2430,
+        "positive": 103,
+        "races": 6,
+        "unique_pairs": 505
+      }
+    },
+    "eligible_negative": 14582,
+    "eligible_positive": 822,
+    "exclusions": {
+      "fixed_pair_missing_current_car_sample": 19
+    },
+    "graphs_eligible": 15404,
+    "graphs_excluded": 19,
+    "windows_labelled": 15423
+  },
+  "pass_races": [
+    "2018:Abu Dhabi Grand Prix:Race",
+    "2018:Austrian Grand Prix:Race",
+    "2018:Azerbaijan Grand Prix:Race",
+    "2018:Belgian Grand Prix:Race",
+    "2018:Brazilian Grand Prix:Race",
+    "2018:British Grand Prix:Race",
+    "2018:Canadian Grand Prix:Race",
+    "2018:Chinese Grand Prix:Race",
+    "2018:French Grand Prix:Race",
+    "2018:German Grand Prix:Race",
+    "2018:Hungarian Grand Prix:Race",
+    "2018:Japanese Grand Prix:Race",
+    "2018:Mexican Grand Prix:Race",
+    "2019:Abu Dhabi Grand Prix:Race",
+    "2019:Australian Grand Prix:Race",
+    "2019:Austrian Grand Prix:Race",
+    "2019:Azerbaijan Grand Prix:Race",
+    "2019:Bahrain Grand Prix:Race",
+    "2019:Belgian Grand Prix:Race",
+    "2019:Brazilian Grand Prix:Race",
+    "2019:British Grand Prix:Race",
+    "2019:Canadian Grand Prix:Race",
+    "2019:Chinese Grand Prix:Race",
+    "2019:French Grand Prix:Race",
+    "2019:German Grand Prix:Race",
+    "2019:Hungarian Grand Prix:Race",
+    "2019:Italian Grand Prix:Race",
+    "2020:70th Anniversary Grand Prix:Race",
+    "2020:Bahrain Grand Prix:Race",
+    "2020:Eifel Grand Prix:Race",
+    "2020:Emilia Romagna Grand Prix:Race",
+    "2020:Hungarian Grand Prix:Race",
+    "2020:Italian Grand Prix:Race",
+    "2020:Portuguese Grand Prix:Race",
+    "2020:Russian Grand Prix:Race",
+    "2020:Sakhir Grand Prix:Race",
+    "2020:Spanish Grand Prix:Race"
+  ],
+  "split_map": {
+    "2018:Abu Dhabi Grand Prix:Race": "development_train",
+    "2018:Austrian Grand Prix:Race": "development_train",
+    "2018:Azerbaijan Grand Prix:Race": "development_train",
+    "2018:Belgian Grand Prix:Race": "development_train",
+    "2018:Brazilian Grand Prix:Race": "development_train",
+    "2018:British Grand Prix:Race": "development_train",
+    "2018:Canadian Grand Prix:Race": "development_train",
+    "2018:Chinese Grand Prix:Race": "development_train",
+    "2018:French Grand Prix:Race": "development_train",
+    "2018:German Grand Prix:Race": "development_train",
+    "2018:Hungarian Grand Prix:Race": "development_train",
+    "2018:Japanese Grand Prix:Race": "development_train",
+    "2018:Mexican Grand Prix:Race": "development_train",
+    "2019:Abu Dhabi Grand Prix:Race": "development_validation",
+    "2019:Australian Grand Prix:Race": "development_train",
+    "2019:Austrian Grand Prix:Race": "development_train",
+    "2019:Azerbaijan Grand Prix:Race": "development_train",
+    "2019:Bahrain Grand Prix:Race": "development_train",
+    "2019:Belgian Grand Prix:Race": "development_train",
+    "2019:Brazilian Grand Prix:Race": "development_train",
+    "2019:British Grand Prix:Race": "development_train",
+    "2019:Canadian Grand Prix:Race": "development_train",
+    "2019:Chinese Grand Prix:Race": "development_train",
+    "2019:French Grand Prix:Race": "development_train",
+    "2019:German Grand Prix:Race": "development_train",
+    "2019:Hungarian Grand Prix:Race": "development_train",
+    "2019:Italian Grand Prix:Race": "development_train",
+    "2020:70th Anniversary Grand Prix:Race": "development_validation",
+    "2020:Bahrain Grand Prix:Race": "development_test",
+    "2020:Eifel Grand Prix:Race": "development_test",
+    "2020:Emilia Romagna Grand Prix:Race": "development_test",
+    "2020:Hungarian Grand Prix:Race": "development_validation",
+    "2020:Italian Grand Prix:Race": "development_validation",
+    "2020:Portuguese Grand Prix:Race": "development_test",
+    "2020:Russian Grand Prix:Race": "development_validation",
+    "2020:Sakhir Grand Prix:Race": "development_test",
+    "2020:Spanish Grand Prix:Race": "development_validation"
+  },
+  "stream_stats": [
+    {
+      "join_keys": [
+        "race_id",
+        "driver",
+        "session_time_sec"
+      ],
+      "kind": "car",
+      "lookback_sec": 10.0,
+      "nonmonotonic_source_rows_in_requested_keys": 0,
+      "requested_keys": 740,
+      "requested_timestamps": 582980,
+      "requests_resolved_or_attempted": 582980,
+      "source": "full_race_telemetry_collection_final/telemetry_car.csv.gz",
+      "source_rows_seen": 17031555,
+      "source_rows_used_for_requested_drivers": 15944390,
+      "tolerance_sec": 1.0
+    },
+    {
+      "join_keys": [
+        "race_id",
+        "driver",
+        "session_time_sec"
+      ],
+      "kind": "position",
+      "lookback_sec": 10.0,
+      "nonmonotonic_source_rows_in_requested_keys": 0,
+      "requested_keys": 740,
+      "requested_timestamps": 582980,
+      "requests_resolved_or_attempted": 582980,
+      "source": "full_race_telemetry_collection_final/telemetry_position.csv.gz",
+      "source_rows_seen": 15484853,
+      "source_rows_used_for_requested_drivers": 14277894,
+      "tolerance_sec": 1.0
+    }
+  ]
+}

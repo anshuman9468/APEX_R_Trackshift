@@ -1,0 +1,384 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "detail": "PASS",
+      "passed": true,
+      "test": "zip_crc"
+    },
+    {
+      "detail": "c1ef1e7a796aec17c356061d264e6896bad6640ca5c564e48a771bfe5c1403ff",
+      "passed": true,
+      "test": "extracted_sha256:PHASE_CONTINUOUS_TELEMETRY_REPORT.md"
+    },
+    {
+      "detail": "0f60fcd2da64fce46c2b82fa7a3affbadad5a5f8a94617693c441b5938ffcfcf",
+      "passed": true,
+      "test": "extracted_sha256:README.md"
+    },
+    {
+      "detail": "99251dd9f72289eacb654aff024edfddffb01dc4ca7568bfc20ee6f381ab23e8",
+      "passed": true,
+      "test": "extracted_sha256:fastf1_source_manifest.csv"
+    },
+    {
+      "detail": "2da596199858d772e818317b7e36028533d46812702d63dc770e058572c6c617",
+      "passed": true,
+      "test": "extracted_sha256:fastf1_source_manifest.json"
+    },
+    {
+      "detail": "a2ea42176da2988984f463079461a21df03f8705947c418902866d2082e8b2bc",
+      "passed": true,
+      "test": "extracted_sha256:metrics.json"
+    },
+    {
+      "detail": "ad6870fb74608cc9d64d651c1d4ccf0d4e8ae37194f2266331244bbfc5147e9e",
+      "passed": true,
+      "test": "extracted_sha256:race_collection_status.csv"
+    },
+    {
+      "detail": "084146507fbdba1092709d5e28048d5e6029397da9bc8f8350851855be70dbd2",
+      "passed": true,
+      "test": "extracted_sha256:race_collection_status.json"
+    },
+    {
+      "detail": "50cb1294b19a85d5ec17b86015989e2e36eba1e51ab9eda1db12c606fa20696f",
+      "passed": true,
+      "test": "extracted_sha256:source_archive_inventory.csv"
+    },
+    {
+      "detail": "3c68bea4da812ebc820a436524789127dd77fdd8b5833c5282c13013e3fd02ab",
+      "passed": true,
+      "test": "extracted_sha256:source_archive_inventory.json"
+    },
+    {
+      "detail": "d8208fbc03f4bee92cd209e50457e6d870cafcf91ab12941c236d73f284debd1",
+      "passed": true,
+      "test": "extracted_sha256:supplied_telemetry_inventory.csv"
+    },
+    {
+      "detail": "82ff8fe22b5643bf114057f38c39d11b639c4ac7e3f3f8c8ccf7af1c84e19321",
+      "passed": true,
+      "test": "extracted_sha256:supplied_telemetry_inventory.json"
+    },
+    {
+      "detail": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+      "passed": true,
+      "test": "extracted_sha256:telemetry_car.csv.gz"
+    },
+    {
+      "detail": "e4826f73c20bae328e17bc9700cd8de7f5e3f9caa016226cece237dafae3c2e7",
+      "passed": true,
+      "test": "extracted_sha256:telemetry_coverage.csv"
+    },
+    {
+      "detail": "934da82dcf8c48b4a765fa017a2ebcc6396c2d8448f7e24dafa2a03e98f4faee",
+      "passed": true,
+      "test": "extracted_sha256:telemetry_coverage.json"
+    },
+    {
+      "detail": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+      "passed": true,
+      "test": "extracted_sha256:telemetry_position.csv.gz"
+    },
+    {
+      "detail": "81b474fb86d9cd1385c17c09414b8751cbe66b916e7adb395322e52d187a20e2",
+      "passed": true,
+      "test": "extracted_sha256:validation_three_race_coverage.csv"
+    },
+    {
+      "detail": "0db9f5c521b94f5a57e348604882a5de3d258cb837c41686bedd847467ec2dab",
+      "passed": true,
+      "test": "extracted_sha256:validation_three_race_coverage.json"
+    },
+    {
+      "detail": "af34cd883d92526e43ba7e0699bdcaea78215e81db18c3b63665822bd86633a2",
+      "passed": true,
+      "test": "extracted_sha256:validation_three_races.csv"
+    },
+    {
+      "detail": "34fff5108b51b3b7455f18f0bf3e5082e9da5521f5d030c12853a7bb16cef9a9",
+      "passed": true,
+      "test": "extracted_sha256:validation_three_races.json"
+    },
+    {
+      "detail": {
+        "actual": 70,
+        "expected": 70
+      },
+      "passed": true,
+      "test": "row_count:fastf1_source_manifest.csv"
+    },
+    {
+      "detail": {
+        "actual": 70,
+        "expected": 70
+      },
+      "passed": true,
+      "test": "row_count:fastf1_source_manifest.json"
+    },
+    {
+      "detail": {
+        "actual": 70,
+        "expected": 70
+      },
+      "passed": true,
+      "test": "row_count:race_collection_status.csv"
+    },
+    {
+      "detail": {
+        "actual": 70,
+        "expected": 70
+      },
+      "passed": true,
+      "test": "row_count:race_collection_status.json"
+    },
+    {
+      "detail": {
+        "actual": 5,
+        "expected": 5
+      },
+      "passed": true,
+      "test": "row_count:source_archive_inventory.csv"
+    },
+    {
+      "detail": {
+        "actual": 5,
+        "expected": 5
+      },
+      "passed": true,
+      "test": "row_count:source_archive_inventory.json"
+    },
+    {
+      "detail": {
+        "actual": 1399,
+        "expected": 1399
+      },
+      "passed": true,
+      "test": "row_count:supplied_telemetry_inventory.csv"
+    },
+    {
+      "detail": {
+        "actual": 1399,
+        "expected": 1399
+      },
+      "passed": true,
+      "test": "row_count:supplied_telemetry_inventory.json"
+    },
+    {
+      "detail": {
+        "actual": 17031555,
+        "expected": 17031555
+      },
+      "passed": true,
+      "test": "row_count:telemetry_car.csv.gz"
+    },
+    {
+      "detail": {
+        "actual": 800,
+        "expected": 800
+      },
+      "passed": true,
+      "test": "row_count:telemetry_coverage.csv"
+    },
+    {
+      "detail": {
+        "actual": 800,
+        "expected": 800
+      },
+      "passed": true,
+      "test": "row_count:telemetry_coverage.json"
+    },
+    {
+      "detail": {
+        "actual": 15484853,
+        "expected": 15484853
+      },
+      "passed": true,
+      "test": "row_count:telemetry_position.csv.gz"
+    },
+    {
+      "detail": {
+        "actual": 60,
+        "expected": 60
+      },
+      "passed": true,
+      "test": "row_count:validation_three_race_coverage.csv"
+    },
+    {
+      "detail": {
+        "actual": 60,
+        "expected": 60
+      },
+      "passed": true,
+      "test": "row_count:validation_three_race_coverage.json"
+    },
+    {
+      "detail": {
+        "actual": 3,
+        "expected": 3
+      },
+      "passed": true,
+      "test": "row_count:validation_three_races.csv"
+    },
+    {
+      "detail": {
+        "actual": 3,
+        "expected": 3
+      },
+      "passed": true,
+      "test": "row_count:validation_three_races.json"
+    }
+  ],
+  "fresh_extraction_cleaned": true,
+  "members": [
+    {
+      "compressed_bytes": 1807,
+      "crc32": "1861b1ad",
+      "name": "PHASE_CONTINUOUS_TELEMETRY_REPORT.md",
+      "sha256": "c1ef1e7a796aec17c356061d264e6896bad6640ca5c564e48a771bfe5c1403ff",
+      "uncompressed_bytes": 3884
+    },
+    {
+      "compressed_bytes": 784,
+      "crc32": "3c2fcd4e",
+      "name": "README.md",
+      "sha256": "0f60fcd2da64fce46c2b82fa7a3affbadad5a5f8a94617693c441b5938ffcfcf",
+      "uncompressed_bytes": 1795
+    },
+    {
+      "compressed_bytes": 937,
+      "crc32": "90ae20c6",
+      "name": "SHA256SUMS.txt",
+      "sha256": "3299827238bebccf9fbc009be8c4fdbb01517e13320b53ebfad1f237bd44f724",
+      "uncompressed_bytes": 1770
+    },
+    {
+      "compressed_bytes": 23547,
+      "crc32": "526c3e6b",
+      "name": "fastf1_source_manifest.csv",
+      "sha256": "99251dd9f72289eacb654aff024edfddffb01dc4ca7568bfc20ee6f381ab23e8",
+      "uncompressed_bytes": 101020
+    },
+    {
+      "compressed_bytes": 24939,
+      "crc32": "224354ad",
+      "name": "fastf1_source_manifest.json",
+      "sha256": "2da596199858d772e818317b7e36028533d46812702d63dc770e058572c6c617",
+      "uncompressed_bytes": 160681
+    },
+    {
+      "compressed_bytes": 2157,
+      "crc32": "aea7ab5c",
+      "name": "metrics.json",
+      "sha256": "a2ea42176da2988984f463079461a21df03f8705947c418902866d2082e8b2bc",
+      "uncompressed_bytes": 7977
+    },
+    {
+      "compressed_bytes": 2020,
+      "crc32": "188a2ce2",
+      "name": "race_collection_status.csv",
+      "sha256": "ad6870fb74608cc9d64d651c1d4ccf0d4e8ae37194f2266331244bbfc5147e9e",
+      "uncompressed_bytes": 11065
+    },
+    {
+      "compressed_bytes": 2509,
+      "crc32": "e26e514f",
+      "name": "race_collection_status.json",
+      "sha256": "084146507fbdba1092709d5e28048d5e6029397da9bc8f8350851855be70dbd2",
+      "uncompressed_bytes": 40060
+    },
+    {
+      "compressed_bytes": 649,
+      "crc32": "dcef3bd4",
+      "name": "source_archive_inventory.csv",
+      "sha256": "50cb1294b19a85d5ec17b86015989e2e36eba1e51ab9eda1db12c606fa20696f",
+      "uncompressed_bytes": 1836
+    },
+    {
+      "compressed_bytes": 732,
+      "crc32": "8b6238f1",
+      "name": "source_archive_inventory.json",
+      "sha256": "3c68bea4da812ebc820a436524789127dd77fdd8b5833c5282c13013e3fd02ab",
+      "uncompressed_bytes": 3057
+    },
+    {
+      "compressed_bytes": 30916,
+      "crc32": "ca2d7495",
+      "name": "supplied_telemetry_inventory.csv",
+      "sha256": "d8208fbc03f4bee92cd209e50457e6d870cafcf91ab12941c236d73f284debd1",
+      "uncompressed_bytes": 396481
+    },
+    {
+      "compressed_bytes": 36805,
+      "crc32": "3251d1d4",
+      "name": "supplied_telemetry_inventory.json",
+      "sha256": "82ff8fe22b5643bf114057f38c39d11b639c4ac7e3f3f8c8ccf7af1c84e19321",
+      "uncompressed_bytes": 1050252
+    },
+    {
+      "compressed_bytes": 263737372,
+      "crc32": "507dbf64",
+      "name": "telemetry_car.csv.gz",
+      "sha256": "22b6ed4e57c3e8e72616fe545f6244aeabbc9a15ab12158fa2de1e499f8ca9ca",
+      "uncompressed_bytes": 267873901
+    },
+    {
+      "compressed_bytes": 44423,
+      "crc32": "7b640c26",
+      "name": "telemetry_coverage.csv",
+      "sha256": "e4826f73c20bae328e17bc9700cd8de7f5e3f9caa016226cece237dafae3c2e7",
+      "uncompressed_bytes": 521982
+    },
+    {
+      "compressed_bytes": 62782,
+      "crc32": "a70b1e98",
+      "name": "telemetry_coverage.json",
+      "sha256": "934da82dcf8c48b4a765fa017a2ebcc6396c2d8448f7e24dafa2a03e98f4faee",
+      "uncompressed_bytes": 1597957
+    },
+    {
+      "compressed_bytes": 266162181,
+      "crc32": "acb369a6",
+      "name": "telemetry_position.csv.gz",
+      "sha256": "5e3dc5c9229ce855e0b23d79ccdf50b7159e6b49daeb77659c7a916d49d7cf0d",
+      "uncompressed_bytes": 277229195
+    },
+    {
+      "compressed_bytes": 4039,
+      "crc32": "03c85a3b",
+      "name": "validation_three_race_coverage.csv",
+      "sha256": "81b474fb86d9cd1385c17c09414b8751cbe66b916e7adb395322e52d187a20e2",
+      "uncompressed_bytes": 40170
+    },
+    {
+      "compressed_bytes": 5352,
+      "crc32": "0c561e2f",
+      "name": "validation_three_race_coverage.json",
+      "sha256": "0db9f5c521b94f5a57e348604882a5de3d258cb837c41686bedd847467ec2dab",
+      "uncompressed_bytes": 119993
+    },
+    {
+      "compressed_bytes": 326,
+      "crc32": "37021e26",
+      "name": "validation_three_races.csv",
+      "sha256": "af34cd883d92526e43ba7e0699bdcaea78215e81db18c3b63665822bd86633a2",
+      "uncompressed_bytes": 690
+    },
+    {
+      "compressed_bytes": 505,
+      "crc32": "729852eb",
+      "name": "validation_three_races.json",
+      "sha256": "34fff5108b51b3b7455f18f0bf3e5082e9da5521f5d030c12853a7bb16cef9a9",
+      "uncompressed_bytes": 2054
+    }
+  ],
+  "package": {
+    "bytes": 530147346,
+    "compression": "ZIP_DEFLATED",
+    "member_count": 20,
+    "path": "/home/anshumandutta/Downloads/APEX-R_Devsez_Full_Application/full_race_telemetry_collection_final/APEX-R_Full_Race_Telemetry_Collection.zip",
+    "sha256": "d4a0123cbe7b6ed76690eddf443b6580e3f9a2c49e7cb5aa62b77c21f396e323"
+  },
+  "verification_directory": "/tmp/apex_full_telemetry_extract_r9rh1zk2"
+}

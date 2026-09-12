@@ -1,0 +1,237 @@
+{
+  "all_passed": true,
+  "bytes": 495988397,
+  "checks": [
+    {
+      "detail": "members=33, compression_types=[8]",
+      "name": "zip_decompresses",
+      "status": "PASS"
+    },
+    {
+      "detail": "95c19063d8d37130b720250f238caa94269408a62514d6f89d6e203bf3427fc2",
+      "name": "checksum:PHASE3_PASSED_RACES_REPORT.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "324ee5d9cb7eb95e38898a16bc708e9d52d98606412f8fbaae1cc970e1d01a44",
+      "name": "checksum:PHASE4_HANDOFF.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "7a5b2ef1143b37baab90bb8327608bd669e7c1aba1503330bd4ac297bb648074",
+      "name": "checksum:README.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "4a9b25917a2cd264d991f23e99bef5369407711809984af9ae949e5fb17dd9d1",
+      "name": "checksum:augment_event_telemetry.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "0fdbdeb3233b28b279f8db0a2d79573217798dceca928de1344f5a6a6b3ec5a3",
+      "name": "checksum:data_dictionary.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "34ba7b4b0c722f2772bf6f59fd5ce1ddf33a2ebb8b4bb3309599fa76b99664b3",
+      "name": "checksum:driver_telemetry_coverage_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "4155b0132f49af8e2d406851624cd1796f94cd40a605494395b71990298c6999",
+      "name": "checksum:event_review_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "0af4a4f2a1a959626b3902336438228b8be593305178d352fa0ffa3b99260c8b",
+      "name": "checksum:fastf1_source_manifest_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "a671a57826d0810447857c70e97c5b16eecc6238d2f0071d59734954ee7d4dd8",
+      "name": "checksum:laptime_source_inventory_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "25cb75b4de79a1c4e4c40387b0da3d3a707d029dfd5e3c6ffebbe3642a3fbadc",
+      "name": "checksum:passed_race_manifest.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "684634f2cb113f037ba8adae56e43ca1c435a60228a31dadf19733a223ee7ae7",
+      "name": "checksum:passed_race_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "8b7622b68a54253320dd9741f68ca74029dfd4728061f873ab7b63829486cfea",
+      "name": "checksum:phase3_passed_metrics.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "aa9478f3d91690a6f6cc9cf2d1d84933e6a0ac9383a0fd15844ef90cf763930a",
+      "name": "checksum:phase3_passed_races_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "765c8b56141a4d04fa4938efde51754073781e8546437df4856c6a982d7376e6",
+      "name": "checksum:phase3_passed_tests.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "4fb811b33e24eff94e7466fe954ec10dde2fdf671b5754390378319aa9afc58c",
+      "name": "checksum:phase3_split_manifest_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "4e46cdd04a310094b0c82aea9c7d38faba6941994d405ab59b9d14c7bf27c06c",
+      "name": "checksum:pit_context_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "1a9107faac1f250bb7cd68a54f7e8c961ea7c5b0ab43edd30aa08bb97075efbd",
+      "name": "checksum:position_swap_candidates_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "f5ef7db8a9b89775ba8579c44c47a50739e50928740cc1aead55b824856d4b33",
+      "name": "checksum:position_swap_candidates_37.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "03a5b634245f0431479c2297d744b905ca803b888b3dd10705c81f4b4c98e01b",
+      "name": "checksum:prediction_windows_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "9940ba85da5df7ec78198db67fbdce936f020441b5b13d95a239ec91aa2de66d",
+      "name": "checksum:proxy_counts_by_split.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "b981438f964feb794c07147bc2a2fa257fba9a435d817f91bd03e3e110b59740",
+      "name": "checksum:proxy_event_links.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "da7aab45d82256eda3498ebfafb0b4ba430794bc8085f927c1201e10f47c7ef3",
+      "name": "checksum:proxy_feature_view_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "9308020b4252b795f2281a6ec0473182db2b057fda0f50b5a71b7299327767b7",
+      "name": "checksum:proxy_labels_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "a0e491f6302e0edfab8cc977c194657d14178e662571b43db499572f29bcaa91",
+      "name": "checksum:race_control_context_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "f4a69bc81c3ead3acc1b2ac31e2f8785a579343150e87093e607ef5489b0d468",
+      "name": "checksum:source_input_hashes_after.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "f4a69bc81c3ead3acc1b2ac31e2f8785a579343150e87093e607ef5489b0d468",
+      "name": "checksum:source_input_hashes_before.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "0968ad623301495dc46aee09005d9bf45720b0b50a0acab3fbd2570d6c641691",
+      "name": "checksum:target_contract_v3_passed_races.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "719d5acfc979513f453b3fa64a1645caabe5b0431df2f10c46ed286432b6ccd8",
+      "name": "checksum:telemetry_coverage_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "a30320b70c1266ae8e4717355bab75f3a7b6e31a98173020c0897641b6e8dadd",
+      "name": "checksum:telemetry_coverage_37.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "3272062ec9dbe3ac12d06aefb2a27eb5bab7dfce8ae01cdb83e40e2b762b4c9b",
+      "name": "checksum:test_passed_races.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "7b80a92bd255bb34b0085e31f020a25f647fa28040e221bea97f166384c1a64c",
+      "name": "checksum:SHA256SUMS.txt",
+      "status": "PASS"
+    },
+    {
+      "detail": "ba4f36ca4df3171b8b9bf96ee699f4fbd7c97b5b6f2b7a82580b47b5b2c4e216",
+      "name": "checksum:telemetry_car_37_passed.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "a434d4ec8ec01d1c949a87085a270db73bdd5f3874fe9adf90becc47961a9e7d",
+      "name": "checksum:telemetry_position_37_passed.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=15944390, expected=15944390",
+      "name": "row_count:telemetry_car_37_passed.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=14277894, expected=14277894",
+      "name": "row_count:telemetry_position_37_passed.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=1195, expected=1195",
+      "name": "row_count:position_swap_candidates_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=40837, expected=40837",
+      "name": "row_count:prediction_windows_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=40837, expected=40837",
+      "name": "row_count:proxy_feature_view_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=40837, expected=40837",
+      "name": "row_count:proxy_labels_37.csv.gz",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=740, expected=740",
+      "name": "row_count:driver_telemetry_coverage_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=1195, expected=1195",
+      "name": "row_count:event_review_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=1, expected=1",
+      "name": "row_count:proxy_counts_by_split.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=1159, expected=1159",
+      "name": "row_count:pit_context_37.csv",
+      "status": "PASS"
+    },
+    {
+      "detail": "actual=3105, expected=3105",
+      "name": "row_count:race_control_context_37.csv",
+      "status": "PASS"
+    }
+  ],
+  "compression": "ZIP_DEFLATED",
+  "member_count": 33,
+  "package_path": "/tmp/APEX-R_37_Passed_Races.zip",
+  "sha256": "410922cd2226b54961d9d25601a90dc21b2fe5906f0bbb4badb23d4cd96ffd56",
+  "verified_at_utc": "2026-09-11T16:05:12.619195+00:00",
+  "verified_from_fresh_extraction": true
+}
