@@ -6,13 +6,21 @@
   const fixed = (v, n=2) => Number.isFinite(v) ? v.toFixed(n) : '--';
   const pct = (v) => fixed(v * 100, 0) + '%';
   const signed = (v) => (v >= 0 ? '+' : '') + fixed(v);
+  const clamp01 = (v) => Math.max(0, Math.min(1, Number.isFinite(Number(v)) ? Number(v) : 0));
+  const actionColors = {ATTACK:'#f44747',HOLD:'#c0e777',HARVEST:'#61d3e6',DEFEND:'#eabe63'};
+  const actionExplanations = {
+    ATTACK: 'Attack now: the current opportunity and available energy support an immediate move.',
+    HOLD: 'Hold: preserve flexibility while the model sees no need to commit energy immediately.',
+    DEFEND: 'Defend: rear pressure and the model safety signal make position protection the priority.',
+    HARVEST: 'Harvest: recover energy and reduce degradation before spending it on a later opportunity.'
+  };
   const modelInfo = document.querySelector('#dataDialog .provenance-table > div:nth-child(3) p');
-  if(modelInfo && window.ApexModel?.metadata) modelInfo.textContent='Historical OpenF1 overtake prior plus exhaustive search over 2 to 5 lap windows. Energy and rival response remain modelled; no private ERS data or FIA certification is claimed.';
+  if(modelInfo) modelInfo.textContent='Frozen hybrid GNN + GRU + physics model, epoch 51. Predictions are served from the tested 2026 holdout bundle; the simulator does not fabricate live telemetry.';
   const key = 'apex-r-decisions-v1';
   let scenario = E.SCENARIOS[0], state = {...scenario.state}, windows = [...scenario.windows], risk = 0.45, judgeAction = 'ATTACK';
   let result = null, comparison = null, benchmark = null, replay = T.synthetic(state.soc), replayTime = 0, playing = false, lastTick = null;
-  let historicalFixture = window.ApexHistoricalFixture || null, historicalModel = null;
-  let api = false, busy = false, logs = [], toastTimer, recalcTimer, revision = 0;
+  let historicalFixture = window.ApexHistoricalFixture || null, hybridModel = null;
+  let api = false, hybridApi = false, busy = false, logs = [], toastTimer, recalcTimer, revision = 0;
   let socket = null, streamedFrame = null, streamSoc = null, comparisonProvenance = null;
   const fields = [
     {key:'soc',name:'Initial energy',min:0,max:100,step:1,unit:'%'},
@@ -56,9 +64,9 @@
     const mean=(key,fallback)=>{const values=samples.map(value=>Number(value[key])).filter(Number.isFinite);return values.length?values.reduce((sum,value)=>sum+value,0)/values.length:fallback;};
     const prior=replayFrameAt(Math.max(0,replayTime-10));
     const openDrs=value=>[10,12,14].includes(Number(value))?1:0;
-    return {scenarioId:E.SCENARIOS.some(s=>s.id===scenario.id)?scenario.id:'patient',state:{...state},telemetry:{speedKmh:frame.speed,throttlePct:frame.throttle,brakePct:frame.brake,gear:frame.gear,raceProgress:frame.progress,speedMean10s:mean('speed',200),speedDelta10s:Number.isFinite(frame.speed)&&Number.isFinite(prior.speed)?frame.speed-prior.speed:0,throttleMean10s:mean('throttle',60),brakeFraction10s:mean('brake',0)/100,rpmMean10s:mean('rpm',10000),gearMean10s:mean('gear',5),drsOpenFraction10s:samples.reduce((sum,value)=>sum+openDrs(value.drs),0)/samples.length,disableLegacyPrior:replay.source==='historical'},windows:[...windows],risk,horizon:Number($('horizon').value),seed:Number($('seed').value),judgeAction};
+    return {scenarioId:E.SCENARIOS.some(s=>s.id===scenario.id)?scenario.id:'patient',state:{...state},telemetry:{speedKmh:frame.speed,throttlePct:frame.throttle,brakePct:frame.brake,gear:frame.gear,raceProgress:frame.progress,speedMean10s:mean('speed',200),speedDelta10s:Number.isFinite(frame.speed)&&Number.isFinite(prior.speed)?frame.speed-prior.speed:0,throttleMean10s:mean('throttle',60),brakeFraction10s:mean('brake',0)/100,rpmMean10s:mean('rpm',10000),gearMean10s:mean('gear',5),drsOpenFraction10s:samples.reduce((sum,value)=>sum+openDrs(value.drs),0)/samples.length,disableLegacyPrior:true},windows:[...windows],risk,horizon:Number($('horizon').value),seed:Number($('seed').value),judgeAction};
   }
-  function provenance(){return {replay:replay.source,name:replay.name,metadata:replay.metadata||null,description:replay.description,energy:'simulated',rivalGaps:replay.source==='historical'?'displayed historical distance plus simulated branch gaps':'simulated',outcomes:'simulated',predictionModel:replay.source==='historical'?'gnn_proxy_gpu_v1_seed42_epoch28 advisory-only':(window.ApexModel?.metadata?.version||'heuristic-only'),captureSeconds:replayTime};}
+  function provenance(){return {replay:replay.source,name:replay.name,metadata:replay.metadata||null,description:replay.description,energy:'simulated',rivalGaps:replay.source==='historical'?'displayed historical distance plus simulated branch gaps':'simulated',outcomes:'simulated',predictionModel:'hybrid_gnn_physics_epoch51',captureSeconds:replayTime};}
   function switchView(name) {
     const target=['pitwall','lab','validation','audit'].includes(name)?name:'pitwall';
     document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!=='view-'+target);
@@ -101,18 +109,58 @@
     setHistoricalOption(true);
     windows=[.42,.35,.31]; judgeAction='ATTACK';
     replay={source:'historical',name:value.race.event+' 2019 — approved development replay',duration:value.replay.duration_sec,frames:value.replay.frames,points:value.replay.track_points,hasLocation:true,trackBounds:value.replay.track_bounds,metadata:{race_id:value.race.race_id,session:'Race',decision_window_id:d.window_id,decision_session_time_sec:d.session_time_sec,asof_tolerance_sec:value.decision.asof_tolerance_sec},description:'Real FastF1 car and track-frame position samples from an approved development-validation race. Each value is backward as-of within 1.0 second; no live latency or outcome claim.'};
-    replayTime=d.replay_time_sec; setPlayback(false); $('scenarioCaption').textContent=scenario.caption; renderInputControls(); renderActionPicker(); invalidate(); installReplay(replay); replayTime=d.replay_time_sec; drawFrame(); recalculate(); loadHistoricalModel();
+    replayTime=d.replay_time_sec; setPlayback(false); $('scenarioCaption').textContent=scenario.caption; renderInputControls(); renderActionPicker(); invalidate(); installReplay(replay); replayTime=d.replay_time_sec; drawFrame(); recalculate();
   }
-  async function loadHistoricalModel(){
-    const d=historicalFixture?.decision; if(!d)return;
-    historicalModel=d.gnn_reference_score!=null?{status:'available',score:d.gnn_reference_score,model_version:'gnn_proxy_gpu_v1_seed42_epoch28',score_label:'experimental boundary position-swap score',device:'offline fixture'}:{status:'unavailable',reason:'Offline score reference not bundled'};
-    if(api){try{historicalModel=await request('/api/phase5/inference',{window_id:d.window_id});}catch(_){/* fixture fallback remains explicit */}}
+  async function loadHybridModel(){
+    try{hybridModel=await request('/api/hybrid/predict?sequence=0',null,12000);hybridApi=hybridModel.status==='available';}
+    catch(_){hybridApi=false;hybridModel={status:'unavailable',reason:'Start the local hybrid model server to load tested predictions.'};}
     renderGnn();
+    if(result)renderRecommendation();
+  }
+  function modelGuidedPolicy(){
+    const o=result?.optimisation, current=result?.input;
+    if(!o||!current||!o.feasible)return null;
+    const candidates=Object.fromEntries((o.alternatives||[]).map(c=>[c.sequence[0],c]));
+    const legal=E.ACTIONS.filter(action=>candidates[action]);
+    if(!legal.length)return null;
+    const values=legal.map(action=>Number(candidates[action].score));
+    const min=Math.min(...values),max=Math.max(...values),span=Math.max(1e-9,max-min);
+    const physics=Object.fromEntries(E.ACTIONS.map(action=>[action,legal.includes(action)?(Number(candidates[action].score)-min)/span:0]));
+    const row=hybridModel?.predictions?.[0]||{};
+    const tyre=clamp01(row.tyre_degradation_probability),pit=clamp01(row.pit_stop_probability),safety=clamp01(row.safety_constraint_probability);
+    const energy=clamp01(current.state.soc/100);
+    const energyNeed=clamp01((0.38-energy)/0.38);
+    const opportunity=clamp01(0.50*(1-clamp01(current.state.gapAhead/3))+0.25*clamp01((current.state.closing+5)/20)+0.15*energy+0.10*(1-current.state.wet));
+    const rearPressure=clamp01(0.60*(1-clamp01(current.state.gapBehind/1.5))+0.40*current.state.aggression);
+    const modelRisk=clamp01(0.45*safety+0.35*tyre+0.20*pit);
+    const signals={
+      ATTACK:clamp01(0.55*opportunity+0.25*(1-modelRisk)+0.20*energy),
+      HOLD:clamp01(0.45*(1-opportunity)+0.35*(1-modelRisk)+0.20*(1-energyNeed)),
+      DEFEND:clamp01(0.55*rearPressure+0.30*safety+0.15*(1-modelRisk)),
+      HARVEST:clamp01(0.55*energyNeed+0.25*tyre+0.10*pit+0.10*current.state.wet)
+    };
+    const raw=Object.fromEntries(E.ACTIONS.map(action=>[action,legal.includes(action)?0.55*physics[action]+0.45*signals[action]:-Infinity]));
+    const top=Math.max(...legal.map(action=>raw[action]));
+    const weights=Object.fromEntries(E.ACTIONS.map(action=>[action,legal.includes(action)?Math.exp((raw[action]-top)*5):0]));
+    const total=legal.reduce((sum,action)=>sum+weights[action],0)||1;
+    const scores=Object.fromEntries(E.ACTIONS.map(action=>[action,weights[action]/total]));
+    const recommendation=legal.slice().sort((a,b)=>scores[b]-scores[a]||physics[b]-physics[a])[0];
+    return {recommendation,scores,legal,modelSignals:{tyre,pit,safety},confidence:scores[recommendation],usingModel:hybridApi&&hybridModel?.status==='available'};
+  }
+  function renderActionScores(policy){
+    if(!policy){$('actionScores').innerHTML='<p class="meta-note">Waiting for a feasible action window.</p>';return;}
+    $('actionScores').innerHTML=E.ACTIONS.map(action=>{
+      const legal=policy.legal.includes(action),value=policy.scores[action]||0,selected=action===policy.recommendation;
+      return '<div class="action-score '+(selected?'selected ':'')+(legal?'':'blocked')+'" style="--action-color:'+(actionColors[action]||'#afb4b4')+'"><span>'+action+'</span><div class="action-track"><i style="width:'+(value*100).toFixed(1)+'%"></i></div><strong>'+(legal?pct(value):'BLOCKED')+'</strong></div>';
+    }).join('');
   }
   function renderGnn(){
-    const m=historicalModel;
-    if(!m||replay.source!=='historical'){$('gnnScore').textContent='--';$('gnnStatus').textContent='Not evaluated. Advisory has zero influence on action selection.';return;}
-    $('gnnScore').textContent=m.status==='available'?pct(Number(m.score)):'--';$('gnnStatus').textContent=m.status==='available'?'Experimental boundary position-swap score / '+(m.device||'offline')+' / advisory only; no action influence':('Unavailable: '+(m.reason||'runtime not installed')+' / no action influence');
+    const m=hybridModel, row=m?.predictions?.[0];
+    renderActionScores(modelGuidedPolicy());
+    $('actionPolicyStatus').textContent=m?.status==='available'?'ACTIVE':'WAITING';
+    if(!m||m.status!=='available'){$('gnnScore').textContent='--';$('gnnStatus').textContent=m?.reason||'Loading tested hybrid model...';return;}
+    $('gnnScore').textContent=Number.isFinite(Number(row?.next_lap_time_s))?fixed(Number(row.next_lap_time_s),2)+' s':'--';
+    $('gnnStatus').textContent='Epoch 51 · '+(m.test_context?.event||'2026 holdout')+' · GNN signals: tyre '+pct(Number(row?.tyre_degradation_probability||0))+' / pit '+pct(Number(row?.pit_stop_probability||0))+' / safety '+pct(Number(row?.safety_constraint_probability||0));
   }
   function drawFrame() {
     let frame=replayFrameAt(replayTime);
@@ -171,14 +219,15 @@
   function renderRecommendation(){
     const o=result.optimisation,s=result.apex.summary;
     const dataModelProbability=o.best?.trace?.[0]?.dataModelProbability;
-    $('recommendation').textContent=o.feasible?o.recommendation:'RECOVER';
-    $('recommendation').style.color=({ATTACK:'#f44747',HOLD:'#c0e777',HARVEST:'#61d3e6',DEFEND:'#eabe63'})[o.recommendation]||'#eabe63';
-    $('decisionIndex').textContent='01 / '+String(result.input.horizon).padStart(2,'0');
-    $('explanation').textContent=(o.explanation||'No normal action fits the available energy. Block deployment and use emergency recovery.')+(Number.isFinite(dataModelProbability)?' Historical OpenF1 overtake prior: '+pct(dataModelProbability)+'.':'');
-    $('modelStatus').textContent=o.feasible?'CHECKS PASS':'RECOVERY REQUIRED';$('modelStatus').className='pill '+(o.feasible?'good':'warning');
+    const policy=modelGuidedPolicy(),action=policy?.recommendation||(o.feasible?o.recommendation:'RECOVER');
+    $('recommendation').textContent=action;
+    $('recommendation').style.color=actionColors[action]||'#eabe63';
+    $('decisionIndex').textContent=policy?'MODEL OUTPUT':'NO FEASIBLE ACTION';
+    $('explanation').textContent=policy?(actionExplanations[action]||'Model-guided strategy action selected.'):(o.explanation||'No normal action fits the available energy. Block deployment and use emergency recovery.');
+    const active=policy?.usingModel;
+    $('modelStatus').textContent=active?'MODEL ACTIVE':(o.feasible?'PHYSICS ONLY':'RECOVERY REQUIRED');$('modelStatus').className='pill '+(active||o.feasible?'good':'warning');
     renderGnn();
-    $('decisionContext').textContent=replay.source==='historical'?'One approved historical decision window. The replay clock changes observed telemetry; this recommendation is for the captured snapshot.':'96 simulated futures from the current scenario. Change the scenario or inputs to recalculate the recommendation.';
-    $('sequence').innerHTML=result.apex.sequence.map((a,i)=>'<span>'+esc(a)+'<small>LAP +'+(i+1)+'</small></span>').join('');
+    $('decisionContext').textContent=policy?'The highlighted action combines the frozen model risk signals with the physics-feasible action scores.':'No normal action is currently feasible under the physics constraints.';
     $('expectedGain').textContent=signed(s.expectedGain);$('passChance').textContent=pct(s.passRate);$('endEnergy').textContent=fixed(s.endSoc,1)+'%';$('lossChance').textContent=pct(s.lossRate);
     $('searchCount').textContent=o.evaluated+' feasible sequences';$('computeTime').textContent=fixed(o.latencyMs,1)+' ms search';
   }
@@ -189,7 +238,7 @@
   }
   function selectScenario(id, reset=true){
     if(id==='historical'&&historicalFixture){installHistorical(historicalFixture);return;}
-    historicalModel=null;scenario=E.SCENARIOS.find(s=>s.id===id)||E.SCENARIOS[0];state={...scenario.state};windows=[...scenario.windows];risk=.45;judgeAction='ATTACK';$('scenario').value=scenario.id;$('scenarioCaption').textContent=scenario.caption;
+    scenario=E.SCENARIOS.find(s=>s.id===id)||E.SCENARIOS[0];state={...scenario.state};windows=[...scenario.windows];risk=.45;judgeAction='ATTACK';$('scenario').value=scenario.id;$('scenarioCaption').textContent=scenario.caption;
     setHistoricalOption(false);
     if(reset){$('seed').value='2026';$('horizon').value='3';}
     renderInputControls();renderActionPicker();invalidate();installReplay(T.synthetic(state.soc));recalculate();
@@ -248,10 +297,10 @@
     $('validationTable').innerHTML=table(['POLICY','POSITION GAIN','END ENERGY','PASS RATE','LOSS RATE','UTILITY','BLOCKED ACTIONS'],b.rows.map(r=>[esc(r.name),signed(r.gain),fixed(r.endSoc,1)+'%',pct(r.passRate),pct(r.lossRate),fixed(r.score),String(r.blockedActions)]));
     $('validationDetails').innerHTML=table(['SCENARIO','APEX-R SEQUENCE','APEX GAIN','THRESHOLD GAIN','UTILITY DIFFERENCE'],b.details.map(r=>[String(r.scenario)+' / '+esc(r.scenarioId),'<small>'+r.sequence.map(esc).join(' / ')+'</small>',signed(r.apexGain),signed(r.baselineGain),'<span class="'+(r.scoreDifference>=0?'positive':'negative')+'">'+signed(r.scoreDifference)+'</span>']));
   }
-  function updateConnection(){$('connection').textContent=api?'Local API connected':'Offline engine';$('connection').className='pill '+(api?'good':'');$('auditStorage').textContent=api?'New comparisons are saved in local SQLite and this browser. The latest 100 decisions are shown.':'Stored in this browser on this device. The latest 100 comparisons record inputs, seed, model version, scores, and outcomes.';}
+  function updateConnection(){const connected=api||hybridApi;$('connection').textContent=api?'Local API connected':(hybridApi?'Hybrid model connected':'Offline engine');$('connection').className='pill '+(connected?'good':'');$('auditStorage').textContent=api?'New comparisons are saved in local SQLite and this browser. The latest 100 decisions are shown.':'Stored in this browser on this device. The latest 100 comparisons record inputs, seed, model version, scores, and outcomes.';}
   async function connect(){
     if(location.protocol==='file:')return;
-    try{const status=await request('/api/health',null,1500);api=status.engine_version===E.VERSION;if(api){const saved=await request('/api/audit?limit=100');const all=[...logs,...saved.records];logs=Array.from(new Map(all.map(l=>[l.id,l])).values()).sort((a,b)=>b.created_at.localeCompare(a.created_at)).slice(0,100);persistLogs();renderAudit();if(status.websocket)connectStream();}}catch(_){api=false;}updateConnection();
+    try{const status=await request('/api/health',null,1500);api=status.engine_version===E.VERSION;if(api){const saved=await request('/api/audit?limit=100');const all=[...logs,...saved.records];logs=Array.from(new Map(all.map(l=>[l.id,l])).values()).sort((a,b)=>b.created_at.localeCompare(a.created_at)).slice(0,100);persistLogs();renderAudit();if(status.websocket)connectStream();}if(status.hybrid_model?.status==='available')await loadHybridModel();}catch(_){api=false;}updateConnection();
   }
   function connectStream(){
     socket=new WebSocket((location.protocol==='https:'?'wss://':'ws://')+location.host+'/ws/replay');

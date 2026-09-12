@@ -1,0 +1,996 @@
+{
+  "phase": "phase_2_calibration_and_robustness",
+  "calibration_data": "../calibration.json",
+  "holdout_data": "../model_test_bundle.pt:predictions_and_labels",
+  "calibration_only_rule": "thresholds and affine lap-time calibration fit on calibration data; no holdout labels used for fitting",
+  "calibration": {
+    "regression": {
+      "available": true,
+      "count": 7825,
+      "slope": 0.9378198530507548,
+      "intercept": 6.9362558936021435,
+      "raw_mae_s": 4.000669090587872,
+      "calibrated_mae_s": 4.674301438820217
+    },
+    "tyre": {
+      "count": 7825,
+      "positive_count": 3154,
+      "available": true,
+      "platt_intercept": -0.2488696145075686,
+      "platt_coefficient": 1.3350643695923,
+      "thresholds": {
+        "f1_threshold": {
+          "threshold": 0.5699994142322987,
+          "precision": 0.9850552306692657,
+          "recall": 0.9613189600507293,
+          "f1": 0.9730423620025674
+        },
+        "youden_threshold": {
+          "threshold": 0.43454897505189855,
+          "score": 0.9521184491201462
+        }
+      },
+      "calibration": {
+        "roc_auc": 0.9969161709203714,
+        "pr_auc": 0.9960755632831105,
+        "brier": 0.01776350153597839,
+        "ece": 0.007920386226759097
+      }
+    },
+    "pit": {
+      "count": 4098,
+      "positive_count": 158,
+      "available": true,
+      "platt_intercept": -2.397166264294373,
+      "platt_coefficient": 1.5453577743334845,
+      "thresholds": {
+        "f1_threshold": {
+          "threshold": 0.09333471045570683,
+          "precision": 0.1691542288557214,
+          "recall": 0.43037974683544306,
+          "f1": 0.24285714285714285
+        },
+        "youden_threshold": {
+          "threshold": 0.04902309223218681,
+          "score": 0.4269774465077427
+        }
+      },
+      "calibration": {
+        "roc_auc": 0.7633232667223544,
+        "pr_auc": 0.18664196494371738,
+        "brier": 0.034625929005276994,
+        "ece": 0.002948482905474852
+      }
+    },
+    "safety": {
+      "count": 4098,
+      "positive_count": 237,
+      "available": true,
+      "platt_intercept": -2.8032929121609076,
+      "platt_coefficient": 1.7682693575560375,
+      "thresholds": {
+        "f1_threshold": {
+          "threshold": 0.23408732254415993,
+          "precision": 0.7605042016806722,
+          "recall": 0.7637130801687764,
+          "f1": 0.7621052631578947
+        },
+        "youden_threshold": {
+          "threshold": 0.08373341497437897,
+          "score": 0.7623525091879523
+        }
+      },
+      "calibration": {
+        "roc_auc": 0.862091651121187,
+        "pr_auc": 0.7694527220058707,
+        "brier": 0.021542146171218166,
+        "ece": 0.007657099269439251
+      }
+    }
+  },
+  "holdout_overall": {
+    "rows": 9689,
+    "regression_raw": {
+      "available": true,
+      "count": 8515,
+      "slope": 0.8840530213041096,
+      "intercept": 11.868606618564769,
+      "raw_mae_s": 5.560064328115825,
+      "calibrated_mae_s": 5.728292015202399
+    },
+    "regression_calibrated": {
+      "available": true,
+      "count": 8515,
+      "mae_s": 5.803104781858251,
+      "rmse_s": 9.669751071933218,
+      "bias_s": 0.3186606051249897
+    },
+    "tyre_degradation": {
+      "count": 8515,
+      "positive_count": 3452,
+      "available": true,
+      "roc_auc": 0.9974857925709639,
+      "pr_auc": 0.9968188088784107,
+      "brier": 0.016865944035768892,
+      "ece": 0.008938853899407267,
+      "operating_point": {
+        "threshold": 0.5699994142322987,
+        "precision": 0.98805256869773,
+        "recall": 0.9582850521436849,
+        "f1": 0.9729411764705882
+      }
+    },
+    "pit_stop": {
+      "count": 4242,
+      "positive_count": 121,
+      "available": true,
+      "roc_auc": 0.786782474766415,
+      "pr_auc": 0.0872184252156231,
+      "brier": 0.029004829737272083,
+      "ece": 0.019749952060730727,
+      "operating_point": {
+        "threshold": 0.09333471045570683,
+        "precision": 0.10922787193973635,
+        "recall": 0.4793388429752066,
+        "f1": 0.17791411042944785
+      }
+    },
+    "safety_constraint": {
+      "count": 4242,
+      "positive_count": 282,
+      "available": true,
+      "roc_auc": 0.773703345511856,
+      "pr_auc": 0.43768423689857794,
+      "brier": 0.04816446558188212,
+      "ece": 0.023090389183024102,
+      "operating_point": {
+        "threshold": 0.23408732254415993,
+        "precision": 0.3908450704225352,
+        "recall": 0.39361702127659576,
+        "f1": 0.392226148409894
+      }
+    }
+  },
+  "holdout_by_condition": {
+    "tyre_compound": {
+      "UNKNOWN": {
+        "rows": 25,
+        "regression_raw": {
+          "available": true,
+          "count": 25,
+          "slope": 0.40585286255561986,
+          "intercept": 54.545018790828394,
+          "raw_mae_s": 6.254620361328125,
+          "calibrated_mae_s": 1.9853804786276397
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 25,
+          "mae_s": 5.023251719207188,
+          "rmse_s": 5.682473238391918,
+          "bias_s": -1.806654699808808
+        },
+        "tyre_degradation": {
+          "count": 25,
+          "positive_count": 0,
+          "available": false
+        },
+        "pit_stop": {
+          "count": 25,
+          "positive_count": 1,
+          "available": true,
+          "roc_auc": 0.7083333333333333,
+          "pr_auc": 0.125,
+          "brier": 0.03964079591354732,
+          "ece": 0.036170031850264774,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "safety_constraint": {
+          "count": 25,
+          "positive_count": 0,
+          "available": false
+        }
+      },
+      "SOFT": {
+        "rows": 3168,
+        "regression_raw": {
+          "available": true,
+          "count": 2504,
+          "slope": 0.8343764674208228,
+          "intercept": 17.515106691638163,
+          "raw_mae_s": 8.116313163464824,
+          "calibrated_mae_s": 8.307238942762217
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 2504,
+          "mae_s": 8.090514513153872,
+          "rmse_s": 12.55581140920172,
+          "bias_s": -0.13266471983261122
+        },
+        "tyre_degradation": {
+          "count": 2504,
+          "positive_count": 807,
+          "available": true,
+          "roc_auc": 0.9947615114945172,
+          "pr_auc": 0.9912590639357363,
+          "brier": 0.022520063453815888,
+          "ece": 0.011377818302434119,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9802890932982917,
+            "recall": 0.9244114002478315,
+            "f1": 0.951530612244898
+          }
+        },
+        "pit_stop": {
+          "count": 519,
+          "positive_count": 11,
+          "available": true,
+          "roc_auc": 0.8006442376521117,
+          "pr_auc": 0.07308510065832867,
+          "brier": 0.023289536863304157,
+          "ece": 0.030238755134658818,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.061855670103092786,
+            "recall": 0.5454545454545454,
+            "f1": 0.1111111111111111
+          }
+        },
+        "safety_constraint": {
+          "count": 519,
+          "positive_count": 24,
+          "available": true,
+          "roc_auc": 0.7030303030303031,
+          "pr_auc": 0.1372017179912292,
+          "brier": 0.05062944253173152,
+          "ece": 0.041409808984011774,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.14285714285714285,
+            "recall": 0.2916666666666667,
+            "f1": 0.1917808219178082
+          }
+        }
+      },
+      "MEDIUM": {
+        "rows": 3277,
+        "regression_raw": {
+          "available": true,
+          "count": 2942,
+          "slope": 0.8954458615087202,
+          "intercept": 11.31436503433782,
+          "raw_mae_s": 5.202939861409118,
+          "calibrated_mae_s": 5.6217736792956545
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 2942,
+          "mae_s": 5.476826901741164,
+          "rmse_s": 9.184642275936616,
+          "bias_s": -0.2700863681166135
+        },
+        "tyre_degradation": {
+          "count": 2942,
+          "positive_count": 1408,
+          "available": true,
+          "roc_auc": 0.9972262245170085,
+          "pr_auc": 0.9973613058249823,
+          "brier": 0.018226106965613144,
+          "ece": 0.011309743838251589,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9911894273127754,
+            "recall": 0.9588068181818182,
+            "f1": 0.9747292418772563
+          }
+        },
+        "pit_stop": {
+          "count": 1292,
+          "positive_count": 57,
+          "available": true,
+          "roc_auc": 0.7577100646352725,
+          "pr_auc": 0.12102494669577094,
+          "brier": 0.04253215317311453,
+          "ece": 0.020360717925578527,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.15196078431372548,
+            "recall": 0.543859649122807,
+            "f1": 0.23754789272030652
+          }
+        },
+        "safety_constraint": {
+          "count": 1292,
+          "positive_count": 76,
+          "available": true,
+          "roc_auc": 0.7432912049861495,
+          "pr_auc": 0.2985487986292783,
+          "brier": 0.04951933333957908,
+          "ece": 0.025207617170681054,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.2631578947368421,
+            "recall": 0.2631578947368421,
+            "f1": 0.2631578947368421
+          }
+        }
+      },
+      "HARD": {
+        "rows": 3219,
+        "regression_raw": {
+          "available": true,
+          "count": 3044,
+          "slope": 0.9407368394890842,
+          "intercept": 5.380655571669136,
+          "raw_mae_s": 3.7967427763769726,
+          "calibrated_mae_s": 3.659371051926021
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 3044,
+          "mae_s": 4.243226950947119,
+          "rmse_s": 7.076831419812182,
+          "bias_s": 1.2763955235198565
+        },
+        "tyre_degradation": {
+          "count": 3044,
+          "positive_count": 1237,
+          "available": true,
+          "roc_auc": 0.9992622778836815,
+          "pr_auc": 0.9989335142949047,
+          "brier": 0.011037789791525964,
+          "ece": 0.013195498647274442,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9893877551020408,
+            "recall": 0.9797898140662894,
+            "f1": 0.9845653939886271
+          }
+        },
+        "pit_stop": {
+          "count": 2406,
+          "positive_count": 52,
+          "available": true,
+          "roc_auc": 0.7987713221358081,
+          "pr_auc": 0.0728177661486267,
+          "brier": 0.022863115675789962,
+          "ece": 0.01921906858286882,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.09130434782608696,
+            "recall": 0.40384615384615385,
+            "f1": 0.14893617021276595
+          }
+        },
+        "safety_constraint": {
+          "count": 2406,
+          "positive_count": 182,
+          "available": true,
+          "roc_auc": 0.7961128350067199,
+          "pr_auc": 0.5558904425204694,
+          "brier": 0.04740311029194734,
+          "ece": 0.02582667791307769,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.5283018867924528,
+            "recall": 0.46153846153846156,
+            "f1": 0.49266862170087977
+          }
+        }
+      }
+    },
+    "race_control_state": {
+      "NOT_RACE_SESSION": {
+        "rows": 5372,
+        "regression_raw": {
+          "available": true,
+          "count": 4273,
+          "slope": 0.8199700893639864,
+          "intercept": 19.67704635408989,
+          "raw_mae_s": 7.492844599235708,
+          "calibrated_mae_s": 7.8319449311390565
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 4273,
+          "mae_s": 7.4813367909685535,
+          "rmse_s": 11.551718460784123,
+          "bias_s": -0.847202364525728
+        },
+        "tyre_degradation": {
+          "count": 4273,
+          "positive_count": 1371,
+          "available": true,
+          "roc_auc": 0.9947856580210032,
+          "pr_auc": 0.9907320905211716,
+          "brier": 0.024496995706946485,
+          "ece": 0.013253872545684433,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9813084112149533,
+            "recall": 0.9190371991247265,
+            "f1": 0.9491525423728814
+          }
+        },
+        "pit_stop": {
+          "count": 0,
+          "positive_count": 0,
+          "available": false
+        },
+        "safety_constraint": {
+          "count": 0,
+          "positive_count": 0,
+          "available": false
+        }
+      },
+      "GREEN": {
+        "rows": 4031,
+        "regression_raw": {
+          "available": true,
+          "count": 3963,
+          "slope": 1.0419892806353275,
+          "intercept": -4.256056438944199,
+          "raw_mae_s": 3.2280535316515415,
+          "calibrated_mae_s": 3.2437309198581668
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 3963,
+          "mae_s": 3.7577419061248327,
+          "rmse_s": 6.857520277277833,
+          "bias_s": 1.4780900571283755
+        },
+        "tyre_degradation": {
+          "count": 3963,
+          "positive_count": 1980,
+          "available": true,
+          "roc_auc": 0.9989269905306214,
+          "pr_auc": 0.9990707776499146,
+          "brier": 0.009105711903078387,
+          "ece": 0.008161185783202591,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9923702950152594,
+            "recall": 0.9853535353535353,
+            "f1": 0.9888494678155094
+          }
+        },
+        "pit_stop": {
+          "count": 3963,
+          "positive_count": 107,
+          "available": true,
+          "roc_auc": 0.7859895489975569,
+          "pr_auc": 0.08688277172374324,
+          "brier": 0.027176167929750916,
+          "ece": 0.01697375176980055,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.11298076923076923,
+            "recall": 0.4392523364485981,
+            "f1": 0.17973231357552583
+          }
+        },
+        "safety_constraint": {
+          "count": 3963,
+          "positive_count": 104,
+          "available": true,
+          "roc_auc": 0.5068396555504615,
+          "pr_auc": 0.028167549587312067,
+          "brier": 0.03066804710588868,
+          "ece": 0.023255428186893044,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "VSC": {
+        "rows": 195,
+        "regression_raw": {
+          "available": true,
+          "count": 190,
+          "slope": 0.42255435465404173,
+          "intercept": 57.31728756816819,
+          "raw_mae_s": 9.497477521394428,
+          "calibrated_mae_s": 8.23361721494699
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 190,
+          "mae_s": 9.399026024627245,
+          "rmse_s": 11.865345358605678,
+          "bias_s": 1.9222522354091864
+        },
+        "tyre_degradation": {
+          "count": 190,
+          "positive_count": 101,
+          "available": true,
+          "roc_auc": 0.9957726109689621,
+          "pr_auc": 0.9970615443871328,
+          "brier": 0.014990281204231591,
+          "ece": 0.01966959941518795,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9897959183673469,
+            "recall": 0.9603960396039604,
+            "f1": 0.9748743718592965
+          }
+        },
+        "pit_stop": {
+          "count": 190,
+          "positive_count": 13,
+          "available": true,
+          "roc_auc": 0.661451542807475,
+          "pr_auc": 0.1505718667367312,
+          "brier": 0.07528233589338448,
+          "ece": 0.07302148793516637,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.0970873786407767,
+            "recall": 0.7692307692307693,
+            "f1": 0.1724137931034483
+          }
+        },
+        "safety_constraint": {
+          "count": 190,
+          "positive_count": 106,
+          "available": true,
+          "roc_auc": 0.36792452830188677,
+          "pr_auc": 0.48122530919509143,
+          "brier": 0.40279880309995625,
+          "ece": 0.3800746346226443,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.42857142857142855,
+            "recall": 0.36792452830188677,
+            "f1": 0.39593908629441626
+          }
+        }
+      },
+      "SAFETY_CAR": {
+        "rows": 91,
+        "regression_raw": {
+          "available": true,
+          "count": 89,
+          "slope": 1.0616545501883232,
+          "intercept": -10.31743121143068,
+          "raw_mae_s": 8.199167487326633,
+          "calibrated_mae_s": 7.941250984782367
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 89,
+          "mae_s": 8.62852798946628,
+          "rmse_s": 12.028506319767294,
+          "bias_s": 1.2426060126991578
+        },
+        "tyre_degradation": {
+          "count": 89,
+          "positive_count": 0,
+          "available": false
+        },
+        "pit_stop": {
+          "count": 89,
+          "positive_count": 1,
+          "available": true,
+          "roc_auc": 0.9545454545454546,
+          "pr_auc": 0.2,
+          "brier": 0.011636971013058777,
+          "ece": 0.02964309741818623,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.08333333333333333,
+            "recall": 1.0,
+            "f1": 0.15384615384615385
+          }
+        },
+        "safety_constraint": {
+          "count": 89,
+          "positive_count": 72,
+          "available": true,
+          "roc_auc": 1.0,
+          "pr_auc": 1.0,
+          "brier": 0.07016201942376904,
+          "ece": 0.21986857263206405,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    },
+    "traffic_regime": {
+      "CONSTRAINED": {
+        "rows": 2819,
+        "regression_raw": {
+          "available": true,
+          "count": 2693,
+          "slope": 0.9039202875278196,
+          "intercept": 8.431927839063512,
+          "raw_mae_s": 3.93386903997252,
+          "calibrated_mae_s": 3.695293927588435
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 2693,
+          "mae_s": 4.427280323659943,
+          "rmse_s": 7.647139374011655,
+          "bias_s": 1.7724676936219377
+        },
+        "tyre_degradation": {
+          "count": 2693,
+          "positive_count": 1215,
+          "available": true,
+          "roc_auc": 0.9992192764106762,
+          "pr_auc": 0.9990874395448516,
+          "brier": 0.01104724914275586,
+          "ece": 0.0096912470479703,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9966130397967824,
+            "recall": 0.968724279835391,
+            "f1": 0.9824707846410684
+          }
+        },
+        "pit_stop": {
+          "count": 1990,
+          "positive_count": 51,
+          "available": true,
+          "roc_auc": 0.7347935564117344,
+          "pr_auc": 0.06262450009828034,
+          "brier": 0.025629370977591867,
+          "ece": 0.01464204463451383,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.08235294117647059,
+            "recall": 0.27450980392156865,
+            "f1": 0.12669683257918551
+          }
+        },
+        "safety_constraint": {
+          "count": 1990,
+          "positive_count": 116,
+          "available": true,
+          "roc_auc": 0.7913783903139145,
+          "pr_auc": 0.522555106384771,
+          "brier": 0.03779687488777671,
+          "ece": 0.017361866249382442,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.4263565891472868,
+            "recall": 0.47413793103448276,
+            "f1": 0.4489795918367347
+          }
+        }
+      },
+      "NORMAL_OR_CLEAR": {
+        "rows": 6870,
+        "regression_raw": {
+          "available": true,
+          "count": 5822,
+          "slope": 0.8723944415700744,
+          "intercept": 13.717695089796408,
+          "raw_mae_s": 6.312270427561019,
+          "calibrated_mae_s": 6.635745624840745
+        },
+        "regression_calibrated": {
+          "available": true,
+          "count": 5822,
+          "mae_s": 6.43950039606781,
+          "rmse_s": 10.474028029044042,
+          "bias_s": -0.353806328801888
+        },
+        "tyre_degradation": {
+          "count": 5822,
+          "positive_count": 2237,
+          "available": true,
+          "roc_auc": 0.9964770261027766,
+          "pr_auc": 0.9952461155744435,
+          "brier": 0.01955741523928729,
+          "ece": 0.010631428737195452,
+          "operating_point": {
+            "threshold": 0.5699994142322987,
+            "precision": 0.9833871712044301,
+            "recall": 0.9526151095216808,
+            "f1": 0.9677565849227975
+          }
+        },
+        "pit_stop": {
+          "count": 2252,
+          "positive_count": 70,
+          "available": true,
+          "roc_auc": 0.8197656147701977,
+          "pr_auc": 0.10347692740430743,
+          "brier": 0.03198758414746907,
+          "ece": 0.024263600274838912,
+          "operating_point": {
+            "threshold": 0.09333471045570683,
+            "precision": 0.12188365650969529,
+            "recall": 0.6285714285714286,
+            "f1": 0.20417633410672853
+          }
+        },
+        "safety_constraint": {
+          "count": 2252,
+          "positive_count": 166,
+          "available": true,
+          "roc_auc": 0.7634632489690305,
+          "pr_auc": 0.3785749167580444,
+          "brier": 0.05732588009399126,
+          "ece": 0.02912879662520848,
+          "operating_point": {
+            "threshold": 0.23408732254415993,
+            "precision": 0.36129032258064514,
+            "recall": 0.3373493975903614,
+            "f1": 0.34890965732087226
+          }
+        }
+      }
+    }
+  },
+  "holdout_by_race": {
+    "British Grand Prix": {
+      "rows": 2207,
+      "regression_raw": {
+        "available": true,
+        "count": 1946,
+        "slope": 1.012485249875631,
+        "intercept": -0.39600416922450304,
+        "raw_mae_s": 4.164909025625482,
+        "calibrated_mae_s": 4.58436564102423
+      },
+      "regression_calibrated": {
+        "available": true,
+        "count": 1946,
+        "mae_s": 4.687331412947611,
+        "rmse_s": 8.749201051107695,
+        "bias_s": -0.19080091266461996
+      },
+      "tyre_degradation": {
+        "count": 1946,
+        "positive_count": 625,
+        "available": true,
+        "roc_auc": 0.9968629825889477,
+        "pr_auc": 0.9951700062439566,
+        "brier": 0.012465643546218739,
+        "ece": 0.011971725928404873,
+        "operating_point": {
+          "threshold": 0.5699994142322987,
+          "precision": 0.9918032786885246,
+          "recall": 0.968,
+          "f1": 0.979757085020243
+        }
+      },
+      "pit_stop": {
+        "count": 1030,
+        "positive_count": 49,
+        "available": true,
+        "roc_auc": 0.7790467869104828,
+        "pr_auc": 0.14136884456767296,
+        "brier": 0.045096091834045886,
+        "ece": 0.021446295937556953,
+        "operating_point": {
+          "threshold": 0.09333471045570683,
+          "precision": 0.14349775784753363,
+          "recall": 0.6530612244897959,
+          "f1": 0.23529411764705882
+        }
+      },
+      "safety_constraint": {
+        "count": 1030,
+        "positive_count": 90,
+        "available": true,
+        "roc_auc": 0.6773404255319149,
+        "pr_auc": 0.15466649237169222,
+        "brier": 0.08408206454112456,
+        "ece": 0.055784461330129924,
+        "operating_point": {
+          "threshold": 0.23408732254415993,
+          "precision": 0.1619047619047619,
+          "recall": 0.18888888888888888,
+          "f1": 0.17435897435897435
+        }
+      }
+    },
+    "Chinese Grand Prix": {
+      "rows": 2035,
+      "regression_raw": {
+        "available": true,
+        "count": 1828,
+        "slope": 0.8011437498685366,
+        "intercept": 21.040929183186005,
+        "raw_mae_s": 5.879266392480362,
+        "calibrated_mae_s": 6.260165020538443
+      },
+      "regression_calibrated": {
+        "available": true,
+        "count": 1828,
+        "mae_s": 6.102298292828415,
+        "rmse_s": 9.736605063866987,
+        "bias_s": 0.3057765700318466
+      },
+      "tyre_degradation": {
+        "count": 1828,
+        "positive_count": 799,
+        "available": true,
+        "roc_auc": 0.9979785227160773,
+        "pr_auc": 0.997679945570681,
+        "brier": 0.017375053850786717,
+        "ece": 0.01833203878860326,
+        "operating_point": {
+          "threshold": 0.5699994142322987,
+          "precision": 0.9973614775725593,
+          "recall": 0.9461827284105131,
+          "f1": 0.9710982658959537
+        }
+      },
+      "pit_stop": {
+        "count": 875,
+        "positive_count": 18,
+        "available": true,
+        "roc_auc": 0.8328795539997407,
+        "pr_auc": 0.06278210659695038,
+        "brier": 0.025571961520052363,
+        "ece": 0.029522374097607936,
+        "operating_point": {
+          "threshold": 0.09333471045570683,
+          "precision": 0.07368421052631578,
+          "recall": 0.3888888888888889,
+          "f1": 0.12389380530973451
+        }
+      },
+      "safety_constraint": {
+        "count": 875,
+        "positive_count": 90,
+        "available": true,
+        "roc_auc": 0.9734182590233547,
+        "pr_auc": 0.901390613577543,
+        "brier": 0.02736908056528026,
+        "ece": 0.025407810193637997,
+        "operating_point": {
+          "threshold": 0.23408732254415993,
+          "precision": 0.8780487804878049,
+          "recall": 0.8,
+          "f1": 0.8372093023255814
+        }
+      }
+    },
+    "Hungarian Grand Prix": {
+      "rows": 2856,
+      "regression_raw": {
+        "available": true,
+        "count": 2506,
+        "slope": 0.7403424503474344,
+        "intercept": 24.566579285575642,
+        "raw_mae_s": 6.533326184759117,
+        "calibrated_mae_s": 5.817831202334632
+      },
+      "regression_calibrated": {
+        "available": true,
+        "count": 2506,
+        "mae_s": 6.0913707172515315,
+        "rmse_s": 9.932091412387148,
+        "bias_s": 0.2945631832872181
+      },
+      "tyre_degradation": {
+        "count": 2506,
+        "positive_count": 1014,
+        "available": true,
+        "roc_auc": 0.9977288470792286,
+        "pr_auc": 0.996765542242448,
+        "brier": 0.01934454083741235,
+        "ece": 0.0207188275075318,
+        "operating_point": {
+          "threshold": 0.5699994142322987,
+          "precision": 0.9798994974874372,
+          "recall": 0.9615384615384616,
+          "f1": 0.9706321553011449
+        }
+      },
+      "pit_stop": {
+        "count": 1365,
+        "positive_count": 45,
+        "available": true,
+        "roc_auc": 0.7877946127946127,
+        "pr_auc": 0.08734227682765519,
+        "brier": 0.032023217710303295,
+        "ece": 0.010120515440373682,
+        "operating_point": {
+          "threshold": 0.09333471045570683,
+          "precision": 0.10119047619047619,
+          "recall": 0.37777777777777777,
+          "f1": 0.1596244131455399
+        }
+      },
+      "safety_constraint": {
+        "count": 1365,
+        "positive_count": 62,
+        "available": true,
+        "roc_auc": 0.748458891392073,
+        "pr_auc": 0.2519269848745704,
+        "brier": 0.038428855280835235,
+        "ece": 0.014997422169865566,
+        "operating_point": {
+          "threshold": 0.23408732254415993,
+          "precision": 0.4186046511627907,
+          "recall": 0.2903225806451613,
+          "f1": 0.34285714285714286
+        }
+      }
+    },
+    "Italian Grand Prix": {
+      "rows": 2591,
+      "regression_raw": {
+        "available": true,
+        "count": 2235,
+        "slope": 0.9409480062427106,
+        "intercept": 5.835085181015021,
+        "raw_mae_s": 5.422469980124659,
+        "calibrated_mae_s": 5.727405496055075
+      },
+      "regression_calibrated": {
+        "available": true,
+        "count": 2235,
+        "mae_s": 6.206672926713327,
+        "rmse_s": 10.071751361109664,
+        "bias_s": 0.7998025598875403
+      },
+      "tyre_degradation": {
+        "count": 2235,
+        "positive_count": 1014,
+        "available": true,
+        "roc_auc": 0.9981414981414982,
+        "pr_auc": 0.9978410998367835,
+        "brier": 0.017501724092097094,
+        "ece": 0.011783213477754842,
+        "operating_point": {
+          "threshold": 0.5699994142322987,
+          "precision": 0.9868020304568528,
+          "recall": 0.9585798816568047,
+          "f1": 0.9724862431215607
+        }
+      },
+      "pit_stop": {
+        "count": 972,
+        "positive_count": 9,
+        "available": true,
+        "roc_auc": 0.7563170647282798,
+        "pr_auc": 0.03652219823957266,
+        "brier": 0.010804891617110169,
+        "ece": 0.029308529855116675,
+        "operating_point": {
+          "threshold": 0.09333471045570683,
+          "precision": 0.044444444444444446,
+          "recall": 0.2222222222222222,
+          "f1": 0.07407407407407407
+        }
+      },
+      "safety_constraint": {
+        "count": 972,
+        "positive_count": 40,
+        "available": true,
+        "roc_auc": 0.48280579399141627,
+        "pr_auc": 0.12481556580128828,
+        "brier": 0.04249568268315367,
+        "ece": 0.038899920837000335,
+        "operating_point": {
+          "threshold": 0.23408732254415993,
+          "precision": 0.07407407407407407,
+          "recall": 0.1,
+          "f1": 0.0851063829787234
+        }
+      }
+    }
+  }
+}

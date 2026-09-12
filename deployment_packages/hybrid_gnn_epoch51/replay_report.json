@@ -1,0 +1,388 @@
+{
+  "package_model_hash": "c6d3679a07f8e5c0ed659c307b660a2ed5aca75e24191a6164428fcfd066f890",
+  "replay_data": {
+    "year": 2026,
+    "split": "validation",
+    "graph_root": "model_test_bundle.pt:graph_dataset"
+  },
+  "replay_runs": [
+    {
+      "device": "mps",
+      "rows": 9689,
+      "sequences": 531,
+      "events": [
+        "British Grand Prix",
+        "Chinese Grand Prix",
+        "Hungarian Grand Prix",
+        "Italian Grand Prix"
+      ],
+      "invalid_prediction_count": 0,
+      "elapsed_seconds": 1.3697362909952062,
+      "milliseconds_per_sequence": 2.5795410376557557,
+      "milliseconds_per_output_row": 0.1413702436779034,
+      "metrics": {
+        "rows": 9689,
+        "finite_predictions": true,
+        "regression": {
+          "count": 8515,
+          "mae_s": 5.560064383667494,
+          "rmse_s": 9.793732918308745,
+          "bias_s": -0.5449173573949235
+        },
+        "tyre_degradation": {
+          "count": 8515,
+          "positive_count": 3452,
+          "roc_auc": 0.9974857925709639,
+          "pr_auc": 0.9968188088784107
+        },
+        "pit_stop": {
+          "count": 4242,
+          "positive_count": 121,
+          "roc_auc": 0.786782474766415,
+          "pr_auc": 0.0872184252156231
+        },
+        "safety_constraint": {
+          "count": 4242,
+          "positive_count": 282,
+          "roc_auc": 0.773703345511856,
+          "pr_auc": 0.43768423689857794
+        },
+        "classification_label_rows": 4242
+      },
+      "per_race": [
+        {
+          "event": "British Grand Prix",
+          "season": 2026,
+          "rows": 2207,
+          "regression": {
+            "count": 1946,
+            "mae_s": 4.164909021704929,
+            "rmse_s": 8.748115286785172,
+            "bias_s": -0.8619720247274557
+          },
+          "tyre_degradation": {
+            "count": 1946,
+            "positive_count": 625,
+            "roc_auc": 0.9968629825889477,
+            "pr_auc": 0.9951700062439566
+          },
+          "pit_stop": {
+            "count": 1030,
+            "positive_count": 49,
+            "roc_auc": 0.7790467869104828,
+            "pr_auc": 0.14136884456767296
+          },
+          "safety_constraint": {
+            "count": 1030,
+            "positive_count": 90,
+            "roc_auc": 0.6773404255319149,
+            "pr_auc": 0.15466649237169222
+          }
+        },
+        {
+          "event": "Chinese Grand Prix",
+          "season": 2026,
+          "rows": 2035,
+          "regression": {
+            "count": 1828,
+            "mae_s": 5.879266350744068,
+            "rmse_s": 9.929652494235347,
+            "bias_s": -0.07451375882004753
+          },
+          "tyre_degradation": {
+            "count": 1828,
+            "positive_count": 799,
+            "roc_auc": 0.9979785227160773,
+            "pr_auc": 0.997679945570681
+          },
+          "pit_stop": {
+            "count": 875,
+            "positive_count": 18,
+            "roc_auc": 0.8328795539997408,
+            "pr_auc": 0.06278210659695038
+          },
+          "safety_constraint": {
+            "count": 875,
+            "positive_count": 90,
+            "roc_auc": 0.9734182590233547,
+            "pr_auc": 0.901390613577543
+          }
+        },
+        {
+          "event": "Hungarian Grand Prix",
+          "season": 2026,
+          "rows": 2856,
+          "regression": {
+            "count": 2506,
+            "mae_s": 6.5333263065371625,
+            "rmse_s": 10.191724648921271,
+            "bias_s": -0.9976439388485213
+          },
+          "tyre_degradation": {
+            "count": 2506,
+            "positive_count": 1014,
+            "roc_auc": 0.9977288470792286,
+            "pr_auc": 0.996765542242448
+          },
+          "pit_stop": {
+            "count": 1365,
+            "positive_count": 45,
+            "roc_auc": 0.7877946127946127,
+            "pr_auc": 0.08734227682765519
+          },
+          "safety_constraint": {
+            "count": 1365,
+            "positive_count": 62,
+            "roc_auc": 0.748458891392073,
+            "pr_auc": 0.2519269848745704
+          }
+        },
+        {
+          "event": "Italian Grand Prix",
+          "season": 2026,
+          "rows": 2591,
+          "regression": {
+            "count": 2235,
+            "mae_s": 5.4224700927734375,
+            "rmse_s": 10.083988476919762,
+            "bias_s": -0.14598070524416248
+          },
+          "tyre_degradation": {
+            "count": 2235,
+            "positive_count": 1014,
+            "roc_auc": 0.9981414981414982,
+            "pr_auc": 0.9978410998367835
+          },
+          "pit_stop": {
+            "count": 972,
+            "positive_count": 9,
+            "roc_auc": 0.7563170647282798,
+            "pr_auc": 0.03652219823957266
+          },
+          "safety_constraint": {
+            "count": 972,
+            "positive_count": 40,
+            "roc_auc": 0.48280579399141627,
+            "pr_auc": 0.12481556580128828
+          }
+        }
+      ],
+      "prediction_ranges": {
+        "next_lap_time_s": [
+          71.20629119873047,
+          155.67271423339844
+        ],
+        "tyre_degradation_probability": [
+          2.333794327569194e-06,
+          0.9994795918464661
+        ],
+        "pit_stop_probability": [
+          0.000500846654176712,
+          0.5492098927497864
+        ],
+        "safety_constraint_probability": [
+          0.0013855049619451165,
+          0.9489861726760864
+        ]
+      },
+      "run": 1
+    },
+    {
+      "device": "mps",
+      "rows": 9689,
+      "sequences": 531,
+      "events": [
+        "British Grand Prix",
+        "Chinese Grand Prix",
+        "Hungarian Grand Prix",
+        "Italian Grand Prix"
+      ],
+      "invalid_prediction_count": 0,
+      "elapsed_seconds": 0.9852263329958078,
+      "milliseconds_per_sequence": 1.855416822967623,
+      "milliseconds_per_output_row": 0.10168503798078313,
+      "metrics": {
+        "rows": 9689,
+        "finite_predictions": true,
+        "regression": {
+          "count": 8515,
+          "mae_s": 5.560064371123569,
+          "rmse_s": 9.793732896083961,
+          "bias_s": -0.5449173914427206
+        },
+        "tyre_degradation": {
+          "count": 8515,
+          "positive_count": 3452,
+          "roc_auc": 0.9974857925709639,
+          "pr_auc": 0.9968188088784107
+        },
+        "pit_stop": {
+          "count": 4242,
+          "positive_count": 121,
+          "roc_auc": 0.786782474766415,
+          "pr_auc": 0.0872184252156231
+        },
+        "safety_constraint": {
+          "count": 4242,
+          "positive_count": 282,
+          "roc_auc": 0.773703345511856,
+          "pr_auc": 0.43768423689857794
+        },
+        "classification_label_rows": 4242
+      },
+      "per_race": [
+        {
+          "event": "British Grand Prix",
+          "season": 2026,
+          "rows": 2207,
+          "regression": {
+            "count": 1946,
+            "mae_s": 4.164908978578856,
+            "rmse_s": 8.748115235163981,
+            "bias_s": -0.8619721149001558
+          },
+          "tyre_degradation": {
+            "count": 1946,
+            "positive_count": 625,
+            "roc_auc": 0.9968629825889477,
+            "pr_auc": 0.9951700062439566
+          },
+          "pit_stop": {
+            "count": 1030,
+            "positive_count": 49,
+            "roc_auc": 0.7790467869104828,
+            "pr_auc": 0.14136884456767296
+          },
+          "safety_constraint": {
+            "count": 1030,
+            "positive_count": 90,
+            "roc_auc": 0.6773404255319149,
+            "pr_auc": 0.15466649237169222
+          }
+        },
+        {
+          "event": "Chinese Grand Prix",
+          "season": 2026,
+          "rows": 2035,
+          "regression": {
+            "count": 1828,
+            "mae_s": 5.879266379959474,
+            "rmse_s": 9.929652409226392,
+            "bias_s": -0.0745137129101242
+          },
+          "tyre_degradation": {
+            "count": 1828,
+            "positive_count": 799,
+            "roc_auc": 0.9979785227160773,
+            "pr_auc": 0.997679945570681
+          },
+          "pit_stop": {
+            "count": 875,
+            "positive_count": 18,
+            "roc_auc": 0.8328795539997407,
+            "pr_auc": 0.06278210659695038
+          },
+          "safety_constraint": {
+            "count": 875,
+            "positive_count": 90,
+            "roc_auc": 0.9734182590233547,
+            "pr_auc": 0.901390613577543
+          }
+        },
+        {
+          "event": "Hungarian Grand Prix",
+          "season": 2026,
+          "rows": 2856,
+          "regression": {
+            "count": 2506,
+            "mae_s": 6.533326346115027,
+            "rmse_s": 10.191724719987443,
+            "bias_s": -0.997643929715168
+          },
+          "tyre_degradation": {
+            "count": 2506,
+            "positive_count": 1014,
+            "roc_auc": 0.9977288470792286,
+            "pr_auc": 0.996765542242448
+          },
+          "pit_stop": {
+            "count": 1365,
+            "positive_count": 45,
+            "roc_auc": 0.7877946127946127,
+            "pr_auc": 0.08734227682765519
+          },
+          "safety_constraint": {
+            "count": 1365,
+            "positive_count": 62,
+            "roc_auc": 0.748458891392073,
+            "pr_auc": 0.2519269848745704
+          }
+        },
+        {
+          "event": "Italian Grand Prix",
+          "season": 2026,
+          "rows": 2591,
+          "regression": {
+            "count": 2235,
+            "mae_s": 5.422470014260653,
+            "rmse_s": 10.083988421605982,
+            "bias_s": -0.14598080423854343
+          },
+          "tyre_degradation": {
+            "count": 2235,
+            "positive_count": 1014,
+            "roc_auc": 0.9981414981414982,
+            "pr_auc": 0.9978410998367835
+          },
+          "pit_stop": {
+            "count": 972,
+            "positive_count": 9,
+            "roc_auc": 0.7563170647282798,
+            "pr_auc": 0.03652219823957266
+          },
+          "safety_constraint": {
+            "count": 972,
+            "positive_count": 40,
+            "roc_auc": 0.48280579399141627,
+            "pr_auc": 0.12481556580128828
+          }
+        }
+      ],
+      "prediction_ranges": {
+        "next_lap_time_s": [
+          71.20629119873047,
+          155.67271423339844
+        ],
+        "tyre_degradation_probability": [
+          2.333794327569194e-06,
+          0.9994795918464661
+        ],
+        "pit_stop_probability": [
+          0.000500846654176712,
+          0.5492098927497864
+        ],
+        "safety_constraint_probability": [
+          0.0013855049619451165,
+          0.9489861726760864
+        ]
+      },
+      "run": 2
+    }
+  ],
+  "stability": {
+    "runs": 2,
+    "max_absolute_prediction_difference": 2.6702880859375e-05,
+    "tolerance": 0.0001,
+    "deterministic_within_tolerance": true
+  },
+  "checks": {
+    "finite_outputs": true,
+    "all_expected_events_present": true,
+    "classification_probabilities_bounded": true,
+    "replay_predictions_written": true
+  },
+  "deployment_decision": "PASS",
+  "artifacts": {
+    "predictions": "model_test_bundle.pt:predictions_and_labels"
+  }
+}

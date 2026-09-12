@@ -1,0 +1,179 @@
+{
+  "years": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "splits": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "history_laps": 5,
+  "primary_target": "next_lap_time_s",
+  "auxiliary_targets": [
+    "next_lap_time_delta_s",
+    "next_tyre_wear_estimate_fraction",
+    "next_high_tyre_degradation",
+    "next_pit_stop_observed",
+    "next_safety_constraint"
+  ],
+  "feature_names": [
+    "speed_mean_mps",
+    "speed_max_mps",
+    "acceleration_mean_mps2",
+    "jerk_mean_mps3",
+    "distance_m",
+    "kinetic_energy_mean_kj",
+    "kinetic_energy_change_mean_kj",
+    "drag_force_mean_n",
+    "downforce_mean_n",
+    "rolling_resistance_mean_n",
+    "mechanical_power_mean_kw",
+    "drag_energy_loss_kj",
+    "rolling_energy_loss_kj",
+    "cumulative_energy_loss_kj",
+    "ers_recovery_potential_kj",
+    "ers_deploy_demand_kj",
+    "ers_soc_proxy",
+    "gap_mean_m",
+    "closing_speed_mean_mps",
+    "headway_mean_s",
+    "traffic_constraint_factor",
+    "tyre_age_laps",
+    "tyre_grip_prior",
+    "tyre_wear_estimate_fraction",
+    "tyre_degradation_proxy_s_per_lap",
+    "weather_confidence",
+    "race_control_pace_factor",
+    "pit_stop_count",
+    "pit_stop_duration_s",
+    "physics_confidence",
+    "telemetry_observed_fraction",
+    "driver_index",
+    "tyre_compound_id",
+    "race_control_state_id",
+    "pitwall_state_id"
+  ],
+  "target_names": [
+    "next_lap_time_s",
+    "next_lap_time_delta_s",
+    "next_tyre_wear_estimate_fraction",
+    "next_high_tyre_degradation",
+    "next_pit_stop_observed",
+    "next_safety_constraint"
+  ],
+  "counts": {
+    "2023:train": {
+      "snapshots": 2556,
+      "nodes": 45121,
+      "edges": 111125,
+      "sequences": 2143,
+      "target_rows": 36452,
+      "valid_targets": 32264,
+      "valid_classification_targets": 16254
+    },
+    "2023:validation": {
+      "snapshots": 663,
+      "nodes": 11688,
+      "edges": 30805,
+      "sequences": 563,
+      "target_rows": 9609,
+      "valid_targets": 8508,
+      "valid_classification_targets": 4048
+    },
+    "2023:test": {
+      "snapshots": 381,
+      "nodes": 6870,
+      "edges": 16357,
+      "sequences": 331,
+      "target_rows": 5826,
+      "valid_targets": 5304,
+      "valid_classification_targets": 2678
+    },
+    "2024:train": {
+      "snapshots": 2799,
+      "nodes": 46342,
+      "edges": 115032,
+      "sequences": 2409,
+      "target_rows": 38343,
+      "valid_targets": 34040,
+      "valid_classification_targets": 15970
+    },
+    "2024:validation": {
+      "snapshots": 621,
+      "nodes": 11224,
+      "edges": 29873,
+      "sequences": 521,
+      "target_rows": 9140,
+      "valid_targets": 7947,
+      "valid_classification_targets": 4110
+    },
+    "2024:test": {
+      "snapshots": 798,
+      "nodes": 13997,
+      "edges": 35272,
+      "sequences": 673,
+      "target_rows": 11435,
+      "valid_targets": 10043,
+      "valid_classification_targets": 5157
+    },
+    "2025:train": {
+      "snapshots": 2954,
+      "nodes": 49794,
+      "edges": 147398,
+      "sequences": 2504,
+      "target_rows": 40909,
+      "valid_targets": 36007,
+      "valid_classification_targets": 18099
+    },
+    "2025:validation": {
+      "snapshots": 653,
+      "nodes": 10979,
+      "edges": 32230,
+      "sequences": 553,
+      "target_rows": 9004,
+      "valid_targets": 7825,
+      "valid_classification_targets": 4098
+    },
+    "2025:test": {
+      "snapshots": 628,
+      "nodes": 8755,
+      "edges": 20461,
+      "sequences": 563,
+      "target_rows": 7478,
+      "valid_targets": 6380,
+      "valid_classification_targets": 1878
+    },
+    "2026:train": {
+      "snapshots": 2382,
+      "nodes": 36934,
+      "edges": 93251,
+      "sequences": 2117,
+      "target_rows": 31113,
+      "valid_targets": 26549,
+      "valid_classification_targets": 10022
+    },
+    "2026:validation": {
+      "snapshots": 631,
+      "nodes": 11955,
+      "edges": 41812,
+      "sequences": 531,
+      "target_rows": 9689,
+      "valid_targets": 8515,
+      "valid_classification_targets": 4242
+    },
+    "2026:test": {
+      "snapshots": 401,
+      "nodes": 3456,
+      "edges": 5676,
+      "sequences": 386,
+      "target_rows": 3203,
+      "valid_targets": 2679,
+      "valid_classification_targets": 0
+    }
+  },
+  "graph_definition": "dynamic lap graph; nodes are drivers, edges are observed driver-ahead relations",
+  "leakage_rule": "current/prior-lap features predict the next lap; split is inherited from source data"
+}

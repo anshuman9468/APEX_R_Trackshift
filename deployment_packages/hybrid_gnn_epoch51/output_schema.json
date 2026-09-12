@@ -1,0 +1,95 @@
+{
+  "schema_version": "phase3-v1",
+  "row_granularity": "driver target row for one graph sequence/current snapshot",
+  "outputs": [
+    {
+      "name": "next_lap_time_s",
+      "type": "float",
+      "unit": "s",
+      "deployment_postprocess": "raw model output"
+    },
+    {
+      "name": "next_lap_time_delta_s",
+      "type": "float",
+      "unit": "s",
+      "deployment_postprocess": "raw model output"
+    },
+    {
+      "name": "next_tyre_wear_estimate_fraction",
+      "type": "float",
+      "unit": "fraction_0_to_1",
+      "deployment_postprocess": "sigmoid model output"
+    },
+    {
+      "name": "tyre_degradation_probability",
+      "type": "float",
+      "unit": "probability",
+      "deployment_postprocess": "Platt calibrated"
+    },
+    {
+      "name": "pit_stop_probability",
+      "type": "float",
+      "unit": "probability",
+      "deployment_postprocess": "Platt calibrated"
+    },
+    {
+      "name": "safety_constraint_probability",
+      "type": "float",
+      "unit": "probability",
+      "deployment_postprocess": "Platt calibrated"
+    },
+    {
+      "name": "tyre_degradation_alert",
+      "type": "bool",
+      "rule": "tyre_degradation_probability >= f1_threshold"
+    },
+    {
+      "name": "pit_stop_alert",
+      "type": "bool",
+      "rule": "pit_stop_probability >= f1_threshold"
+    },
+    {
+      "name": "safety_constraint_alert",
+      "type": "bool",
+      "rule": "safety_constraint_probability >= f1_threshold"
+    },
+    {
+      "name": "confidence_quality_flags",
+      "type": "object",
+      "fields": [
+        "physics_confidence",
+        "weather_confidence",
+        "telemetry_observed_fraction"
+      ]
+    }
+  ],
+  "calibration_policy": {
+    "lap_time": "raw is the frozen deployment output; Phase 2 affine calibration was not selected because it worsened holdout MAE",
+    "classification": "apply the stored Platt parameters to each head logit, then use the stored F1 operating threshold",
+    "thresholds": {
+      "tyre_degradation": {
+        "threshold": 0.5699994142322987,
+        "precision": 0.9850552306692657,
+        "recall": 0.9613189600507293,
+        "f1": 0.9730423620025674
+      },
+      "pit_stop": {
+        "threshold": 0.09333471045570683,
+        "precision": 0.1691542288557214,
+        "recall": 0.43037974683544306,
+        "f1": 0.24285714285714285
+      },
+      "safety_constraint": {
+        "threshold": 0.23408732254415993,
+        "precision": 0.7605042016806722,
+        "recall": 0.7637130801687764,
+        "f1": 0.7621052631578947
+      }
+    }
+  },
+  "validity": {
+    "finite_output_requirement": "all numeric outputs must be finite",
+    "classification_label_requirement": "ROC-AUC requires both classes in the evaluation slice; probability outputs remain available when labels are absent",
+    "pit_safety_warning": "holdout ROC-AUC is below the original 0.85-0.90 aspiration and must not be presented as guaranteed accuracy"
+  }
+}

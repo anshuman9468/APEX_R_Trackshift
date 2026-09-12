@@ -1,0 +1,85 @@
+{
+  "regression": {
+    "available": true,
+    "count": 7825,
+    "slope": 0.9378198530507548,
+    "intercept": 6.9362558936021435,
+    "raw_mae_s": 4.000669090587872,
+    "calibrated_mae_s": 4.674301438820217
+  },
+  "tyre": {
+    "count": 7825,
+    "positive_count": 3154,
+    "available": true,
+    "platt_intercept": -0.2488696145075686,
+    "platt_coefficient": 1.3350643695923,
+    "thresholds": {
+      "f1_threshold": {
+        "threshold": 0.5699994142322987,
+        "precision": 0.9850552306692657,
+        "recall": 0.9613189600507293,
+        "f1": 0.9730423620025674
+      },
+      "youden_threshold": {
+        "threshold": 0.43454897505189855,
+        "score": 0.9521184491201462
+      }
+    },
+    "calibration": {
+      "roc_auc": 0.9969161709203714,
+      "pr_auc": 0.9960755632831105,
+      "brier": 0.01776350153597839,
+      "ece": 0.007920386226759097
+    }
+  },
+  "pit": {
+    "count": 4098,
+    "positive_count": 158,
+    "available": true,
+    "platt_intercept": -2.397166264294373,
+    "platt_coefficient": 1.5453577743334845,
+    "thresholds": {
+      "f1_threshold": {
+        "threshold": 0.09333471045570683,
+        "precision": 0.1691542288557214,
+        "recall": 0.43037974683544306,
+        "f1": 0.24285714285714285
+      },
+      "youden_threshold": {
+        "threshold": 0.04902309223218681,
+        "score": 0.4269774465077427
+      }
+    },
+    "calibration": {
+      "roc_auc": 0.7633232667223544,
+      "pr_auc": 0.18664196494371738,
+      "brier": 0.034625929005276994,
+      "ece": 0.002948482905474852
+    }
+  },
+  "safety": {
+    "count": 4098,
+    "positive_count": 237,
+    "available": true,
+    "platt_intercept": -2.8032929121609076,
+    "platt_coefficient": 1.7682693575560375,
+    "thresholds": {
+      "f1_threshold": {
+        "threshold": 0.23408732254415993,
+        "precision": 0.7605042016806722,
+        "recall": 0.7637130801687764,
+        "f1": 0.7621052631578947
+      },
+      "youden_threshold": {
+        "threshold": 0.08373341497437897,
+        "score": 0.7623525091879523
+      }
+    },
+    "calibration": {
+      "roc_auc": 0.862091651121187,
+      "pr_auc": 0.7694527220058707,
+      "brier": 0.021542146171218166,
+      "ece": 0.007657099269439251
+    }
+  }
+}
