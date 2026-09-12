@@ -85,9 +85,32 @@ receiving a fabricated score.
 
 The starting replay is deliberately paused. Choose **Judge demo** for the built-in 90-second flow. Recommendations recompute when scenario parameters change. The random seed changes simulated outcomes rather than secretly forcing APEX-R to win.
 
+## Integrated hybrid GNN + physics frontend
+
+The `dist/` frontend in this branch is wired to the frozen deployment package
+under `deployment_packages/hybrid_gnn_epoch51/`. Run the model-backed local
+server from the repository root with:
+
+```bash
+python3 -m venv .venv-hybrid
+source .venv-hybrid/bin/activate
+python -m pip install -r requirements.txt
+python ml_pipeline/trackshift_server.py --port 8000
+```
+
+The Pit wall makes the model-guided strategy decision the primary output and
+shows ATTACK, HOLD, DEFEND and HARVEST scores. It also reports the frozen
+epoch-51 next-lap and calibrated risk outputs. The action layer combines those
+GNN signals with physics-feasible strategy scores; the checkpoint itself does
+not contain a separately trained four-class action head. The test bundle keeps
+the actual 2026 unseen holdout labels, predictions and metrics for inspection.
+
+The service is a local test-holdout replay. It is not a live telemetry feed and
+does not claim measured private F1 telemetry.
+
 ## Data honesty
 
-The bundled replay and circuit remain synthetic. Energy, opponent gaps, future positions and simulator outcomes are still modelled. The active overtake-opportunity model in `dist/apex-model.js` is XGBoost, selected after comparison with a Logistic Regression baseline on a held-out historical OpenF1 race. It predicts observed overtake events, not private team battery telemetry or a complete F1 strategy. Importing public telemetry changes playback and provenance but does not create private ERS measurements or guarantee calibration for a new race.
+The bundled replay and circuit remain synthetic. Energy, opponent gaps, future positions and simulator outcomes are still modelled. The integrated Pit wall uses the frozen hybrid GNN + GRU + physics package described above; the legacy XGBoost artifact remains in the repository for its original scripts and tests but is not loaded by this frontend. Neither model predicts private team battery telemetry or a complete F1 strategy. Importing public telemetry changes playback and provenance but does not create private ERS measurements or guarantee calibration for a new race.
 
 The model searches two to five lap windows with one strategic decision per lap. Probabilities are explicit heuristics. The objective is a weighted position/energy/risk utility; position value per MJ is separately reported. See `docs/MODEL.md` for equations, units, assumptions and evaluation limits.
 
@@ -107,7 +130,7 @@ Reference: https://openf1.org/docs/ . Live access and historical access have dif
 
 ## Train the real-data prediction model
 
-The enriched reproducible training pipeline uses OpenF1 historical sessions, creates a cleaned label for an overtake within the next 60 seconds, uses the final session for validation-based early stopping, and exports both a JSON artifact and browser-compatible `dist/apex-model.js`:
+The legacy enriched reproducible training pipeline uses OpenF1 historical sessions, creates a cleaned label for an overtake within the next 60 seconds, uses the final session for validation-based early stopping, and exports its browser-compatible `dist/apex-model.js` artifact. That legacy artifact is not used by the integrated hybrid frontend:
 
 ```bash
 python3 scripts/train_model.py

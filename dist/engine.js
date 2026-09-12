@@ -19,27 +19,6 @@
   const sigmoid = (x) => 1 / (1 + Math.exp(-clamp(x, -30, 30)));
   const round = (x, places = 3) => Number(x.toFixed(places));
   const now = () => typeof performance === 'object' ? performance.now() : Date.now();
-  function learnedPrediction(state, telemetry = {}) {
-    const predictor = typeof globalThis !== 'undefined' ? globalThis.ApexModel : null;
-    if (!predictor || typeof predictor.predict !== 'function') return null;
-    return predictor.predict({
-      interval_sec: Number.isFinite(telemetry.intervalSec) ? telemetry.intervalSec : state.gapAhead,
-      gap_to_leader_sec: Number.isFinite(telemetry.gapToLeaderSec) ? telemetry.gapToLeaderSec : state.gapAhead,
-      closing_rate_sec_per_min: Number.isFinite(telemetry.closingRateSecPerMin) ? telemetry.closingRateSecPerMin : 0,
-      position: state.position,
-      tyre_age: state.tyreAge,
-      track_temperature_c: Number.isFinite(telemetry.trackTemperatureC) ? telemetry.trackTemperatureC : 30,
-      rainfall: Number.isFinite(telemetry.rainfall) ? telemetry.rainfall : (state.wet >= 0.5 ? 1 : 0),
-      race_progress: Number.isFinite(telemetry.raceProgress) ? telemetry.raceProgress : clamp(state.lap / 80, 0, 1),
-      speed_mean_10s: Number.isFinite(telemetry.speedMean10s) ? telemetry.speedMean10s : 200,
-      speed_delta_10s: Number.isFinite(telemetry.speedDelta10s) ? telemetry.speedDelta10s : 0,
-      throttle_mean_10s: Number.isFinite(telemetry.throttleMean10s) ? telemetry.throttleMean10s : 60,
-      brake_fraction_10s: Number.isFinite(telemetry.brakeFraction10s) ? telemetry.brakeFraction10s : 0,
-      rpm_mean_10s: Number.isFinite(telemetry.rpmMean10s) ? telemetry.rpmMean10s : 10000,
-      gear_mean_10s: Number.isFinite(telemetry.gearMean10s) ? telemetry.gearMean10s : 5,
-      drs_open_fraction_10s: Number.isFinite(telemetry.drsOpenFraction10s) ? telemetry.drsOpenFraction10s : 0
-    });
-  }
   function finite(value, name, low, high) {
     if (typeof value !== 'number' || !Number.isFinite(value) || value < low || value > high) throw new Error(name + ' must be between ' + low + ' and ' + high);
     return value;
@@ -104,18 +83,11 @@
     const grip = 1 - state.wet * 0.5;
     const boost = m.deploy * CONFIG.efficiency * grip;
     const attackLogit = -2.0 + quality * 2.6 + state.closing * 0.09 - state.gapAhead * 2.15 + boost * 1.8 - state.tyreAge * 0.012 - state.aggression * 0.9;
-    const learned = telemetry.disableLegacyPrior ? null : learnedPrediction(state, telemetry);
-    const learnedBaseRate = Number(globalThis.ApexModel?.metadata?.metadata?.train_positive_rate);
-    const learnedLift = learned && learnedBaseRate > 0 && learnedBaseRate < 1 ? Math.log((learned.probability * (1 - learnedBaseRate)) / (learnedBaseRate * (1 - learned.probability))) : 0;
-    // A low-confidence public-data prior must not erase the transparent
-    // scenario logic. Positive evidence can strengthen an attack; negative
-    // evidence is handled by the existing gap/energy/risk constraints.
-    const learnedAdjustment = learned ? Math.max(0, clamp(learnedLift, -3, 3)) * (action === 'ATTACK' ? 0.45 : 0.10) : 0;
-    const pPass = state.gain >= 1 ? 0 : clamp(sigmoid(attackLogit + learnedAdjustment + (model.passBias || 0)), 0.002, 0.98);
+    const pPass = state.gain >= 1 ? 0 : clamp(sigmoid(attackLogit + (model.passBias || 0)), 0.002, 0.98);
     const energyAfter = Math.max(0, state.soc / 100 * CONFIG.capacityMJ - m.deploy);
     const threat = -1.8 + state.aggression * 1.5 - state.gapBehind * 1.65 + (1 - energyAfter / CONFIG.capacityMJ) * 1.45 - m.guard * 4 + state.wet * 0.7;
     const pLoss = state.gain <= -1 ? 0 : clamp(sigmoid(threat + (model.lossBias || 0)), 0.002, 0.95);
-    return { pPass, pLoss, dataModelProbability: learned?.probability ?? null, dataModelVersion: learned?.modelVersion ?? null };
+    return { pPass, pLoss, dataModelProbability: null, dataModelVersion: null };
   }
   function transition(state, action, input, step, draws, model = {}) {
     const e = energy(state, action, input.recovery[step] * (model.recoveryScale || 1));

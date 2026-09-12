@@ -1,0 +1,276 @@
+{
+  "contract_version": "phase3-v1",
+  "feature_dim": 35,
+  "history_laps": 5,
+  "feature_names": [
+    "speed_mean_mps",
+    "speed_max_mps",
+    "acceleration_mean_mps2",
+    "jerk_mean_mps3",
+    "distance_m",
+    "kinetic_energy_mean_kj",
+    "kinetic_energy_change_mean_kj",
+    "drag_force_mean_n",
+    "downforce_mean_n",
+    "rolling_resistance_mean_n",
+    "mechanical_power_mean_kw",
+    "drag_energy_loss_kj",
+    "rolling_energy_loss_kj",
+    "cumulative_energy_loss_kj",
+    "ers_recovery_potential_kj",
+    "ers_deploy_demand_kj",
+    "ers_soc_proxy",
+    "gap_mean_m",
+    "closing_speed_mean_mps",
+    "headway_mean_s",
+    "traffic_constraint_factor",
+    "tyre_age_laps",
+    "tyre_grip_prior",
+    "tyre_wear_estimate_fraction",
+    "tyre_degradation_proxy_s_per_lap",
+    "weather_confidence",
+    "race_control_pace_factor",
+    "pit_stop_count",
+    "pit_stop_duration_s",
+    "physics_confidence",
+    "telemetry_observed_fraction",
+    "driver_index",
+    "tyre_compound_id",
+    "race_control_state_id",
+    "pitwall_state_id"
+  ],
+  "feature_types": {
+    "continuous": [
+      {
+        "index": 0,
+        "name": "speed_mean_mps"
+      },
+      {
+        "index": 1,
+        "name": "speed_max_mps"
+      },
+      {
+        "index": 2,
+        "name": "acceleration_mean_mps2"
+      },
+      {
+        "index": 3,
+        "name": "jerk_mean_mps3"
+      },
+      {
+        "index": 4,
+        "name": "distance_m"
+      },
+      {
+        "index": 5,
+        "name": "kinetic_energy_mean_kj"
+      },
+      {
+        "index": 6,
+        "name": "kinetic_energy_change_mean_kj"
+      },
+      {
+        "index": 7,
+        "name": "drag_force_mean_n"
+      },
+      {
+        "index": 8,
+        "name": "downforce_mean_n"
+      },
+      {
+        "index": 9,
+        "name": "rolling_resistance_mean_n"
+      },
+      {
+        "index": 10,
+        "name": "mechanical_power_mean_kw"
+      },
+      {
+        "index": 11,
+        "name": "drag_energy_loss_kj"
+      },
+      {
+        "index": 12,
+        "name": "rolling_energy_loss_kj"
+      },
+      {
+        "index": 13,
+        "name": "cumulative_energy_loss_kj"
+      },
+      {
+        "index": 14,
+        "name": "ers_recovery_potential_kj"
+      },
+      {
+        "index": 15,
+        "name": "ers_deploy_demand_kj"
+      },
+      {
+        "index": 16,
+        "name": "ers_soc_proxy"
+      },
+      {
+        "index": 17,
+        "name": "gap_mean_m"
+      },
+      {
+        "index": 18,
+        "name": "closing_speed_mean_mps"
+      },
+      {
+        "index": 19,
+        "name": "headway_mean_s"
+      },
+      {
+        "index": 20,
+        "name": "traffic_constraint_factor"
+      },
+      {
+        "index": 21,
+        "name": "tyre_age_laps"
+      },
+      {
+        "index": 22,
+        "name": "tyre_grip_prior"
+      },
+      {
+        "index": 23,
+        "name": "tyre_wear_estimate_fraction"
+      },
+      {
+        "index": 24,
+        "name": "tyre_degradation_proxy_s_per_lap"
+      },
+      {
+        "index": 25,
+        "name": "weather_confidence"
+      },
+      {
+        "index": 26,
+        "name": "race_control_pace_factor"
+      },
+      {
+        "index": 27,
+        "name": "pit_stop_count"
+      },
+      {
+        "index": 28,
+        "name": "pit_stop_duration_s"
+      },
+      {
+        "index": 29,
+        "name": "physics_confidence"
+      },
+      {
+        "index": 30,
+        "name": "telemetry_observed_fraction"
+      }
+    ],
+    "categorical": [
+      {
+        "index": 31,
+        "name": "driver_index",
+        "scale": 1.0
+      },
+      {
+        "index": 32,
+        "name": "tyre_compound_id",
+        "scale": 5.0
+      },
+      {
+        "index": 33,
+        "name": "race_control_state_id",
+        "scale": 5.0
+      },
+      {
+        "index": 34,
+        "name": "pitwall_state_id",
+        "scale": 3.0
+      }
+    ]
+  },
+  "tyre_head_masked_features": [
+    {
+      "index": 23,
+      "name": "tyre_wear_estimate_fraction"
+    },
+    {
+      "index": 24,
+      "name": "tyre_degradation_proxy_s_per_lap"
+    }
+  ],
+  "edge_feature_names": [
+    "gap_m",
+    "closing_speed_mps",
+    "headway_s"
+  ],
+  "graph_semantics": {
+    "node": "driver/car",
+    "edge": "driver -> observed driver ahead",
+    "self_loops": "add in model"
+  },
+  "target_names": [
+    "next_lap_time_s",
+    "next_lap_time_delta_s",
+    "next_tyre_wear_estimate_fraction",
+    "next_high_tyre_degradation",
+    "next_pit_stop_observed",
+    "next_safety_constraint"
+  ],
+  "categorical_vocabularies": {
+    "tyre_compound": [
+      "UNKNOWN",
+      "SOFT",
+      "MEDIUM",
+      "HARD",
+      "INTERMEDIATE",
+      "WET"
+    ],
+    "race_control_state": [
+      "UNKNOWN",
+      "NOT_RACE_SESSION",
+      "GREEN",
+      "VSC",
+      "SAFETY_CAR",
+      "RED_FLAG"
+    ],
+    "pitwall_state": [
+      "UNKNOWN",
+      "NOT_RACE_SESSION",
+      "NO_PIT_STOP",
+      "PIT_STOP_OBSERVED"
+    ],
+    "traffic_state": [
+      "UNKNOWN",
+      "NO_AHEAD_DRIVER",
+      "CLEAR",
+      "FOLLOWING",
+      "CLOSING",
+      "CONSTRAINED"
+    ]
+  },
+  "input_contract": {
+    "format": "gnn_sequences graph_sequences.npz + snapshots.jsonl",
+    "required_history": "five current/prior lap snapshots per sequence",
+    "target_direction": "current/prior-lap features predict the next lap",
+    "edge_direction": "driver -> observed driver ahead; model adds reverse edges",
+    "missing_numeric_values": "must be finite before normalization; use the same upstream imputation/proxy rules",
+    "driver_index": "retained in the source schema but zeroed by the model normalizer"
+  },
+  "provenance": {
+    "observed_or_joined": [
+      "tyre compound/age",
+      "lap time",
+      "pit-stop duration",
+      "race-control state"
+    ],
+    "estimated_or_proxy": [
+      "aero forces",
+      "rolling resistance",
+      "mechanical power",
+      "ERS energy",
+      "physical tyre wear",
+      "weather confidence"
+    ]
+  }
+}
