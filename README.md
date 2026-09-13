@@ -1,143 +1,132 @@
 # APEX-R Race Strategy Studio
 
-Team Devsez / VIPS-TC (GGSIPU)
+**Team Devsez | VIPS-TC (GGSIPU)**
+**TrackShift Hackathon 2025**
 
-A working, offline-first race-strategy application. The pit wall, optimiser, counterfactual comparison, benchmark, telemetry import and decision log all compute or process data. There are no scripted winning outcomes.
+APEX-R is an offline-first Formula 1 race-strategy decision-support demo. It combines historical telemetry references, proxy model inference, a constrained simulated energy model, and ATTACK / HOLD / HARVEST / DEFEND strategy comparison.
 
-## Quick start
+> This is a research and demonstration system. Public historical data does not contain private ERS percentage, battery state of health, battery temperature, fuel load, team deployment maps, or pit-wall instructions.
 
-**No installation:** open `dist/index.html` in a modern desktop browser. All core functionality runs locally. The separate release file `APEX-R_Devsez_Offline.html` bundles every required asset into one HTML file.
+## Final demo model
 
-**Full local app with SQLite:** install Python 3.10+ and Node.js 18+ (no npm packages required), then run from this directory:
+The final demo model presentation is **Frozen Hybrid GNN + GRU + Physics Model**. It combines graph-based race-state context, temporal sequence modelling, tyre-degradation, pit-stop, and safety-constraint views.
+
+The reproducible frozen inference artifact behind the graph advisory is **GPU GNN seed 42, best checkpoint epoch 28**. It predicts a fixed-pair next-lap classified-order position-swap proxy, not a verified overtake and not the probability that ATTACK will be beneficial. The GNN is advisory only; the energy simulator and rule-based optimiser select the strategy action.
+
+The Hybrid GNN figures in the report are supplied visual evidence. Their standalone checkpoint and full reproducible metric artifact are not retained in this repository, so no independent Hybrid-GNN F1 or deployment accuracy is claimed.
+
+## Repository map
+
+| Path | Purpose |
+| --- | --- |
+| `backend/` | Local API, model adapter, SQLite audit service, and replay endpoints |
+| `dist/` | Browser application, shared strategy engine, telemetry view, and model bundle |
+| `models/` | Frozen model manifest, model card, checkpoints, and model reports |
+| `gnn_proxy_experiment_v1/` | CPU GNN experiment artifacts and disk-backed graph store |
+| `gnn_proxy_experiment_gpu_v1/` | GPU GNN runs, histories, predictions, and validation reports |
+| `reports/` | Structured model-training PDF, figures, and reproducible report builder |
+| `scripts/` | Validation, telemetry import, model-training, and packaging helpers |
+| `tests/` | Engine, API, import, persistence, and model-integration tests |
+| `runtime/` | Local SQLite and benchmark output; generated at runtime |
+
+## Quick start: judge demo
+
+The simplest demo needs Python 3.10+ and does not require CUDA, Node packages, Docker, or an API key.
 
 ```bash
-python3 run.py
+cd "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application"
+python3 run.py --standalone --port 8001
 ```
 
-Open http://127.0.0.1:8000/. If occupied, use `python3 run.py --port 8001`. Ctrl+C stops the server. No GPU, Docker, API key or Internet connection is required for the bundled demo. The server listens only on the local machine.
+Open `http://127.0.0.1:8001/`. If the port is occupied, choose another free port. Stop the server with `Ctrl+C`.
 
-## FastAPI mode
+For a file-only offline preview, open `dist/index.html` in a modern desktop browser. The local server is recommended for model status, API checks, replay, and SQLite persistence.
 
-FastAPI is an optional adapter over the same tested local service and engine. Install dependencies while online:
+## GPU model integration
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python run.py --fastapi
-```
-
-On Windows, activate with `.venv\Scripts\activate` instead. API docs are at http://127.0.0.1:8000/docs. FastAPI adds WebSocket replay at `/ws/replay`; the frontend connects automatically. If FastAPI is unavailable, `python3 run.py` uses the included dependency-free HTTP adapter with the same comparison, benchmark, telemetry and SQLite services. `--standalone` explicitly selects it.
-
-Dependency installation was blocked in the build environment. The dependency-free HTTP adapter was runtime-tested. FastAPI and its WebSocket adapter were syntax-checked but could not be runtime-tested here; the included optional tests run once requirements are installed. No server is automatically started by opening the HTML file.
-
-## Frozen GNN proxy API
-
-The selected GPU-trained checkpoint is integrated as an inference-only,
-advisory backend service from `models/frozen/gnn_proxy_v1/`. Its output is
-labelled **experimental boundary position-swap proxy signal**. It scores the
-fixed-pair boundary position-swap proxy task; it is not a calibrated overtake
-probability and it never returns an ATTACK/HOLD/HARVEST decision. The existing
-rule/energy simulator remains responsible for that decision.
-
-Use the GPU environment when available so the service can select CUDA; the
-`--standalone` flag keeps the local HTTP adapter dependency-light:
+Use the existing GPU environment when available. This does not retrain the model.
 
 ```bash
 cd "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application"
 source .venv_gnn_gpu/bin/activate
-python run.py --standalone --port 8000
+APEX_GNN_DEVICE=auto python run.py --standalone --port 8001
 ```
 
-In another terminal, check the manifest and model status, build the label-free
-approved example, and send it to the graph-level endpoint:
+Check the frozen model:
 
 ```bash
-cd "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application"
-curl -sS http://127.0.0.1:8000/api/model/status
+curl -sS http://127.0.0.1:8001/api/model/status
+echo
+```
+
+Run the approved label-free smoke request:
+
+```bash
 python scripts/build_gnn_predict_example.py
-curl -sS -X POST http://127.0.0.1:8000/api/model/predict \
+curl -sS -X POST http://127.0.0.1:8001/api/model/predict \
   -H 'Content-Type: application/json' \
   --data-binary @examples/gnn_predict_request.json
+echo
 ```
 
-The prediction request must contain the complete raw multi-car graph emitted
-by the canonical builder: node features, edge topology and features, fixed
-attacker/target indices, pair features, and the one-second backward-only /
-ten-second lookback freshness declaration. Labels, future outcomes and
-simplified speed/gap-only dictionaries are rejected. The service loads and
-checksums the frozen model once at startup, preserves explicit missingness,
-reports warnings and latency, and returns an explicit unavailable response on
-checksum, dependency or model failures. Malformed, stale or incomplete
-essential-pair requests are rejected with a validation error rather than
-receiving a fabricated score.
+Expected output includes `model_version: gnn_proxy_v1`, `selected_seed: 42`, `selected_epoch: 28`, `device: cuda` when CUDA is available, and a finite `proxy_score`.
 
-## What's implemented
+The output label is `experimental boundary position-swap proxy signal`. Complete graph inputs are required; stale or incomplete essential inputs are rejected and missing values are not silently replaced with invented telemetry.
 
-| View | Behaviour |
-| --- | --- |
-| Pit wall | Animated telemetry replay; play, pause, seek and speed; capture a decision window; four action choices; live model recommendation |
-| Counterfactual comparison | Judge first action plus HOLD versus an optimised full sequence; 96 paired trials; seeded branch events; energy timeline; JSON export |
-| Strategy lab | Energy, front/rear gaps, closing rate, tyre proxy, wetness, aggression, risk and opportunity controls; feasible sequence ranking and rejection reasons |
-| Validation | Synthetic scenario suite; four policies; hidden outcome perturbations; wins, ties, losses, energy, pass/loss rates and executed violations |
-| Decision log | Inputs, seed, provenance, model version, scores, outcomes; restore inputs; export logs; browser storage and optional SQLite |
-| Data & model | OpenF1-style JSON import, missing-field handling, optional location samples, explicit data provenance and model limitations |
+## Application workflow
 
-The starting replay is deliberately paused. Choose **Judge demo** for the built-in 90-second flow. Recommendations recompute when scenario parameters change. The random seed changes simulated outcomes rather than secretly forcing APEX-R to win.
+1. Start the local server.
+2. Open **Pit wall** or choose **Judge demo**.
+3. Use the historical reference replay to show the selected driver pair and timestamped state.
+4. Inspect the GNN advisory score and freshness/status explanation.
+5. Open **Strategy lab** to compare ATTACK, HOLD, HARVEST, and DEFEND.
+6. Change scenario inputs or the judge action and compare branch outcomes.
+7. Use **Decision log** to inspect inputs, model version, scores, constraints, and simulated results.
 
-## Data honesty
+Observed telemetry, model output, and simulated energy are separate sources. A model score must not be presented as proof of a successful overtake or as real battery telemetry.
 
-The bundled replay and circuit remain synthetic. Energy, opponent gaps, future positions and simulator outcomes are still modelled. The active overtake-opportunity model in `dist/apex-model.js` is XGBoost, selected after comparison with a Logistic Regression baseline on a held-out historical OpenF1 race. It predicts observed overtake events, not private team battery telemetry or a complete F1 strategy. Importing public telemetry changes playback and provenance but does not create private ERS measurements or guarantee calibration for a new race.
+## Model history
 
-The model searches two to five lap windows with one strategic decision per lap. Probabilities are explicit heuristics. The objective is a weighted position/energy/risk utility; position value per MJ is separately reported. See `docs/MODEL.md` for equations, units, assumptions and evaluation limits.
+Metrics belong to different tasks and splits; they are not one common benchmark.
 
-## Historical telemetry
-
-In **Data & model**, choose an OpenF1 `car_data` JSON export for one driver and one session. Each record requires a timestamp and speed. `throttle`, `brake` and `n_gear` are displayed when present. A combined `{ "car_data": [...], "location": [...], "metadata": {...} }` file can include a recorded path. Files are limited to 20 MB and 100,000 car records; keep segments short.
-
-Fetch an existing historical interval with the included helper after checking the session's actual UTC timestamps:
-
-```bash
-python3 scripts/fetch_openf1.py --help
-```
-
-Provide `--session`, `--driver`, `--start`, `--end`, and `--output` plus optional `--location`. The helper requests only a fixed public OpenF1 endpoint and limits the interval to ten minutes. It fails explicitly on unavailable data or access errors; it never substitutes invented race data.
-
-Reference: https://openf1.org/docs/ . Live access and historical access have different requirements; this application does not promise a live F1 data connection.
-
-## Train the real-data prediction model
-
-The enriched reproducible training pipeline uses OpenF1 historical sessions, creates a cleaned label for an overtake within the next 60 seconds, uses the final session for validation-based early stopping, and exports both a JSON artifact and browser-compatible `dist/apex-model.js`:
-
-```bash
-python3 scripts/train_model.py
-python3 scripts/train_xgboost.py
-python3 scripts/train_xgboost_enriched.py
-```
-
-The enriched script adds `car_data`, `location`, `pit` and `race_control` to the original interval/position/lap/stint/weather/overtake pipeline. Car telemetry becomes rolling model features; pit and neutralisation windows are removed from labels; location data is cached and audited for replay use rather than used as a non-portable coordinate feature. The default runs use sessions `7953,7779,7787,9070`; pass another comma-separated list with `--sessions`. Raw API responses are cached under `data/openf1-cache/`. Artifacts, validation metrics, model-selection decision and the full machine-learning report are saved in `models/`. The selected model informs overtake probability, while the existing optimiser still selects the action and enforces energy constraints.
-
-## Architecture
-
-`dist/engine.js` is the sole strategic implementation. It runs in the browser and in Node. Python calls `scripts/engine-cli.cjs` with structured stdin, without shell interpolation. This avoids a second Python implementation drifting from offline results.
-
-`backend/service.py` owns the subprocess boundary and SQLite audit store. `backend/standalone.py` and `backend/app.py` expose the same services through the Python standard library or FastAPI. A server comparison writes its record before returning a result. Repeated request IDs are idempotent; conflicting input reuse is rejected.
-
-`dist/telemetry.js` handles replay construction, data validation, sorting and interpolation. Imported data remains in browser memory and is not uploaded. Browser audit records retain its provenance, not the full telemetry. The most recent 100 decisions are shown; SQLite keeps all server decisions. File-mode browser storage depends on the browser; JSON export is the portable backup.
-
-| Endpoint | Method | Contract |
+| Model | Main configuration | Reported result / role |
 | --- | --- | --- |
-| `/api/health` | GET | Version, adapter, SQLite status and WebSocket capability |
-| `/api/scenarios` | GET | Model configuration and bundled scenario definitions |
-| `/api/compare` | POST | `{input, provenance, request_id}`; computes and stores a comparison |
-| `/api/validate` | POST | `{count, seed}`; runs the synthetic benchmark |
+| Legacy Logistic Regression | Eight baseline features; StandardScaler; C=1.0; lbfgs | ROC-AUC 0.711676; AP 0.122823; linear baseline |
+| Legacy XGBoost | 300 trees; depth 4; learning rate 0.04 | ROC-AUC 0.787855; AP 0.193889 |
+| Cleaned Feature XGBoost | Clean labels; saved 75-tree model | Locked holdout ROC-AUC 0.930631; AP 0.247008 |
+| Enriched XGBoost | Rolling speed, throttle, brake, RPM, gear, and DRS context | ROC-AUC 0.794901; AP 0.166549 |
+| Engineered XGBoost | Scale-pos-weight sweep; best weight 2.0 | ROC-AUC 0.824588; AP 0.206596 |
+| Phase 1 TracingInsights XGBoost | 19 features; weight 2.0; grouped Platt calibration | ROC-AUC 0.818115; AP 0.188670 |
+| GPU GNN | Two GINEConv layers; hidden 32; dropout 0.2; seed 42; best epoch 28 | Validation AP 0.127602; ROC-AUC 0.689272; frozen graph advisory |
+| Hybrid GNN + GRU + Physics | Supplied integrated probability and classification views | Final demo presentation model; standalone artifact metrics unavailable |
+
+The original XGBoost and GNN tasks differ. XGBoost models use an overtake-opportunity target, while the GNN uses a fixed-pair boundary position-swap proxy. Comparisons must be read within their task and split.
+
+## Data and causal boundaries
+
+- The GNN experiment used 37 telemetry-coverage-passed races, 15,404 supervised graphs, 822 positive proxy windows, and 14,582 negative proxy windows.
+- The frozen GNN uses a 10-second trailing lookback and backward-only one-second as-of joins.
+- The target is a classified-order position swap at the next lap boundary, not verified on-track overtaking.
+- Historical replay is a reference view. Branch futures are simulated and are not recorded race outcomes caused by APEX-R actions.
+- Energy, battery state, opponent responses, future positions, and strategy outcomes in the simulator are modelled assumptions.
+- The sealed holdout session `11353` is excluded from demo inference and development workflows.
+
+## API endpoints
+
+| Endpoint | Method | Purpose |
+| --- | --- | --- |
+| `/api/health` | GET | Server and adapter health |
+| `/api/model/status` | GET | Frozen model availability, checksum, device, and contract |
+| `/api/model/predict` | POST | Label-free graph advisory inference |
+| `/api/scenarios` | GET | Bundled scenario definitions and configuration |
+| `/api/compare` | POST | Judge-versus-optimiser simulated comparison |
+| `/api/validate` | POST | Synthetic strategy benchmark |
 | `/api/audit?limit=100` | GET | Recent decision records |
-| `/api/telemetry?soc=42` | GET | Labelled synthetic replay samples |
-| `/ws/replay` | WebSocket, FastAPI only | Send `{time, soc}`; receive `{source: "synthetic", frame}` |
+| `/api/telemetry?soc=42` | GET | Labelled replay samples |
 
-The shared engine rejects out-of-range and non-finite inputs. Local adapters reject cross-origin browser requests. The app is intended for a trusted laptop demo, not unauthenticated Internet hosting. Runtime data is written to `runtime/apex.db`; set `APEX_DATABASE` to use a different local database file.
+FastAPI documentation, when optional dependencies are installed, is available at `http://127.0.0.1:8001/docs`.
 
-## Verification
+## Verification commands
 
 ```bash
 node --test tests/engine.test.cjs
@@ -145,20 +134,53 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 node scripts/validate.cjs
 ```
 
-The baseline build passed 13 engine/import tests and 4 HTTP/storage tests. Two FastAPI/WebSocket tests require optional dependencies and are skipped if missing. The browser/Node parity check executes the shared browser bundle in an isolated JavaScript context; it is not a browser UI test.
+Run the frozen-model smoke test directly:
 
-The recorded 60-scenario run used 11,520 strategy rollouts and had 54 utility wins, 0 ties and 6 losses against the threshold policy, with zero executed model-constraint violations. These are synthetic results, not real-race gains. Re-run the suite on your laptop; timings depend on hardware. The generated detailed report is `runtime/benchmark.json`.
+```bash
+source .venv_gnn_gpu/bin/activate
+python models/frozen/gnn_proxy_v1/smoke_test.py --device cuda
+```
 
-Browser visual QA was not run in this environment. Before presenting, check play/pause/seek, every scenario, a low-energy rejection, imported telemetry, comparison exports, reload persistence, and the four views on the actual presentation laptop. Test a second device as the fallback.
+The smoke test should report `status: PASS`, a finite score, evaluation/no-grad inference, and `training_code_executed: false`.
 
-## Team handoff and release
+## Reports
 
-Read `docs/DEMO_AND_TEAM.md` for the judge flow, four-person ownership and the three-day preparation / 24-hour event schedule. Check event rules before reusing this preparation build.
+- [APEX-R model training report](reports/APEX-R_MODEL_TRAINING_REPORT.pdf)
+- [Frozen GNN model card](models/frozen/gnn_proxy_v1/MODEL_CARD.md)
+- [Frozen GNN manifest](models/frozen/gnn_proxy_v1/FROZEN_MODEL_MANIFEST.json)
+- [GPU GNN experiment report](gnn_proxy_experiment_gpu_v1/GPU_RUN_REPORT.md)
+- [GPU GNN Phase 4 report](gnn_proxy_experiment_gpu_v1/PHASE4_REPORT.md)
+- [Master model-training report](models/APEX_R_MODEL_TRAINING_MASTER_REPORT.md)
 
-Create the single-file offline app and source archive with:
+The PDF includes the title page, model configurations, confusion matrices, ROC-AUC curves, Average Precision curves, GNN result graph, Hybrid GNN figures, UI screenshots, limitations, and future work.
+
+## Important limitations
+
+1. High accuracy can be misleading because positive events are rare; AP, ROC-AUC, precision, recall, F1, and confusion counts should be read together.
+2. The GNN proxy is not a calibrated overtake probability and does not estimate ATTACK benefit.
+3. The optimiser currently gives the GNN zero influence over action selection. It is advisory only.
+4. The Hybrid GNN figures are supplied reference visuals; no standalone reproducible Hybrid checkpoint is available in this repository.
+5. Simulated energy and strategy gains are not observed racing improvements.
+6. Browser visual behaviour should be checked on the presentation laptop before the hackathon.
+
+## Research-only training commands
+
+These commands are for controlled experiments, not for the judge demo. Do not run them when you only need to demonstrate the frozen model.
+
+```bash
+python3 scripts/train_model.py
+python3 scripts/train_xgboost.py
+python3 scripts/train_xgboost_enriched.py
+```
+
+Training and evaluation must preserve race-separated splits, causal feature rules, explicit missingness, and protected-holdout exclusions. Do not overwrite frozen model artifacts.
+
+## Packaging
+
+Create a release directory and package the application without environments, caches, credentials, or unnecessary raw telemetry:
 
 ```bash
 node scripts/package.cjs /absolute/path/to/release
 ```
 
-Source files are deliberately buildless and self-contained, so the team can inspect and change the model without a bundler or a large dependency installation.
+Keep the report PDF and model manifest with the release. Verify the archive after extraction before distributing it.
