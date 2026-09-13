@@ -1,81 +1,34 @@
-# ML data preparation
+# Hybrid GNN + physics model
 
-`prepare_data.py` creates a non-destructive, model-ready copy of the selected
-F1 telemetry and lap metrics.
+This directory contains the inference server and model implementation used by
+the integrated APEX-R frontend. The server loads only the frozen epoch-51
+package in `deployment_packages/hybrid_gnn_epoch51/`.
 
-## Run
+## Run the integrated app
 
-The 2023 output has already been generated at `prepared_data_2023/`:
-
-```bash
-.venv-ml/bin/python ml_pipeline/prepare_data.py \
-  --years 2023 \
-  --output-root prepared_data_2023
-```
-
-To process every discovered season:
+Install the Python dependencies from the repository root, then start the local
+server:
 
 ```bash
-.venv-ml/bin/python ml_pipeline/prepare_data.py \
-  --output-root prepared_data_all
+python3 -m venv .venv-hybrid
+source .venv-hybrid/bin/activate
+python -m pip install -r requirements.txt
+python ml_pipeline/trackshift_server.py --port 8000
 ```
 
-Use `--overwrite` only when intentionally replacing a generated output
-directory.
+Open `http://127.0.0.1:8000/`. The Pit wall displays the four model-guided
+strategy actions—ATTACK, HOLD, DEFEND and HARVEST—alongside the frozen GNN
+timing and risk outputs. The action policy combines those outputs with
+physics-feasible action scores; the current checkpoint was not trained with a
+dedicated four-class action head.
 
-## Output
-
-Each season is divided into deterministic event-level `train`, `validation`,
-and `test` folders. Each contains compressed Parquet files for telemetry and
-lap metrics. Raw numeric columns are retained, and normalized columns use the
-`*_norm` suffix.
-
-Normalization statistics are fitted from training rows only and are recorded
-in `normalization_stats.json`. `metadata.json` records row counts, dropped-row
-reasons, split settings, and the cleaning rules.
-
-`valid_lap` is false for missing, out-of-range, or deleted lap times. No
-physics-derived columns are generated yet; that is the next pipeline stage.
-
-## Live MultiViewer bridge
-
-`trackshift_server.py` polls MultiViewer's local Live Timing API and exposes
-the normalized snapshot at `/api/live/status` and `/api/live/snapshot`. Start
-MultiViewer, sign in with an eligible F1 TV subscription, open the Live Timing
-window, and then start APEX-R:
+## API checks
 
 ```bash
-cd "/Users/keshavgeer/Desktop/APex R"
-.venv-ml/bin/python ml_pipeline/trackshift_server.py --port 8000
+curl -sS http://127.0.0.1:8000/api/hybrid/status
+curl -sS 'http://127.0.0.1:8000/api/hybrid/predict?sequence=0'
 ```
 
-Live samples are captured locally at `runtime/multiviewer_live.jsonl` by
-default. The bridge records car timing, speed, controls, gear, RPM, DRS, tyre
-stint, weather, lap, track-status, race-control, exact meeting/circuit
-metadata, full driver names, racing numbers, teams, and observed S1/S2/S3
-sector records when MultiViewer provides them. The live dashboard lets the
-operator choose a `MY DRIVER` and `TARGET DRIVER`; the selected relation
-(ahead/behind) and observed gap are fed into the physics-aware policy. A live
-safety-car, VSC, yellow, or red status constrains the policy toward HOLD and
-reduces simulated overtake probability. Energy accounting, action branches,
-and counterfactual outcomes remain explicitly simulated.
-
-The Data & model dialog also exposes bounded recorded test replays from the
-prepared 2024 and 2025 Grand Prix test splits. Those replays are historical
-test inputs, not live MultiViewer sessions.
-
-## Race-specific circuit maps
-
-`dist/track_maps.js` is a compact catalogue of 2024 circuit layouts generated
-from the fastest valid FastF1 race-lap XY telemetry. The frontend matches the
-MultiViewer meeting/circuit or selected test replay to the corresponding
-layout; matching 2025 events reuse the same physical circuit geometry. The
-build command is:
-
-```bash
-python ml_pipeline/build_track_maps.py --years 2024 --session R --overwrite
-```
-
-MultiViewer timing identifies the meeting and driver progress but does not
-provide live XY coordinates through this bridge, so live car markers are
-placed by lap progress on the matched circuit path.
+`model_deployment.pt` is the lean inference artifact. `model_checkpoint.pt`
+retains optimizer and training history, while `model_test_bundle.pt` retains
+the model, 2026 unseen holdout graph arrays, labels, predictions and metrics.
