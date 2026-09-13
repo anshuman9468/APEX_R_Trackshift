@@ -1,50 +1,62 @@
-# APEX-R Race Strategy Studio
+<div align="center">
 
-**Team Devsez | VIPS-TC (GGSIPU)**
-**TrackShift Hackathon 2025**
+# APEX-R
 
-APEX-R is an offline-first Formula 1 race-strategy decision-support demo. It combines historical telemetry references, proxy model inference, a constrained simulated energy model, and ATTACK / HOLD / HARVEST / DEFEND strategy comparison.
+### Race Strategy Studio for TrackShift Hackathon 2025
 
-> This is a research and demonstration system. Public historical data does not contain private ERS percentage, battery state of health, battery temperature, fuel load, team deployment maps, or pit-wall instructions.
+**Team Devsez · VIPS-TC (GGSIPU)**
 
-## Final demo model
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#run-the-demo)
+[![PyTorch](https://img.shields.io/badge/PyTorch-GNN%20ready-EE4C2C?logo=pytorch&logoColor=white)](#model-artefacts)
+[![Mode](https://img.shields.io/badge/Mode-Offline--first%20demo-111111)](#what-apex-r-does)
+[![Scope](https://img.shields.io/badge/Scope-Decision%20support-F43F4F)](#important-boundaries)
 
-The final demo model presentation is **Frozen Hybrid GNN + GRU + Physics Model**. It combines graph-based race-state context, temporal sequence modelling, tyre-degradation, pit-stop, and safety-constraint views.
+*Historical telemetry reference · Experimental graph signals · Constrained energy simulation*
 
-The reproducible frozen inference artifact behind the graph advisory is **GPU GNN seed 42, best checkpoint epoch 28**. It predicts a fixed-pair next-lap classified-order position-swap proxy, not a verified overtake and not the probability that ATTACK will be beneficial. The GNN is advisory only; the energy simulator and rule-based optimiser select the strategy action.
+</div>
 
-The Hybrid GNN figures in the report are supplied visual evidence. Their standalone checkpoint and full reproducible metric artifact are not retained in this repository, so no independent Hybrid-GNN F1 or deployment accuracy is claimed.
+> APEX-R is a research and hackathon demonstration system—not a live team pit wall. Public historical data does not provide private ERS state-of-charge, battery health or temperature, fuel load, team deployment maps, or confidential radio instructions.
 
-## Repository map
+<p align="center">
+  <img src="reports/assets/gnn_result_summary.png" alt="APEX-R GNN experiment result summary" width="760" />
+</p>
 
-| Path | Purpose |
-| --- | --- |
-| `backend/` | Local API, model adapter, SQLite audit service, and replay endpoints |
-| `dist/` | Browser application, shared strategy engine, telemetry view, and model bundle |
-| `models/` | Frozen model manifest, model card, checkpoints, and model reports |
-| `gnn_proxy_experiment_v1/` | CPU GNN experiment artifacts and disk-backed graph store |
-| `gnn_proxy_experiment_gpu_v1/` | GPU GNN runs, histories, predictions, and validation reports |
-| `reports/` | Structured model-training PDF, figures, and reproducible report builder |
-| `scripts/` | Validation, telemetry import, model-training, and packaging helpers |
-| `tests/` | Engine, API, import, persistence, and model-integration tests |
-| `runtime/` | Local SQLite and benchmark output; generated at runtime |
+## What APEX-R does
 
-## Quick start: judge demo
+APEX-R is an offline-first Formula 1 decision-support studio. It brings together three clearly separated layers:
 
-The simplest demo needs Python 3.10+ and does not require CUDA, Node packages, Docker, or an API key.
+| Layer | What it does | What it does **not** claim |
+| --- | --- | --- |
+| **Historical replay** | Displays timestamped telemetry and classified race-state context from approved local material. | A live F1 data feed or private team telemetry. |
+| **Model advisory** | Produces experimental graph-model signals from supported input contracts. | A verified on-track overtake probability or proof that ATTACK will work. |
+| **Strategy simulator** | Compares ATTACK, HOLD, HARVEST, and DEFEND under explicit energy and opponent assumptions. | Observed race outcomes caused by APEX-R. |
+
+The dashboard keeps observed telemetry, model output, and simulated future branches visibly separate.
+
+## Run the demo
+
+### Standard local application
+
+The standard judge demo runs locally. Python 3.10+ is required; no Docker, API key, or internet connection is needed after setup.
 
 ```bash
 cd "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application"
 python3 run.py --standalone --port 8001
 ```
 
-Open `http://127.0.0.1:8001/`. If the port is occupied, choose another free port. Stop the server with `Ctrl+C`.
+Open [http://127.0.0.1:8001/](http://127.0.0.1:8001/). Stop the server with `Ctrl+C`.
 
-For a file-only offline preview, open `dist/index.html` in a modern desktop browser. The local server is recommended for model status, API checks, replay, and SQLite persistence.
+If port `8001` is occupied, start it on another port, for example:
 
-## GPU model integration
+```bash
+python3 run.py --standalone --port 8002
+```
 
-Use the existing GPU environment when available. This does not retrain the model.
+For a lightweight browser-only preview, open `dist/index.html`. The local server is recommended because it enables API checks, replay services, model status, and local decision logging.
+
+### Run with the frozen GNN proxy on CUDA or CPU
+
+Use the existing environment when it is available. `APEX_GNN_DEVICE=auto` selects CUDA when supported and otherwise falls back to CPU.
 
 ```bash
 cd "/run/media/anshumandutta/ADATA HD710M PRO/APEX-R_Devsez_Full_Application"
@@ -52,14 +64,14 @@ source .venv_gnn_gpu/bin/activate
 APEX_GNN_DEVICE=auto python run.py --standalone --port 8001
 ```
 
-Check the frozen model:
+Confirm that the API and frozen model are available:
 
 ```bash
 curl -sS http://127.0.0.1:8001/api/model/status
 echo
 ```
 
-Run the approved label-free smoke request:
+Run one approved, label-free graph request:
 
 ```bash
 python scripts/build_gnn_predict_example.py
@@ -69,82 +81,106 @@ curl -sS -X POST http://127.0.0.1:8001/api/model/predict \
 echo
 ```
 
-Expected output includes `model_version: gnn_proxy_v1`, `selected_seed: 42`, `selected_epoch: 28`, `device: cuda` when CUDA is available, and a finite `proxy_score`.
+Expected fields include `model_version`, `selected_seed`, `selected_epoch`, `device`, and a finite `proxy_score`. Stale or incomplete required inputs are rejected rather than silently filled with invented telemetry.
 
-The output label is `experimental boundary position-swap proxy signal`. Complete graph inputs are required; stale or incomplete essential inputs are rejected and missing values are not silently replaced with invented telemetry.
+## A 90-second judge flow
 
-## Application workflow
+1. Start the local application and open **Pit wall**.
+2. Select **Judge demo** or an approved historical reference window.
+3. Point out the observed car state, selected driver pair, timestamp, and data freshness.
+4. Show the advisory model status and its experimental proxy score.
+5. Open **Strategy lab** and compare ATTACK, HOLD, HARVEST, and DEFEND from the same starting state.
+6. Use a judge-selected action to create a separate simulated branch.
+7. Open **Decision log** to inspect the inputs, action scores, constraints, and branch assumptions.
 
-1. Start the local server.
-2. Open **Pit wall** or choose **Judge demo**.
-3. Use the historical reference replay to show the selected driver pair and timestamped state.
-4. Inspect the GNN advisory score and freshness/status explanation.
-5. Open **Strategy lab** to compare ATTACK, HOLD, HARVEST, and DEFEND.
-6. Change scenario inputs or the judge action and compare branch outcomes.
-7. Use **Decision log** to inspect inputs, model version, scores, constraints, and simulated results.
+The recommended action comes from the strategy/energy layer under the stated simulation assumptions. Model output is shown as decision support, not a guarantee.
 
-Observed telemetry, model output, and simulated energy are separate sources. A model score must not be presented as proof of a successful overtake or as real battery telemetry.
+## Model artefacts
 
-## Integrated hybrid GNN + physics frontend
+### Final presentation model: Hybrid GNN + GRU + Physics
 
-The integrated `dist/` frontend is wired to the frozen deployment package at
-`deployment_packages/hybrid_gnn_epoch51/`. That package contains the frozen
-hybrid checkpoint, configuration, calibration, feature contract, normalizer,
-and output schema used by the model-backed frontend. The integrated view shows
-ATTACK, HOLD, HARVEST, and DEFEND scores; the action layer combines model
-signals with physics-feasible strategy scores.
+The final APEX-R presentation uses the frozen hybrid package in [`deployment_packages/hybrid_gnn_epoch51/`](deployment_packages/hybrid_gnn_epoch51/). It contains the deployment checkpoint, exact checkpoint archive, model configuration, calibration, normalizer, feature contract, output schema, and package manifest.
 
-The package reports frozen epoch-51 next-lap and calibrated risk outputs. The
-checkpoint does not contain a separately trained four-class action head, so
-these action scores are an integrated decision-support layer rather than proof
-of real-race strategy effectiveness.
+The hybrid package was frozen at **epoch 51**. It uses graph-based race context, a temporal GRU component, and physics-derived tyre, pit-stop, and safety-constraint views. Its action layer combines model outputs with physics-feasible strategy scoring; it does **not** contain a separately trained four-class action classifier.
 
-The bundled replay remains local and illustrative. Energy, opponent gaps,
-future positions, and simulator outcomes are modelled; neither model predicts
-private team battery telemetry or a complete F1 strategy.
+### Reproducible graph advisory: GNN Proxy v1
 
-## Model history
+The API-level advisory artifact is [`models/frozen/gnn_proxy_v1/`](models/frozen/gnn_proxy_v1/):
 
-Metrics belong to different tasks and splits; they are not one common benchmark.
+| Item | Frozen value |
+| --- | --- |
+| Model version | `gnn_proxy_v1` |
+| Selected run | GPU GNN, seed 42 |
+| Checkpoint selection | Best validation checkpoint, epoch 28 |
+| Task | Fixed-pair next-lap-boundary classified-order position-swap proxy |
+| Output label | `experimental boundary position-swap proxy signal` |
+| Use in demo | Advisory signal only; the rule/energy simulator makes the final action |
+
+The proxy signal is not a calibrated overtake probability, not an ATTACK-benefit probability, and not a measure of actual battery state.
+
+## Model development history
+
+These models were trained on different feature sets, target definitions, and evaluation splits. Their metrics are not one shared leaderboard.
 
 | Model | Main configuration | Reported result / role |
 | --- | --- | --- |
-| Legacy Logistic Regression | Eight baseline features; StandardScaler; C=1.0; lbfgs | ROC-AUC 0.711676; AP 0.122823; linear baseline |
+| Legacy Logistic Regression | Eight baseline features; `StandardScaler`; `C=1.0`; `lbfgs` | ROC-AUC 0.711676; AP 0.122823; linear baseline |
 | Legacy XGBoost | 300 trees; depth 4; learning rate 0.04 | ROC-AUC 0.787855; AP 0.193889 |
 | Cleaned Feature XGBoost | Clean labels; saved 75-tree model | Locked holdout ROC-AUC 0.930631; AP 0.247008 |
 | Enriched XGBoost | Rolling speed, throttle, brake, RPM, gear, and DRS context | ROC-AUC 0.794901; AP 0.166549 |
-| Engineered XGBoost | Scale-pos-weight sweep; best weight 2.0 | ROC-AUC 0.824588; AP 0.206596 |
+| Engineered XGBoost | Class-weight sweep; best `scale_pos_weight=2.0` | ROC-AUC 0.824588; AP 0.206596 |
 | Phase 1 TracingInsights XGBoost | 19 features; weight 2.0; grouped Platt calibration | ROC-AUC 0.818115; AP 0.188670 |
-| GPU GNN | Two GINEConv layers; hidden 32; dropout 0.2; seed 42; best epoch 28 | Validation AP 0.127602; ROC-AUC 0.689272; frozen graph advisory |
-| Hybrid GNN + GRU + Physics | Supplied integrated probability and classification views | Final demo presentation model; standalone artifact metrics unavailable |
+| GPU GNN Proxy | Two GINEConv layers; hidden 32; dropout 0.2; seed 42; best epoch 28 | Validation AP 0.127602; ROC-AUC 0.689272; frozen advisory artifact |
+| Hybrid GNN + GRU + Physics | Frozen epoch-51 integrated deployment package | Final demo model; inspect package-specific contracts and reports for task-specific metrics |
 
-The original XGBoost and GNN tasks differ. XGBoost models use an overtake-opportunity target, while the GNN uses a fixed-pair boundary position-swap proxy. Comparisons must be read within their task and split.
+<p align="center">
+  <img src="reports/assets/average_precision_gpu_gnn.png" alt="GPU GNN average precision comparison" width="720" />
+</p>
 
-## Data and causal boundaries
+## Data and causal contract
 
-- The GNN experiment used 37 telemetry-coverage-passed races, 15,404 supervised graphs, 822 positive proxy windows, and 14,582 negative proxy windows.
-- The frozen GNN uses a 10-second trailing lookback and backward-only one-second as-of joins.
-- The target is a classified-order position swap at the next lap boundary, not verified on-track overtaking.
-- Historical replay is a reference view. Branch futures are simulated and are not recorded race outcomes caused by APEX-R actions.
-- Energy, battery state, opponent responses, future positions, and strategy outcomes in the simulator are modelled assumptions.
-- The sealed holdout session `11353` is excluded from demo inference and development workflows.
+The frozen GNN proxy experiment used:
 
-## API endpoints
+- **37** telemetry-coverage-passed races
+- **15,404** supervised graphs
+- **822** positive proxy windows and **14,582** negative proxy windows
+- A **10-second trailing lookback** with **backward-only one-second as-of joins**
+
+Its target is a classified-order position swap at the next lap boundary. It is not a verified on-track overtake label. Historical replay supplies reference state; all counterfactual position, energy, opponent-response, and strategy results are simulated.
+
+The sealed session **11353** is excluded from demo inference and development workflows.
+
+## Project map
+
+| Location | Contents |
+| --- | --- |
+| [`backend/`](backend/) | Local API, model adapter, SQLite audit service, and replay endpoints |
+| [`dist/`](dist/) | Browser dashboard, strategy engine, telemetry view, and frontend assets |
+| [`deployment_packages/`](deployment_packages/) | Frozen hybrid deployment package and model contracts |
+| [`models/`](models/) | Frozen proxy manifest, model card, checkpoints, and model reports |
+| [`gnn_proxy_experiment_gpu_v1/`](gnn_proxy_experiment_gpu_v1/) | GPU experiment histories, predictions, and reports |
+| [`reports/`](reports/) | Model-training PDF, charts, screenshots, and report builder |
+| [`scripts/`](scripts/) | Validation, telemetry, packaging, and model helper scripts |
+| [`tests/`](tests/) | Engine, API, import, persistence, and integration tests |
+
+## API reference
 
 | Endpoint | Method | Purpose |
 | --- | --- | --- |
 | `/api/health` | GET | Server and adapter health |
-| `/api/model/status` | GET | Frozen model availability, checksum, device, and contract |
+| `/api/model/status` | GET | Frozen proxy availability, checksum, device, and contract |
 | `/api/model/predict` | POST | Label-free graph advisory inference |
 | `/api/scenarios` | GET | Bundled scenario definitions and configuration |
 | `/api/compare` | POST | Judge-versus-optimiser simulated comparison |
 | `/api/validate` | POST | Synthetic strategy benchmark |
-| `/api/audit?limit=100` | GET | Recent decision records |
+| `/api/audit?limit=100` | GET | Recent local decision records |
 | `/api/telemetry?soc=42` | GET | Labelled replay samples |
 
-FastAPI documentation, when optional dependencies are installed, is available at `http://127.0.0.1:8001/docs`.
+When optional FastAPI dependencies are installed, API docs are available at `http://127.0.0.1:8001/docs`.
 
-## Verification commands
+## Verify before a demo
+
+Run these from the project root:
 
 ```bash
 node --test tests/engine.test.cjs
@@ -152,53 +188,38 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 node scripts/validate.cjs
 ```
 
-Run the frozen-model smoke test directly:
+For the frozen proxy smoke test:
 
 ```bash
 source .venv_gnn_gpu/bin/activate
 python models/frozen/gnn_proxy_v1/smoke_test.py --device cuda
 ```
 
-The smoke test should report `status: PASS`, a finite score, evaluation/no-grad inference, and `training_code_executed: false`.
+The smoke test should return `status: PASS`, a finite score in `[0, 1]`, evaluation/no-grad inference, and `training_code_executed: false`.
 
-## Reports
+## Reports and reproducibility
 
-- [APEX-R model training report](reports/APEX-R_MODEL_TRAINING_REPORT.pdf)
-- [Frozen GNN model card](models/frozen/gnn_proxy_v1/MODEL_CARD.md)
-- [Frozen GNN manifest](models/frozen/gnn_proxy_v1/FROZEN_MODEL_MANIFEST.json)
-- [GPU GNN experiment report](gnn_proxy_experiment_gpu_v1/GPU_RUN_REPORT.md)
+- [Model training report (PDF)](reports/APEX-R_MODEL_TRAINING_REPORT.pdf)
+- [Frozen GNN proxy model card](models/frozen/gnn_proxy_v1/MODEL_CARD.md)
+- [Frozen GNN proxy manifest](models/frozen/gnn_proxy_v1/FROZEN_MODEL_MANIFEST.json)
+- [GPU GNN run report](gnn_proxy_experiment_gpu_v1/GPU_RUN_REPORT.md)
 - [GPU GNN Phase 4 report](gnn_proxy_experiment_gpu_v1/PHASE4_REPORT.md)
 - [Master model-training report](models/APEX_R_MODEL_TRAINING_MASTER_REPORT.md)
 
-The PDF includes the title page, model configurations, confusion matrices, ROC-AUC curves, Average Precision curves, GNN result graph, Hybrid GNN figures, UI screenshots, limitations, and future work.
+## Important boundaries
 
-## Important limitations
-
-1. High accuracy can be misleading because positive events are rare; AP, ROC-AUC, precision, recall, F1, and confusion counts should be read together.
-2. The GNN proxy is not a calibrated overtake probability and does not estimate ATTACK benefit.
-3. The optimiser currently gives the GNN zero influence over action selection. It is advisory only.
-4. The Hybrid GNN figures are supplied reference visuals; no standalone reproducible Hybrid checkpoint is available in this repository.
-5. Simulated energy and strategy gains are not observed racing improvements.
-6. Browser visual behaviour should be checked on the presentation laptop before the hackathon.
-
-## Research-only training commands
-
-These commands are for controlled experiments, not for the judge demo. Do not run them when you only need to demonstrate the frozen model.
-
-```bash
-python3 scripts/train_model.py
-python3 scripts/train_xgboost.py
-python3 scripts/train_xgboost_enriched.py
-```
-
-Training and evaluation must preserve race-separated splits, causal feature rules, explicit missingness, and protected-holdout exclusions. Do not overwrite frozen model artifacts.
+1. Positive events are rare. Accuracy alone can be misleading; read Average Precision, ROC-AUC, precision, recall, F1, and confusion counts together.
+2. Public inputs do not create private ERS, battery, fuel, tyre-temperature, or pit-wall measurements.
+3. A proxy score is not a verified overtake probability and does not prove an energy action will succeed.
+4. Historical replay is observed reference material; strategy branches are simulations with declared assumptions.
+5. Do not tune against protected holdouts or overwrite frozen model artefacts.
 
 ## Packaging
 
-Create a release directory and package the application without environments, caches, credentials, or unnecessary raw telemetry:
+Create a compact release package without virtual environments, caches, credentials, or unnecessary raw telemetry:
 
 ```bash
 node scripts/package.cjs /absolute/path/to/release
 ```
 
-Keep the report PDF and model manifest with the release. Verify the archive after extraction before distributing it.
+Extract and verify the generated archive before sharing it with judges.
