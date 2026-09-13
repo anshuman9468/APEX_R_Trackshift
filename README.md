@@ -105,8 +105,17 @@ GNN signals with physics-feasible strategy scores; the checkpoint itself does
 not contain a separately trained four-class action head. The test bundle keeps
 the actual 2026 unseen holdout labels, predictions and metrics for inspection.
 
-The service is a local test-holdout replay. It is not a live telemetry feed and
-does not claim measured private F1 telemetry.
+The model service is evaluated against a local test-holdout replay and does
+not claim measured private F1 telemetry. Live MultiViewer observations are
+kept separate from modelled energy and counterfactual outcomes.
+
+When MultiViewer is open with Live Timing active, the same local server can
+also poll its local timing API. The Pit wall then shows the observed meeting,
+circuit, driver roster, sectors, tyre state, weather, and race-control status.
+Use `--multiviewer-driver VER` (or another driver code/number) to set the
+initial focus car; the dashboard also supports selecting a target driver.
+Circuit geometry is matched from `dist/track_maps.js`, while live car markers
+use lap progress because the local timing API does not expose live XY points.
 
 ## Data honesty
 
