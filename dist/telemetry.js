@@ -2,6 +2,16 @@
   'use strict';
   const POINTS = [[110,340],[250,340],[350,322],[510,305],[555,275],[505,238],[400,240],[368,213],[408,177],[552,172],[610,162],[638,105],[600,65],[510,60],[420,85],[290,100],[230,138],[215,203],[156,229],[96,226],[65,257],[80,300],[110,340]];
   const clamp = (x,a,b) => Math.max(a,Math.min(b,x));
+  const key = value => String(value||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,' ');
+  function mapFor(context={}) {
+    const catalogue = (typeof window !== 'undefined' ? window.ApexTrackMaps : null)?.maps || {};
+    const wanted = [context.event,context.meetingName,context.circuitName,context.location].filter(Boolean).map(key);
+    const year = Number(context.year);
+    const exact = Object.values(catalogue).find(record => (!Number.isFinite(year)||Number(record.season)===year) && wanted.includes(key(record.event)));
+    if(exact)return exact;
+    return Object.values(catalogue).find(record => wanted.includes(key(record.event))||wanted.includes(key(record.location))) || null;
+  }
+  function pointsFor(context={}) { return mapFor(context)?.points || POINTS; }
   function path(points = POINTS) { return points.map((p,i) => (i ? 'L' : 'M') + p[0].toFixed(2) + ' ' + p[1].toFixed(2)).join(' '); }
   function point(progress, points = POINTS) {
     const lengths = []; let total = 0;
@@ -61,5 +71,5 @@
     return {name:filename,source:'imported',description:'Imported telemetry supplied by user; provenance not independently verified. '+(locationFrames?'Imported position samples.':'Car movement uses the schematic circuit.'),frames,points,duration,hasLocation:!!locationFrames,metadata:{driver:drivers.size?[...drivers][0]:null,session:sessions.size?[...sessions][0]:null,source:raw.metadata?.source||'User-supplied file',start:new Date(start).toISOString(),count:frames.length}};
   }
   function at(replay,time){const frames=replay.frames;let lo=0,hi=frames.length-1;while(lo<hi){const mid=Math.ceil((lo+hi)/2);if(frames[mid].t<=time)lo=mid;else hi=mid-1;}const a=frames[lo],b=frames[Math.min(lo+1,frames.length-1)];const q=b.t===a.t?0:clamp((time-a.t)/(b.t-a.t),0,1);return {...a,t:time,x:a.x+(b.x-a.x)*q,y:a.y+(b.y-a.y)*q,speed:a.speed+(b.speed-a.speed)*q,progress:a.progress+(b.progress-a.progress)*q};}
-  return {POINTS,path,point,synthetic,parse,at};
+  return {POINTS,path,point,synthetic,parse,at,mapFor,pointsFor};
 });
