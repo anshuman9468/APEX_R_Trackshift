@@ -7,6 +7,11 @@
   const VERSION = '1.0.0';
   const ACTIONS = ['ATTACK', 'HOLD', 'HARVEST', 'DEFEND'];
   const CONFIG = Object.freeze({ version: 'phase5-demo-energy-v1', accountingBoundary: 'battery-side', capacityMJ: 4, reserveMJ: 0.12, maxDeployMJ: 1.45, maxHarvestMJ: 0.95, powerKW: 300, windowSeconds: 5, efficiency: 0.9, scoreWeights: { position: 6, reserve: 0.9, threat: 1.6, deploymentCost: 0.065 } });
+  const PRACTICE_SESSIONS = Object.freeze({
+    FP1: { name: 'FP1 · Baseline', duration: '60 min', plan: 'Aero correlation', note: 'Low-risk baseline collection for correlation and system checks.' },
+    FP2: { name: 'FP2 · Performance', duration: '60 min', plan: 'Performance run', note: 'Higher performance focus with controlled deployment and tyre risk.' },
+    FP3: { name: 'FP3 · Race prep', duration: '60 min', plan: 'Long-run preparation', note: 'Long-run preparation with reserve and degradation protection.' }
+  });
   const MODES = Object.freeze({ ATTACK: { deploy: 1.35, recovery: 0.30, pace: 0.26, guard: 0.02 }, HOLD: { deploy: 0.36, recovery: 0.50, pace: 0, guard: 0.08 }, HARVEST: { deploy: 0.08, recovery: 0.88, pace: -0.22, guard: -0.04 }, DEFEND: { deploy: 0.90, recovery: 0.38, pace: 0.07, guard: 0.47 } });
   const SCENARIOS = [
     { id: 'patient', name: 'The patient attack', track: 'Strategy circuit', caption: 'A better window is one lap away.', state: { soc: 42, gapAhead: 0.68, gapBehind: 0.65, closing: 3, tyreAge: 18, wet: 0, aggression: 0.55, position: 7, lap: 37 }, windows: [0.20, 1.00, 0.60, 0.80, 0.50], recovery: [1.00, 1.10, 0.80, 1.00, 1.00] },
@@ -22,6 +27,24 @@
   function finite(value, name, low, high) {
     if (typeof value !== 'number' || !Number.isFinite(value) || value < low || value > high) throw new Error(name + ' must be between ' + low + ' and ' + high);
     return value;
+  }
+  function normaliseLimits(raw = {}) {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('Engineer limits must be an object');
+    const limits = {
+      capacityMJ: CONFIG.capacityMJ,
+      reserveMJ: raw.reserveMJ ?? CONFIG.reserveMJ,
+      maxDeployMJ: raw.maxDeployMJ ?? CONFIG.maxDeployMJ,
+      maxHarvestMJ: raw.maxHarvestMJ ?? CONFIG.maxHarvestMJ,
+      powerKW: raw.powerKW ?? CONFIG.powerKW,
+      windowSeconds: raw.windowSeconds ?? CONFIG.windowSeconds
+    };
+    finite(limits.reserveMJ, 'reserve limit', 0, CONFIG.capacityMJ - 0.05);
+    finite(limits.maxDeployMJ, 'deployment limit', 0.05, 2.50);
+    finite(limits.maxHarvestMJ, 'recovery limit', 0, 1.50);
+    finite(limits.powerKW, 'power limit', 50, 600);
+    finite(limits.windowSeconds, 'decision window', 1, 10);
+    if (limits.maxDeployMJ > limits.capacityMJ - limits.reserveMJ) throw new Error('Deployment limit must leave room for the reserve');
+    return limits;
   }
   function normalise(input = {}) {
     if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('Input must be an object');
@@ -39,6 +62,7 @@
     finite(seed, 'seed', 0, 4294967295);
     if (!Number.isInteger(seed)) throw new Error('Seed must be an integer');
     const risk = finite(input.risk ?? 0.45, 'risk', 0, 1);
+    const limits = normaliseLimits(input.limits || {});
     const judgeAction = input.judgeAction || 'ATTACK';
     if (!ACTIONS.includes(judgeAction)) throw new Error('Unknown action');
     const windows = input.windows || scenario.windows;
@@ -48,7 +72,9 @@
     for (const [key, bounds] of Object.entries({ speedKmh: [0, 450], throttlePct: [0, 100], brakePct: [0, 100], gear: [0, 8], intervalSec: [0, 10], gapToLeaderSec: [0, 100], closingRateSecPerMin: [-30, 30], trackTemperatureC: [-30, 70], rainfall: [0, 1], raceProgress: [0, 1], speedMean10s: [0, 450], speedDelta10s: [-300, 300], throttleMean10s: [0, 100], brakeFraction10s: [0, 1], rpmMean10s: [0, 20000], gearMean10s: [0, 8], drsOpenFraction10s: [0, 1] })) {
       if (telemetry[key] != null) finite(telemetry[key], key, ...bounds);
     }
-    return { scenarioId: scenario.id, state, telemetry, horizon, seed, risk, judgeAction, windows: windows.slice(), recovery: scenario.recovery.slice() };
+    const driverSelection = input.driverSelection && typeof input.driverSelection === 'object' && !Array.isArray(input.driverSelection) ? { ...input.driverSelection } : null;
+    const liveContext = input.liveContext && typeof input.liveContext === 'object' && !Array.isArray(input.liveContext) ? { ...input.liveContext } : null;
+    return { scenarioId: scenario.id, state, telemetry, horizon, seed, risk, judgeAction, windows: windows.slice(), recovery: scenario.recovery.slice(), driverSelection, liveContext, limits };
   }
   function rng(seed) {
     let a = seed >>> 0;
@@ -58,42 +84,60 @@
       return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
     };
   }
-  function energy(state, action, recoveryFactor = 1) {
+  function energy(state, action, recoveryFactor = 1, limits = CONFIG) {
     const m = MODES[action];
     if (!m) throw new Error('Unknown action');
-    const start = state.soc / 100 * CONFIG.capacityMJ;
+    const capacityMJ = Number.isFinite(Number(limits?.capacityMJ)) ? Number(limits.capacityMJ) : CONFIG.capacityMJ;
+    const reserveMJ = Number.isFinite(Number(limits?.reserveMJ)) ? Number(limits.reserveMJ) : CONFIG.reserveMJ;
+    const maxDeployMJ = Number.isFinite(Number(limits?.maxDeployMJ)) ? Number(limits.maxDeployMJ) : CONFIG.maxDeployMJ;
+    const maxHarvestMJ = Number.isFinite(Number(limits?.maxHarvestMJ)) ? Number(limits.maxHarvestMJ) : CONFIG.maxHarvestMJ;
+    const powerKW = Number.isFinite(Number(limits?.powerKW)) ? Number(limits.powerKW) : CONFIG.powerKW;
+    const windowSeconds = Number.isFinite(Number(limits?.windowSeconds)) ? Number(limits.windowSeconds) : CONFIG.windowSeconds;
+    const start = state.soc / 100 * capacityMJ;
     const requestedDeploy = m.deploy;
     // Illegal requests are still represented transparently, but their
     // projected accounting is bounded at the reserve floor.  The caller
     // must inspect `legal`/`violations`; transition() rejects the request.
-    const deploy = Math.min(requestedDeploy, Math.max(0, start - CONFIG.reserveMJ));
-    const grossRecovery = Math.min(CONFIG.maxHarvestMJ, m.recovery * recoveryFactor * (1 - state.wet * 0.20));
-    const capacityLeft = CONFIG.capacityMJ - (start - deploy);
+    const deploy = Math.min(requestedDeploy, Math.max(0, start - reserveMJ));
+    const grossRecovery = Math.min(maxHarvestMJ, m.recovery * recoveryFactor * (1 - state.wet * 0.20));
+    const capacityLeft = capacityMJ - (start - deploy);
     const acceptedRecovery = Math.max(0, Math.min(grossRecovery, capacityLeft));
     const violations = [];
-    if (start - requestedDeploy < CONFIG.reserveMJ - 1e-9) violations.push('Insufficient energy before recovery');
-    if (requestedDeploy > CONFIG.maxDeployMJ) violations.push('Deployment budget exceeded');
-    if (requestedDeploy / CONFIG.windowSeconds * 1000 > CONFIG.powerKW) violations.push('Power ceiling exceeded');
+    if (start - requestedDeploy < reserveMJ - 1e-9) violations.push('Insufficient energy before recovery');
+    if (requestedDeploy > maxDeployMJ) violations.push('Deployment budget exceeded');
+    if (requestedDeploy / windowSeconds * 1000 > powerKW) violations.push('Power ceiling exceeded');
     return { startMJ: start, requestedDeployMJ: requestedDeploy, deployMJ: deploy, harvestMJ: acceptedRecovery, spillMJ: grossRecovery - acceptedRecovery, endMJ: start - deploy + acceptedRecovery, legal: violations.length === 0, constraintStatus: violations.length ? 'INFEASIBLE_REQUEST_LOGGED' : 'FEASIBLE', violations };
   }
-  function legalActions(state, recoveryFactor) { return ACTIONS.filter((a) => energy(state, a, recoveryFactor).legal); }
+  function legalActions(state, recoveryFactor, limits = CONFIG) { return ACTIONS.filter((a) => energy(state, a, recoveryFactor, limits).legal); }
   function initialState(input) { return { ...input.state, gain: 0, deployed: 0, harvested: 0, threats: 0, passes: 0, losses: 0 }; }
   function chance(state, action, quality, model = {}, telemetry = {}) {
     const m = MODES[action];
     const grip = 1 - state.wet * 0.5;
     const boost = m.deploy * CONFIG.efficiency * grip;
-    const attackLogit = -2.0 + quality * 2.6 + state.closing * 0.09 - state.gapAhead * 2.15 + boost * 1.8 - state.tyreAge * 0.012 - state.aggression * 0.9;
-    const pPass = state.gain >= 1 ? 0 : clamp(sigmoid(attackLogit + (model.passBias || 0)), 0.002, 0.98);
+    const live = model.liveContext && typeof model.liveContext === 'object' ? model.liveContext : {};
+    const selection = model.driverSelection && typeof model.driverSelection === 'object' ? model.driverSelection : {};
+    const relation = selection.relation || 'NONE';
+    const targetGap = Number.isFinite(Number(selection.gapSeconds)) ? Number(selection.gapSeconds) : null;
+    const caution = Boolean(live.trackStatus?.caution_active);
+    const targetOpportunity = relation === 'AHEAD' && targetGap != null ? clamp(1 - targetGap / 2, 0, 1) : 0;
+    const targetPressure = relation === 'BEHIND' && targetGap != null ? clamp(1 - targetGap / 1.5, 0, 1) : 0;
+    let attackLogit = -2.0 + quality * 2.6 + state.closing * 0.09 - state.gapAhead * 2.15 + boost * 1.8 - state.tyreAge * 0.012 - state.aggression * 0.9;
+    if (relation === 'AHEAD') attackLogit += targetOpportunity * 1.6;
+    if (relation === 'BEHIND') attackLogit -= 1.4;
+    if (caution) attackLogit -= 5.5;
+    const pPass = state.gain >= 1 ? 0 : clamp(sigmoid(attackLogit + (model.passBias || 0)), 0.002, caution ? 0.02 : 0.98);
     const energyAfter = Math.max(0, state.soc / 100 * CONFIG.capacityMJ - m.deploy);
-    const threat = -1.8 + state.aggression * 1.5 - state.gapBehind * 1.65 + (1 - energyAfter / CONFIG.capacityMJ) * 1.45 - m.guard * 4 + state.wet * 0.7;
-    const pLoss = state.gain <= -1 ? 0 : clamp(sigmoid(threat + (model.lossBias || 0)), 0.002, 0.95);
+    let threat = -1.8 + state.aggression * 1.5 - state.gapBehind * 1.65 + (1 - energyAfter / CONFIG.capacityMJ) * 1.45 - m.guard * 4 + state.wet * 0.7;
+    if (relation === 'BEHIND') threat += targetPressure * (action === 'DEFEND' ? -1.8 : 0.6);
+    if (caution) threat += action === 'DEFEND' || action === 'HOLD' ? -0.8 : 0.2;
+    const pLoss = state.gain <= -1 ? 0 : clamp(sigmoid(threat + (model.lossBias || 0)), 0.002, caution ? 0.18 : 0.95);
     return { pPass, pLoss, dataModelProbability: null, dataModelVersion: null };
   }
   function transition(state, action, input, step, draws, model = {}) {
-    const e = energy(state, action, input.recovery[step] * (model.recoveryScale || 1));
+    const e = energy(state, action, input.recovery[step] * (model.recoveryScale || 1), input.limits);
     if (!e.legal) return { valid: false, energy: e };
     const q = input.windows[step];
-    const p = chance(state, action, q, model, input.telemetry);
+    const p = chance(state, action, q, { ...model, liveContext: input.liveContext, driverSelection: input.driverSelection }, input.telemetry);
     let gain = state.gain, passed = false, lost = false;
     if (draws) {
       passed = draws[0] < p.pPass;
@@ -132,8 +176,8 @@
     }
     // A depleted battery can always recover, but recovery is never borrowed before deployment.
     let start = initialState(input);
-    if (legalActions(start, input.recovery[0]).length === 0) {
-      return { feasible: false, recommendation: 'NO FEASIBLE ACTION', candidates: [], rejections: ACTIONS.map(action => ({ action, reasons: energy(start, action).violations })), evaluated: 0, latencyMs: now() - t0 };
+    if (legalActions(start, input.recovery[0], input.limits).length === 0) {
+      return { feasible: false, recommendation: 'NO FEASIBLE ACTION', candidates: [], rejections: ACTIONS.map(action => ({ action, reasons: energy(start, action, input.recovery[0], input.limits).violations })), evaluated: 0, latencyMs: now() - t0 };
     }
     visit(start, [], [], 0);
     candidates.sort((a, b) => b.score - a.score || a.deployedMJ - b.deployedMJ || a.sequence.join().localeCompare(b.sequence.join()));
@@ -151,7 +195,7 @@
     return { feasible: true, recommendation: best.sequence[0], best, alternatives: byAction, candidates: candidates.slice(0, 8), rejections, evaluated, scoreMargin: advantage, explanation, latencyMs: now() - t0 };
   }
   function fallback(state, input, step) {
-    const legal = legalActions(state, input.recovery[step]);
+    const legal = legalActions(state, input.recovery[step], input.limits);
     if (!legal.length) return null;
     return legal.includes('HARVEST') ? 'HARVEST' : legal[0];
   }
@@ -171,7 +215,7 @@
         if (action) result = transition(state, action, input, step, draws, model);
         if (!action || !result.valid) {
           // Emergency zero-deployment recovery, outside the four strategy modes.
-          const recovery = Math.min(CONFIG.maxHarvestMJ, CONFIG.maxHarvestMJ * (model.recoveryScale || 1), CONFIG.capacityMJ * (1 - state.soc / 100));
+          const recovery = Math.min(input.limits.maxHarvestMJ, input.limits.maxHarvestMJ * (model.recoveryScale || 1), CONFIG.capacityMJ * (1 - state.soc / 100));
       const threat = chance(state, 'HARVEST', input.windows[step], model, input.telemetry).pLoss;
           const lost = draws[1] < threat && state.gain > -1;
           state = { ...state, gain: Math.max(-1, state.gain - Number(lost)), losses: state.losses + Number(lost), threats: state.threats + threat, soc: state.soc + recovery / CONFIG.capacityMJ * 100, harvested: state.harvested + recovery, lap: state.lap + 1 };
@@ -208,7 +252,7 @@
     let state = initialState(input); const sequence = [];
     for (let t = 0; t < input.horizon; t++) {
       let action = state.soc < 30 ? 'HARVEST' : state.gapBehind < 0.5 ? 'DEFEND' : state.gapAhead < 0.8 && state.soc > 45 ? 'ATTACK' : 'HOLD';
-      if (!energy(state, action, input.recovery[t]).legal) action = fallback(state, input, t) || 'HARVEST';
+      if (!energy(state, action, input.recovery[t], input.limits).legal) action = fallback(state, input, t) || 'HARVEST';
       sequence.push(action);
       const next = transition(state, action, input, t);
       if (next.valid) state = next.next;
@@ -243,5 +287,5 @@
     }
     return { version: VERSION, count, seed, trialsPerScenario: 48, comparisons: count * 48 * 4, wins, ties, losses, rows, details, elapsedMs: now() - start, methodology: 'Synthetic scenarios with a historical OpenF1 overtake prior; 48 paired draws per strategy and scenario; outcome-model perturbations hidden from the planner. Wins compare simulated utility with the threshold baseline. Not real-race validation.' };
   }
-  return { VERSION, ACTIONS, CONFIG, MODES, SCENARIOS, normalise, rng, energy, legalActions, chance, transition, initialState, search, rollout, ensemble, compare, validate };
+  return { VERSION, ACTIONS, CONFIG, MODES, PRACTICE_SESSIONS, SCENARIOS, normaliseLimits, normalise, rng, energy, legalActions, chance, transition, initialState, search, rollout, ensemble, compare, validate };
 });
