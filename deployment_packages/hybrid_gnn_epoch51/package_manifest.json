@@ -1,0 +1,113 @@
+{
+  "phase": "phase_3_deployment_freeze",
+  "package_version": "phase3-v1",
+  "created_at_utc": "2026-09-12T19:17:36.539586+00:00",
+  "model": {
+    "source_checkpoint": "model_checkpoint.pt",
+    "deployment_checkpoint": "model_deployment.pt",
+    "exact_checkpoint_archive": "model_checkpoint.pt",
+    "epoch": 51,
+    "best_epoch": 51,
+    "best_validation_lap_time_mae_s": 4.000669479370117,
+    "architecture": {
+      "hidden": 128,
+      "layers": 3,
+      "heads": 4,
+      "dropout": 0.15,
+      "history_laps": 5
+    }
+  },
+  "data_contract": {
+    "graph_root": "model_test_bundle.pt:graph_dataset",
+    "feature_metadata": "sources/graph_metadata.json",
+    "reference_manifest": "sources/reference_graph_manifest_2026_validation.json",
+    "physics_assumptions": "sources/physics_assumptions.json",
+    "source_normalization_stats": "sources/source_normalization_stats.json",
+    "calibration_source": "sources/phase2_report.json"
+  },
+  "artifacts": {
+    "model_deployment.pt": {
+      "path": "model_deployment.pt",
+      "bytes": 2490777,
+      "sha256": "c6d3679a07f8e5c0ed659c307b660a2ed5aca75e24191a6164428fcfd066f890"
+    },
+    "model_checkpoint.pt": {
+      "path": "model_checkpoint.pt",
+      "bytes": 7493357,
+      "sha256": "53d33bdbc53a38346f6126c1725a2073b3563a15284b8e83f5d679c7a620d991"
+    },
+    "model_config.json": {
+      "path": "model_config.json",
+      "bytes": 2693,
+      "sha256": "03c8aabf4d0ecdb00b52c52873d9813f752a8518266ab1a45d5ef43a9bdb269c"
+    },
+    "normalizer.json": {
+      "path": "normalizer.json",
+      "bytes": 1633,
+      "sha256": "5d8a36c01c9d041249ac56b1ce736019148aadcc45a1a58cf51bf1f838132198"
+    },
+    "calibration.json": {
+      "path": "calibration.json",
+      "bytes": 2236,
+      "sha256": "718abba96862f52a8edd782b19d8ae74b66e0e7ad486931b7a85270f1eec5328"
+    },
+    "feature_contract.json": {
+      "path": "feature_contract.json",
+      "bytes": 5942,
+      "sha256": "f510893b0140ef3abdce735f1806a7afff8df59e48516de087765b5046a20357"
+    },
+    "output_schema.json": {
+      "path": "output_schema.json",
+      "bytes": 2934,
+      "sha256": "4074128fbd5b170b9e83c07b14120556648cfba75a7e9ff43eb692182bdea6a1"
+    },
+    "replay_report.json": {
+      "path": "replay_report.json",
+      "bytes": 11240,
+      "sha256": "cbe2314db69732c8e247a066bf13c0833e7f4e509a1dac82a5456133ba401eef"
+    },
+    "model_test_bundle.pt": {
+      "path": "model_test_bundle.pt",
+      "bytes": 9501791,
+      "sha256": "cd67bcf6f2752993cd30e377bb981045be231401acbb514aea7fa92a2f19156a"
+    }
+  },
+  "runtime": {
+    "python": ".venv-ml/bin/python",
+    "dependencies": {
+      "torch": "2.14.0",
+      "numpy": "2.5.3",
+      "pyarrow": "25.0.1",
+      "scikit-learn": "1.9.1"
+    },
+    "device_selection": "auto -> CUDA, then MPS, then CPU",
+    "batch_size": 16
+  },
+  "deployment_warnings": [
+    "This package contains physics-derived estimates and proxies; it does not create measured downforce, battery SOC, tyre temperature, or weather telemetry.",
+    "2026 validation is an unseen-year holdout for this frozen run, but it must not be reused for future model or threshold tuning.",
+    "Pit-stop and safety-constraint heads are probabilistic aids, not guaranteed race decisions; monitor their per-race performance."
+  ],
+  "replay_validation": {
+    "report": "replay_report.json",
+    "predictions": "model_test_bundle.pt:predictions_and_labels",
+    "deployment_decision": "PASS",
+    "finite_outputs": true,
+    "deterministic_within_tolerance": true,
+    "prediction_rows": 9689
+  },
+  "test_bundle": {
+    "path": "model_test_bundle.pt",
+    "contains": [
+      "model_weights",
+      "graph_dataset",
+      "snapshots",
+      "labels",
+      "predictions",
+      "metrics"
+    ],
+    "year": 2026,
+    "split": "validation",
+    "rows": 9689
+  }
+}

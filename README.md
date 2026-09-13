@@ -85,6 +85,24 @@ The output label is `experimental boundary position-swap proxy signal`. Complete
 
 Observed telemetry, model output, and simulated energy are separate sources. A model score must not be presented as proof of a successful overtake or as real battery telemetry.
 
+## Integrated hybrid GNN + physics frontend
+
+The integrated `dist/` frontend is wired to the frozen deployment package at
+`deployment_packages/hybrid_gnn_epoch51/`. That package contains the frozen
+hybrid checkpoint, configuration, calibration, feature contract, normalizer,
+and output schema used by the model-backed frontend. The integrated view shows
+ATTACK, HOLD, HARVEST, and DEFEND scores; the action layer combines model
+signals with physics-feasible strategy scores.
+
+The package reports frozen epoch-51 next-lap and calibrated risk outputs. The
+checkpoint does not contain a separately trained four-class action head, so
+these action scores are an integrated decision-support layer rather than proof
+of real-race strategy effectiveness.
+
+The bundled replay remains local and illustrative. Energy, opponent gaps,
+future positions, and simulator outcomes are modelled; neither model predicts
+private team battery telemetry or a complete F1 strategy.
+
 ## Model history
 
 Metrics belong to different tasks and splits; they are not one common benchmark.

@@ -22,6 +22,8 @@ full_race_telemetry_collection*/fastf1_cache/
 # The small frozen demo checkpoint is intentionally versioned.
 !models/frozen/gnn_proxy_v1/gnn_seed_42_best.pt
 !phase5_dashboard/frozen/gnn_seed_42_best.pt
+!deployment_packages/hybrid_gnn_epoch51/
+!deployment_packages/hybrid_gnn_epoch51/*.pt
 
 # Local cached API payloads and bulk audit datasets
 data/

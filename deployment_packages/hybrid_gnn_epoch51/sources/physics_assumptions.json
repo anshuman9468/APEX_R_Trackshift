@@ -1,0 +1,51 @@
+{
+  "vehicle_mass_kg": 800.0,
+  "gravity_mps2": 9.80665,
+  "air_density_kg_m3": 1.225,
+  "drag_area_m2": 1.2,
+  "downforce_area_m2": 3.0,
+  "rolling_resistance_coefficient": 0.015,
+  "acceleration_low_pass_alpha": 0.25,
+  "derivative_min_dt_s": 0.05,
+  "derivative_max_dt_s": 1.5,
+  "acceleration_bounds_mps2": [
+    -60.0,
+    40.0
+  ],
+  "jerk_bounds_mps3": [
+    -300.0,
+    300.0
+  ],
+  "ers_recovery_efficiency": 0.65,
+  "ers_deploy_share_of_positive_wheel_power": 0.2,
+  "ers_energy_store_capacity_assumed_kj": 4000.0,
+  "ers_initial_soc_proxy": 0.5,
+  "ers_power_limit_kw": {
+    "2023": 120.0,
+    "2024": 120.0,
+    "2025": 120.0,
+    "2026": 350.0
+  },
+  "race_control_pace_factor_prior": {
+    "GREEN": 1.0,
+    "VSC": 0.75,
+    "SAFETY_CAR": 0.6,
+    "RED_FLAG": 0.0
+  },
+  "tyre_grip_prior": {
+    "SOFT": 1.0,
+    "MEDIUM": 0.97,
+    "HARD": 0.94,
+    "INTERMEDIATE": 0.8,
+    "WET": 0.7,
+    "UNKNOWN": 0.85
+  },
+  "expected_tyre_life_laps": {
+    "SOFT": 18.0,
+    "MEDIUM": 25.0,
+    "HARD": 35.0,
+    "INTERMEDIATE": 20.0,
+    "WET": 25.0,
+    "UNKNOWN": 25.0
+  }
+}
